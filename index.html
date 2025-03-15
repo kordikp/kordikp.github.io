@@ -132,6 +132,35 @@
       font-size: 16px;
     }
 
+    .course-box {
+      padding: 20px;
+      height: 100%;
+      border-left: 3px solid var(--primary-color);
+      background: rgba(255, 255, 255, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .course-box:hover {
+      background: white;
+      transform: translateX(5px);
+    }
+
+    .course-box h4 {
+      color: var(--secondary-color);
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .course-box p {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    .teaching-highlights h4 {
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+
     .social-links a {
       font-size: 24px;
       margin-right: 15px;
@@ -141,6 +170,41 @@
 
     .social-links a:hover {
       color: var(--primary-color);
+    }
+
+    .publication-item {
+      margin-bottom: 2rem;
+    }
+    
+    .publication-item h4 {
+      color: var(--secondary-color);
+      margin-bottom: 1rem;
+    }
+
+    .paper {
+      margin-bottom: 1.5rem;
+    }
+
+    .paper strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .paper .authors {
+      font-style: italic;
+      margin-bottom: 0.3rem;
+    }
+
+    .paper .venue {
+      color: var(--secondary-color);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .copy-citation {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.5rem;
     }
   </style>
 </head>
@@ -152,7 +216,7 @@
       <div class="row gy-4">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Pavel Kordík</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">CEO at Recombee | AI Researcher | Academic Leader</h2>
+          <h2 data-aos="fade-up" data-aos-delay="400">CEO at Recombee | AI Researcher | Disruptor</h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="social-links mt-3">
               <a href="https://www.linkedin.com/in/pavelkordik/" class="linkedin"><i class="bi bi-linkedin"></i></a>
@@ -265,6 +329,51 @@
       </div>
     </section>
 
+    <!-- Teaching Section -->
+    <section id="teaching" class="teaching">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Teaching</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="achievement-box" data-aos="fade-up">
+              <h3>Academic Courses at CTU</h3>
+              <div class="row mt-4">
+                <div class="col-md-4">
+                  <div class="course-box">
+                    <h4>Advanced Data Mining (ADM)</h4>
+                    <p>Advanced techniques in data mining, focusing on modern approaches to extracting knowledge from complex datasets and real-world applications.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="course-box">
+                    <h4>Modern AI Architectures (MVI)</h4>
+                    <p>Exploring cutting-edge AI architectures and optimization strategies, bridging theoretical foundations with practical implementations.</p>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="course-box">
+                    <h4>AI Research Seminar</h4>
+                    <p>Leading discussions on current AI research trends, methodologies, and breakthrough papers, fostering critical thinking and research skills.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="teaching-highlights mt-4">
+                <h4>Teaching Philosophy</h4>
+                <ul>
+                  <li>Bridging theoretical concepts with real-world industry applications</li>
+                  <li>Fostering hands-on experience with cutting-edge AI technologies</li>
+                  <li>Encouraging research-oriented thinking and innovation</li>
+                  <li>Mentoring students in AI projects and research initiatives</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Publications Section -->
     <section id="publications" class="publications">
       <div class="container" data-aos="fade-up">
@@ -274,20 +383,34 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="achievement-box" data-aos="fade-up">
-              <ul class="publication-list">
-                <li>
-                  <strong>beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems</strong>
-                  <p>RecSys '24: Proceedings of the 18th ACM Conference on Recommender Systems (2024)</p>
-                </li>
-                <li>
-                  <strong>Selecting representative data sets</strong>
-                  <p>Advances in data mining knowledge discovery and applications (2012)</p>
-                </li>
-                <li>
-                  <strong>Meta-learning approach to neural network optimization</strong>
-                  <p>Neural Networks (2010)</p>
-                </li>
-              </ul>
+              <div class="publication-list">
+                <div class="publication-item">
+                  <h4>2024</h4>
+                  <div class="paper">
+                    <strong>beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems</strong>
+                    <p class="authors">Vančura, V., Kordík, P., & Straka, M.</p>
+                    <p class="venue">Proceedings of the 18th ACM Conference on Recommender Systems (2024)</p>
+                    <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{10.1145/3640457.3691707, author = {Van\v{c}ura, Vojt\v{e}ch and Kord\'{i}k, Pavel and Straka, Milan}, title = {beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems}, year = {2024}, publisher = {Association for Computing Machinery}, booktitle = {Proceedings of the 18th ACM Conference on Recommender Systems}, series = {RecSys '24}}">Copy Citation</button>
+                  </div>
+                </div>
+
+                <div class="publication-item">
+                  <h4>2023</h4>
+                  <div class="paper">
+                    <strong>Overcoming the cold-start problem in recommendation systems with ontologies and knowledge graphs</strong>
+                    <p class="authors">Kuznetsov, S., & Kordík, P.</p>
+                    <p class="venue">European Conference on Advances in Databases and Information Systems (2023)</p>
+                    <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{kuznetsov2023overcoming, title={Overcoming the cold-start problem in recommendation systems with ontologies and knowledge graphs}, author={Kuznetsov, Stanislav and Kord{\'i}k, Pavel}, booktitle={European Conference on Advances in Databases and Information Systems}, pages={591--603}, year={2023}, organization={Springer}}">Copy Citation</button>
+                  </div>
+
+                  <div class="paper mt-3">
+                    <strong>Improving recommendation diversity and serendipity with an Ontology-based algorithm for cold start environments</strong>
+                    <p class="authors">Kuznetsov, S., & Kordík, P.</p>
+                    <p class="venue">International Journal of Data Science and Analytics (2023)</p>
+                    <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@article{kuznetsov2023improving, title={Improving recommendation diversity and serendipity with an Ontology-based algorithm for cold start environments}, author={Kuznetsov, Stanislav and Kord{\'i}k, Pavel}, journal={International Journal of Data Science and Analytics}, pages={1--13}, year={2023}, publisher={Springer}}">Copy Citation</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -336,6 +459,21 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.copy-citation').forEach(button => {
+        button.addEventListener('click', function() {
+          const citation = this.getAttribute('data-citation');
+          navigator.clipboard.writeText(citation).then(() => {
+            const originalText = this.textContent;
+            this.textContent = 'Copied!';
+            setTimeout(() => {
+              this.textContent = originalText;
+            }, 2000);
+          });
+        });
+      });
+    });
   </script>
 </body>
 

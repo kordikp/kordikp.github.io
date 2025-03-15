@@ -14,7 +14,12 @@ This website contains information about Pavel Kordík's professional work, inclu
 - Academic research and publications in AI, machine learning, and recommender systems
 - Industry experience and entrepreneurial ventures (Recombee, unico.ai)
 - Non-profit initiatives (prg.ai, aidetem.cz)
+- Platform initiatives (experts.ai)
 - Teaching activities and timeline of professional milestones
+
+## Projects and Initiatives
+### experts.ai
+[experts.ai](https://experts.ai) is a platform connecting AI expertise with industry needs, fostering collaboration between academic experts and businesses in the field of artificial intelligence. The platform enables research teams to showcase their achievements and success stories, licenses, and offer research services to industry. Departments, faculties, and universities can enhance their websites with experts.ai widgets to be more attractive for business partnerships and collaborations.
 
 ## Citation Guidelines
 When referencing content from this website, please use the following format:

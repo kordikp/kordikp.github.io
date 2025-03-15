@@ -319,6 +319,43 @@
       font-weight: 600;
     }
 
+    /* Improved tag colors with better readability */
+    .tag.bg-primary {
+      background-color: rgba(13, 110, 253, 0.15) !important;
+      color: #0b5ed7 !important;
+      font-weight: 600;
+    }
+    
+    .tag.bg-info {
+      background-color: rgba(13, 202, 240, 0.15) !important;
+      color: #0aa2c0 !important;
+      font-weight: 600;
+    }
+    
+    .tag.bg-secondary {
+      background-color: rgba(108, 117, 125, 0.15) !important;
+      color: #495057 !important;
+      font-weight: 600;
+    }
+    
+    .tag.bg-success {
+      background-color: rgba(25, 135, 84, 0.15) !important;
+      color: #146c43 !important;
+      font-weight: 600;
+    }
+    
+    .tag.bg-warning {
+      background-color: rgba(255, 193, 7, 0.15) !important;
+      color: #b86e00 !important;
+      font-weight: 600;
+    }
+    
+    .tag.bg-danger {
+      background-color: rgba(220, 53, 69, 0.15) !important;
+      color: #b02a37 !important;
+      font-weight: 600;
+    }
+
     .thesis-card h4 {
       font-size: 16px;
       margin-bottom: 10px;
@@ -331,6 +368,26 @@
       color: #6c757d;
       margin: 0;
       margin-top: auto;
+    }
+
+    .thesis-link {
+      display: inline-flex;
+      align-items: center;
+      color: var(--primary-color);
+      font-size: 14px;
+      margin-top: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .thesis-link:hover {
+      text-decoration: underline;
+      color: #0056b3;
+    }
+
+    .thesis-link i {
+      margin-right: 5px;
+      font-size: 16px;
     }
 
     .nav-pills .nav-link {
@@ -411,6 +468,11 @@
             <div class="section-title">
               <h2>PhD Dissertation Topics</h2>
               <p>Join my research team to explore cutting-edge topics in AI and recommender systems. PhD studies offer the opportunity to contribute to the scientific community through publications in top conferences and journals while developing novel algorithms and systems with real-world impact.</p>
+              <div class="alert alert-info mt-3">
+                <i class="bi bi-info-circle-fill me-2"></i>
+                For detailed information about the doctoral program in Informatics at FIT CTU, including admission requirements and program structure, please visit the 
+                <a href="https://fit.cvut.cz/en/studies/programs-and-specializations/doctoral/dsp-informatics" target="_blank" class="alert-link">official DSP Informatics program page</a>.
+              </div>
             </div>
 
             <div class="row">
@@ -744,6 +806,9 @@
                         </div>
                         <h4>Semantic Product Search</h4>
                         <p class="student">Bc. Patrik Schweika | Completed 1/4/2024</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/101922" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="ml">
@@ -754,6 +819,9 @@
                         </div>
                         <h4>Efficient implementation of neuroevolution for reinforcement learning tasks</h4>
                         <p class="student">Vladimír Votava | Completed 11/8/2023</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/101763" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="ml">
@@ -764,6 +832,9 @@
                         </div>
                         <h4>Knowlege tracing techniques, their explainability and applications</h4>
                         <p class="student">Bc. Eliška Svobodová | Completed 12/12/2023</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/102077" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="nlp">
@@ -774,6 +845,9 @@
                         </div>
                         <h4>Text to query using large language models on local infrastructure</h4>
                         <p class="student">Patrik Laurinc | Completed 4/26/2023</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/100845" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="web">
@@ -800,6 +874,9 @@
                         </div>
                         <h4>Personalized recommendations for students</h4>
                         <p class="student">Bc. Čeněk Žid | Completed 9/30/2021</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/97559" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="ml">
@@ -810,6 +887,9 @@
                         </div>
                         <h4>Anytime Learning with Auto-Sizing Neural Networks</h4>
                         <p class="student">Bc. Vojtěch Cahlík | Completed 10/12/2021</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/97579" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="recsys">
@@ -856,6 +936,9 @@
                         </div>
                         <h4>Recommendation based on product images</h4>
                         <p class="student">Bc. Kristýna Tauchmanová</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/90153" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="ui">
@@ -936,6 +1019,9 @@
                         </div>
                         <h4>Neural Autoencoders in Recommender Systems</h4>
                         <p class="student">Bc. Michal Bajer</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/90177" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="ui">
@@ -1012,6 +1098,9 @@
                         </div>
                         <h4>Flight data analysis and passenger anomaly detection</h4>
                         <p class="student">Bc. Matúš Tóth</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/73042" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="ml">
@@ -1052,6 +1141,9 @@
                         </div>
                         <h4>Scalability of Predictive Modeling Algorithms</h4>
                         <p class="student">Bc. Tomáš Frýda</p>
+                        <a href="https://dspace.cvut.cz/handle/10467/73016" target="_blank" class="thesis-link">
+                          <i class="bi bi-file-earmark-text"></i> Read full thesis
+                        </a>
                       </div>
 
                       <div class="thesis-card" data-category="ui">
@@ -1233,7 +1325,9 @@
             if (!years[yearHeading]) {
               years[yearHeading] = [];
             }
-            years[yearHeading].push(card.cloneNode(true));
+            // Deep clone to ensure all child elements (including links) are preserved
+            const clonedCard = card.cloneNode(true);
+            years[yearHeading].push(clonedCard);
           });
           
           // Create year sections
@@ -1273,6 +1367,43 @@
         });
       });
     });
+  </script>
+
+  <!-- Helper script for generating DSpace search links -->
+  <script>
+    /**
+     * Helper function to generate search links for theses in DSpace
+     * Usage: Open browser console and run generateDSpaceLinks() to see search links for all theses
+     */
+    function generateDSpaceLinks() {
+      const thesisCards = document.querySelectorAll('.thesis-card');
+      const results = [];
+      
+      thesisCards.forEach(card => {
+        const title = card.querySelector('h4').textContent.trim();
+        const studentInfo = card.querySelector('.student').textContent.trim();
+        const studentName = studentInfo.split('|')[0].trim();
+        
+        // Generate a search URL for DSpace
+        const searchParams = new URLSearchParams();
+        searchParams.append('query', `${title} ${studentName} Kordík`);
+        
+        const searchUrl = `https://dspace.cvut.cz/discover?${searchParams.toString()}`;
+        
+        results.push({
+          title,
+          student: studentName,
+          searchUrl
+        });
+        
+        console.log(`%c${title}`, 'font-weight: bold;');
+        console.log(`Student: ${studentName}`);
+        console.log(`Search URL: ${searchUrl}`);
+        console.log('---');
+      });
+      
+      return results; // Return the array for further processing
+    }
   </script>
 </body>
 

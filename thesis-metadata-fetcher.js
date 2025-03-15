@@ -1,31 +1,27 @@
 /**
  * DSpace Thesis Metadata Fetcher
  * 
- * A standalone script to enhance thesis cards by fetching metadata from DSpace.
- * This script fetches abstracts, direct links, and additional metadata for theses
- * listed on a page, enriching the user experience with more detailed information.
+ * A tool to fetch thesis metadata from DSpace and export it to a JSON file.
+ * Instead of directly manipulating the DOM, this version creates a data file
+ * that can be used to update the website manually when needed.
  * 
  * Usage:
- * 1. Include this script in your HTML: <script src="thesis-metadata-fetcher.js"></script>
- * 2. Call ThesisEnhancer.initialize() to add a button to the page
- * 3. Or create a new ThesisEnhancer instance and call enhance() directly
+ * 1. Run this script in the browser console on the student-topics.html page
+ * 2. Call ThesisMetadataExporter.exportData() to start the process
+ * 3. Save the resulting JSON data to a file
  * 
  * @author Claude
- * @version 1.0.0
+ * @version 2.0.0
  */
 
-class ThesisEnhancer {
+class ThesisMetadataExporter {
   constructor(options = {}) {
     this.config = {
       dspaceBaseUrl: 'https://dspace.cvut.cz',
       throttleDelay: 500, // Delay between API calls to avoid rate limiting (ms)
-      cacheTTL: 7 * 24 * 60 * 60 * 1000, // Cache TTL: 1 week in milliseconds
       cardSelector: '.thesis-card',
       titleSelector: 'h4',
       studentSelector: '.student',
-      buttonText: 'Load Thesis Abstracts & Links',
-      buttonLoadingText: 'Loading Thesis Data...',
-      buttonRefreshText: 'Refresh Thesis Data',
       ...options
     };
 
@@ -33,83 +29,25 @@ class ThesisEnhancer {
     this.thesisCards = document.querySelectorAll(this.config.cardSelector);
     this.processedCount = 0;
     this.totalCount = 0;
+    this.metadataResults = {};
     this.cache = this.loadCache();
   }
 
   /**
-   * Initialize the enhancer by adding a button to the page
-   * @param {string} containerSelector - CSS selector for the container to add the button to
+   * Static method to initialize and start the export process
    */
-  static initialize(containerSelector = '#past-theses') {
-    document.addEventListener('DOMContentLoaded', () => {
-      const enhancer = new ThesisEnhancer();
-      enhancer.addControlButton(containerSelector);
-    });
+  static exportData() {
+    const exporter = new ThesisMetadataExporter();
+    exporter.processAllTheses();
   }
 
   /**
-   * Add a control button to the specified container
-   * @param {string} containerSelector - CSS selector for the container to add the button to
-   */
-  addControlButton(containerSelector) {
-    const container = document.querySelector(containerSelector);
-    if (!container) return;
-
-    const controlButton = document.createElement('button');
-    controlButton.id = 'enhance-theses-button';
-    controlButton.className = 'btn btn-outline-primary';
-    controlButton.style.cssText = 'margin-top: 20px; display: block; margin-left: auto; margin-right: auto;';
-    controlButton.textContent = this.config.buttonText;
-    
-    // Add button after the filter tabs
-    const tabsContent = container.querySelector('.tab-content');
-    if (tabsContent) {
-      tabsContent.parentNode.insertBefore(controlButton, tabsContent.nextSibling);
-    } else {
-      container.appendChild(controlButton);
-    }
-    
-    // Add event listener
-    controlButton.addEventListener('click', () => {
-      this.enhance();
-      controlButton.disabled = true;
-      controlButton.textContent = this.config.buttonLoadingText;
-      
-      // Re-enable button after completion
-      setTimeout(() => {
-        controlButton.disabled = false;
-        controlButton.textContent = this.config.buttonRefreshText;
-      }, this.totalCount * this.config.throttleDelay + 1000);
-    });
-  }
-
-  /**
-   * Load the cache from localStorage
-   * @returns {Object} The cached data or an empty object
+   * Load cache from localStorage
    */
   loadCache() {
     try {
       const cacheData = localStorage.getItem('thesisMetadataCache');
-      if (!cacheData) return {};
-      
-      const cache = JSON.parse(cacheData);
-      
-      // Check if cache has expired entries and clean them
-      const now = Date.now();
-      let hasChanges = false;
-      
-      Object.keys(cache).forEach(key => {
-        if (cache[key].timestamp && (now - cache[key].timestamp) > this.config.cacheTTL) {
-          delete cache[key];
-          hasChanges = true;
-        }
-      });
-      
-      if (hasChanges) {
-        localStorage.setItem('thesisMetadataCache', JSON.stringify(cache));
-      }
-      
-      return cache;
+      return cacheData ? JSON.parse(cacheData) : {};
     } catch (e) {
       console.error('Failed to load cache:', e);
       return {};
@@ -117,7 +55,7 @@ class ThesisEnhancer {
   }
 
   /**
-   * Save the cache to localStorage
+   * Save cache to localStorage
    */
   saveCache() {
     try {
@@ -128,10 +66,75 @@ class ThesisEnhancer {
   }
 
   /**
-   * Main method to enhance thesis cards with metadata
+   * Create a progress indicator
    */
-  async enhance() {
-    console.log('Starting thesis enhancement process...');
+  createProgressIndicator() {
+    // Remove any existing progress indicator
+    const existingIndicator = document.getElementById('thesis-exporter-progress');
+    if (existingIndicator) {
+      existingIndicator.remove();
+    }
+    
+    const progressContainer = document.createElement('div');
+    progressContainer.id = 'thesis-exporter-progress';
+    progressContainer.style.cssText = `
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(0, 102, 204, 0.9);
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    `;
+    
+    progressContainer.innerHTML = `
+      <div style="margin-bottom: 8px;">Fetching thesis metadata...</div>
+      <div class="progress" style="height: 10px; background-color: rgba(255, 255, 255, 0.3); border-radius: 5px; overflow: hidden;">
+        <div id="thesis-exporter-progress-bar" class="progress-bar" style="height: 100%; width: 0%; background-color: white; transition: width 0.3s ease;"></div>
+      </div>
+      <div id="thesis-exporter-progress-text" style="margin-top: 8px; text-align: center;">0/${this.totalCount}</div>
+    `;
+    
+    document.body.appendChild(progressContainer);
+  }
+
+  /**
+   * Update the progress indicator
+   */
+  updateProgress() {
+    const progressBar = document.getElementById('thesis-exporter-progress-bar');
+    const progressText = document.getElementById('thesis-exporter-progress-text');
+    
+    if (progressBar && progressText) {
+      const percentage = (this.processedCount / this.totalCount) * 100;
+      progressBar.style.width = `${percentage}%`;
+      progressText.textContent = `${this.processedCount}/${this.totalCount}`;
+    }
+  }
+
+  /**
+   * Remove the progress indicator
+   */
+  removeProgressIndicator() {
+    const progressContainer = document.getElementById('thesis-exporter-progress');
+    if (progressContainer) {
+      progressContainer.style.opacity = '0';
+      setTimeout(() => {
+        progressContainer.remove();
+      }, 500);
+    }
+  }
+
+  /**
+   * Process all thesis cards and collect metadata
+   */
+  async processAllTheses() {
+    console.log('Starting thesis metadata export process...');
     
     // Count total theses to process
     this.thesisCards.forEach(card => {
@@ -146,8 +149,7 @@ class ThesisEnhancer {
           this.cache[title] = {
             ...this.cache[title],
             handle,
-            link: href,
-            timestamp: Date.now()
+            link: href
           };
         }
       }
@@ -169,101 +171,47 @@ class ThesisEnhancer {
       await new Promise(resolve => setTimeout(resolve, this.config.throttleDelay));
     }
     
-    console.log('Thesis enhancement completed!');
+    console.log('Thesis metadata export completed!');
     this.saveCache();
+    this.displayResults();
     this.removeProgressIndicator();
   }
-
-  /**
-   * Create a progress indicator
-   */
-  createProgressIndicator() {
-    const progressContainer = document.createElement('div');
-    progressContainer.id = 'thesis-enhancer-progress';
-    progressContainer.style.cssText = `
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: rgba(0, 102, 204, 0.9);
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-      z-index: 9999;
-      font-family: 'Inter', sans-serif;
-      font-size: 14px;
-      transition: all 0.3s ease;
-    `;
-    
-    progressContainer.innerHTML = `
-      <div style="margin-bottom: 8px;">Enhancing thesis information...</div>
-      <div class="progress" style="height: 10px; background-color: rgba(255, 255, 255, 0.3); border-radius: 5px; overflow: hidden;">
-        <div id="thesis-enhancer-progress-bar" class="progress-bar" style="height: 100%; width: 0%; background-color: white; transition: width 0.3s ease;"></div>
-      </div>
-      <div id="thesis-enhancer-progress-text" style="margin-top: 8px; text-align: center;">0/${this.totalCount}</div>
-    `;
-    
-    document.body.appendChild(progressContainer);
-  }
-
-  /**
-   * Update the progress indicator
-   */
-  updateProgress() {
-    const progressBar = document.getElementById('thesis-enhancer-progress-bar');
-    const progressText = document.getElementById('thesis-enhancer-progress-text');
-    
-    if (progressBar && progressText) {
-      const percentage = (this.processedCount / this.totalCount) * 100;
-      progressBar.style.width = `${percentage}%`;
-      progressText.textContent = `${this.processedCount}/${this.totalCount}`;
-    }
-  }
-
-  /**
-   * Remove the progress indicator
-   */
-  removeProgressIndicator() {
-    const progressContainer = document.getElementById('thesis-enhancer-progress');
-    if (progressContainer) {
-      progressContainer.style.opacity = '0';
-      setTimeout(() => {
-        progressContainer.remove();
-      }, 500);
-    }
-  }
-
+  
   /**
    * Process a single thesis card
-   * @param {Element} card - The thesis card element to process
+   * @param {Element} card - The thesis card to process
    */
   async processThesisCard(card) {
     const title = card.querySelector(this.config.titleSelector).textContent.trim();
     const studentInfo = card.querySelector(this.config.studentSelector).textContent.trim();
     const studentName = studentInfo.split('|')[0].trim();
+    const category = this.getThesisCategory(card);
+    const type = this.getThesisType(card);
+    const year = this.getThesisYear(card);
     
-    // Skip if the card already has detailed content
-    if (card.querySelector('.thesis-abstract')) {
-      console.log(`Skipping ${title} - already enhanced`);
-      return;
-    }
+    // Basic metadata from the card
+    let metadata = {
+      title: title,
+      student: studentName,
+      type: type,
+      category: category,
+      year: year
+    };
     
     // Check cache first
     if (this.cache[title] && this.cache[title].abstract) {
-      this.updateThesisCard(card, this.cache[title]);
+      metadata = { ...metadata, ...this.cache[title] };
+      this.metadataResults[title] = metadata;
       return;
     }
     
-    // If we have a handle but no abstract, just fetch the abstract
+    // If we have a handle but no abstract, fetch the abstract
     if (this.cache[title] && this.cache[title].handle) {
       try {
-        const metadata = await this.fetchFullMetadata(this.cache[title].handle);
-        this.cache[title] = {
-          ...this.cache[title],
-          ...metadata,
-          timestamp: Date.now()
-        };
-        this.updateThesisCard(card, this.cache[title]);
+        const fetchedMetadata = await this.fetchFullMetadata(this.cache[title].handle);
+        metadata = { ...metadata, ...this.cache[title], ...fetchedMetadata };
+        this.cache[title] = { ...this.cache[title], ...fetchedMetadata };
+        this.metadataResults[title] = metadata;
         return;
       } catch (error) {
         console.warn(`Failed to fetch metadata for ${title} using handle: ${error.message}`);
@@ -271,19 +219,79 @@ class ThesisEnhancer {
       }
     }
     
-    // Otherwise, search for the thesis
+    // Search for the thesis
     try {
       const searchResult = await this.searchThesis(title, studentName);
       if (searchResult) {
-        this.cache[title] = {
-          ...searchResult,
-          timestamp: Date.now()
-        };
-        this.updateThesisCard(card, searchResult);
+        metadata = { ...metadata, ...searchResult };
+        this.cache[title] = { ...searchResult };
+        this.metadataResults[title] = metadata;
+      } else {
+        // No results found, just store basic info
+        this.metadataResults[title] = metadata;
       }
     } catch (error) {
       console.error(`Error processing ${title}:`, error);
+      // Store whatever we have
+      this.metadataResults[title] = metadata;
     }
+  }
+  
+  /**
+   * Extract the thesis category from its HTML element
+   * @param {Element} card - The thesis card element
+   * @returns {string} - The thesis category
+   */
+  getThesisCategory(card) {
+    // Try to find category from data attribute
+    const dataCategory = card.getAttribute('data-category');
+    if (dataCategory) return dataCategory;
+    
+    // Try to find category from tags
+    const tags = Array.from(card.querySelectorAll('.tag')).map(tag => tag.textContent.trim());
+    if (tags.length > 0) {
+      // Use the first tag as category
+      return tags[0];
+    }
+    
+    return 'unknown';
+  }
+  
+  /**
+   * Extract the thesis type (BT/MT) from its HTML element
+   * @param {Element} card - The thesis card element
+   * @returns {string} - The thesis type
+   */
+  getThesisType(card) {
+    const typeElement = card.querySelector('.thesis-type');
+    if (typeElement) return typeElement.textContent.trim();
+    
+    // Try to infer from other content
+    const cardText = card.textContent.toLowerCase();
+    if (cardText.includes('master') || cardText.includes('diploma') || 
+        cardText.includes('mt') || cardText.includes('dp')) {
+      return 'MT';
+    } else if (cardText.includes('bachelor') || cardText.includes('bakalář') || 
+               cardText.includes('bt') || cardText.includes('bp')) {
+      return 'BT';
+    }
+    
+    return 'unknown';
+  }
+  
+  /**
+   * Extract the thesis year from its container
+   * @param {Element} card - The thesis card element
+   * @returns {string} - The thesis year
+   */
+  getThesisYear(card) {
+    const yearSection = card.closest('.timeline-year');
+    if (yearSection) {
+      const yearHeading = yearSection.querySelector('.year-heading');
+      if (yearHeading) return yearHeading.textContent.trim();
+    }
+    
+    return 'unknown';
   }
 
   /**
@@ -345,10 +353,12 @@ class ThesisEnhancer {
       // Extract metadata
       const metadata = {
         abstract: this.extractMetadataValue(data, 'dc.description.abstract'),
+        abstractEn: this.extractMetadataValue(data, 'dc.description.abstract', 'eng'),
+        abstractCz: this.extractMetadataValue(data, 'dc.description.abstract', 'cze'),
         keywords: this.extractMetadataValues(data, 'dc.subject'),
         dateIssued: this.extractMetadataValue(data, 'dc.date.issued'),
         language: this.extractMetadataValue(data, 'dc.language.iso'),
-        type: this.extractMetadataValue(data, 'dc.type'),
+        docType: this.extractMetadataValue(data, 'dc.type'),
         pdfLink: null  // Will be fetched in a separate step
       };
       
@@ -440,11 +450,17 @@ class ThesisEnhancer {
    * Extract a single metadata value from DSpace item data
    * @param {Object} data - The DSpace item data
    * @param {string} key - The metadata key to extract
+   * @param {string} lang - Optional language filter
    * @returns {string} - The metadata value or null if not found
    */
-  extractMetadataValue(data, key) {
-    const metadataField = data.metadata?.find(meta => meta.key === key);
-    return metadataField?.value || null;
+  extractMetadataValue(data, key, lang = null) {
+    let metadataFields = data.metadata?.filter(meta => meta.key === key);
+    
+    if (lang) {
+      metadataFields = metadataFields.filter(meta => meta.language === lang);
+    }
+    
+    return metadataFields?.[0]?.value || null;
   }
 
   /**
@@ -459,257 +475,151 @@ class ThesisEnhancer {
   }
 
   /**
-   * Update a thesis card with fetched metadata
-   * @param {Element} card - The thesis card element to update
-   * @param {Object} metadata - The thesis metadata
+   * Display the results and provide download options
    */
-  updateThesisCard(card, metadata) {
-    // Don't update if already updated
-    if (card.querySelector('.thesis-abstract')) {
-      return;
-    }
+  displayResults() {
+    // Create a modal to display the results
+    const modal = document.createElement('div');
+    modal.style.cssText = `
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    `;
     
-    // Create enhanced card content
-    const enhancedContent = document.createElement('div');
-    enhancedContent.className = 'thesis-enhanced-content';
+    const modalContent = document.createElement('div');
+    modalContent.style.cssText = `
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 800px;
+      width: 90%;
+      max-height: 90vh;
+      overflow-y: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    `;
     
-    // Add abstract if available
-    if (metadata.abstract) {
-      const abstractSection = this.createAbstractSection(metadata.abstract);
-      enhancedContent.appendChild(abstractSection);
-    }
+    const closeButton = document.createElement('button');
+    closeButton.textContent = '×';
+    closeButton.style.cssText = `
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: none;
+      background: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #333;
+    `;
+    closeButton.addEventListener('click', () => modal.remove());
     
-    // Add keywords if available
-    if (metadata.keywords && metadata.keywords.length > 0) {
-      const keywordsSection = this.createKeywordsSection(metadata.keywords);
-      enhancedContent.appendChild(keywordsSection);
-    }
+    const title = document.createElement('h2');
+    title.textContent = 'Thesis Metadata Export';
+    title.style.marginTop = '0';
     
-    // Create links section
-    const linksSection = document.createElement('div');
-    linksSection.className = 'thesis-links';
-    linksSection.style.marginTop = '15px';
+    const summary = document.createElement('p');
+    summary.textContent = `Successfully fetched metadata for ${Object.keys(this.metadataResults).length} theses.`;
     
-    // Add repository link
-    if (metadata.link) {
-      const repoLink = document.createElement('a');
-      repoLink.className = 'thesis-link mr-2';
-      repoLink.href = metadata.link;
-      repoLink.target = '_blank';
-      repoLink.innerHTML = '<i class="bi bi-archive"></i> Repository page';
-      repoLink.style.marginRight = '10px';
-      linksSection.appendChild(repoLink);
-    }
+    const downloadButton = document.createElement('button');
+    downloadButton.textContent = 'Download JSON';
+    downloadButton.className = 'btn btn-primary';
+    downloadButton.style.marginRight = '10px';
+    downloadButton.addEventListener('click', () => this.downloadJSON());
     
-    // Add PDF link if available
-    if (metadata.pdfLink) {
-      const pdfLink = document.createElement('a');
-      pdfLink.className = 'thesis-link mr-2';
-      pdfLink.href = metadata.pdfLink;
-      pdfLink.target = '_blank';
-      pdfLink.innerHTML = '<i class="bi bi-file-earmark-text"></i> Full text PDF';
-      pdfLink.style.marginRight = '10px';
-      linksSection.appendChild(pdfLink);
-    }
+    const copyButton = document.createElement('button');
+    copyButton.textContent = 'Copy to Clipboard';
+    copyButton.className = 'btn btn-secondary';
+    copyButton.style.marginRight = '10px';
+    copyButton.addEventListener('click', () => {
+      const jsonStr = JSON.stringify(this.metadataResults, null, 2);
+      navigator.clipboard.writeText(jsonStr)
+        .then(() => {
+          copyButton.textContent = 'Copied!';
+          setTimeout(() => {
+            copyButton.textContent = 'Copy to Clipboard';
+          }, 2000);
+        })
+        .catch(err => {
+          console.error('Failed to copy: ', err);
+          copyButton.textContent = 'Failed to copy';
+        });
+    });
     
-    // Add reviews if available
-    if (metadata.reviews && metadata.reviews.length > 0) {
-      const reviewsDropdown = this.createReviewsDropdown(metadata.reviews);
-      linksSection.appendChild(reviewsDropdown);
-    }
-    
-    enhancedContent.appendChild(linksSection);
-    
-    // Add metadata badge
-    if (metadata.dateIssued || metadata.type) {
-      const metaBadge = document.createElement('div');
-      metaBadge.className = 'thesis-meta-badge';
-      metaBadge.style.cssText = `
-        margin-top: 10px;
-        font-size: 12px;
-        color: #6c757d;
-      `;
-      
-      if (metadata.type) {
-        metaBadge.innerHTML += `<span>${metadata.type}</span>`;
-      }
-      
-      if (metadata.dateIssued) {
-        if (metadata.type) metaBadge.innerHTML += ' · ';
-        metaBadge.innerHTML += `<span>Published: ${metadata.dateIssued}</span>`;
-      }
-      
-      enhancedContent.appendChild(metaBadge);
-    }
-    
-    // Find insertion point and add the enhanced content
-    const studentInfo = card.querySelector('.student');
-    if (studentInfo) {
-      studentInfo.parentNode.insertBefore(enhancedContent, studentInfo.nextSibling);
-    } else {
-      card.appendChild(enhancedContent);
-    }
-    
-    // Remove original thesis link if it exists (to avoid duplication)
-    const originalLink = card.querySelector('.thesis-link:not(.mr-2)');
-    if (originalLink && originalLink.parentElement) {
-      if (originalLink.parentElement.childElementCount === 1) {
-        originalLink.parentElement.remove(); // Remove parent if it only contains the link
+    const previewButton = document.createElement('button');
+    previewButton.textContent = 'Preview Data';
+    previewButton.className = 'btn btn-info';
+    previewButton.addEventListener('click', () => {
+      const previewArea = document.getElementById('preview-area');
+      if (previewArea.style.display === 'none') {
+        previewArea.style.display = 'block';
+        previewButton.textContent = 'Hide Preview';
       } else {
-        originalLink.remove(); // Just remove the link
+        previewArea.style.display = 'none';
+        previewButton.textContent = 'Preview Data';
       }
-    }
+    });
     
-    // Add visual indicator that the card has been enhanced
-    card.classList.add('thesis-enhanced');
-    card.style.transition = 'all 0.3s ease';
+    const buttonContainer = document.createElement('div');
+    buttonContainer.style.marginBottom = '20px';
+    buttonContainer.appendChild(downloadButton);
+    buttonContainer.appendChild(copyButton);
+    buttonContainer.appendChild(previewButton);
     
-    // Briefly highlight the card to show it's been updated
-    const originalBackground = card.style.backgroundColor;
-    card.style.backgroundColor = 'rgba(0, 102, 204, 0.1)';
+    const previewArea = document.createElement('pre');
+    previewArea.id = 'preview-area';
+    previewArea.style.cssText = `
+      background-color: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+      max-height: 400px;
+      overflow-y: auto;
+      display: none;
+      white-space: pre-wrap;
+      word-break: break-all;
+    `;
+    previewArea.textContent = JSON.stringify(this.metadataResults, null, 2);
+    
+    modalContent.appendChild(closeButton);
+    modalContent.appendChild(title);
+    modalContent.appendChild(summary);
+    modalContent.appendChild(buttonContainer);
+    modalContent.appendChild(previewArea);
+    
+    modal.appendChild(modalContent);
+    document.body.appendChild(modal);
+  }
+  
+  /**
+   * Download the metadata as a JSON file
+   */
+  downloadJSON() {
+    const jsonStr = JSON.stringify(this.metadataResults, null, 2);
+    const blob = new Blob([jsonStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'thesis-metadata.json';
+    document.body.appendChild(a);
+    a.click();
+    
     setTimeout(() => {
-      card.style.backgroundColor = originalBackground;
-    }, 1000);
-  }
-
-  /**
-   * Create an abstract section for the thesis card
-   * @param {string} abstract - The thesis abstract
-   * @returns {Element} - The abstract section element
-   */
-  createAbstractSection(abstract) {
-    const abstractSection = document.createElement('div');
-    abstractSection.className = 'thesis-abstract';
-    abstractSection.style.cssText = `
-      margin-top: 15px;
-      font-size: 14px;
-      color: #6c757d;
-      position: relative;
-      overflow: hidden;
-      max-height: 100px;
-      transition: max-height 0.3s ease;
-    `;
-    
-    const abstractText = document.createElement('p');
-    abstractText.textContent = abstract || 'Abstract not available';
-    abstractSection.appendChild(abstractText);
-    
-    // Add "Read more" toggle if abstract is long
-    if ((abstract?.length || 0) > 200) {
-      const gradient = document.createElement('div');
-      gradient.className = 'abstract-gradient';
-      gradient.style.cssText = `
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 40px;
-        background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
-        pointer-events: none;
-      `;
-      
-      const readMore = document.createElement('button');
-      readMore.className = 'btn btn-sm btn-link abstract-toggle p-0';
-      readMore.textContent = 'Read more';
-      readMore.style.cssText = `
-        display: block;
-        margin-top: 5px;
-        font-size: 12px;
-        text-decoration: none;
-      `;
-      
-      abstractSection.appendChild(gradient);
-      abstractSection.appendChild(readMore);
-      
-      readMore.addEventListener('click', function() {
-        if (abstractSection.style.maxHeight === '100px') {
-          abstractSection.style.maxHeight = '1000px';
-          gradient.style.display = 'none';
-          readMore.textContent = 'Show less';
-        } else {
-          abstractSection.style.maxHeight = '100px';
-          gradient.style.display = 'block';
-          readMore.textContent = 'Read more';
-        }
-      });
-    }
-    
-    return abstractSection;
-  }
-
-  /**
-   * Create a keywords section for the thesis card
-   * @param {Array} keywords - The thesis keywords
-   * @returns {Element} - The keywords section element
-   */
-  createKeywordsSection(keywords) {
-    const keywordsSection = document.createElement('div');
-    keywordsSection.className = 'thesis-keywords';
-    keywordsSection.style.cssText = `
-      margin-top: 10px;
-    `;
-    
-    // Define a set of background colors for the tags
-    const tagColors = [
-      'bg-primary',
-      'bg-info',
-      'bg-secondary',
-      'bg-success',
-      'bg-warning'
-    ];
-    
-    keywords.forEach((keyword, index) => {
-      const tag = document.createElement('span');
-      tag.className = `tag ${tagColors[index % tagColors.length]}`;
-      tag.textContent = keyword;
-      keywordsSection.appendChild(tag);
-    });
-    
-    return keywordsSection;
-  }
-
-  /**
-   * Create a dropdown for thesis reviews
-   * @param {Array} reviews - The thesis reviews
-   * @returns {Element} - The reviews dropdown element
-   */
-  createReviewsDropdown(reviews) {
-    const dropdownContainer = document.createElement('div');
-    dropdownContainer.className = 'dropdown d-inline-block';
-    dropdownContainer.style.marginRight = '10px';
-    
-    const dropdownButton = document.createElement('button');
-    dropdownButton.className = 'btn btn-sm btn-outline-secondary dropdown-toggle';
-    dropdownButton.type = 'button';
-    dropdownButton.setAttribute('data-bs-toggle', 'dropdown');
-    dropdownButton.setAttribute('aria-expanded', 'false');
-    dropdownButton.innerHTML = '<i class="bi bi-file-earmark-text"></i> Reviews';
-    
-    const dropdownMenu = document.createElement('ul');
-    dropdownMenu.className = 'dropdown-menu';
-    
-    reviews.forEach(review => {
-      const menuItem = document.createElement('li');
-      const link = document.createElement('a');
-      link.className = 'dropdown-item';
-      link.href = review.link;
-      link.target = '_blank';
-      link.textContent = review.name.replace(/\.pdf$/i, '');
-      menuItem.appendChild(link);
-      dropdownMenu.appendChild(menuItem);
-    });
-    
-    dropdownContainer.appendChild(dropdownButton);
-    dropdownContainer.appendChild(dropdownMenu);
-    
-    return dropdownContainer;
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }, 0);
   }
 }
 
-// Export the enhancer for global access
-window.ThesisEnhancer = ThesisEnhancer;
+// Instructions to use in browser console:
+console.log('Thesis Metadata Exporter loaded!');
+console.log('To start exporting thesis metadata, run:');
+console.log('ThesisMetadataExporter.exportData()');
 
-// Initialize when included directly
-if (typeof document !== 'undefined') {
-  ThesisEnhancer.initialize();
-} 
+// Export the exporter for global access
+window.ThesisMetadataExporter = ThesisMetadataExporter; 

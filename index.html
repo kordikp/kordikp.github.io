@@ -371,9 +371,17 @@
     }
 
     .paper strong {
-      display: block;
+      display: inline-block;
       margin-bottom: 0.5rem;
       color: var(--primary-color);
+    }
+
+    .paper .title-row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 0.5rem;
     }
 
     .paper .authors {
@@ -390,6 +398,17 @@
     .copy-citation {
       font-size: 0.8rem;
       padding: 0.2rem 0.5rem;
+    }
+    
+    .btn-outline-lightblue {
+      color: #5bc0de;
+      border-color: #5bc0de;
+    }
+    
+    .btn-outline-lightblue:hover {
+      color: #fff;
+      background-color: #5bc0de;
+      border-color: #5bc0de;
     }
     
     /* New styles for tabs */
@@ -583,6 +602,16 @@
       font-weight: 500;
       vertical-align: middle;
     }
+    
+    .venue-citation {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .venue-citation .badge {
+      margin-left: 10px;
+    }
   </style>
 </head>
 
@@ -741,7 +770,8 @@
                     <li>Coordinator of the Computational Intelligence Research Group</li>
                     <li>Active member of the Data Science Laboratory and Recombee Research Lab</li>
                     <li>Principal Investigator of multiple research projects</li>
-                    <li>Motivating students to pursue their own research interests</li>
+                    <li>Supervising several PhD and industrial PhD students.</li>
+                    <li>Motivating undergrad students to pursue their own research interests</li>
                   </ul>
                 </div>
                 
@@ -824,15 +854,6 @@
           </div>
         </div>
         
-        <div class="row mt-4">
-          <div class="col-lg-12">
-            <div class="achievement-box" data-aos="fade-up">
-              <h3>EU Project Leadership</h3>
-              <p>As Principal Investigator on multiple EU-funded projects, I lead research teams in developing innovative solutions to complex challenges across rural development, climate change, and technology transfer domains. These projects represent significant collaborations between academic institutions, industry partners, and public sector organizations across Europe.</p>
-              <p>The combined budget of these initiatives exceeds €10 million, supporting research activities that directly impact policy development, technological innovation, and practical implementations across multiple European regions.</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -1076,11 +1097,13 @@
                   <div class="publication-item">
                     <h4>2024</h4>
                     <div class="paper">
-                      <strong data-citation-id="10.1145/3640457.3691707">beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="10.1145/3640457.3691707">beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{10.1145/3640457.3691707, author = {Van\v{c}ura, Vojt\v{e}ch and Kord\'{i}k, Pavel and Straka, Milan}, title = {beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems}, year = {2024}, isbn = {9798400705052}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3640457.3691707}, doi = {10.1145/3640457.3691707}, booktitle = {Proceedings of the 18th ACM Conference on Recommender Systems}, pages = {1102–1107}, numpages = {6}, keywords = {Cold-start recommendation, Recommender systems, Sentence embeddings, Text mining, Zero-shot recommendation}, location = {Bari, Italy}, series = {RecSys '24}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Vančura, V., Kordík, P., & Straka, M.</p>
                       <p class="venue">Proceedings of the 18th ACM Conference on Recommender Systems (2024)</p>
                       <p class="description">Improve recommendation of cold start items by training transformers on interactions.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{10.1145/3640457.3691707, author = {Van\v{c}ura, Vojt\v{e}ch and Kord\'{i}k, Pavel and Straka, Milan}, title = {beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems}, year = {2024}, isbn = {9798400705052}, publisher = {Association for Computing Machinery}, address = {New York, NY, USA}, url = {https://doi.org/10.1145/3640457.3691707}, doi = {10.1145/3640457.3691707}, booktitle = {Proceedings of the 18th ACM Conference on Recommender Systems}, pages = {1102–1107}, numpages = {6}, keywords = {Cold-start recommendation, Recommender systems, Sentence embeddings, Text mining, Zero-shot recommendation}, location = {Bari, Italy}, series = {RecSys '24}}">Copy Citation</button>
                     </div>
 
                   </div>
@@ -1088,35 +1111,43 @@
                   <div class="publication-item">
                     <h4>2023</h4>
                     <div class="paper">
-                      <strong data-citation-id="kuznetsov2023overcoming">Overcoming the Cold-Start Problem in Recommendation Systems with Ontologies and Knowledge Graphs</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="kuznetsov2023overcoming">Overcoming the Cold-Start Problem in Recommendation Systems with Ontologies and Knowledge Graphs</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{kuznetsov2023overcoming, title={Overcoming the Cold-Start Problem in Recommendation Systems with Ontologies and Knowledge Graphs}, author={Kuznetsov, Stanislav and Kord{\'i}k, Pavel}, booktitle={ADBIS (Short Papers)}, pages={591--603}, year={2023}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Kuznetsov, S., & Kordík, P.</p>
                       <p class="venue">ADBIS (Short Papers) 2023: 591-603</p>
                       <p class="description">Novel approach to addressing the cold-start problem in recommendation systems using semantic technologies.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{kuznetsov2023overcoming, title={Overcoming the Cold-Start Problem in Recommendation Systems with Ontologies and Knowledge Graphs}, author={Kuznetsov, Stanislav and Kord{\'i}k, Pavel}, booktitle={ADBIS (Short Papers)}, pages={591--603}, year={2023}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="zid2023personalised">Personalised Recommendations and Profile Based Re-ranking Improve Distribution of Student Opportunities</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="zid2023personalised">Personalised Recommendations and Profile Based Re-ranking Improve Distribution of Student Opportunities</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{zid2023personalised, title={Personalised Recommendations and Profile Based Re-ranking Improve Distribution of Student Opportunities}, author={Zid, Cenek and Kord{\'i}k, Pavel and Kuznetsov, Stanislav}, booktitle={CISIS-ICEUTE}, pages={217--227}, year={2023}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Zid, C., Kordík, P., & Kuznetsov, S.</p>
                       <p class="venue">CISIS-ICEUTE 2023: 217-227</p>
                       <p class="description">Improving educational opportunities distribution through personalized recommendation systems.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{zid2023personalised, title={Personalised Recommendations and Profile Based Re-ranking Improve Distribution of Student Opportunities}, author={Zid, Cenek and Kord{\'i}k, Pavel and Kuznetsov, Stanislav}, booktitle={CISIS-ICEUTE}, pages={217--227}, year={2023}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="kovalenko2023decorelated">Decorelated Weight Initialization by Backpropagation</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="kovalenko2023decorelated">Decorelated Weight Initialization by Backpropagation</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{kovalenko2023decorelated, title={Decorelated Weight Initialization by Backpropagation}, author={Kovalenko, Alexander and Kord{\'i}k, Pavel}, booktitle={ICANN (1)}, pages={546--550}, year={2023}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Kovalenko, A., & Kordík, P.</p>
                       <p class="venue">ICANN (1) 2023: 546-550</p>
                       <p class="description">Novel approach to neural network weight initialization improving convergence and stability.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{kovalenko2023decorelated, title={Decorelated Weight Initialization by Backpropagation}, author={Kovalenko, Alexander and Kord{\'i}k, Pavel}, booktitle={ICANN (1)}, pages={546--550}, year={2023}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="kasalicky2023bridging">Bridging Offline-Online Evaluation with a Time-dependent and Popularity Bias-free Offline Metric for Recommenders</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="kasalicky2023bridging">Bridging Offline-Online Evaluation with a Time-dependent and Popularity Bias-free Offline Metric for Recommenders</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{kasalicky2023bridging, title={Bridging Offline-Online Evaluation with a Time-dependent and Popularity Bias-free Offline Metric for Recommenders}, author={Kasalick{\'y}, Petr and Alves, Rodrigo and Kord{\'i}k, Pavel}, booktitle={EvalRS@KDD}, year={2023}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Kasalický, P., Alves, R., & Kordík, P.</p>
                       <p class="venue">EvalRS@KDD 2023</p>
                       <p class="description">Novel evaluation metric addressing the gap between offline and online recommender system performance.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{kasalicky2023bridging, title={Bridging Offline-Online Evaluation with a Time-dependent and Popularity Bias-free Offline Metric for Recommenders}, author={Kasalick{\'y}, Petr and Alves, Rodrigo and Kord{\'i}k, Pavel}, booktitle={EvalRS@KDD}, year={2023}}">Copy Citation</button>
                     </div>
 
                   </div>
@@ -1124,203 +1155,250 @@
                   <div class="publication-item">
                     <h4>2022</h4>
                     <div class="paper">
-                      <strong data-citation-id="cahlik2022adapting">Adapting the Size of Artificial Neural Networks Using Dynamic Auto-Sizing</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="cahlik2022adapting">Adapting the Size of Artificial Neural Networks Using Dynamic Auto-Sizing</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{cahlik2022adapting, title={Adapting the Size of Artificial Neural Networks Using Dynamic Auto-Sizing}, author={Cahl{\\'i}k, Vojtech and Kord{\\'i}k, Pavel and Cepek, Miroslav}, booktitle={CSIT}, pages={592--596}, year={2022}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Cahlík, V., Kordík, P., & Čepek, M.</p>
                       <p class="venue">CSIT 2022: 592-596</p>
                       <p class="description">Innovative approach to dynamically adjusting neural network architecture during training.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{cahlik2022adapting, title={Adapting the Size of Artificial Neural Networks Using Dynamic Auto-Sizing}, author={Cahl{\\'i}k, Vojtech and Kord{\\'i}k, Pavel and Cepek, Miroslav}, booktitle={CSIT}, pages={592--596}, year={2022}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="pastukhov2022offline">Offline evaluation of the serendipity in recommendation systems</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="pastukhov2022offline">Offline evaluation of the serendipity in recommendation systems</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{pastukhov2022offline, title={Offline evaluation of the serendipity in recommendation systems}, author={Pastukhov, Daniil and Kuznetsov, Stanislav and Vancura, Vojtech and Kord{\\'i}k, Pavel}, booktitle={CSIT}, pages={597--601}, year={2022}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Pastukhov, D., Kuznetsov, S., Vančura, V., & Kordík, P.</p>
                       <p class="venue">CSIT 2022: 597-601</p>
                       <p class="description">Novel methods for evaluating serendipity in recommender systems without online testing.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{pastukhov2022offline, title={Offline evaluation of the serendipity in recommendation systems}, author={Pastukhov, Daniil and Kuznetsov, Stanislav and Vancura, Vojtech and Kord{\\'i}k, Pavel}, booktitle={CSIT}, pages={597--601}, year={2022}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="motl2022discriminant">Discriminant Analysis on a Stream of Features</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="motl2022discriminant">Discriminant Analysis on a Stream of Features</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{motl2022discriminant, title={Discriminant Analysis on a Stream of Features}, author={Motl, Jan and Kord{\\'i}k, Pavel}, booktitle={EANN}, pages={223--234}, year={2022}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Motl, J., & Kordík, P.</p>
                       <p class="venue">EANN 2022: 223-234</p>
                       <p class="description">Extending discriminant analysis techniques to streaming feature contexts.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{motl2022discriminant, title={Discriminant Analysis on a Stream of Features}, author={Motl, Jan and Kord{\\'i}k, Pavel}, booktitle={EANN}, pages={223--234}, year={2022}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="motl2022trend">Trend and Seasonality Elimination from Relational Data</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="motl2022trend">Trend and Seasonality Elimination from Relational Data</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{motl2022trend, title={Trend and Seasonality Elimination from Relational Data}, author={Motl, Jan and Kord{\\'i}k, Pavel}, booktitle={EANN}, pages={260--268}, year={2022}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Motl, J., & Kordík, P.</p>
                       <p class="venue">EANN 2022: 260-268</p>
                       <p class="description">Novel techniques for removing temporal patterns from relational data for improved modeling.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{motl2022trend, title={Trend and Seasonality Elimination from Relational Data}, author={Motl, Jan and Kord{\\'i}k, Pavel}, booktitle={EANN}, pages={260--268}, year={2022}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="simanek2022learning">Learning to Optimize with Dynamic Mode Decomposition</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="simanek2022learning">Learning to Optimize with Dynamic Mode Decomposition</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{simanek2022learning, title={Learning to Optimize with Dynamic Mode Decomposition}, author={Sim{\\'a}nek, Petr and Vasata, Daniel and Kord{\\'i}k, Pavel}, booktitle={IJCNN}, pages={1--8}, year={2022}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Šimánek, P., Vašata, D., & Kordík, P.</p>
                       <p class="venue">IJCNN 2022: 1-8</p>
                       <p class="description">Applying dynamic mode decomposition to optimization problems for faster convergence.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{simanek2022learning, title={Learning to Optimize with Dynamic Mode Decomposition}, author={Sim{\\'a}nek, Petr and Vasata, Daniel and Kord{\\'i}k, Pavel}, booktitle={IJCNN}, pages={1--8}, year={2022}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="vancura2022scalable">Scalable Linear Shallow Autoencoder for Collaborative Filtering</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="vancura2022scalable">Scalable Linear Shallow Autoencoder for Collaborative Filtering</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{vancura2022scalable, title={Scalable Linear Shallow Autoencoder for Collaborative Filtering}, author={Vancura, Vojtech and Alves, Rodrigo and Kasalick{\\'y}, Petr and Kord{\\'i}k, Pavel}, booktitle={RecSys}, pages={604--609}, year={2022}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Vančura, V., Alves, R., Kasalický, P., & Kordík, P.</p>
                       <p class="venue">RecSys 2022: 604-609</p>
                       <p class="description">Highly efficient autoencoder approach for large-scale collaborative filtering applications.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{vancura2022scalable, title={Scalable Linear Shallow Autoencoder for Collaborative Filtering}, author={Vancura, Vojtech and Alves, Rodrigo and Kasalick{\\'y}, Petr and Kord{\\'i}k, Pavel}, booktitle={RecSys}, pages={604--609}, year={2022}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="safarik2022repsys">RepSys: Framework for Interactive Evaluation of Recommender Systems</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="safarik2022repsys">RepSys: Framework for Interactive Evaluation of Recommender Systems</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{safarik2022repsys, title={RepSys: Framework for Interactive Evaluation of Recommender Systems}, author={Safar{\\'i}k, Jan and Vancura, Vojtech and Kord{\\'i}k, Pavel}, booktitle={RecSys}, pages={636--639}, year={2022}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Šafařík, J., Vančura, V., & Kordík, P.</p>
                       <p class="venue">RecSys 2022: 636-639</p>
                       <p class="description">Interactive framework for comprehensive evaluation of recommender systems, promoting transparency.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{safarik2022repsys, title={RepSys: Framework for Interactive Evaluation of Recommender Systems}, author={Safar{\\'i}k, Jan and Vancura, Vojtech and Kord{\\'i}k, Pavel}, booktitle={RecSys}, pages={636--639}, year={2022}}">Copy Citation</button>
                     </div>
-
                   </div>
 
                   <div class="publication-item">
                     <h4>2021</h4>
                     <div class="paper">
-                      <strong data-citation-id="chobola2021transfer">Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network</strong>
-                      <p class="authors">Chobola, T., Vasata, D., & Kordík, P.</p>
-                      <p class="venue">MetaDL@AAAI 2021: 29-37</p>
-                      <p class="description">Advanced transfer learning technique for few-shot learning scenarios using optimal transport.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{chobola2021transfer, title={Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network}, author={Chobola, Tom{\\'a}s and Vasata, Daniel and Kord{\\'i}k, Pavel}, booktitle={MetaDL@AAAI}, pages={29--37}, year={2021}}">Copy Citation</button>
+                      <div class="title-row">
+                        <strong data-citation-id="chobola2021transfer">Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{chobola2021transfer, title={Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network}, author={Chobola, T. and Va{\v{s}}ata, D. and Kord{\\'i}k, Pavel}, booktitle={AAAI workshop on meta-learning and metaDL challenge}, pages={29--37}, year={2021}}">Copy Citation</button>
+                      </div>
+                      <p class="authors">Chobola, T., Vašata, D., & Kordík, P.</p>
+                      <p class="venue venue-citation">AAAI Workshop on Meta-Learning and MetaDL Challenge, pp. 29-37 (2021) <span class="badge bg-primary" data-citation-id="chobola2021transfer">22+ citations</span></p>
+                      <p class="description">Innovative approach to few-shot learning using optimal transport mapping for enhanced performance.</p>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="vancura2021deep">Deep Variational Autoencoder with Shallow Parallel Path for Top-N Recommendation (VASP)</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="vancura2021deep">Deep Variational Autoencoder with Shallow Parallel Path for Top-N Recommendation (VASP)</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{vancura2021deep, title={Deep Variational Autoencoder with Shallow Parallel Path for Top-N Recommendation (VASP)}, author={Van{\v{c}}ura, Vojtech and Kord{\\'i}k, Pavel}, booktitle={International Conference on Artificial Neural Networks}, pages={138--149}, year={2021}, organization={Springer}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Vančura, V., & Kordík, P.</p>
-                      <p class="venue">ICANN (5) 2021: 138-149</p>
+                      <p class="venue venue-citation">International Conference on Artificial Neural Networks, pp. 138-149 (2021) <span class="badge bg-primary" data-citation-id="vancura2021deep">17+ citations</span></p>
                       <p class="description">Hybrid deep-shallow neural architecture for improved recommendation accuracy and efficiency.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{vancura2021deep, title={Deep Variational Autoencoder with Shallow Parallel Path for Top-N Recommendation (VASP)}, author={Vancura, Vojtech and Kord{\\'i}k, Pavel}, booktitle={ICANN (5)}, pages={138--149}, year={2021}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="kovalenko2021dynamic">Dynamic Neural Diversification: Path to Computationally Sustainable Neural Networks</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="kovalenko2021dynamic">Dynamic Neural Diversification: Path to Computationally Sustainable Neural Networks</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{kovalenko2021dynamic, title={Dynamic Neural Diversification: Path to Computationally Sustainable Neural Networks}, author={Kovalenko, Alexander and Kord{\\'i}k, Pavel and Friedjungov{\\'a}, Magda}, booktitle={ICANN (2)}, pages={235--247}, year={2021}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Kovalenko, A., Kordík, P., & Friedjungová, M.</p>
                       <p class="venue">ICANN (2) 2021: 235-247</p>
                       <p class="description">Neural network architecture that dynamically adjusts to computational constraints.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{kovalenko2021dynamic, title={Dynamic Neural Diversification: Path to Computationally Sustainable Neural Networks}, author={Kovalenko, Alexander and Kord{\\'i}k, Pavel and Friedjungov{\\'a}, Magda}, booktitle={ICANN (2)}, pages={235--247}, year={2021}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="motl2021stratified">Stratified Cross-Validation on Multiple Columns</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="motl2021stratified">Stratified Cross-Validation on Multiple Columns</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{motl2021stratified, title={Stratified Cross-Validation on Multiple Columns}, author={Motl, Jan and Kord{\\'i}k, Pavel}, booktitle={ICTAI}, pages={26--31}, year={2021}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Motl, J., & Kordík, P.</p>
                       <p class="venue">ICTAI 2021: 26-31</p>
                       <p class="description">Enhanced cross-validation technique that preserves multiple stratification constraints.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{motl2021stratified, title={Stratified Cross-Validation on Multiple Columns}, author={Motl, Jan and Kord{\\'i}k, Pavel}, booktitle={ICTAI}, pages={26--31}, year={2021}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="motl2021aggregate">Aggregate Function Generalization to Temporal Data</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="motl2021aggregate">Aggregate Function Generalization to Temporal Data</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{motl2021aggregate, title={Aggregate Function Generalization to Temporal Data}, author={Motl, Jan and Kord{\\'i}k, Pavel}, booktitle={ICTAI}, pages={614--618}, year={2021}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Motl, J., & Kordík, P.</p>
                       <p class="venue">ICTAI 2021: 614-618</p>
                       <p class="description">Extending standard aggregate functions for improved handling of temporal data patterns.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{motl2021aggregate, title={Aggregate Function Generalization to Temporal Data}, author={Motl, Jan and Kord{\\'i}k, Pavel}, booktitle={ICTAI}, pages={614--618}, year={2021}}">Copy Citation</button>
                     </div>
 
                     <div class="paper">
-                      <strong data-citation-id="buk2021novel">Novel Data Mining-based Age-at-death Estimation Model using Adult Pubic Symphysis 3D Scans</strong>
+                      <div class="title-row">
+                        <strong data-citation-id="buk2021novel">Novel Data Mining-based Age-at-death Estimation Model using Adult Pubic Symphysis 3D Scans</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{buk2021novel, title={Novel Data Mining-based Age-at-death Estimation Model using Adult Pubic Symphysis 3D Scans}, author={Buk, Zdenek and Stepanovsky, Michal and Koterov{\\'a}, Anezka and Velem{\\'i}nsk{\\'a}, Jana and Bruzek, Jaroslav and Kord{\\'i}k, Pavel}, booktitle={ITAT}, pages={46--52}, year={2021}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Buk, Z., Štepanovský, M., Koterová, A., Velemínská, J., Brůžek, J., & Kordík, P.</p>
                       <p class="venue">ITAT 2021: 46-52</p>
                       <p class="description">Applying data mining to forensic anthropology for improved age-at-death estimation.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{buk2021novel, title={Novel Data Mining-based Age-at-death Estimation Model using Adult Pubic Symphysis 3D Scans}, author={Buk, Zdenek and Stepanovsky, Michal and Koterov{\\'a}, Anezka and Velem{\\'i}nsk{\\'a}, Jana and Bruzek, Jaroslav and Kord{\\'i}k, Pavel}, booktitle={ITAT}, pages={46--52}, year={2021}}">Copy Citation</button>
                     </div>
-                  </div>
-                </div>
-                
-                <div class="tab-pane fade" id="cited" role="tabpanel" aria-labelledby="cited-tab">
-                  <div class="publication-item">
+                    
                     <div class="paper">
-                      <strong data-citation-id="kordik2012selecting">Selecting representative data sets</strong> <span class="badge bg-primary" data-citation-id="kordik2012selecting">145+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="kordik2012selecting">Selecting representative data sets</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@incollection{kordik2012selecting, title={Selecting representative data sets}, author={Borovicka, T. and Jirina, M. Jr. and Kord{\\'i}k, Pavel and Jirina, M.}, booktitle={Advances in data mining knowledge discovery and applications}, volume={12}, pages={43--70}, year={2012}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Borovicka, T., Jirina, M. Jr., Kordík, P., & Jirina, M.</p>
-                      <p class="venue">Advances in data mining knowledge discovery and applications 12, 43-70 (2012)</p>
+                      <p class="venue venue-citation">Advances in data mining knowledge discovery and applications 12, 43-70 (2012) <span class="badge bg-primary" data-citation-id="kordik2012selecting">145+ citations</span></p>
                       <p class="description">A fundamental work on optimizing data selection for machine learning models, significantly improving model generalization.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@incollection{kordik2012selecting, title={Selecting representative data sets}, author={Borovicka, T. and Jirina, M. Jr. and Kord{\\'i}k, Pavel and Jirina, M.}, booktitle={Advances in data mining knowledge discovery and applications}, volume={12}, pages={43--70}, year={2012}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="kordik2010meta">Meta-learning approach to neural network optimization</strong> <span class="badge bg-primary" data-citation-id="kordik2010meta">67+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="kordik2010meta">Meta-learning approach to neural network optimization</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@article{kordik2010meta, title={Meta-learning approach to neural network optimization}, author={Kord{\\'i}k, Pavel and Koutn{\\'i}k, Jan and Drchal, Jan and Kov{\\'a}{\\'r}{\\'i}k, Ond{\\v{r}}ej and {\\v{C}}epek, Miroslav and {\\v{S}}norek, Miroslav}, journal={Neural Networks}, volume={23}, number={4}, pages={568--582}, year={2010}, publisher={Elsevier}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Kordík, P., Koutník, J., Drchal, J., Kovářík, O., Čepek, M., & Šnorek, M.</p>
-                      <p class="venue">Neural Networks, Vol. 23(4), pp. 568-582 (2010)</p>
+                      <p class="venue venue-citation">Neural Networks, Vol. 23(4), pp. 568-582 (2010) <span class="badge bg-primary" data-citation-id="kordik2010meta">67+ citations</span></p>
                       <p class="description">Novel approach to optimizing neural networks through meta-learning principles, enhancing performance and efficiency.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@article{kordik2010meta, title={Meta-learning approach to neural network optimization}, author={Kord{\\'i}k, Pavel and Koutn{\\'i}k, Jan and Drchal, Jan and Kov{\\'a}{\\'r}{\\'i}k, Ond{\\v{r}}ej and {\\v{C}}epek, Miroslav and {\\v{S}}norek, Miroslav}, journal={Neural Networks}, volume={23}, number={4}, pages={568--582}, year={2010}, publisher={Elsevier}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="buk2012age">The age at death assessment in a multi-ethnic sample of pelvic bones using nature-inspired data mining methods</strong> <span class="badge bg-primary" data-citation-id="buk2012age">62+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="buk2012age">The age at death assessment in a multi-ethnic sample of pelvic bones using nature-inspired data mining methods</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@article{buk2012age, title={The age at death assessment in a multi-ethnic sample of pelvic bones using nature-inspired data mining methods}, author={Buk, Z. and Kordik, P. and Bruzek, J. and Schmitt, A. and Snorek, M.}, journal={Forensic Science International}, volume={220}, number={1-3}, pages={294.e1--294.e9}, year={2012}, publisher={Elsevier}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Buk, Z., Kordik, P., Bruzek, J., Schmitt, A., & Snorek, M.</p>
-                      <p class="venue">Forensic Science International 220 (1-3), 294.e1-294.e9 (2012)</p>
+                      <p class="venue venue-citation">Forensic Science International 220 (1-3), 294.e1-294.e9 (2012) <span class="badge bg-primary" data-citation-id="buk2012age">62+ citations</span></p>
                       <p class="description">Innovative application of data mining methods to forensic anthropology for improved age estimation.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@article{buk2012age, title={The age at death assessment in a multi-ethnic sample of pelvic bones using nature-inspired data mining methods}, author={Buk, Z. and Kordik, P. and Bruzek, J. and Schmitt, A. and Snorek, M.}, journal={Forensic Science International}, volume={220}, number={1-3}, pages={294.e1--294.e9}, year={2012}, publisher={Elsevier}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="kordik2018discovering">Discovering predictive ensembles for transfer learning and meta-learning</strong> <span class="badge bg-primary" data-citation-id="kordik2018discovering">41+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="kordik2018discovering">Discovering predictive ensembles for transfer learning and meta-learning</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@article{kordik2018discovering, title={Discovering predictive ensembles for transfer learning and meta-learning}, author={Kord{\\'i}k, Pavel and {\\"C}ern{\\'y}, J. and Fr{\\'y}da, T.}, journal={Machine Learning}, volume={107}, number={1}, pages={177--207}, year={2018}, publisher={Springer}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Kordík, P., Černý, J., & Frýda, T.</p>
-                      <p class="venue">Machine Learning, Vol. 107(1), pp. 177-207 (2018)</p>
+                      <p class="venue venue-citation">Machine Learning, Vol. 107(1), pp. 177-207 (2018) <span class="badge bg-primary" data-citation-id="kordik2018discovering">41+ citations</span></p>
                       <p class="description">Advanced ensemble methods for improving transfer learning and meta-learning capabilities in ML systems.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@article{kordik2018discovering, title={Discovering predictive ensembles for transfer learning and meta-learning}, author={Kord{\\'i}k, Pavel and {\\"C}ern{\\'y}, J. and Fr{\\'y}da, T.}, journal={Machine Learning}, volume={107}, number={1}, pages={177--207}, year={2018}, publisher={Springer}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="tkacik2016neural">Neural turing machine for sequential learning of human mobility patterns</strong> <span class="badge bg-primary" data-citation-id="tkacik2016neural">36+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="tkacik2016neural">Neural turing machine for sequential learning of human mobility patterns</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{tkacik2016neural, title={Neural turing machine for sequential learning of human mobility patterns}, author={Tka{\v{c}}{\\'i}k, J. and Kord{\\'i}k, Pavel}, booktitle={2016 International Joint Conference on Neural Networks (IJCNN)}, pages={2790--2797}, year={2016}, organization={IEEE}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Tkačík, J., & Kordík, P.</p>
-                      <p class="venue">International Joint Conference on Neural Networks (IJCNN), pp. 2790-2797 (2016)</p>
+                      <p class="venue venue-citation">International Joint Conference on Neural Networks (IJCNN), pp. 2790-2797 (2016) <span class="badge bg-primary" data-citation-id="tkacik2016neural">36+ citations</span></p>
                       <p class="description">Application of Neural Turing Machines to predict human mobility patterns with enhanced accuracy.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{tkacik2016neural, title={Neural turing machine for sequential learning of human mobility patterns}, author={Tka{\v{c}}{\\'i}k, J. and Kord{\\'i}k, Pavel}, booktitle={2016 International Joint Conference on Neural Networks (IJCNN)}, pages={2790--2797}, year={2016}, organization={IEEE}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="barton2019chameleon">Chameleon 2: an improved graph-based clustering algorithm</strong> <span class="badge bg-primary" data-citation-id="barton2019chameleon">35+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="barton2019chameleon">Chameleon 2: an improved graph-based clustering algorithm</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@article{barton2019chameleon, title={Chameleon 2: An improved graph-based clustering algorithm}, author={Barton, T. and Bruna, T. and Kordik, P.}, journal={ACM Transactions on Knowledge Discovery from Data (TKDD)}, volume={13}, number={1}, pages={1--27}, year={2019}, publisher={ACM New York, NY, USA}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Barton, T., Bruna, T., & Kordik, P.</p>
-                      <p class="venue">ACM Transactions on Knowledge Discovery from Data (TKDD), Vol. 13(1), pp. 1-27 (2019)</p>
+                      <p class="venue venue-citation">ACM Transactions on Knowledge Discovery from Data (TKDD), Vol. 13(1), pp. 1-27 (2019) <span class="badge bg-primary" data-citation-id="barton2019chameleon">35+ citations</span></p>
                       <p class="description">Enhanced graph-based clustering algorithm with improved performance for complex data structures.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@article{barton2019chameleon, title={Chameleon 2: An improved graph-based clustering algorithm}, author={Barton, T. and Bruna, T. and Kordik, P.}, journal={ACM Transactions on Knowledge Discovery from Data (TKDD)}, volume={13}, number={1}, pages={1--27}, year={2019}, publisher={ACM New York, NY, USA}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="borovicka2012advances">Advances in data mining knowledge discovery and applications</strong> <span class="badge bg-primary" data-citation-id="borovicka2012advances">31+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="borovicka2012advances">Advances in data mining knowledge discovery and applications</strong>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@article{borovicka2012advances, title={Advances in data mining knowledge discovery and applications}, author={Borovicka, T. and Jirina, M. and Kordik, P. and Jirina, M. and Karahoca, A.}, journal={Selecting Representative Data Sets}, pages={43--70}, year={2012}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Borovicka, T., Jirina, M., Kordik, P., Jirina, M., & Karahoca, A.</p>
-                      <p class="venue">Selecting Representative Data Sets, pp. 43-70 (2012)</p>
+                      <p class="venue venue-citation">Selecting Representative Data Sets, pp. 43-70 (2012) <span class="badge bg-primary" data-citation-id="borovicka2012advances">31+ citations</span></p>
                       <p class="description">Comprehensive overview of advances in data mining with focus on representative data selection.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@article{borovicka2012advances, title={Advances in data mining knowledge discovery and applications}, author={Borovicka, T. and Jirina, M. and Kordik, P. and Jirina, M. and Karahoca, A.}, journal={Selecting Representative Data Sets}, pages={43--70}, year={2012}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="chobola2021transfer">Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network</strong> <span class="badge bg-primary" data-citation-id="chobola2021transfer">22+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="chobola2021transfer">Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network</strong>
+                        <span class="badge bg-primary" data-citation-id="chobola2021transfer">22+ citations</span>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{chobola2021transfer, title={Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network}, author={Chobola, T. and Va{\v{s}}ata, D. and Kord{\\'i}k, Pavel}, booktitle={AAAI workshop on meta-learning and metaDL challenge}, pages={29--37}, year={2021}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Chobola, T., Vašata, D., & Kordík, P.</p>
                       <p class="venue">AAAI Workshop on Meta-Learning and MetaDL Challenge, pp. 29-37 (2021)</p>
                       <p class="description">Innovative approach to few-shot learning using optimal transport mapping for enhanced performance.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{chobola2021transfer, title={Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network}, author={Chobola, T. and Va{\v{s}}ata, D. and Kord{\\'i}k, Pavel}, booktitle={AAAI workshop on meta-learning and metaDL challenge}, pages={29--37}, year={2021}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="kuznetsov2016reducing">Reducing cold start problems in educational recommender systems</strong> <span class="badge bg-primary" data-citation-id="kuznetsov2016reducing">20+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="kuznetsov2016reducing">Reducing cold start problems in educational recommender systems</strong>
+                        <span class="badge bg-primary" data-citation-id="kuznetsov2016reducing">20+ citations</span>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{kuznetsov2016reducing, title={Reducing cold start problems in educational recommender systems}, author={Kuznetsov, S. and Kord{\\'i}k, Pavel and {\v{R}}eho{\v{r}}ek, T. and Dvo{\v{r}}{\\'a}k, J. and Kroha, P.}, booktitle={2016 International Joint Conference on Neural Networks (IJCNN)}, pages={3143--3149}, year={2016}, organization={IEEE}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Kuznetsov, S., Kordík, P., Řehořek, T., Dvořák, J., & Kroha, P.</p>
-                      <p class="venue">International Joint Conference on Neural Networks (IJCNN), pp. 3143-3149 (2016)</p>
+                      <p class="venue">International Joint Conference on Neural Networks (IJCNN), pp. 3143-3149 (2016) <span class="badge bg-primary" data-citation-id="kuznetsov2016reducing">20+ citations</span></p>
                       <p class="description">Novel methods to address cold start challenges in educational recommender systems for improved learning experiences.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{kuznetsov2016reducing, title={Reducing cold start problems in educational recommender systems}, author={Kuznetsov, S. and Kord{\\'i}k, Pavel and {\v{R}}eho{\v{r}}ek, T. and Dvo{\v{r}}{\\'a}k, J. and Kroha, P.}, booktitle={2016 International Joint Conference on Neural Networks (IJCNN)}, pages={3143--3149}, year={2016}, organization={IEEE}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="vancura2021deep">Deep variational autoencoder with shallow parallel path for top-N recommendation (VASP)</strong> <span class="badge bg-primary" data-citation-id="vancura2021deep">17+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="vancura2021deep">Deep variational autoencoder with shallow parallel path for top-N recommendation (VASP)</strong>
+                        <span class="badge bg-primary" data-citation-id="vancura2021deep">17+ citations</span>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{vancura2021deep, title={Deep Variational Autoencoder with Shallow Parallel Path for Top-N Recommendation (VASP)}, author={Van{\v{c}}ura, Vojtech and Kord{\\'i}k, Pavel}, booktitle={International Conference on Artificial Neural Networks}, pages={138--149}, year={2021}, organization={Springer}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Vančura, V., & Kordík, P.</p>
-                      <p class="venue">International Conference on Artificial Neural Networks, pp. 138-149 (2021)</p>
+                      <p class="venue venue-citation">International Conference on Artificial Neural Networks, pp. 138-149 (2021) <span class="badge bg-primary" data-citation-id="vancura2021deep">17+ citations</span></p>
                       <p class="description">Hybrid deep-shallow neural architecture for improved recommendation accuracy and efficiency.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{vancura2021deep, title={Deep Variational Autoencoder with Shallow Parallel Path for Top-N Recommendation (VASP)}, author={Van{\v{c}}ura, Vojtech and Kord{\\'i}k, Pavel}, booktitle={International Conference on Artificial Neural Networks}, pages={138--149}, year={2021}, organization={Springer}}">Copy Citation</button>
                     </div>
                     
                     <div class="paper">
-                      <strong data-citation-id="vancura2022scalable">Scalable linear shallow autoencoder for collaborative filtering</strong> <span class="badge bg-primary" data-citation-id="vancura2022scalable">14+ citations</span>
+                      <div class="title-row">
+                        <strong data-citation-id="vancura2022scalable">Scalable linear shallow autoencoder for collaborative filtering</strong>
+                        <span class="badge bg-primary" data-citation-id="vancura2022scalable">14+ citations</span>
+                        <button class="btn btn-sm btn-outline-lightblue copy-citation" data-citation="@inproceedings{vancura2022scalable, title={Scalable linear shallow autoencoder for collaborative filtering}, author={Van{\v{c}}ura, V. and Alves, R. and Kasalick{\\'y}, P. and Kord{\\'i}k, Pavel}, booktitle={Proceedings of the 16th ACM Conference on Recommender Systems}, pages={604--609}, year={2022}, organization={ACM}}">Copy Citation</button>
+                      </div>
                       <p class="authors">Vančura, V., Alves, R., Kasalický, P., & Kordík, P.</p>
-                      <p class="venue">Proceedings of the 16th ACM Conference on Recommender Systems, pp. 604-609 (2022)</p>
+                      <p class="venue">Proceedings of the 16th ACM Conference on Recommender Systems, pp. 604-609 (2022) <span class="badge bg-primary" data-citation-id="vancura2022scalable">14+ citations</span></p>
                       <p class="description">Highly efficient autoencoder approach for large-scale collaborative filtering applications.</p>
-                      <button class="btn btn-sm btn-outline-primary copy-citation" data-citation="@inproceedings{vancura2022scalable, title={Scalable linear shallow autoencoder for collaborative filtering}, author={Van{\v{c}}ura, V. and Alves, R. and Kasalick{\\'y}, P. and Kord{\\'i}k, Pavel}, booktitle={Proceedings of the 16th ACM Conference on Recommender Systems}, pages={604--609}, year={2022}, organization={ACM}}">Copy Citation</button>
                     </div>
                   </div>
                 </div>
@@ -1508,4 +1586,5 @@
   </script>
 </body>
 
+</html> 
 </html> 

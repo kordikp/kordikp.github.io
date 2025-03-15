@@ -245,6 +245,112 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* Timeline Styles */
+    .past-theses {
+      background-color: var(--light-bg);
+      padding: 80px 0;
+    }
+
+    .timeline-year {
+      margin-bottom: 40px;
+    }
+
+    .year-heading {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--primary-color);
+      color: #fff;
+      border-radius: 30px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .timeline-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      position: relative;
+    }
+
+    .thesis-card {
+      background: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .thesis-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .thesis-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .thesis-type {
+      display: inline-block;
+      padding: 3px 10px;
+      background-color: #e9ecef;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--secondary-color);
+    }
+
+    .thesis-badge {
+      display: inline-block;
+      padding: 3px 10px;
+      background-color: #198754;
+      color: white;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .thesis-card h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+
+    .student {
+      font-size: 14px;
+      color: #6c757d;
+      margin: 0;
+      margin-top: auto;
+    }
+
+    .nav-pills .nav-link {
+      border-radius: 20px;
+      padding: 5px 15px;
+      font-size: 14px;
+      margin: 0 5px;
+      color: var(--secondary-color);
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .timeline-items {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 
@@ -549,6 +655,441 @@
       </div>
     </section>
 
+    <!-- Past Theses Timeline Section -->
+    <section id="past-theses" class="past-theses">
+      <div class="container">
+        <div class="section-title">
+          <h2>Past Theses Timeline</h2>
+          <p>Browse through previously completed master's and bachelor's theses supervised by doc. Ing. Pavel Kordík, Ph.D., organized by year and topic area.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="thesesTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all-theses" type="button" role="tab" aria-controls="all-theses" aria-selected="true">All Topics</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="recsys-tab" data-bs-toggle="pill" data-bs-target="#recsys-theses" type="button" role="tab" aria-controls="recsys-theses" aria-selected="false">Recommender Systems</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ml-tab" data-bs-toggle="pill" data-bs-target="#ml-theses" type="button" role="tab" aria-controls="ml-theses" aria-selected="false">Machine Learning</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nlp-tab" data-bs-toggle="pill" data-bs-target="#nlp-theses" type="button" role="tab" aria-controls="nlp-theses" aria-selected="false">NLP & Text Analytics</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="vis-tab" data-bs-toggle="pill" data-bs-target="#vis-theses" type="button" role="tab" aria-controls="vis-theses" aria-selected="false">Visualization & UI</button>
+              </li>
+            </ul>
+
+            <div class="tab-content" id="thesesTabsContent">
+              <!-- All Theses Timeline -->
+              <div class="tab-pane fade show active" id="all-theses" role="tabpanel" aria-labelledby="all-tab">
+                <div class="timeline">
+                  <!-- 2023-2024 -->
+                  <div class="timeline-year" data-aos="fade-up">
+                    <h3 class="year-heading">2023-2024</h3>
+                    <div class="timeline-items">
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Nowcasting from Radar Images Using Diffusion Networks</h4>
+                        <p class="student">Bc. Markéta Minářová | Assigned 2/25/2025</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Demonstration and Benchmarking of Evolutionary Algorithms in TensorNEAT</h4>
+                        <p class="student">Daniil Kolesnikov | Assigned 1/22/2025</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ui">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="tag bg-warning">Web & UI</span>
+                        </div>
+                        <h4>Secure Cross-Site Widget Integration Solution</h4>
+                        <p class="student">Bc. Matej Stieranka | Assigned 2/9/2025</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="nlp">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="tag bg-secondary">NLP</span>
+                        </div>
+                        <h4>Full-Duplex Dialogue Systems</h4>
+                        <p class="student">Bc. Vojtěch Slavík | Assigned 11/20/2024</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Cold Start Items in Next Basket Recommendation</h4>
+                        <p class="student">Jakub Feik | Assigned 7/9/2024</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Semantic Product Search</h4>
+                        <p class="student">Bc. Patrik Schweika | Completed 1/4/2024</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Efficient implementation of neuroevolution for reinforcement learning tasks</h4>
+                        <p class="student">Vladimír Votava | Completed 11/8/2023</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Knowlege tracing techniques, their explainability and applications</h4>
+                        <p class="student">Bc. Eliška Svobodová | Completed 12/12/2023</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="nlp">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-secondary">NLP</span>
+                        </div>
+                        <h4>Text to query using large language models on local infrastructure</h4>
+                        <p class="student">Patrik Laurinc | Completed 4/26/2023</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="web">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-success">Data Analysis</span>
+                        </div>
+                        <h4>Estimating Customer Lifetime Value for Media Houses</h4>
+                        <p class="student">Bekbolot Khudaiberdiev | Completed 9/30/2021</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2021-2022 -->
+                  <div class="timeline-year" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="year-heading">2021-2022</h3>
+                    <div class="timeline-items">
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Personalized recommendations for students</h4>
+                        <p class="student">Bc. Čeněk Žid | Completed 9/30/2021</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Anytime Learning with Auto-Sizing Neural Networks</h4>
+                        <p class="student">Bc. Vojtěch Cahlík | Completed 10/12/2021</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Algorithms for better understanding of recommended content and user clusters</h4>
+                        <p class="student">Bc. Pavel Hlubík | Completed 2/10/2021</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="nlp">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-secondary">NLP</span>
+                        </div>
+                        <h4>Machine learning based query analysis for an online medical clinic</h4>
+                        <p class="student">Bc. Adam Jankovec | Completed 2/10/2021</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Vehicle Routing Problem with Time Windows solved via Machine Learning and Optimization Heuristics</h4>
+                        <p class="student">Bc. Adam Zvada | Completed 2/11/2021</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2018-2020 -->
+                  <div class="timeline-year" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="year-heading">2018-2020</h3>
+                    <div class="timeline-items">
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Recommendation based on product images</h4>
+                        <p class="student">Bc. Kristýna Tauchmanová</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ui">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-warning">UI/UX</span>
+                        </div>
+                        <h4>Grammar interactive evolution of graph interfaces</h4>
+                        <p class="student">Petr Hanzl</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>User subaccounts detection for better recommendation</h4>
+                        <p class="student">Tomáš Vopat</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="nlp">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-secondary">NLP</span>
+                        </div>
+                        <h4>Classification of URLs Using Deep Neural Networks</h4>
+                        <p class="student">Matyáš Skalický</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Scalability of Nearest Neighbor Algorithm</h4>
+                        <p class="student">Antonín Dvořák</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="nlp">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-secondary">NLP</span>
+                        </div>
+                        <h4>Question Answering Algorithms in Natural Language</h4>
+                        <p class="student">Matúš Žilinec</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Music Recommender System</h4>
+                        <p class="student">Ondřej Šofr</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Improving Learning to Rank Algorithms</h4>
+                        <p class="student">Huy Hoang Vu</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Neural Autoencoders in Recommender Systems</h4>
+                        <p class="student">Bc. Michal Bajer</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ui">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-warning">Web & UI</span>
+                        </div>
+                        <h4>Software module for skill based search of students</h4>
+                        <p class="student">Adam Jankovec</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="cv">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-danger">Computer Vision</span>
+                        </div>
+                        <h4>Lip Reading using Deep Neural Networks</h4>
+                        <p class="student">Jan Horák</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Recommending related images to articles</h4>
+                        <p class="student">Bc. Matouš Pištora</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Recommendation of new movies to obtain</h4>
+                        <p class="student">Tatiana Lekýrová</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="recsys">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-primary">Recommender Systems</span>
+                        </div>
+                        <h4>Recommendation algorithms optimization</h4>
+                        <p class="student">Bc. Jakub Drdák</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2015-2017 -->
+                  <div class="timeline-year" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="year-heading">2015-2017</h3>
+                    <div class="timeline-items">
+                      <div class="thesis-card" data-category="web">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-secondary">Text Analytics</span>
+                        </div>
+                        <h4>Web service for advanced text analysis</h4>
+                        <p class="student">Jan Švejda</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-success">Data Analysis</span>
+                        </div>
+                        <h4>Flight data analysis and passenger anomaly detection</h4>
+                        <p class="student">Bc. Matúš Tóth</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-success">Data Analysis</span>
+                        </div>
+                        <h4>Criminality prediction</h4>
+                        <p class="student">Bc. Veronika Maurerová</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="cv">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-danger">Computer Vision</span>
+                        </div>
+                        <h4>Historic Landmarks Identification</h4>
+                        <p class="student">Bc. Peter Bábics</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="nlp">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-secondary">NLP</span>
+                        </div>
+                        <h4>Understanding Documents with Text Mining Methods</h4>
+                        <p class="student">Bc. Sergii Stamenov</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ml">
+                        <div class="thesis-header">
+                          <span class="thesis-type">MT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-info">Machine Learning</span>
+                        </div>
+                        <h4>Scalability of Predictive Modeling Algorithms</h4>
+                        <p class="student">Bc. Tomáš Frýda</p>
+                      </div>
+
+                      <div class="thesis-card" data-category="ui">
+                        <div class="thesis-header">
+                          <span class="thesis-type">BT</span>
+                          <span class="thesis-badge">Evaluated</span>
+                          <span class="tag bg-warning">UI/UX</span>
+                        </div>
+                        <h4>Personalization of Data Visualization User Interfaces</h4>
+                        <p class="student">Martin Endršt</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Filtered views for specific categories will be added by JavaScript dynamically -->
+              <div class="tab-pane fade" id="recsys-theses" role="tabpanel" aria-labelledby="recsys-tab">
+                <!-- Content will be generated by JS -->
+              </div>
+
+              <div class="tab-pane fade" id="ml-theses" role="tabpanel" aria-labelledby="ml-tab">
+                <!-- Content will be generated by JS -->
+              </div>
+
+              <div class="tab-pane fade" id="nlp-theses" role="tabpanel" aria-labelledby="nlp-tab">
+                <!-- Content will be generated by JS -->
+              </div>
+
+              <div class="tab-pane fade" id="vis-theses" role="tabpanel" aria-labelledby="vis-tab">
+                <!-- Content will be generated by JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Application Process Section -->
     <section class="application-process section-bg">
       <div class="container">
@@ -647,6 +1188,89 @@
             }
           }
         }
+      });
+    });
+  </script>
+
+  <!-- Timeline filtering script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Generate filtered tabs content
+      function generateFilteredContent() {
+        const categories = {
+          'recsys': { selector: '[data-category="recsys"]', title: 'Recommender Systems' },
+          'ml': { selector: '[data-category="ml"]', title: 'Machine Learning' },
+          'nlp': { selector: '[data-category="nlp"]', title: 'NLP & Text Analytics' },
+          'vis': { selector: '[data-category="ui"],[data-category="cv"]', title: 'Visualization & UI' }
+        };
+        
+        for (const [key, info] of Object.entries(categories)) {
+          const container = document.getElementById(`${key}-theses`);
+          if (!container) continue;
+          
+          // Clear existing content
+          container.innerHTML = '';
+          
+          // Create title
+          const titleDiv = document.createElement('div');
+          titleDiv.className = 'section-title';
+          titleDiv.innerHTML = `<h3>${info.title} Theses</h3>
+            <p>Displaying theses focused on ${info.title.toLowerCase()} research and applications.</p>`;
+          container.appendChild(titleDiv);
+          
+          // Create timeline div
+          const timelineDiv = document.createElement('div');
+          timelineDiv.className = 'timeline';
+          container.appendChild(timelineDiv);
+          
+          // Get all thesis cards matching the category
+          const allCards = document.querySelectorAll(info.selector);
+          
+          // Group by year
+          const years = {};
+          allCards.forEach(card => {
+            const yearHeading = card.closest('.timeline-year').querySelector('.year-heading').textContent;
+            if (!years[yearHeading]) {
+              years[yearHeading] = [];
+            }
+            years[yearHeading].push(card.cloneNode(true));
+          });
+          
+          // Create year sections
+          let delay = 0;
+          for (const [year, cards] of Object.entries(years)) {
+            const yearDiv = document.createElement('div');
+            yearDiv.className = 'timeline-year';
+            yearDiv.setAttribute('data-aos', 'fade-up');
+            yearDiv.setAttribute('data-aos-delay', delay.toString());
+            
+            const yearHeadingDiv = document.createElement('h3');
+            yearHeadingDiv.className = 'year-heading';
+            yearHeadingDiv.textContent = year;
+            yearDiv.appendChild(yearHeadingDiv);
+            
+            const itemsDiv = document.createElement('div');
+            itemsDiv.className = 'timeline-items';
+            cards.forEach(card => {
+              itemsDiv.appendChild(card);
+            });
+            yearDiv.appendChild(itemsDiv);
+            
+            timelineDiv.appendChild(yearDiv);
+            delay += 100;
+          }
+        }
+      }
+      
+      // Generate filtered content when DOM is loaded
+      generateFilteredContent();
+      
+      // Reinitialize AOS after tab changes
+      const tabLinks = document.querySelectorAll('#thesesTabs button[data-bs-toggle="pill"]');
+      tabLinks.forEach(tabLink => {
+        tabLink.addEventListener('shown.bs.tab', function() {
+          AOS.refresh();
+        });
       });
     });
   </script>

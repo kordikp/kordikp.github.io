@@ -54,6 +54,22 @@
       margin-bottom: 30px;
     }
 
+    .profile-img {
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 991px) {
+      .profile-img {
+        width: 250px;
+        height: 250px;
+      }
+    }
+
     .section-title {
       padding-bottom: 30px;
     }
@@ -112,8 +128,8 @@
   <!-- Hero Section -->
   <section id="hero" class="hero d-flex align-items-center">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1 data-aos="fade-up">Pavel Kordík</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">CEO at Recombee | AI Researcher | Academic Leader</h2>
           <div data-aos="fade-up" data-aos-delay="600">
@@ -124,6 +140,9 @@
               <a href="https://medium.com/@pavelkordik" class="medium"><i class="bi bi-medium"></i></a>
             </div>
           </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up">
+          <img src="assets/img/PAVEL-KORDIK-420x420.png" class="profile-img" alt="Pavel Kordík">
         </div>
       </div>
     </div>

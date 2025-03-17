@@ -266,6 +266,32 @@
         height: 250px;
       }
     }
+    
+    /* Improve mobile responsiveness */
+    @media (max-width: 800px) {
+      .hero {
+        padding-top: 150px; /* Additional padding to prevent header overlap */
+      }
+      
+      .hero .order-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      
+      .profile-img {
+        margin: 0 auto 30px;
+      }
+    }
+    
+    /* Extra padding for very small screens */
+    @media (max-width: 576px) {
+      .hero {
+        padding-top: 180px;
+      }
+    }
 
     .section-title {
       padding-bottom: 30px;
@@ -1024,7 +1050,7 @@
                       <h4 class="subheading">Co-founded aidetem.cz</h4>
                     </div>
                     <div class="timeline-body">
-                      <p>Co-founded aidetem.cz to introduce children to AI in a responsible and engaging way, fostering <a href="https://kurikulum.aidetem.cz/en/" target="_blank">future AI literacy</a> and ethical understanding.</p>
+                      <p>Established aidetem.cz to introduce children to AI in a responsible and engaging way, fostering <a href="https://kurikulum.aidetem.cz/en/" target="_blank">future AI literacy</a> and ethical understanding.</p>
                     </div>
                   </div>
                 </li>

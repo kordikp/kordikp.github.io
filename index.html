@@ -271,6 +271,8 @@
     @media (max-width: 800px) {
       .hero {
         padding-top: 150px; /* Additional padding to prevent header overlap */
+        height: auto; /* Allow the hero section to expand based on content */
+        min-height: 100vh; /* Ensure it still takes at least the full viewport height */
       }
       
       .hero .order-1 {
@@ -290,6 +292,10 @@
     @media (max-width: 576px) {
       .hero {
         padding-top: 180px;
+      }
+      
+      .profile-img {
+        margin-top: 20px;
       }
     }
 

@@ -1,0 +1,271 @@
+2025-03-27 23:00:32,888 - INFO - Starting thesis download process
+2025-03-27 23:00:32,888 - INFO - Initialized ThesisDownloader with output directory: theses
+2025-03-27 23:00:32,889 - INFO - Successfully parsed 0 theses from mytheses.txt
+2025-03-27 23:00:32,889 - INFO - 
+Download process completed
+2025-03-27 23:00:32,889 - INFO - Successfully downloaded: 0
+2025-03-27 23:00:32,889 - INFO - Failed: 0
+2025-03-27 23:00:32,889 - INFO - Total processed: 0
+2025-03-27 23:00:56,342 - INFO - Starting thesis download process
+2025-03-27 23:00:56,342 - INFO - Initialized ThesisDownloader with output directory: theses
+2025-03-27 23:00:56,342 - INFO - Successfully parsed 106 theses from mytheses.txt
+2025-03-27 23:00:56,342 - INFO - 
+Processing thesis 1/106
+2025-03-27 23:00:56,343 - INFO - Author: Charbulák Jakub Dorian
+2025-03-27 23:00:56,343 - INFO - Title: A Guide to Building a Technological Startup: A Case Study
+2025-03-27 23:00:56,343 - INFO - Type: B
+2025-03-27 23:00:56,343 - INFO - Year: 2025
+2025-03-27 23:01:31,483 - INFO - Starting thesis download process
+2025-03-27 23:01:31,483 - INFO - Initialized ThesisDownloader with output directory: theses
+2025-03-27 23:01:31,483 - INFO - Successfully parsed 106 theses from mytheses.txt
+2025-03-27 23:01:31,483 - INFO - 
+Processing thesis 1/106
+2025-03-27 23:01:31,483 - INFO - Author: Charbulák Jakub Dorian
+2025-03-27 23:01:31,483 - INFO - Title: A Guide to Building a Technological Startup: A Case Study
+2025-03-27 23:01:31,483 - INFO - Type: B
+2025-03-27 23:01:31,483 - INFO - Year: 2025
+2025-03-27 23:01:31,484 - INFO - Trying search strategy with query: A Guide to Building a Technological Startup: A Case Study
+2025-03-27 23:01:31,641 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=A+Guide+to+Building+a+Technological+Startup%3A+A+Case+Study&scope=dc.title
+2025-03-27 23:01:33,642 - INFO - 
+Processing thesis 2/106
+2025-03-27 23:01:33,642 - INFO - Author: Vančura Vojtěch
+2025-03-27 23:01:33,642 - INFO - Title: From Collaborative to Content-Based: Scaling Autoencoders to Train Transformers in Recommender Systems
+2025-03-27 23:01:33,642 - INFO - Type: D
+2025-03-27 23:01:33,642 - INFO - Year: 2025
+2025-03-27 23:01:33,642 - INFO - Trying search strategy with query: From Collaborative to Content-Based: Scaling Autoencoders to Train Transformers in Recommender Systems
+2025-03-27 23:01:33,812 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=From+Collaborative+to+Content-Based%3A+Scaling+Autoencoders+to+Train+Transformers+in+Recommender+Systems&scope=dc.title
+2025-03-27 23:01:35,813 - INFO - 
+Processing thesis 3/106
+2025-03-27 23:01:35,813 - INFO - Author: Svobodová Eliška
+2025-03-27 23:01:35,813 - INFO - Title: Knowlege tracing techniques
+2025-03-27 23:01:35,813 - INFO - Type: their explainability and applications
+2025-03-27 23:01:35,813 - INFO - Year: N
+2025-03-27 23:01:35,813 - INFO - Trying search strategy with query: Knowlege tracing techniques
+2025-03-27 23:01:35,997 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Knowlege+tracing+techniques&scope=dc.title
+2025-03-27 23:01:37,998 - INFO - 
+Processing thesis 4/106
+2025-03-27 23:01:37,999 - INFO - Author: Schweika Patrik
+2025-03-27 23:01:37,999 - INFO - Title: Semantic Product Search
+2025-03-27 23:01:37,999 - INFO - Type: N
+2025-03-27 23:01:37,999 - INFO - Year: 2024
+2025-03-27 23:01:37,999 - INFO - Trying search strategy with query: Semantic Product Search
+2025-03-27 23:01:39,213 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Semantic+Product+Search&scope=dc.title
+2025-03-27 23:01:41,213 - INFO - 
+Processing thesis 5/106
+2025-03-27 23:01:41,213 - INFO - Author: Votava Vladimír
+2025-03-27 23:01:41,213 - INFO - Title: Efficient implementation of neuroevolution for reinforcement learning tasks
+2025-03-27 23:01:41,213 - INFO - Type: B
+2025-03-27 23:01:41,214 - INFO - Year: 2024
+2025-03-27 23:01:41,214 - INFO - Trying search strategy with query: Efficient implementation of neuroevolution for reinforcement learning tasks
+2025-03-27 23:01:41,376 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Efficient+implementation+of+neuroevolution+for+reinforcement+learning+tasks&scope=dc.title
+2025-03-27 23:01:43,377 - INFO - 
+Processing thesis 6/106
+2025-03-27 23:01:43,377 - INFO - Author: Laurinc Patrik
+2025-03-27 23:01:43,377 - INFO - Title: Text to query using large language models on local infrastructure
+2025-03-27 23:01:43,377 - INFO - Type: B
+2025-03-27 23:01:43,377 - INFO - Year: 2023
+2025-03-27 23:01:43,377 - INFO - Trying search strategy with query: Text to query using large language models on local infrastructure
+2025-03-27 23:01:43,512 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Text+to+query+using+large+language+models+on+local+infrastructure&scope=dc.title
+2025-03-27 23:01:45,513 - INFO - 
+Processing thesis 7/106
+2025-03-27 23:01:45,513 - INFO - Author: Žid Čeněk
+2025-03-27 23:01:45,513 - INFO - Title: Personalized recommendations for students
+2025-03-27 23:01:45,513 - INFO - Type: N
+2025-03-27 23:01:45,513 - INFO - Year: 2022
+2025-03-27 23:01:45,513 - INFO - Trying search strategy with query: Personalized recommendations for students
+2025-03-27 23:01:45,709 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Personalized+recommendations+for+students&scope=dc.title
+2025-03-27 23:01:47,709 - INFO - 
+Processing thesis 8/106
+2025-03-27 23:01:47,709 - INFO - Author: Khudaiberdiev Bekbolot
+2025-03-27 23:01:47,709 - INFO - Title: Estimating Customer Lifetime Value for Media Houses
+2025-03-27 23:01:47,709 - INFO - Type: B
+2025-03-27 23:01:47,709 - INFO - Year: 2022
+2025-03-27 23:01:47,709 - INFO - Trying search strategy with query: Estimating Customer Lifetime Value for Media Houses
+2025-03-27 23:01:47,845 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Estimating+Customer+Lifetime+Value+for+Media+Houses&scope=dc.title
+2025-03-27 23:01:49,845 - INFO - 
+Processing thesis 9/106
+2025-03-27 23:01:49,845 - INFO - Author: Cahlík Vojtěch
+2025-03-27 23:01:49,845 - INFO - Title: Anytime Learning with Auto-Sizing Neural Networks
+2025-03-27 23:01:49,845 - INFO - Type: N
+2025-03-27 23:01:49,845 - INFO - Year: 2022
+2025-03-27 23:01:49,846 - INFO - Trying search strategy with query: Anytime Learning with Auto-Sizing Neural Networks
+2025-03-27 23:01:50,048 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Anytime+Learning+with+Auto-Sizing+Neural+Networks&scope=dc.title
+2025-03-27 23:01:52,049 - INFO - 
+Processing thesis 10/106
+2025-03-27 23:01:52,049 - INFO - Author: Motl Jan
+2025-03-27 23:01:52,049 - INFO - Title: Predictor Factory: Learning from Relational Data
+2025-03-27 23:01:52,049 - INFO - Type: D
+2025-03-27 23:01:52,049 - INFO - Year: 2021
+2025-03-27 23:01:52,049 - INFO - Trying search strategy with query: Predictor Factory: Learning from Relational Data
+2025-03-27 23:01:52,324 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Predictor+Factory%3A+Learning+from+Relational+Data&scope=dc.title
+2025-03-27 23:01:54,324 - INFO - 
+Processing thesis 11/106
+2025-03-27 23:01:54,324 - INFO - Author: Hlubík Pavel
+2025-03-27 23:01:54,324 - INFO - Title: Algorithms for better understanding of recommended content and user clusters
+2025-03-27 23:01:54,325 - INFO - Type: N
+2025-03-27 23:01:54,325 - INFO - Year: 2021
+2025-03-27 23:01:54,325 - INFO - Trying search strategy with query: Algorithms for better understanding of recommended content and user clusters
+2025-03-27 23:01:54,465 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Algorithms+for+better+understanding+of+recommended+content+and+user+clusters&scope=dc.title
+2025-03-27 23:01:56,466 - INFO - 
+Processing thesis 12/106
+2025-03-27 23:01:56,466 - INFO - Author: Kuznetsov Stanislav
+2025-03-27 23:01:56,466 - INFO - Title: Ontologies in Recommender Systems
+2025-03-27 23:01:56,466 - INFO - Type: D
+2025-03-27 23:01:56,467 - INFO - Year: 2020
+2025-03-27 23:01:56,467 - INFO - Trying search strategy with query: Ontologies in Recommender Systems
+2025-03-27 23:01:56,608 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Ontologies+in+Recommender+Systems&scope=dc.title
+2025-03-27 23:01:58,609 - INFO - 
+Processing thesis 13/106
+2025-03-27 23:01:58,609 - INFO - Author: Tauchmanová Kristýna
+2025-03-27 23:01:58,609 - INFO - Title: Recommendation based on product images
+2025-03-27 23:01:58,609 - INFO - Type: N
+2025-03-27 23:01:58,609 - INFO - Year: 2020
+2025-03-27 23:01:58,609 - INFO - Trying search strategy with query: Recommendation based on product images
+2025-03-27 23:01:58,767 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Recommendation+based+on+product+images&scope=dc.title
+2025-03-27 23:02:00,768 - INFO - 
+Processing thesis 14/106
+2025-03-27 23:02:00,768 - INFO - Author: Bartoň Tomáš
+2025-03-27 23:02:00,768 - INFO - Title: Meta-optimizations for Cluster Analysis
+2025-03-27 23:02:00,768 - INFO - Type: D
+2025-03-27 23:02:00,768 - INFO - Year: 2019
+2025-03-27 23:02:00,768 - INFO - Trying search strategy with query: Meta-optimizations for Cluster Analysis
+2025-03-27 23:02:00,906 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Meta-optimizations+for+Cluster+Analysis&scope=dc.title
+2025-03-27 23:02:02,907 - INFO - 
+Processing thesis 15/106
+2025-03-27 23:02:02,907 - INFO - Author: Pištora Matouš
+2025-03-27 23:02:02,907 - INFO - Title: Recommending related images to articles
+2025-03-27 23:02:02,908 - INFO - Type: N
+2025-03-27 23:02:02,908 - INFO - Year: 2019
+2025-03-27 23:02:02,908 - INFO - Trying search strategy with query: Recommending related images to articles
+2025-03-27 23:02:03,116 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Recommending+related+images+to+articles&scope=dc.title
+2025-03-27 23:02:05,116 - INFO - 
+Processing thesis 16/106
+2025-03-27 23:02:05,117 - INFO - Author: Skalický Matyáš
+2025-03-27 23:02:05,117 - INFO - Title: Classification of URLs Using Deep Neural Networks
+2025-03-27 23:02:05,117 - INFO - Type: B
+2025-03-27 23:02:05,117 - INFO - Year: 2019
+2025-03-27 23:02:05,117 - INFO - Trying search strategy with query: Classification of URLs Using Deep Neural Networks
+2025-03-27 23:02:05,251 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Classification+of+URLs+Using+Deep+Neural+Networks&scope=dc.title
+2025-03-27 23:02:07,252 - INFO - 
+Processing thesis 17/106
+2025-03-27 23:02:07,253 - INFO - Author: Vopat Tomáš
+2025-03-27 23:02:07,253 - INFO - Title: User subaccounts detection for better recommendation
+2025-03-27 23:02:07,253 - INFO - Type: B
+2025-03-27 23:02:07,253 - INFO - Year: 2019
+2025-03-27 23:02:07,253 - INFO - Trying search strategy with query: User subaccounts detection for better recommendation
+2025-03-27 23:02:07,469 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=User+subaccounts+detection+for+better+recommendation&scope=dc.title
+2025-03-27 23:02:09,469 - INFO - 
+Processing thesis 18/106
+2025-03-27 23:02:09,469 - INFO - Author: Žilinec Matúš
+2025-03-27 23:02:09,469 - INFO - Title: Question Answering Algorithms in Natural Language
+2025-03-27 23:02:09,469 - INFO - Type: B
+2025-03-27 23:02:09,469 - INFO - Year: 2019
+2025-03-27 23:02:09,470 - INFO - Trying search strategy with query: Question Answering Algorithms in Natural Language
+2025-03-27 23:02:09,656 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Question+Answering+Algorithms+in+Natural+Language&scope=dc.title
+2025-03-27 23:02:11,657 - INFO - 
+Processing thesis 19/106
+2025-03-27 23:02:11,657 - INFO - Author: Dvořák Antonín
+2025-03-27 23:02:11,658 - INFO - Title: Scalability of Nearest Neighbor Algorithm
+2025-03-27 23:02:11,658 - INFO - Type: B
+2025-03-27 23:02:11,658 - INFO - Year: 2019
+2025-03-27 23:02:11,658 - INFO - Trying search strategy with query: Scalability of Nearest Neighbor Algorithm
+2025-03-27 23:02:11,896 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Scalability+of+Nearest+Neighbor+Algorithm&scope=dc.title
+2025-03-27 23:02:13,897 - INFO - 
+Processing thesis 20/106
+2025-03-27 23:02:13,897 - INFO - Author: Bajer Michal
+2025-03-27 23:02:13,897 - INFO - Title: Neural Autoencoders in Recommender Systems
+2025-03-27 23:02:13,898 - INFO - Type: N
+2025-03-27 23:02:13,898 - INFO - Year: 2019
+2025-03-27 23:02:13,898 - INFO - Trying search strategy with query: Neural Autoencoders in Recommender Systems
+2025-03-27 23:02:14,105 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Neural+Autoencoders+in+Recommender+Systems&scope=dc.title
+2025-03-27 23:02:16,106 - INFO - 
+Processing thesis 21/106
+2025-03-27 23:02:16,106 - INFO - Author: Lekýrová Tatiana
+2025-03-27 23:02:16,106 - INFO - Title: Recommendation of new movies to obtain
+2025-03-27 23:02:16,106 - INFO - Type: B
+2025-03-27 23:02:16,106 - INFO - Year: 2019
+2025-03-27 23:02:16,107 - INFO - Trying search strategy with query: Recommendation of new movies to obtain
+2025-03-27 23:02:16,247 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover/search/objects?query=Recommendation+of+new+movies+to+obtain&scope=dc.title
+2025-03-27 23:02:46,745 - INFO - Starting thesis download process
+2025-03-27 23:02:46,745 - INFO - Initialized ThesisDownloader with output directory: theses
+2025-03-27 23:02:46,745 - INFO - Successfully parsed 106 theses from mytheses.txt
+2025-03-27 23:02:46,745 - INFO - 
+Processing thesis 1/106
+2025-03-27 23:02:46,745 - INFO - Author: Charbulák Jakub Dorian
+2025-03-27 23:02:46,745 - INFO - Title: A Guide to Building a Technological Startup: A Case Study
+2025-03-27 23:02:46,745 - INFO - Type: B
+2025-03-27 23:02:46,745 - INFO - Year: 2025
+2025-03-27 23:02:46,745 - INFO - Trying search strategy with query: A Guide to Building a Technological Startup: A Case Study
+2025-03-27 23:02:46,905 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22A+Guide+to+Building+a+Technological+Startup%3A+A+Case+Study%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:02:48,906 - INFO - 
+Processing thesis 2/106
+2025-03-27 23:02:48,906 - INFO - Author: Vančura Vojtěch
+2025-03-27 23:02:48,906 - INFO - Title: From Collaborative to Content-Based: Scaling Autoencoders to Train Transformers in Recommender Systems
+2025-03-27 23:02:48,906 - INFO - Type: D
+2025-03-27 23:02:48,906 - INFO - Year: 2025
+2025-03-27 23:02:48,906 - INFO - Trying search strategy with query: From Collaborative to Content-Based: Scaling Autoencoders to Train Transformers in Recommender Systems
+2025-03-27 23:02:49,038 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22From+Collaborative+to+Content-Based%3A+Scaling+Autoencoders+to+Train+Transformers+in+Recommender+Systems%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:02:51,039 - INFO - 
+Processing thesis 3/106
+2025-03-27 23:02:51,039 - INFO - Author: Svobodová Eliška
+2025-03-27 23:02:51,039 - INFO - Title: Knowlege tracing techniques
+2025-03-27 23:02:51,039 - INFO - Type: their explainability and applications
+2025-03-27 23:02:51,039 - INFO - Year: N
+2025-03-27 23:02:51,039 - INFO - Trying search strategy with query: Knowlege tracing techniques
+2025-03-27 23:02:51,164 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22Knowlege+tracing+techniques%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:02:53,164 - INFO - 
+Processing thesis 4/106
+2025-03-27 23:02:53,165 - INFO - Author: Schweika Patrik
+2025-03-27 23:02:53,165 - INFO - Title: Semantic Product Search
+2025-03-27 23:02:53,165 - INFO - Type: N
+2025-03-27 23:02:53,165 - INFO - Year: 2024
+2025-03-27 23:02:53,165 - INFO - Trying search strategy with query: Semantic Product Search
+2025-03-27 23:02:53,288 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22Semantic+Product+Search%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:02:55,289 - INFO - 
+Processing thesis 5/106
+2025-03-27 23:02:55,289 - INFO - Author: Votava Vladimír
+2025-03-27 23:02:55,289 - INFO - Title: Efficient implementation of neuroevolution for reinforcement learning tasks
+2025-03-27 23:02:55,289 - INFO - Type: B
+2025-03-27 23:02:55,289 - INFO - Year: 2024
+2025-03-27 23:02:55,290 - INFO - Trying search strategy with query: Efficient implementation of neuroevolution for reinforcement learning tasks
+2025-03-27 23:02:55,411 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22Efficient+implementation+of+neuroevolution+for+reinforcement+learning+tasks%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:02:57,413 - INFO - 
+Processing thesis 6/106
+2025-03-27 23:02:57,413 - INFO - Author: Laurinc Patrik
+2025-03-27 23:02:57,413 - INFO - Title: Text to query using large language models on local infrastructure
+2025-03-27 23:02:57,413 - INFO - Type: B
+2025-03-27 23:02:57,413 - INFO - Year: 2023
+2025-03-27 23:02:57,413 - INFO - Trying search strategy with query: Text to query using large language models on local infrastructure
+2025-03-27 23:02:57,539 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22Text+to+query+using+large+language+models+on+local+infrastructure%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:02:59,541 - INFO - 
+Processing thesis 7/106
+2025-03-27 23:02:59,541 - INFO - Author: Žid Čeněk
+2025-03-27 23:02:59,541 - INFO - Title: Personalized recommendations for students
+2025-03-27 23:02:59,541 - INFO - Type: N
+2025-03-27 23:02:59,541 - INFO - Year: 2022
+2025-03-27 23:02:59,542 - INFO - Trying search strategy with query: Personalized recommendations for students
+2025-03-27 23:02:59,697 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22Personalized+recommendations+for+students%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:03:01,697 - INFO - 
+Processing thesis 8/106
+2025-03-27 23:03:01,697 - INFO - Author: Khudaiberdiev Bekbolot
+2025-03-27 23:03:01,698 - INFO - Title: Estimating Customer Lifetime Value for Media Houses
+2025-03-27 23:03:01,698 - INFO - Type: B
+2025-03-27 23:03:01,698 - INFO - Year: 2022
+2025-03-27 23:03:01,698 - INFO - Trying search strategy with query: Estimating Customer Lifetime Value for Media Houses
+2025-03-27 23:03:01,843 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22Estimating+Customer+Lifetime+Value+for+Media+Houses%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:03:03,844 - INFO - 
+Processing thesis 9/106
+2025-03-27 23:03:03,844 - INFO - Author: Cahlík Vojtěch
+2025-03-27 23:03:03,844 - INFO - Title: Anytime Learning with Auto-Sizing Neural Networks
+2025-03-27 23:03:03,844 - INFO - Type: N
+2025-03-27 23:03:03,845 - INFO - Year: 2022
+2025-03-27 23:03:03,845 - INFO - Trying search strategy with query: Anytime Learning with Auto-Sizing Neural Networks
+2025-03-27 23:03:04,005 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22Anytime+Learning+with+Auto-Sizing+Neural+Networks%22&dsoType=item&configuration=default&scope=
+2025-03-27 23:03:06,006 - INFO - 
+Processing thesis 10/106
+2025-03-27 23:03:06,006 - INFO - Author: Motl Jan
+2025-03-27 23:03:06,006 - INFO - Title: Predictor Factory: Learning from Relational Data
+2025-03-27 23:03:06,006 - INFO - Type: D
+2025-03-27 23:03:06,006 - INFO - Year: 2021
+2025-03-27 23:03:06,006 - INFO - Trying search strategy with query: Predictor Factory: Learning from Relational Data
+2025-03-27 23:03:06,255 - ERROR - API request failed: 404 Client Error: Not Found for url: https://dspace.cvut.cz/rest/discover?query=%22Predictor+Factory%3A+Learning+from+Relational+Data%22&dsoType=item&configuration=default&scope=

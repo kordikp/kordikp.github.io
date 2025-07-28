@@ -1,0 +1,2007 @@
+Abdullin Timergali
+Recommender systems for e-shops
+N
+All reviews inserted
+Thesis supervisor
+28 May 2015
+8 Jun 2015
+Bábics Peter
+Historic Landmarks Identification
+N
+Defended
+Thesis supervisor
+9 May 2017
+9 May 2017
+Babka Milan
+Photovoltaic power plant output prediciton
+B
+Defended
+Thesis supervisor
+4 Jan 2013
+Bajer Michal
+Neural Autoencoders in Recommender Systems
+N
+Defended
+Thesis supervisor
+9 May 2019
+7 May 2019
+Balák Zdeněk
+Portal for support of educational activities and student evaluation
+N
+Defended
+Thesis supervisor
+9 May 2017
+9 May 2017
+Bartel Jakub
+Tools and approaches for new generation journalism
+N
+Defended
+Thesis supervisor
+28 May 2015
+8 Jun 2015
+Bartoň Tomáš
+Meta-optimizations for Cluster Analysis
+D
+Defended
+Thesis supervisor
+31 Jul 2019
+31 Jul 2019
+Bartoň Tomáš
+Clustering cell responses to chemical compounds
+N
+Defended
+Thesis supervisor
+13 May 2011
+Bartyzal Radek
+Optimization of Recommender Systems
+B
+Defended
+Thesis supervisor
+17 May 2016
+12 May 2016
+Bičík Vladimír
+Continuous optimization algorithms
+N
+Defended
+Thesis supervisor
+14 May 2010
+Borovička Tomáš
+Training set Construction Methods
+N
+Defended
+Thesis supervisor
+11 May 2012
+Bouška Josef
+Neural Networks for Time Series Prediction
+M
+Defended
+Thesis supervisor
+18 Jan 2008
+Brázdil Martin
+Machine Learning in Game Playing using Visual Input
+N
+Defended
+Thesis supervisor
+10 May 2016
+12 May 2016
+Breiner Daniel
+Design and implementation of an application for scheduling and sending of personalized content
+N
+Defended
+Thesis supervisor
+9 Jan 2025
+15 Jan 2025
+Cahlík Vojtěch
+Anytime Learning with Auto-Sizing Neural Networks
+N
+Defended
+Thesis supervisor
+5 May 2022
+5 May 2022
+Cahlík Vojtěch
+Modelling representations of human behavior using multi-task learning
+D
+Assigned
+Thesis supervisor
+Čadek Václav
+Information support for clinical studies
+N
+Defended
+Thesis supervisor
+10 May 2013
+Čejka Martin
+Reinforcement learning with imagination
+N
+Assigned
+Thesis supervisor
+25 May 2018
+Čepek Miroslav
+Pattern Recognition for Real World Data
+M
+Defended
+Thesis supervisor
+27 Jan 2006
+Černý Jan
+Automated Data Mining
+D
+Assigned
+Thesis supervisor
+Černý Jan
+Ensembling data mining models and classifiers
+N
+Defended
+Thesis supervisor
+14 May 2010
+Černý Ondřej
+Neural Networks for Game control
+B
+Defended
+Opponent
+16 May 2017
+16 May 2017
+Černý Prokop
+Contextual Embeddings for Anomaly Detection in Log Files
+N
+Defended
+Opponent
+21 May 2021
+21 May 2021
+Černý Tomáš
+Text Embeddings for Recommender Systems
+B
+Defended
+Opponent
+9 Jan 2024
+9 Jan 2024
+Čertík David
+Methods for processing of biomedical data
+B
+Defended
+Opponent
+25 May 2012
+24 May 2012
+Čiefová Martina
+E-shop Recommender System
+N
+Defended
+Opponent
+9 Jan 2018
+9 Jan 2018
+Činčura Adam
+Distributed computation environment
+N
+Defended
+Thesis supervisor
+2 Jan 2014
+Detko Tomáš
+Clustering and data analysis of Jupyter notebooks on GitHub
+N
+Defended
+Opponent
+5 May 2022
+5 May 2022
+Do Minh Duc
+Cascade Correlation Neural Networks in GAME
+N
+Defended
+Opponent
+22 May 2009
+Dočekalová Anna
+Implementation of a Module for Sentiment Analysis
+B
+Defended
+Opponent
+4 Jun 2015
+8 Jun 2015
+Dohnal Filip
+Access to FAKE GAME application
+M
+Defended
+Thesis supervisor
+14 May 2010
+Dolejský Luděk
+Text clustering
+M
+Defended
+Opponent
+25 May 2007
+Doležel Jan
+Parkinson Disease Diagnostics
+M
+Defended
+Opponent
+19 Jan 2007
+Doležel Jiří
+Evolution algorithm for neural networks improvement
+B
+Defended
+Thesis supervisor
+26 May 2006
+Drdák Jakub
+Recommendation algorithms optimization
+N
+Defended
+Thesis supervisor
+9 May 2018
+16 Feb 2018
+Drchal Jan
+Evolutionary algorithms and neural networks
+M
+Defended
+Thesis supervisor
+27 Jan 2006
+Dušek Petr
+Educational and Reseach Performance Dashboards
+N
+Defended
+Thesis supervisor
+Dvořák Antonín
+Scalability of Nearest Neighbor Algorithm
+B
+Defended
+Thesis supervisor
+16 May 2019
+20 May 2019
+Dvořák David
+Application for Visualization of Structure and Behaviour of Inductive Models
+N
+Defended
+Thesis supervisor
+23 May 2008
+Dvořák Josef
+Integration of a recommendation system to the SSP portal
+N
+Defended
+Opponent
+10 Jan 2017
+2 Jul 2016
+Dvořák Lukáš
+Analytic framework for eshop interactions data
+N
+Defended
+Thesis supervisor
+10 May 2016
+9 May 2016
+Dvořák Mikuláš
+Optimization of surrogate model settings using landscape analysis
+N
+Defended
+Opponent
+28 May 2020
+31 May 2020
+Ekimova Svetlana
+Identification of the functional style of the document
+B
+Defended
+Opponent
+17 May 2016
+17 May 2016
+Eliáš Martin
+Robust neural embeddings for typos correction
+B
+Assigned
+Thesis supervisor
+Eliáš Roman
+New trends in the architecture of PC processors
+B
+Defended
+Opponent
+28 Jan 2005
+Endršt Martin
+Personalization of Data Visualization User Interfaces
+B
+Defended
+Thesis supervisor
+17 May 2016
+18 May 2016
+Fabián Jan
+Visualizing behavior of model ensembles
+N
+Defended
+Thesis supervisor
+10 May 2013
+Fabián Jan
+Visualization methods for data mining reports
+B
+Defended
+Thesis supervisor
+27 May 2011
+Feik Jakub
+Cold Start Items in Next Basket Recommendation
+B
+Assigned
+Thesis supervisor
+Fialka Ladislav
+Application for special rotate chair signal processing
+N
+Defended
+Opponent
+5 Jan 2010
+Filípek Ondřej
+Conjugate Gradient Method for GAME Units Optimization
+M
+Defended
+Thesis supervisor
+19 Jan 2007
+Fišer Vratislav
+Mobile study guide
+B
+Defended
+Opponent
+11 Jul 2008
+Fornůsek Tomáš
+Numerical approximation on nowadays graphic cards
+B
+Defended
+Opponent
+28 May 2010
+Friedjungová Magda
+Performance Prediction of the Bachelor programme Informatics at FIT CTU
+N
+Defended
+Opponent
+10 May 2016
+9 May 2016
+Frýda Tomáš
+Scalability of Predictive Modeling Algorithms
+N
+Defended
+Thesis supervisor
+10 Jan 2017
+11 Jan 2017
+Galík Petr
+Time-series Preprocessing Library for Data Mining
+N
+Defended
+Opponent
+14 May 2010
+Gažo Alexander
+Algorithms for Document Retrieval in Czech Language Supporting Long Inputs
+N
+Defended
+Opponent
+13 Aug 2021
+13 Aug 2021
+Grafnetr Libor
+Email clustering algorithm
+B
+Defended
+Thesis supervisor
+12 Jun 2009
+Hadáček Jan
+Application of a Camera in a Mobile Phone for Visually Impaired People
+N
+Defended
+Opponent
+26 May 2017
+25 May 2017
+Hadáček Martin
+Frequent Sequence Mining Algorithm
+N
+Defended
+Thesis supervisor
+11 May 2012
+Hafner Petr
+Implementation of SOM on Cell Processor
+B
+Defended
+Opponent
+24 Aug 2007
+Hájíček Josef
+Using Equation Discovery for Panel Data of Import and Export of EU Countries
+B
+Defended
+Opponent
+24 May 2013
+Hána František
+Comparison of statistical and data mining approaches to chemometrical analysis of oil derivatives
+N
+Defended
+Thesis supervisor
+16 May 2014
+Handl Marek
+Spam identification independent of email body contents
+N
+Defended
+Thesis supervisor
+5 Jan 2010
+Hanuš Marek
+Accelerating evolutionary optimization using response surface models on real-world benchmarks
+N
+Defended
+Opponent
+28 May 2020
+31 May 2020
+Hanzl Petr
+Grammar interactive evolution of graph interfaces
+B
+Defended
+Thesis supervisor
+16 May 2019
+20 May 2019
+Hanzlík Michal
+An application for diagnostics of patients by the Hautant test
+B
+Defended
+Opponent
+27 May 2011
+Hasaj Martin
+Neural Networks for Adaptive Control of Households
+N
+Defended
+Thesis supervisor
+22 May 2009
+Heglas Daniel
+Portlets opening access to university courseware
+N
+Defended
+Thesis supervisor
+2 Jan 2014
+Heglas Daniel
+Portlets opening access to university courseware
+N
+Defended
+Thesis supervisor
+28 May 2015
+Hejl František
+Learning to Rank Query Suggestions
+N
+Defended
+Thesis supervisor
+18 May 2016
+19 Feb 2016
+Helcl Luboš
+Design and implementation of intelligent line follower
+N
+Defended
+Opponent
+10 May 2013
+Hlaváč Šimon
+Automatic text summarization
+N
+Defended
+Opponent
+28 May 2015
+8 Jun 2015
+Hlavan František
+New trends in the architecture of PC processors
+B
+Defended
+Opponent
+26 May 2006
+Hlubík Pavel
+Algorithms for better understanding of recommended content and user clusters
+N
+Defended
+Thesis supervisor
+19 May 2021
+Hlubík Pavel
+Reinforcement learning and neural networks for text mining
+B
+Defended
+Opponent
+15 May 2018
+10 May 2018
+Hnízdil Jan
+Text signals relevance improvement for full text serch
+N
+Defended
+Opponent
+28 May 2015
+8 Jun 2015
+Hora Michal
+PMML Models Visualization
+B
+Assigned
+Thesis supervisor
+Horák Jan
+Lip Reading using Deep Neural Networks
+B
+Defended
+Thesis supervisor
+15 May 2018
+15 May 2018
+Houska Vojtěch
+Self-supervised model for efficient sound recognition trained on aggregated data
+B
+Defended
+Opponent
+13 May 2021
+19 May 2021
+Hroch Jan
+Facial feature detection
+B
+Defended
+Opponent
+15 May 2018
+14 May 2018
+Hrubý Jaroslav
+Implementation of Encyclopedia (powered by Wikipedia) for Visually Impaired Users
+B
+Defended
+Opponent
+10 Jan 2017
+10 Jan 2017
+Hryzák Ondřej
+Development of an Android Input Method Using Braille
+N
+Defended
+Opponent
+25 May 2018
+25 May 2018
+Hudík Marek
+Remote access to neural network simulator
+M
+Defended
+Opponent
+19 Jan 2007
+Hvizdoš Martin
+Continuous Optimization Library
+N
+Defended
+Thesis supervisor
+22 May 2009
+Chabr Daniel
+Data visualization and clustering process optimization through reinforcement learning
+N
+Assigned
+Thesis supervisor
+Charbulák Jakub Dorian
+A Guide to Building a Technological Startup: A Case Study
+B
+Defended
+Thesis supervisor
+9 Jan 2025
+18 Jan 2025
+Chernova Dina
+Development of games for users with visual impairment
+B
+Defended
+Opponent
+10 Jan 2017
+9 Jan 2017
+Chládek Ondřej
+Deep learning for detection of defects in sewer CCTV
+B
+Defended
+Opponent
+4 Jun 2020
+4 Jun 2020
+Chmelař Ondřej
+Mining the Digital Model of Prague Surface
+N
+Assigned
+Thesis supervisor
+16 May 2014
+Chmelař Ondřej
+Advanced source editor for programmers
+B
+Defended
+Opponent
+18 May 2012
+Choma Matej
+Physics-Informed Deep Learning in Weather Forecasting
+D
+Assigned
+Thesis supervisor
+Chouň Martin
+Graph Based Recommendation Algorithms for Linked Data
+N
+Defended
+Opponent
+10 May 2016
+9 May 2016
+Chrastinová Adéla
+Components of Energy Efficient and Intelligent House
+M
+Defended
+Thesis supervisor
+23 Jan 2009
+Chren Michal
+Automated Knowledge Extraction
+M
+Defended
+Thesis supervisor
+23 Jan 2009
+Chvátal Lukáš
+Integration of internet radio service
+B
+Defended
+Opponent
+27 May 2016
+25 May 2016
+Janda Aleš
+Semantics analysis of text messages
+B
+Defended
+Opponent
+24 Aug 2007
+Janda Tomáš
+Alumni portal
+N
+Defended
+Thesis supervisor
+10 May 2013
+Jankovec Adam
+Machine learning based query analysis for an online medical clinic
+N
+Defended
+Thesis supervisor
+19 May 2021
+Jankovec Adam
+Software module for skill based search of students
+B
+Defended
+Thesis supervisor
+16 May 2019
+16 May 2019
+Janošík Miroslav
+Algorithms for Optimization of GAME networks
+B
+Defended
+Thesis supervisor
+30 Jun 2006
+Jendrušák Ján
+Antibody sequence analysis using Deep Learning
+B
+Defended
+Opponent
+30 Jul 2020
+31 Jul 2020
+Jež Radek
+Application for Lottery Result Validation
+N
+Defended
+Opponent
+16 May 2014
+Jež Radek
+Application for Lottery Result Validation
+N
+Defended
+Opponent
+28 May 2015
+Jirků Jakub
+Regression modelling for fulltext search engine
+N
+Defended
+Thesis supervisor
+4 Jan 2013
+Kábrt Zbyněk
+Automatic virtual generator of timetables
+M
+Defended
+Opponent
+18 Jan 2008
+Kajtmanová Ludmila
+Evolutionary Construction of Classification Circuits in Boolean Domain
+N
+Assigned
+Opponent
+2 Jan 2014
+Kaniok Tomáš
+Visual editor for decision trees
+B
+Defended
+Opponent
+17 May 2013
+Kaplan Michal
+Medical Data Processing
+M
+Defended
+Opponent
+21 May 2004
+Kasalický Petr
+Content-Based Recommendation Model Trained Using Interaction Similarity
+B
+Defended
+Opponent
+15 May 2018
+14 May 2018
+Khol David
+Managerial extensions of portal Cooperation with Industry
+B
+Defended
+Opponent
+4 Jun 2015
+9 Jun 2015
+Khudaiberdiev Bekbolot
+Estimating Customer Lifetime Value for Media Houses
+B
+Defended
+Thesis supervisor
+12 May 2022
+11 May 2022
+Kislinger Jan
+Applications of Multi-Layered Clustering in Recommender Systems
+D
+Assigned
+Thesis supervisor
+Klemš Václav
+Differential Evolution with Adaptive Encoding
+N
+Defended
+Opponent
+1 Sep 2011
+Kojan Filip
+Extracting structured data from textual car selling advertisement data
+N
+Defended
+Opponent
+19 May 2021
+Kolesnikov Daniil
+Demonstration and Benchmarking of Evolutionary Algorithms in TensorNEAT
+B
+Assigned
+Thesis supervisor
+Kopecký Jiří
+Tool for Evolutionary Design of Wireless Networks
+N
+Defended
+Opponent
+10 May 2013
+Kopejtko Kamil
+Testing of Automatic PreprocessingAlgorithm in GAME Project
+N
+Defended
+Opponent
+5 Jan 2010
+Korelus Martin
+Visualization of neural network outputs
+B
+Defended
+Opponent
+18 Jan 2008
+Koutný Jan
+Personalization and Optimization of GoOut.net Social Feed
+B
+Assigned
+Opponent
+Kovář Jindřich
+Accelerated compression using semiadaptive Huffman coding
+B
+Defended
+Opponent
+27 May 2011
+Kovář Milan
+RapidMiner Component Developement
+B
+Defended
+Opponent
+17 May 2013
+Kovářík Oleg
+ANT Colony Optimization for Continuous Problems
+M
+Defended
+Thesis supervisor
+19 Jan 2007
+Kožnarová Zuzana
+Manuscripts Classification Using Convolutional Deep Learning Networks
+B
+Defended
+Opponent
+4 Aug 2017
+2 Aug 2017
+Král Peter
+Import and Export from/to MS Excel and Openoffice Spreadsheet
+B
+Defended
+Opponent
+23 Jan 2009
+Králík Tomáš
+Faculty Portal Aplication Interface
+N
+Defended
+Thesis supervisor
+11 May 2012
+Kramný David
+Robust reconstruction of camera poses from images of a passenger car
+N
+Defended
+Opponent
+9 Jan 2025
+15 Jan 2025
+Kratochvíl Lukáš
+Analysis and prediction of user behavior on auction web sites
+N
+Defended
+Opponent
+9 May 2017
+10 May 2017
+Krejcar Jan
+Anomaly detection methods
+N
+Defended
+Thesis supervisor
+2 Jan 2014
+Krejcar Jan
+Anomaly detection methods
+N
+Defended
+Thesis supervisor
+2 Jan 2014
+Krkošková Helena
+Data Reduction for Data Mining and GAME Neural Network
+N
+Defended
+Opponent
+22 May 2009
+Kroupa Lukáš
+Universal file manager
+M
+Defended
+Opponent
+28 Jan 2005
+Krupička Mikuláš
+Image Data Analysis from Brain Surgery
+N
+Defended
+Opponent
+14 May 2010
+Krupka Jan
+Iterative algorithms for solving sparse systems
+B
+Defended
+Opponent
+24 Aug 2007
+Krutský Matyáš
+Visual detection of relations in databases
+N
+Defended
+Thesis supervisor
+11 May 2012
+Krýže Petr
+Integration of Audio Library
+B
+Defended
+Opponent
+27 May 2016
+Křeček Martin
+Implementation of graph algorithms for the Clueminer platform
+B
+Defended
+Opponent
+4 Jun 2015
+8 Jun 2015
+Křivák Václav
+Experiments with time series prediction
+B
+Defended
+Opponent
+27 May 2005
+Kučera Adam
+Reporting for Efficient Management of Faculty
+N
+Defended
+Thesis supervisor
+11 May 2012
+Kuchař Jaroslav
+Statistical Data Processing Module
+N
+Defended
+Thesis supervisor
+22 May 2009
+Kulovaný Vojtěch
+Linked Data and Question Answering module for chatbot
+B
+Defended
+Opponent
+30 Jul 2020
+14 Aug 2020
+Kupčiha Matej
+Design and application of advanced analytics in customer segmentation
+N
+Defended
+Opponent
+10 May 2013
+Kuzin Tomáš
+Predictive maintenance of sensor parts
+N
+Defended
+Opponent
+10 May 2016
+25 May 2016
+Kuzmovych Yevhen
+Multi-instrument Music Transcription
+N
+Defended
+Opponent
+9 Jan 2020
+10 Jan 2020
+Kuznetsov Stanislav
+Faculty Data Warehouse
+N
+Defended
+Thesis supervisor
+11 May 2012
+Kuznetsov Stanislav
+Ontologies in Recommender Systems
+D
+Defended
+Thesis supervisor
+1 Sep 2020
+1 Sep 2020
+Lašek Ivo
+Integration of Business Intelligence open source tools
+N
+Defended
+Thesis supervisor
+14 May 2010
+Laurinc Patrik
+Text to query using large language models on local infrastructure
+B
+Defended
+Thesis supervisor
+11 May 2023
+16 May 2023
+Lekýrová Tatiana
+Recommendation of new movies to obtain
+B
+Defended
+Thesis supervisor
+16 May 2019
+15 Feb 2019
+Lenoch Tomáš
+Automated creation of experts profiles from public data
+B
+Defended
+Opponent
+4 Jun 2020
+3 Jun 2020
+Leškanič Juraj
+Methods for Metallurgical Samples Identification
+N
+Defended
+Thesis supervisor
+11 May 2012
+Lupták Radovan
+Recommender system powered by text mining methods
+N
+Defended
+Thesis supervisor
+10 May 2013
+Macek Ondřej
+Self Organizing Map and its Extensions
+B
+Defended
+Thesis supervisor
+30 Jun 2006
+Málek Richard
+Alternation of Meta-heuristic Algorithms with Runtime Analysis and Parameters Adaptation
+M
+Defended
+Thesis supervisor
+25 May 2007
+Malý Patrik
+Segment-Based Recommendations
+N
+Defended
+Opponent
+9 Jan 2025
+9 Jan 2025
+Marksfeld Alex Eduard
+Machine Learning in Sociodemographic Segmentation of a Telco Company Customers
+B
+Defended
+Opponent
+15 May 2018
+16 May 2018
+Maroušek Jiří
+Analytic web services for the academia industry collaboration portal
+N
+Defended
+Thesis supervisor
+12 Jan 2016
+21 Jun 2015
+Martínek Ladislav
+Evaluation of Local Sensitive Hashing (LSH) Algorithm in Recommender Systems
+B
+Defended
+Opponent
+15 May 2018
+10 May 2018
+Martyniuk Vladislav
+Software application for presentation of university projects and research outcomes
+N
+Assigned
+Thesis supervisor
+Masri Filip
+Automatic ontology learning from semi-structured data
+N
+Defended
+Opponent
+9 May 2017
+9 May 2017
+Matejička Jozef
+Statistical properties of data in GAME
+N
+Defended
+Opponent
+23 May 2008
+Matoušek Jaroslav
+Hybrid Inductive Models Topology Visualization
+M
+Defended
+Thesis supervisor
+23 May 2008
+Matuška Martin
+User autentization and role management for aplications of the faculty
+N
+Defended
+Thesis supervisor
+11 May 2012
+Maurerová Veronika
+Criminality prediction
+N
+Defended
+Thesis supervisor
+9 May 2017
+9 May 2017
+Medonos Vojtěch
+R&amp;D data mining
+N
+Defended
+Thesis supervisor
+10 May 2013
+Meško Dezider
+Data Normalisation for the GAME Neural Network
+B
+Defended
+Opponent
+13 Jun 2008
+Mezera Vladimír
+Selected FAKE-GAME project modules integration into RapidMiner
+N
+Defended
+Opponent
+4 Jan 2011
+Micka Vojtěch
+Objects identification in signal processing of FMCW radar for Advanced Driver Assistance Systems
+N
+Defended
+Opponent
+9 Jan 2017
+9 Jan 2017
+Mika Marcel
+Liferay communication infrastructure
+N
+Defended
+Thesis supervisor
+4 Jan 2013
+Miklánek Martin
+Evolutionary Algorithms for JCOOL
+N
+Defended
+Opponent
+13 May 2011
+Milichovský Martin
+Mobile application for text localization and and recognition in real-world images
+N
+Defended
+Opponent
+5 Jan 2015
+5 Jan 2015
+Minářová Markéta
+Nowcasting from Radar Images Using Diffusion Networks
+N
+Assigned
+Thesis supervisor
+Mlejnek Jaromír
+Evolutionary-Based Hyper-heuristics for Vehicle Routing Problem
+N
+Defended
+Opponent
+11 May 2012
+Molokoiedov Dmytro
+Detection of anomalies in water main flow time series
+B
+Defended
+Opponent
+4 Jun 2020
+4 Jun 2020
+Moravčík Ondřej
+Predictive modelling API design and implementation
+B
+Defended
+Opponent
+17 May 2013
+Motl Jan
+Supporting the Diagnosis of Borreliosis by Machine Learning Methods
+N
+Defended
+Thesis supervisor
+10 May 2013
+Motl Jan
+Predictor Factory: Learning from Relational Data
+D
+Defended
+Thesis supervisor
+31 Aug 2021
+31 Aug 2021
+Moulík Karel
+A Program for Prediction of Gene Coexpression
+N
+Defended
+Opponent
+23 Jan 2009
+Nádvorník Jiří
+Algorithms for Origami Folding
+B
+Defended
+Thesis supervisor
+17 May 2013
+Navara Jan
+The Simplification of Folmulas Generated by Inductive Models
+B
+Defended
+Thesis supervisor
+17 May 2013
+Novák Jakub
+Anthropological data analysis by means of computational intelligence methods
+N
+Defended
+Thesis supervisor
+23 May 2008
+Novák Jakub
+GMDH networks the KnowledgeMiner software
+B
+Defended
+Thesis supervisor
+30 Jun 2006
+Novák Jiří
+The comparison of methods for noise cancelation
+M
+Defended
+Thesis supervisor
+28 Jan 2005
+Novák Tomáš
+Web Portal for Data Mining Experiments
+N
+Assigned
+Opponent
+2 Jan 2014
+Novák Václav
+Optimization of ASM code
+B
+Defended
+Opponent
+28 May 2010
+Novotný Peter
+Speaker localization by an microphone array
+M
+Defended
+Opponent
+23 Jan 2009
+Nožka Jiří
+Visual 3D Analysis of Neural Networks Behaviour
+M
+Defended
+Thesis supervisor
+19 Jan 2007
+Nykodem Martin
+Dictated numbers recognition model for an interactive voice response (IVR) company
+N
+Defended
+Opponent
+5 May 2022
+5 May 2022
+Nykodým Tomáš
+Advanced optimization of the ASM code
+N
+Defended
+Opponent
+5 Jan 2010
+Obrusník Vít
+Development of online platform for board games for blind users
+B
+Defended
+Opponent
+26 May 2017
+25 May 2017
+Palas Jiří
+Methods for visual analysis of biomedical data
+B
+Defended
+Opponent
+25 May 2012
+24 May 2012
+Palkoci Igor
+Software for Household Energy Consumption Analysis
+N
+Assigned
+Thesis supervisor
+6 Jan 2015
+Pancíř Jan
+Optimizing of methods for data preprocessing for the best possible classification
+B
+Defended
+Opponent
+15 May 2018
+3 May 2018
+Pankovčin Matej
+Matafeature database in Rapidminer
+B
+Defended
+Thesis supervisor
+6 Jan 2012
+Pavlíček Martin
+Recommendation Models Based on Images
+B
+Defended
+Opponent
+15 May 2018
+15 May 2018
+Pavlíček Miloslav
+Automated Data Preprocessing Module
+M
+Defended
+Thesis supervisor
+18 Jan 2008
+Pavlovský Jan
+UI design for accessing educational resources
+N
+Defended
+Thesis supervisor
+4 Jan 2013
+Pavlů Petr
+Port of Valgrind to Solaris/x86
+N
+Defended
+Opponent
+11 May 2012
+Pechan Jan
+Color and bank-note recognition for blind users in Android envirionment
+N
+Defended
+Opponent
+5 Jan 2015
+4 Jan 2015
+Pejznoch Jan
+Niching Evolutionary Algorithms in GAME
+N
+Defended
+Opponent
+14 May 2010
+Pihrt Jiří
+Nové algoritmy pro časo-prostorové hluboké učení
+D
+Assigned
+Thesis supervisor
+Pilný Aleš
+Biological Signals Processing
+M
+Defended
+Thesis supervisor
+18 Jan 2008
+Pinc Radek
+Non-parametric GMDH Neural Networks and their Applicatio
+M
+Defended
+Opponent
+28 Jan 2005
+Pištěk Jakub
+Analysis of Collaborative Filtering Algorithms on Multimedial Data
+N
+Defended
+Opponent
+10 May 2013
+Pištora Matouš
+Recommending related images to articles
+N
+Defended
+Thesis supervisor
+9 May 2019
+15 Feb 2019
+Poddubny Alexander
+Application for Social Network Analysis
+B
+Defended
+Opponent
+12 Jan 2016
+24 Jun 2015
+Polívka Tomáš
+XCalc: Expensive computations management system
+N
+Defended
+Opponent
+28 May 2015
+8 Jun 2015
+Ponomarov Kyrylo
+Methods for Open-World Fact-Checking
+N
+Assigned
+Opponent
+Rajnoch Filip
+Sharing and electronic document circulation infrastructure
+N
+Defended
+Thesis supervisor
+4 Jan 2013
+Ravichandran Ruhi
+Predictive models in Logistics: Comparison of traditional time series techniques with an artificial neural network model approach
+N
+Defended
+Thesis supervisor
+28 May 2015
+8 Jun 2015
+Remešová Marie
+Educational performance dashboard
+N
+Defended
+Thesis supervisor
+28 May 2015
+8 Jun 2015
+Režnický Michal
+Design and Implementation of Feature Selection Module in Modgen Recommender System
+B
+Defended
+Opponent
+17 May 2016
+17 May 2016
+Richtr Tomáš
+Evaluation of Matrix Factorization Algorithms in Collaborative Filtering
+N
+Defended
+Opponent
+10 May 2016
+12 May 2016
+Rubáčková Barbora
+Comparing Methods for Oxygen-Insufficience Detection in Neonates During the Labour based on Features from Analysis of Heart Rate Variability
+M
+Defended
+Opponent
+23 Jan 2009
+Rulf Martin
+Computational crystalography algorithms
+N
+Defended
+Opponent
+10 May 2013
+Rusnák Rastislav
+Vehicle Count and Localization from Satellite and Aerial Imagery
+N
+Assigned
+Opponent
+25 May 2018
+Rýpar Martin
+Methods of Document Retrieval for Fact Checking
+N
+Defended
+Opponent
+21 May 2021
+21 May 2021
+Řeháček Denis
+Development of games for blind users
+B
+Defended
+Opponent
+26 May 2017
+26 May 2017
+Řehořek Tomáš
+Evolution of processes
+N
+Defended
+Thesis supervisor
+13 May 2011
+Řehořek Tomáš
+Manipulating the Capacity of Recommendation Models in Recall-Coverage Optimization
+D
+Defended
+Thesis supervisor
+31 Aug 2018
+Řehořek Tomáš
+Web Client Visualization Library
+B
+Defended
+Thesis supervisor
+12 Jun 2009
+Sabol Michal
+Data mining models
+B
+Defended
+Thesis supervisor
+27 May 2011
+Sadílek Adam
+Software Model of Autonomous Object Affordances Learning
+B
+Defended
+Opponent
+13 Jun 2008
+Sachok Maxim
+The system for automatically creation of experts profiles based on similarities of their R&D results
+B
+Undefended
+Opponent
+4 Jun 2020
+3 Jun 2020
+Sachok Maxim
+The system for automatically creation of experts profiles based on similarities of their R&amp;D results
+B
+Defended
+Opponent
+30 Jul 2020
+3 Aug 2020
+Saidl Jan
+Visualization as a tool for nature systems behaviour study
+M
+Defended
+Thesis supervisor
+27 Jan 2006
+Salai Dominik
+The quality estatimaton of uncontrolled crossroads
+B
+Defended
+Opponent
+27 May 2011
+Samek Jiří
+3D model editor supporting photo transformations
+B
+Defended
+Thesis supervisor
+7 Jan 2011
+Samek Petr
+Evaluation of Comparative Study in Reconditioning Centre
+M
+Defended
+Thesis supervisor
+18 Jan 2008
+Sedláček Zbyšek
+Development of online platform for board games for blind users
+B
+Defended
+Opponent
+26 May 2017
+26 May 2017
+Sejkora Tomáš
+Medical Data Analysis by Means of Statistical Methods and SOM
+M
+Defended
+Thesis supervisor
+19 Jan 2007
+Semin Danil
+Multitask Learning for NLP Classifiers
+B
+Defended
+Opponent
+26 May 2023
+25 May 2023
+Schweika Patrik
+Semantic Product Search
+N
+Defended
+Thesis supervisor
+9 May 2024
+17 May 2024
+Simek Adam
+Instance segmentation and object tracking accuracy comparison on real and virtual scenarios
+N
+Defended
+Opponent
+30 Jul 2020
+19 May 2021
+Skalický Matyáš
+Classification of URLs Using Deep Neural Networks
+B
+Defended
+Thesis supervisor
+16 May 2019
+20 May 2019
+Skalička Ondřej
+Combinatorial Optimization Library
+N
+Defended
+Thesis supervisor
+14 May 2010
+Slavík Vojtěch
+Full-Duplex Dialogue Systems
+N
+Assigned
+Thesis supervisor
+Slifka Jan
+Software application for project management using gamification elements
+B
+Defended
+Opponent
+4 Jun 2015
+8 Jun 2015
+Spiridonov Andrey
+Evolutionary optimization in distributed machine learning under time constrains
+D
+Assigned
+Thesis supervisor
+Stamenov Sergii
+Understanding Documents with Text Mining Methods
+N
+Defended
+Thesis supervisor
+9 May 2017
+17 Feb 2017
+Staněk Pavel
+Statistical Evaluation of optimal inductive model topology
+B
+Defended
+Thesis supervisor
+28 Jan 2005
+Stanovčák Tomáš
+Extraction of company descriptors from web resources
+N
+Defended
+Opponent
+5 May 2022
+5 May 2022
+Stieranka Matej
+Secure Cross-Site Widget Integration Library
+N
+Assigned
+Thesis supervisor
+Stolín Václav
+Visualization for neural networks
+B
+Defended
+Opponent
+19 Jan 2007
+Sůva Čeněk
+Merlin: Recommender Systems pipeline implemented on GPUs
+B
+Defended
+Opponent
+12 May 2022
+12 May 2022
+Svoboda Ondřej
+Bayesian methods in data mining
+B
+Defended
+Thesis supervisor
+30 Jun 2006
+Svobodová Eliška
+Knowlege tracing techniques, their explainability and applications
+N
+Defended
+Thesis supervisor
+9 May 2024
+9 May 2024
+Šefčík Petr
+Graph Coloring - A Case Study in Evolutionary Computation
+B
+Defended
+Opponent
+17 May 2013
+Šimánek Petr
+Dynamics Informed Recurrent Neural Networks: Learning to Optimise and Spatiotemporal Prediction
+D
+Assigned
+Thesis supervisor
+Škola Michal
+Data Visualization for the Knowledge Extraction
+M
+Defended
+Thesis supervisor
+23 Jan 2009
+Škorpil Štěpán
+Application to analysis of text messages for investigators
+N
+Defended
+Thesis supervisor
+28 May 2015
+8 Jun 2015
+Šmíd Martin
+Job-board predictions
+B
+Defended
+Thesis supervisor
+16 May 2017
+16 May 2017
+Šmolík Daniel
+Automated Fact-Checking Based on Czech Wikipedia
+N
+Assigned
+Opponent
+Šnajdr Kamil
+Sparse matrix generator
+B
+Defended
+Opponent
+7 Jan 2011
+Šofr Ondřej
+Music Recommender System
+B
+Defended
+Thesis supervisor
+15 May 2018
+28 Jun 2018
+Šorejs Tomáš
+Web portal for full-text thesis semantic search
+N
+Defended
+Opponent
+6 Jan 2015
+Šorejs Tomáš
+Web portal for full-text thesis semantic search
+N
+Defended
+Opponent
+28 May 2015
+Šos Ondřej
+Implementation of an algorithm for 3D objects reconstruction
+B
+Defended
+Opponent
+30 Jun 2006
+Šourek David
+Experiments with the CALM Neural Network
+M
+Defended
+Opponent
+28 Jan 2005
+Špetlík Radim
+BarnSim: A Multi-agent Dairy Barn Simulation System
+B
+Defended
+Opponent
+17 May 2016
+17 May 2016
+Špirk Jakub
+Distributed Computation of Inductive Models
+B
+Defended
+Thesis supervisor
+13 Jun 2008
+Špirk Jakub
+Distributed computing of inductive models
+N
+Defended
+Opponent
+10 May 2013
+Štaffa Miroslav
+Personal dashboard for students
+B
+Undefended
+Opponent
+4 Jun 2015
+9 Jun 2015
+Štaffa Miroslav
+Personal dashboard for students
+B
+Defended
+Opponent
+12 Jan 2016
+20 Jan 2016
+Štáfl Michal
+Solvers of large liner equations systems
+B
+Assigned
+Opponent
+18 Jan 2008
+Šťastný Vladimír
+FAKE GAME web services
+B
+Defended
+Thesis supervisor
+10 Jul 2009
+Šuták Petr
+Visual search in big graph structures
+N
+Undefended
+Thesis supervisor
+12 Jan 2016
+8 Jun 2015
+Šuták Petr
+Visual search in big graph structures
+N
+Defended
+Thesis supervisor
+10 May 2016
+13 May 2016
+Švastalová Vendula
+Harnessing Spatial Context for Item Recommendation
+N
+Defended
+Opponent
+9 May 2024
+9 May 2024
+Švejda Jan
+Web service for advanced text analysis
+B
+Defended
+Thesis supervisor
+16 May 2017
+15 May 2017
+Tauchmanová Kristýna
+Recommendation based on product images
+N
+Undefended
+Thesis supervisor
+9 Jan 2020
+10 Jan 2020
+Tauchmanová Kristýna
+Recommendation based on product images
+N
+Defended
+Thesis supervisor
+30 Jul 2020
+3 Aug 2020
+Tejkl Michal
+Audio/Video Formats for Mobile Phones
+B
+Defended
+Opponent
+25 May 2007
+Tkačík Ján
+Algorithms for time-space behaviour analysis of suspects
+N
+Defended
+Thesis supervisor
+12 Jan 2016
+20 Jan 2016
+Tkačík Ján
+New recurrent neural networks and sequence modelling techniques
+D
+Assigned
+Thesis supervisor
+Toegel Jan
+Web management for SiMoNNe neural network simulator
+M
+Defended
+Opponent
+25 May 2007
+Tóth Matúš
+Flight data analysis and passenger anomaly detection
+N
+Undefended
+Thesis supervisor
+9 May 2017
+9 May 2017
+Tóth Matúš
+Flight data analysis and passenger anomaly detection
+N
+Undefended
+Thesis supervisor
+9 Jan 2018
+10 Jan 2018
+Trávníček Jiří
+Noisy Data Modeling
+M
+Defended
+Thesis supervisor
+5 Jan 2010
+Trávníček Ondřej
+Efficient multiplication of sparse matrices
+B
+Defended
+Opponent
+28 May 2010
+Trčka Milan
+The Simplification of Folmulas Generated by Inductive Models
+M
+Assigned
+Thesis supervisor
+Trčka Milan
+The Simplification of Formulas Generated by Inductive Models
+B
+Defended
+Thesis supervisor
+11 Jul 2008
+Trlida Lukáš
+XML representation of inductive models
+B
+Defended
+Thesis supervisor
+26 May 2006
+Trusina Jan
+Implementation of Evolutionary Clustering
+B
+Defended
+Opponent
+4 Jun 2015
+8 Jun 2015
+Třebický Vladimír
+Implementation of Optimization Algorithms on the Cell Processor
+M
+Defended
+Opponent
+18 Jan 2008
+Tuháček Zdeněk
+A Portlet-based Inferface for Research Records at FIT CTU
+N
+Defended
+Opponent
+11 May 2012
+Tvrdý Marek
+Automation of Energy Efficient and Intelligent House
+M
+Defended
+Thesis supervisor
+22 May 2009
+Uhliariková Eva
+Development of a Recognizer for Isolated Hand-Drawn Characters for the Purpose of a Quick-Dial Function in a Phone for the Visually Impaired
+B
+Defended
+Opponent
+25 May 2018
+25 May 2018
+Uličný Vít
+Hybrid inductive models in PMML
+M
+Defended
+Thesis supervisor
+18 Jan 2008
+Valenta Adam
+Anomaly detection using Extended Isolation Forest
+N
+Defended
+Opponent
+28 May 2020
+29 May 2020
+Valenta Tomáš
+Interactive Tool for Data Analysis
+M
+Defended
+Opponent
+27 May 2005
+Vančura Vojtěch
+From Collaborative to Content-Based: Scaling Autoencoders to Train Transformers in Recommender Systems
+D
+Recommended for defence
+Thesis supervisor
+29 Jan 2025
+29 Jan 2025
+Vaněk Jiří
+Java Implementation of map for Mobile Phones
+B
+Defended
+Opponent
+28 May 2010
+Vašíček Jakub
+Design of algorithms to support writing reviews
+B
+Defended
+Opponent
+16 May 2017
+16 May 2017
+Verner Pavel
+Feature selection methods for classification and regression problems
+N
+Defended
+Opponent
+9 May 2017
+9 May 2017
+Vítek Martin
+Design and implementation of a system for collection and analysis of vehicle photos documentation using camera and neural networks
+N
+Defended
+Opponent
+4 May 2023
+4 May 2023
+Vitouš Jan
+SVG drawing in mobile devices with SymbianOS
+B
+Defended
+Opponent
+10 Jul 2009
+Vítovec Přemysl
+Artificial Immune System for Grammar Checking
+B
+Defended
+Opponent
+11 Jul 2008
+Vodáček Ondřej
+Metadata extraction from documents
+B
+Undefended
+Opponent
+Vopat Tomáš
+User subaccounts detection for better recommendation
+B
+Defended
+Thesis supervisor
+16 May 2019
+20 May 2019
+Votava Vladimír
+Efficient implementation of neuroevolution for reinforcement learning tasks
+B
+Defended
+Thesis supervisor
+16 May 2024
+16 May 2024
+Vu Huy Hoang
+Improving Learning to Rank Algorithms
+B
+Defended
+Thesis supervisor
+15 May 2018
+15 May 2018
+Weberschinke Jakub
+Design Patterns in the FAKE GAME Application
+B
+Defended
+Thesis supervisor
+12 Jun 2009
+Yorsh Uladzislau
+The Study of Linear Self-Attention Mechanism in Transformer
+N
+Defended
+Opponent
+5 May 2022
+5 May 2022
+Yutukov Artem
+Acoustic Noise Cancellation by Machine Learning
+B
+Defended
+Opponent
+11 May 2023
+15 May 2023
+Záborec Michal
+Evolutionary Encoding of Nomial Data
+N
+Defended
+Thesis supervisor
+22 May 2009
+Záleský David
+Search optimization in the case-law of supreme courts of the Czech Republic
+N
+Defended
+Opponent
+27 Jun 2021
+28 Jun 2021
+Zámečník Dušan
+Methods for Outlier Detection
+B
+Defended
+Opponent
+28 May 2010
+Zelenka Petr
+Data Preprocessing in YALE Open Source Software
+M
+Defended
+Thesis supervisor
+25 May 2007
+Zindulka Kryštof
+Recommendation Algorithms for Hierarchical Data
+N
+Defended
+Opponent
+4 May 2023
+4 May 2023
+Zrzavý Pavel
+TV signal recording with remote managment
+B
+Defended
+Opponent
+13 Jun 2008
+Zvada Adam
+Vehicle Routing Problem with Time Windows solved via Machine Learning and Optimization Heuristics
+N
+Defended
+Thesis supervisor
+6 May 2021
+19 May 2021
+Žampa Petr
+Carcassonne game
+B
+Defended
+Opponent
+24 Aug 2007
+Žid Čeněk
+Algoritmy proaktivního doporučování
+D
+Assigned
+Thesis supervisor
+Žid Čeněk
+Personalized recommendations for students
+N
+Defended
+Thesis supervisor
+5 May 2022
+5 May 2022
+Žilinec Matúš
+Question Answering Algorithms in Natural Language
+B
+Defended
+Thesis supervisor
+16 May 2019
+20 May 2019
+Žitný Jakub
+Generative Models and Explainable Deep Learning in Computer Vision
+D
+Assigned
+Thesis supervisor
+

@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+
+# Point crawlers to the sitemap
+Sitemap: https://kordikp.github.io/personal-profile/sitemap.xml
+
+# Allow major LLM and extended crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: GPTBot-Image
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+

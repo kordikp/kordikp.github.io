@@ -6,11 +6,11 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Research Timeline – Pavel Kordík</title>
-  <meta name="description" content="24 years of research by Pavel Kordík in one zoomable chart: every paper and every supervised bachelor's, master's and doctoral thesis since 2002, coloured by topic, with milestones and the eras of the group's work.">
+  <meta name="description" content="Research by Pavel Kordík since 2002 in one zoomable chart: papers and the bachelor's, master's and doctoral theses he supervised, coloured by topic, with milestones.">
   <link rel="canonical" href="https://kordikp.github.io/timeline.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Research Timeline – Pavel Kordík">
-  <meta property="og:description" content="Every paper and supervised thesis since 2002 in one zoomable chart, coloured by topic.">
+  <meta property="og:description" content="Papers and supervised theses since 2002 in one zoomable chart, coloured by topic.">
   <meta property="og:url" content="https://kordikp.github.io/timeline.html">
   <meta property="og:image" content="https://kordikp.github.io/assets/img/PAVEL-KORDIK-420x420.png">
   <meta name="twitter:card" content="summary">
@@ -285,7 +285,7 @@
     }
     function overview() {
       return `<h2>${D.minY}–${D.maxY}</h2>
-        <p>Every brick is one paper (solid) or one thesis I supervised (light), stacked by year and coloured by topic. Flags mark milestones.</p>
+        <p>Each brick is a paper (solid) or a thesis I supervised (light), stacked by year and coloured by topic. Flags mark milestones. The paper list is not complete; see Google Scholar for that.</p>
         <ul class="ps-how"><li><b>Click an era</b> or a year to zoom in</li><li><b>Drag</b> across the chart to pick years</li><li><b>Click a topic</b> to follow it through the years</li><li><b>Click a brick</b> for the paper or thesis</li></ul>
         <h3>Five eras</h3>${D.eras.map(e => {
           const its = D.items.filter(i => i.y >= e.from && i.y <= e.to);

@@ -25,7 +25,7 @@ def main():
         out.append(f"- {m['y']} {m['title']}" + (f": {m['text']}" if m.get("text") else ""))
 
     papers = sorted((x for x in items if x["type"] == "paper"), key=lambda x: (-x["y"], x["title"]))
-    out += ["", f"## Papers ({len(papers)}, since {min(p['y'] for p in papers)})", ""]
+    out += ["", f"## Papers ({len(papers)} since {min(p['y'] for p in papers)}; not a complete list, see Google Scholar)", ""]
     for p in papers:
         link = f"https://doi.org/{p['doi']}" if p.get("doi") else p.get("url", "")
         line = f"- {p['y']}. {p['authors']}: {p['title']}. {p.get('venue', '')}".rstrip(". ") + "."

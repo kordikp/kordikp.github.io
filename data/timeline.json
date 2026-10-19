@@ -87,13 +87,6 @@
   {
    "y": 2026,
    "type": "milestone",
-   "sub": "community",
-   "title": "Keynote at ISD 2026",
-   "text": "“The Great Convergence: Recommendation, Search, and Conversation in Real-World AI Systems”."
-  },
-  {
-   "y": 2026,
-   "type": "milestone",
    "sub": "project",
    "title": "p-book and RecSys Atlas",
    "text": "A self-recommending living book (RecSys 2026 demo) and a map of 20 years of RecSys research."

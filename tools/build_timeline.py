@@ -275,7 +275,6 @@ MILESTONES = [
     (2024, "community", "ACM RecSys Steering Committee", "Also Senior PC member of RecSys 2024."),
     (2025, "community", "General Co-Chair, ACM RecSys 2025 in Prague", "More than 1,000 attendees from around the world."),
     (2026, "project", "capTTict completed", "Technology transfer and startup support across 9 Danube countries (2024–2026)."),
-    (2026, "community", "Keynote at ISD 2026", "“The Great Convergence: Recommendation, Search, and Conversation in Real-World AI Systems”."),
     (2026, "project", "p-book and RecSys Atlas", "A self-recommending living book (RecSys 2026 demo) and a map of 20 years of RecSys research."),
 ]
 

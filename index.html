@@ -337,108 +337,41 @@
       color: var(--primary-color);
     }
     
-    /* Adjust hero for fixed header */
-    .hero {
-      padding-top: 120px;
-    }
-    
-    /* Add smooth scrolling for all browsers */
     html {
       scroll-behavior: smooth;
     }
 
-    .hero {
-      width: 100%;
-      background: #fff;
-      padding: 130px 0 70px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: var(--secondary-color);
-    }
-
-    .hero h2 {
-      font-size: 24px;
-      margin-bottom: 30px;
-    }
-    
-    .hero .row {
-      height: 100%;
-      align-items: center;
-    }
-
-    .profile-img {
-      width: 320px;
-      height: 320px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 30px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    }
-
+    /* Hero: who I am on the left, the research timeline on the right (below it on phones) */
+    .hero { width: 100%; background: #fff; padding: 112px 0 56px; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 48px; align-items: center; }
+    .hero-id { display: flex; align-items: center; gap: 22px; margin-bottom: 22px; }
+    .hero-photo { width: 116px; height: 116px; border-radius: 50%; object-fit: cover; flex: none; box-shadow: 0 4px 18px rgba(16, 24, 40, .14); }
+    .hero h1 { font-size: 46px; font-weight: 700; color: var(--secondary-color); margin: 0 0 6px; line-height: 1.05; }
+    .hero-role { font-family: 'Raleway', sans-serif; font-size: 19px; line-height: 1.35; color: #3d4a59; margin: 0; }
+    .hero-text { font-size: 17px; line-height: 1.6; margin: 0; }
+    .hero-tl { background: #fff; border-radius: 14px; box-shadow: 0 0 24px rgba(16, 24, 40, .09); padding: 18px 20px 14px; }
+    .htl-k { font-size: 13px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; color: var(--primary-color); }
+    .hero-tl h2 { font-size: 21px; font-weight: 700; color: var(--secondary-color); margin: 3px 0 12px; }
+    .htl-chart { height: 400px; }
+    .htl-foot { display: flex; align-items: center; justify-content: space-between; gap: 6px 18px; flex-wrap: wrap; margin-top: 10px; padding-top: 10px; border-top: 1px solid #edf1f5; font-size: 14px; color: #5f6b7a; }
+    .htl-foot a { font-weight: 600; white-space: nowrap; }
+    #header .logo { transition: opacity .25s; }
+    body.hero-top #header .logo { opacity: 0; visibility: hidden; }
     @media (max-width: 991px) {
-      .profile-img {
-        width: 250px;
-        height: 250px;
-      }
+      .hero { padding: 92px 0 36px; }
+      .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 28px; }
     }
-    
-    /* Medium screens (tablets and small laptops) */
-    @media (min-width: 801px) and (max-width: 991px) {
-      .hero {
-        padding-top: 100px;
-        height: auto;
-      }
-      
-      .hero .row {
-        align-items: center;
-      }
-      
-      .hero .order-1 {
-        padding-top: 0;
-        padding-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .profile-img {
-        margin: 30px auto 40px;
-      }
-    }
-    
-    /* Improve mobile responsiveness */
-    @media (max-width: 800px) {
-      .hero {
-        padding-top: 96px; /* Clears the fixed header */
-        height: auto; /* Allow the hero section to expand based on content */
-      }
-      
-      .hero .order-1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 0;
-        padding-bottom: 10px;
-      }
-      
-      .profile-img {
-        margin: 0 auto 30px;
-      }
-    }
-    
-    /* Extra padding for very small screens */
-    @media (max-width: 576px) {
-      .hero {
-        padding-top: 88px;
-      }
-      
-      .profile-img {
-        margin-top: 20px;
-      }
+    @media (max-width: 575px) {
+      .hero { padding-top: 76px; }
+      .hero-id { gap: 16px; margin-bottom: 14px; }
+      .hero-photo { width: 76px; height: 76px; }
+      .hero h1 { font-size: 34px; margin-bottom: 4px; }
+      .hero-role { font-size: 15px; }
+      .hero-text { font-size: 15.5px; line-height: 1.55; }
+      .hero-ctas .btn { flex: 1 1 0; }
+      .hero-tl { padding: 12px 10px 10px; }
+      .hero-tl h2 { font-size: 18px; margin-bottom: 8px; }
+      .htl-chart { height: 300px; }
     }
 
     .section-title {
@@ -685,7 +618,7 @@
     .pc-links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 6px; }
     .pc-links a { font-size: 13px; text-decoration: none; border: 1px solid #c9d6e3; border-radius: 999px; padding: 3px 10px; color: var(--secondary-color); }
     .pc-links a:hover { border-color: var(--primary-color); color: var(--primary-color); }
-    .hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 24px; }
     /* Community & recognition */
     .recog { margin-top: 26px; }
     .recog h4 { font-size: 17px; }
@@ -727,22 +660,21 @@
     .biz-list b { color: var(--secondary-color); }
     @media (max-width: 991px) { .biz-feature { grid-template-columns: 1fr; } .biz-shot { aspect-ratio: 16 / 10; } .biz-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 575px) { .biz-grid { grid-template-columns: 1fr; } .biz-stats { grid-template-columns: 1fr 1fr; } .biz-body { padding: 18px; } }
-    .timeline-preview { background: var(--light-bg); }
-    .tlp-card { background: #fff; border-radius: 12px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.07); padding: 18px 20px 16px; }
-    .tlp-chart { height: 440px; }
-    .tlp-foot { display: flex; align-items: center; justify-content: space-between; gap: 14px 28px; flex-wrap: wrap; margin-top: 12px; padding-top: 14px; border-top: 1px solid #edf1f5; }
-    .tlp-foot p { margin: 0; flex: 1 1 420px; font-size: 15px; }
-    .tlp-btns { display: flex; gap: 10px; flex-wrap: wrap; }
-    @media (max-width: 575px) { .tlp-card { padding: 12px 10px; } .tlp-chart { height: 360px; } }
     /* Section rhythm: alternate white and light grey */
-    .research, .eu-projects, .journey, .publications { background: var(--light-bg); }
-    .timeline-preview { background: #fff; }
+    .research, .journey, .publications { background: var(--light-bg); }
     /* Hero logos */
-    .hero-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 30px; margin-top: 22px; }
+    .hero-logos { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 22px; }
+    .hero-logos a:nth-child(1) img { height: 36px; } .hero-logos a:nth-child(2) img { height: 22px; }
+    .hero-logos a:nth-child(3) img { height: 32px; } .hero-logos a:nth-child(4) img { height: 24px; }
     .hero-logos a { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: #1b2733; font-weight: 700; font-size: 17px; opacity: .85; transition: opacity .2s, transform .2s; }
     .hero-logos a:hover { opacity: 1; transform: translateY(-2px); }
     .hero-logos img { display: block; width: auto; }
-    @media (max-width: 991px) { .hero-logos { justify-content: center; } }
+    @media (max-width: 575px) {
+      .hero-logos { gap: 10px 20px; margin-top: 18px; }
+      .hero-logos a { font-size: 15px; }
+      .hero-logos a:nth-child(1) img { height: 32px; } .hero-logos a:nth-child(2) img { height: 19px; }
+      .hero-logos a:nth-child(3) img { height: 28px; } .hero-logos a:nth-child(4) img { height: 21px; }
+    }
     /* Business: quieter facts line, logo as heading */
     .biz-logo { margin: 2px 0 12px !important; line-height: 1; }
     .biz-logo img { height: 30px; width: auto; display: block; }
@@ -895,7 +827,7 @@
   <!-- Header with Navigation -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo me-auto"><a href="#hero">Pavel Kordík</a></h1>
+      <div class="logo me-auto"><a href="#hero">Pavel Kordík</a></div>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -915,38 +847,34 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="hero" class="hero d-flex align-items-center">
+  <section id="hero" class="hero">
     <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Pavel Kordík</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Associate professor at FIT CTU in Prague · Co-founder of Recombee</h2>
-          <p data-aos="fade-up" data-aos-delay="500">I work on machine learning at FIT CTU in Prague and co-founded Recombee, where much of the research ends up in production. I try to use AI to make things around us a little better: recommenders that help people find what they would otherwise miss, AI that is safe for children at school, climate models for cities and forests, and AI agents that work for people.</p>
-          <div class="hero-logos" data-aos="fade-up" data-aos-delay="550">
+      <div class="hero-grid">
+        <div class="hero-intro">
+          <div class="hero-id">
+            <img src="assets/img/PAVEL-KORDIK-420x420.png" class="hero-photo" alt="Pavel Kordík" width="420" height="420">
+            <div>
+              <h1>Pavel Kordík</h1>
+              <p class="hero-role">Associate professor at FIT CTU in Prague · Co-founder of Recombee</p>
+            </div>
+          </div>
+          <p class="hero-text">I work on machine learning, and much of it ends up in production at Recombee. I try to use AI to make things around us a little better: recommenders that help people find what they would otherwise miss, AI that is safe for children at school, climate models for cities and forests, and AI agents that work for people.</p>
+          <div class="hero-logos">
             <a href="https://fit.cvut.cz/en" target="_blank" rel="noopener" title="Faculty of Information Technology, CTU in Prague"><img src="assets/img/logos/cvut.svg" alt="Czech Technical University in Prague" height="40"></a>
             <a href="https://www.recombee.com" target="_blank" rel="noopener" title="Recombee"><img src="assets/img/logos/recombee.svg" alt="Recombee" height="24"></a>
             <a href="https://aidetem.cz" target="_blank" rel="noopener" title="AI dětem"><img src="assets/img/logos/aidetem.webp" alt="" height="36">AI dětem</a>
             <a href="https://prg.ai/en/" target="_blank" rel="noopener" title="prg.ai"><img src="assets/img/logos/prgai.svg" alt="prg.ai" height="26"></a>
           </div>
-          <div data-aos="fade-up" data-aos-delay="600">
-            <div class="social-links mt-3">
-              <a href="https://www.linkedin.com/in/kordik/" class="linkedin" rel="me"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/kordikp" class="github" rel="me"><i class="bi bi-github"></i></a>
-              <a href="https://twitter.com/pavelkordik" class="twitter" rel="me"><i class="bi bi-twitter"></i></a>
-              <a href="https://medium.com/@pavelkordik" class="medium" rel="me"><i class="bi bi-medium"></i></a>
-              <a href="https://pavelkordik.substack.com/" class="substack" title="Substack" rel="me"><i class="bi bi-journal-text"></i></a>
-              <a href="https://about.me/kordik" class="about-me" title="About.me" rel="me"><i class="bi bi-person-badge"></i></a>
-              <a href="https://www.researchgate.net/profile/Pavel-Kordik" class="researchgate" title="ResearchGate" rel="me"><i class="bi bi-diagram-3"></i></a>
-            </div>
-            <div class="hero-ctas mt-4">
-              <a href="#work" class="btn btn-primary scrollto-btn">Work with me</a>
-              <a href="timeline.html" class="btn btn-outline-primary">Research timeline</a>
-              <a href="#projects" class="btn btn-link scrollto-btn">Projects &rarr;</a>
-            </div>
+          <div class="hero-ctas">
+            <a href="#work" class="btn btn-primary scrollto-btn">Work with me</a>
+            <a href="#projects" class="btn btn-outline-primary scrollto-btn">Projects</a>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up">
-          <img src="assets/img/PAVEL-KORDIK-420x420.png" class="profile-img" alt="Pavel Kordík">
+        <div class="hero-tl">
+          <div class="htl-k">Research timeline · 2002–2026</div>
+          <h2>My papers and my students' theses, one brick each</h2>
+          <div class="htl-chart" id="tlPreview" aria-label="Research timeline preview"></div>
+          <div class="htl-foot"><span>Solid bricks are papers, light ones theses. Click a year to zoom in.</span><a href="timeline.html">Explore the timeline &rarr;</a></div>
         </div>
       </div>
     </div>
@@ -1235,26 +1163,6 @@
               <span><i class="bi bi-trophy"></i>Best Paper, EvalRS @ KDD 2023</span>
               <span><i class="bi bi-trophy"></i>1st place, Weather4cast @ NeurIPS 2022</span>
               <span><i class="bi bi-trophy"></i>2nd place, Meta-Learning Challenge @ AAAI 2021</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Research timeline preview -->
-    <section id="timeline-preview" class="timeline-preview">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Research Timeline</h2>
-          <p>My papers and the theses I supervised, one brick each, coloured by topic. Hover for details, click to zoom in.</p>
-        </div>
-        <div class="tlp-card">
-          <div class="tlp-chart" id="tlPreview" aria-label="Research timeline preview"></div>
-          <div class="tlp-foot">
-            <p>The light bricks are theses, the solid ones papers. Theses and papers share topics year after year.</p>
-            <div class="tlp-btns">
-              <a class="btn btn-primary" href="timeline.html">Explore the timeline</a>
-              <a class="btn btn-outline-primary" href="student-topics.html">Thesis topics</a>
             </div>
           </div>
         </div>
@@ -1640,6 +1548,7 @@
               <a href="https://medium.com/@pavelkordik" class="medium" title="Medium" rel="me"><i class="bi bi-medium"></i></a>
               <a href="https://pavelkordik.substack.com/" class="substack" title="Substack" rel="me"><i class="bi bi-journal-text"></i></a>
               <a href="https://www.researchgate.net/profile/Pavel-Kordik" class="researchgate" title="ResearchGate" rel="me"><i class="bi bi-diagram-3"></i></a>
+              <a href="https://about.me/kordik" class="about-me" title="About.me" rel="me"><i class="bi bi-person-badge"></i></a>
             </div>
           </aside>
         </div>
@@ -1661,21 +1570,22 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="assets/timeline-chart.js"></script>
   <script>
-    // Timeline preview: load the data and grow the bricks when the section scrolls into view.
-    (function () {
+    // Hero timeline: load the data and grow the bricks right away.
+    (async function () {
       const el = document.getElementById('tlPreview');
-      if (!el || !('IntersectionObserver' in window)) return;
-      const io = new IntersectionObserver(async entries => {
-        if (!entries.some(e => e.isIntersecting)) return;
-        io.disconnect();
-        try {
-          const data = await fetch('data/timeline.json').then(r => r.json());
-          TimelineChart.mount(el, data, { mini: true, intro: true, onNavigate: p => { location.href = 'timeline.html?' + new URLSearchParams(p); } });
-        } catch (e) {
-          el.innerHTML = '<p><a href="timeline.html">Open the research timeline</a></p>';
-        }
-      }, { rootMargin: '0px 0px -15% 0px' });
-      io.observe(el);
+      if (!el) return;
+      try {
+        const data = await fetch('data/timeline.json').then(r => r.json());
+        TimelineChart.mount(el, data, { mini: true, intro: true, onNavigate: p => { location.href = 'timeline.html?' + new URLSearchParams(p); } });
+      } catch (e) {
+        el.innerHTML = '<p><a href="timeline.html">Open the research timeline</a></p>';
+      }
+    })();
+    // The name is already in the hero, so the header shows it only after the hero heading scrolls away.
+    (function () {
+      const h = document.querySelector('#hero h1');
+      if (!h || !('IntersectionObserver' in window)) return;
+      new IntersectionObserver(([e]) => document.body.classList.toggle('hero-top', e.isIntersecting), { rootMargin: '-60px 0px 0px 0px' }).observe(h);
     })();
   </script>
   <script>

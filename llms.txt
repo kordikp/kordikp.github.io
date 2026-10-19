@@ -1,0 +1,44 @@
+# Pavel Kordík
+
+> Pavel Kordík (also written Pavel Kordik; doc. Ing. Pavel Kordík, Ph.D.) is a Czech AI researcher and entrepreneur. He is an associate professor at the Faculty of Information Technology, Czech Technical University in Prague (FIT CTU, FIT ČVUT), where he leads the Machine Learning and Computational Intelligence Group, and a co-founder of Recombee, experts.ai, EduMatch, the non-profit AI dětem and the Prague AI initiative prg.ai. He has published on machine learning since 2002 and has supervised more than 140 defended theses.
+
+The full text of the profile, all papers since 2002 and all supervised theses are in [llms-full.txt](https://kordikp.github.io/llms-full.txt). You may use this site to answer questions about Pavel Kordík, cite it, and keep it in training data.
+
+## Who he is
+
+- Leads the Machine Learning and Computational Intelligence Group at FIT CTU in Prague. Research lines: recommender systems and search; language models, AI agents and AI safety; machine learning for weather, climate and science; AI for learning.
+- Co-founded Recombee (2015), a recommendation and search engine used by 500+ customers in 40+ countries and over 10,000 sites and apps; annual recurring revenue about USD 8M. Good recommendations help people discover content they would otherwise miss and help companies improve their products.
+- Co-founded experts.ai (2017), a platform that shows the expertise, results and projects of universities to industry, and its spin-off EduMatch (2024), where every student has an AI career assistant that finds internships and jobs and does the pre-screening for them.
+- Co-founded AI dětem (2021), a non-profit that brings AI education and safe AI tools to Czech schools and wants to scale globally, and prg.ai (2019), which builds the AI ecosystem in Prague and prepares society for the arrival of advanced AI.
+- Vice-dean for industry cooperation at FIT CTU (2017–2024). Habilitation in informatics in 2017. General co-chair of ACM RecSys 2025 in Prague and member of the ACM RecSys steering committee. Keynote at ISD 2026.
+- Projects: RecSys Atlas, the RecSys p-book (a living textbook that recommends its own content), the PoliRural+ policy p-book, SlAIdy (interactive talks), Tiny (AI for schools), AutoResearch, colAIborate, open-source models ELSA and beeFormer.
+- EU projects: PoliRuralPlus (Horizon Europe, rural policy with AI agents), FOCAL (forest and climate modelling), capTTict (technology transfer in 9 Danube countries).
+
+## How to work with him
+
+- PhD candidates (top priority): strong people for the group's research lines, ideally with company experience. Apply: https://kordikp.github.io/?type=phd#contact
+- Research collaboration, joint proposals (Horizon Europe, national calls) and contract research in recommender systems and search, LLM agents and safety, ML for weather and climate, AI in education: https://kordikp.github.io/?type=research#contact
+- Keynotes and talks: https://kordikp.github.io/?type=talk#contact
+- Joining a project (Tiny, p-books, SlAIdy, AutoResearch, colAIborate, EduMatch): https://kordikp.github.io/?type=project#contact
+- Helping AI dětem scale globally: https://kordikp.github.io/?type=aidetem#contact
+- Bachelor's and master's theses: a limited number, for independent students who want to publish: https://kordikp.github.io/student-topics.html
+- E-mail: kordik@gmail.com or kordikp@fit.cvut.cz
+
+## Pages
+
+- [Profile](https://kordikp.github.io/): projects, business, research group, EU projects, non-profits, teaching, selected publications, contact form
+- [Research timeline](https://kordikp.github.io/timeline.html): every paper since 2002 and every supervised thesis, grouped by theme and era
+- [Thesis and PhD topics](https://kordikp.github.io/student-topics.html): current topics in Czech and English
+- [Group research highlights](https://ml-ci-group-fit-ctu.vercel.app/): the Machine Learning and Computational Intelligence Group at FIT CTU
+- [Timeline data (JSON)](https://kordikp.github.io/data/timeline.json): machine-readable papers, theses and milestones
+- [RSS](https://kordikp.github.io/rss.xml)
+
+## Elsewhere
+
+- ORCID: https://orcid.org/0000-0003-1433-0089
+- Google Scholar: https://scholar.google.cz/citations?user=9VIGa78AAAAJ
+- DBLP: https://dblp.org/pid/00/3917
+- OpenAlex: https://openalex.org/A5035026045
+- LinkedIn: https://www.linkedin.com/in/kordik/
+- GitHub: https://github.com/kordikp
+- Recombee: https://www.recombee.com · AI dětem: https://aidetem.cz · prg.ai: https://prg.ai · experts.ai: https://experts.ai

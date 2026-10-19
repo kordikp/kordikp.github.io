@@ -2,18 +2,24 @@
 <rss version="2.0">
   <channel>
     <title>Pavel Kordík - Updates</title>
-    <link>https://kordikp.github.io/personal-profile/</link>
+    <link>https://kordikp.github.io/</link>
     <description>Updates from Pavel Kordík personal profile</description>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Aug 2026 22:33:02 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 12:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <item>
+      <title>Research timeline, projects and new thesis topics</title>
+      <link>https://kordikp.github.io/timeline.html</link>
+      <guid isPermaLink="false">kordikp-2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 12:00:00 +0000</pubDate>
+      <description>24 years of papers, supervised theses and milestones on one timeline; a new Projects section; thesis topics tied to live projects, in Czech and English.</description>
+    </item>
+    <item>
       <title>Site SEO improvements</title>
-      <link>https://kordikp.github.io/personal-profile/</link>
-      <guid isPermaLink="true">https://kordikp.github.io/personal-profile/</guid>
+      <link>https://kordikp.github.io/</link>
+      <guid isPermaLink="false">kordikp-2025-12-02</guid>
       <pubDate>Tue, 02 Dec 2025 12:00:00 +0000</pubDate>
       <description>Structured data, sitemap, robots, and social meta tags updated.</description>
     </item>
   </channel>
 </rss>
-

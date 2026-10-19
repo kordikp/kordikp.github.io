@@ -1,6 +1,6 @@
-Website: https://kordikp.github.io/personal-profile/
+Website: https://kordikp.github.io/
 Owner: Pavel Kordík
 Contact: mailto:kordik@gmail.com
 Policy: allow
-Sitemap: https://kordikp.github.io/personal-profile/sitemap.xml
+Sitemap: https://kordikp.github.io/sitemap.xml
 

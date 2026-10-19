@@ -1,440 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Student Topics - Pavel Kordík</title>
-  <meta content="Research and study opportunities for students offered by Pavel Kordík at the Czech Technical University in Prague" name="description">
-  <meta content="AI, Machine Learning, PhD topics, Student Projects, Recommender Systems, Pavel Kordik" name="keywords">
+  <title>PhD and thesis topics – Pavel Kordík | Témata disertačních, diplomových a bakalářských prací</title>
+  <meta name="description" content="Bachelor's, master's and PhD thesis topics at FIT CTU in Prague with Pavel Kordík: recommender systems, language models and AI safety, AI for climate and science, AI for learning. Témata bakalářských, diplomových a disertačních prací na FIT ČVUT: doporučovací systémy, jazykové modely, AI pro klima a vzdělávání.">
+  <meta name="keywords" content="thesis topics, master thesis, bachelor thesis, PhD, FIT CTU, recommender systems, LLM, AI safety, téma diplomové práce, téma bakalářské práce, doporučovací systémy, umělá inteligence, ČVUT">
+  <link rel="canonical" href="https://kordikp.github.io/student-topics.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thesis topics with Pavel Kordík (FIT CTU)">
+  <meta property="og:description" content="Work on something real: thesis topics tied to live projects, from recommender systems to AI for climate and education.">
+  <meta property="og:url" content="https://kordikp.github.io/student-topics.html">
+  <meta property="og:image" content="https://kordikp.github.io/assets/img/PAVEL-KORDIK-420x420.png">
+  <meta name="twitter:card" content="summary">
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
-  <link rel="icon" href="assets/favicon/favicon.ico">
-  <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#0066cc">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png?v=2">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png?v=2">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|Raleway:500,600,700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="assets/site.css" rel="stylesheet">
 
   <style>
-    :root {
-      --primary-color: #0066cc;
-      --secondary-color: #2c4964;
-      --text-color: #272829;
-      --light-bg: #f8f9fa;
-    }
+    html[data-lang="en"] [data-l="cs"], html[data-lang="cs"] [data-l="en"] { display: none !important; }
+    body { background: var(--light-bg); }
+    .muted { color: #6c757d; }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text-color);
-      line-height: 1.6;
-    }
+    .lang { display: inline-flex; margin-left: 22px; border: 1px solid #c3c2b7; border-radius: 8px; overflow: hidden; }
+    .lang button { border: 0; background: #fff; padding: 3px 10px; font-size: 13px; color: var(--secondary-color); }
+    .lang button[aria-pressed="true"] { background: var(--secondary-color); color: #fff; }
+    @media (max-width: 991px) { .lang { margin: 0 14px 0 0; } }
 
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Raleway', sans-serif;
-    }
+    .hero-t { padding: 130px 0 40px; }
+    .hero-t .kicker { text-transform: uppercase; letter-spacing: .08em; font-size: 13px; color: var(--primary-color); font-weight: 600; }
+    .hero-t h1 { font-size: clamp(34px, 6.5vw, 56px); font-weight: 700; color: var(--secondary-color); margin: 6px 0 14px; }
+    .hero-t .lead { font-size: 19px; max-width: 780px; color: #3b3b3b; }
+    .hero-t .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .phd-note { display: flex; gap: 14px; align-items: flex-start; max-width: 780px; margin-top: 22px; padding: 14px 18px; border: 1px solid #cfe0f3; border-left: 4px solid var(--primary-color); border-radius: 10px; background: #f3f8fd; }
+    .phd-note > i { font-size: 24px; color: var(--primary-color); line-height: 1.2; }
+    .phd-note p { margin: 0 0 10px; font-size: 15.5px; }
+    .updated { font-size: 13px; color: #6c757d; margin-top: 14px; }
 
-    #header {
-      background: rgba(255, 255, 255, 0.95);
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.5s;
-      z-index: 997;
-      padding: 15px 0;
+    .proof { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    @media (max-width: 575px) {
+      .proof { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; padding-bottom: 8px; margin-right: -12px; }
+      .story { flex: 0 0 82%; scroll-snap-align: start; }
     }
-    
-    #header .logo {
-      font-size: 28px;
-      margin: 0;
-      padding: 0;
-      line-height: 1;
-      font-weight: 700;
-      font-family: 'Raleway', sans-serif;
-    }
-    
-    #header .logo a {
-      color: var(--secondary-color);
-      text-decoration: none;
-    }
-    
-    .navbar {
-      padding: 0;
-    }
-    
-    .navbar ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      list-style: none;
-      align-items: center;
-    }
-    
-    .navbar li {
-      position: relative;
-    }
-    
-    .navbar a, .navbar a:focus {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 0 10px 30px;
-      font-size: 14px;
-      color: var(--secondary-color);
-      white-space: nowrap;
-      transition: 0.3s;
-      text-decoration: none;
-    }
-    
-    .navbar a i, .navbar a:focus i {
-      font-size: 12px;
-      line-height: 0;
-      margin-left: 5px;
-    }
-    
-    .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-      color: var(--primary-color);
-    }
-    
-    .mobile-nav-toggle {
-      color: var(--secondary-color);
-      font-size: 28px;
-      cursor: pointer;
-      display: none;
-      line-height: 0;
-      transition: 0.5s;
-    }
-    
-    .mobile-nav-toggle.bi-x {
-      color: #fff;
-    }
-    
-    @media (max-width: 991px) {
-      .mobile-nav-toggle {
-        display: block;
-      }
-      
-      .navbar ul {
-        display: none;
-      }
-    }
-    
-    .navbar-mobile {
-      position: fixed;
-      overflow: hidden;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.9);
-      transition: 0.3s;
-      z-index: 999;
-    }
-    
-    .navbar-mobile .mobile-nav-toggle {
-      position: absolute;
-      top: 15px;
-      right: 15px;
-    }
-    
-    .navbar-mobile ul {
-      display: block;
-      position: absolute;
-      top: 55px;
-      right: 15px;
-      bottom: 15px;
-      left: 15px;
-      padding: 10px 0;
-      background-color: #fff;
-      overflow-y: auto;
-      transition: 0.3s;
-    }
-    
-    .navbar-mobile a, .navbar-mobile a:focus {
-      padding: 10px 20px;
-      font-size: 15px;
-      color: var(--secondary-color);
-    }
-    
-    .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-      color: var(--primary-color);
-    }
+    .story { background: #fff; border-radius: 12px; padding: 16px 18px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    .story .who { font-weight: 700; font-family: Raleway, sans-serif; color: var(--secondary-color); }
+    .story .path { font-size: 14px; color: #3b3b3b; margin-top: 4px; }
+    .story .path i { color: var(--primary-color); }
 
-    .hero {
-      padding-top: 120px;
-      padding-bottom: 60px;
-      background: var(--light-bg);
-    }
+    section { padding: 44px 0; }
+    .sec-title { font-size: clamp(24px, 4vw, 32px); font-weight: 700; color: var(--secondary-color); margin-bottom: 6px; }
+    .sec-sub { color: #52514e; max-width: 760px; margin-bottom: 24px; }
 
-    .section-title {
-      padding-bottom: 30px;
-    }
+    .track { margin-top: 34px; }
+    .track-head { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .track-head .ti { width: 44px; height: 44px; border-radius: 12px; background: var(--secondary-color); color: #fff; display: grid; place-items: center; font-size: 20px; flex: none; }
+    .track-head h3 { margin: 0; font-size: 22px; font-weight: 700; color: var(--secondary-color); }
+    .track-head p { margin: 0; font-size: 14px; color: #6c757d; }
+    .topics { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; }
+    @media (max-width: 400px) { .topics { grid-template-columns: 1fr; } }
+    .topic { background: #fff; border-radius: 14px; padding: 18px 20px; box-shadow: 0 1px 6px rgba(0,0,0,.06); display: flex; flex-direction: column; }
+    .topic .lv { display: flex; gap: 6px; margin-bottom: 8px; }
+    .topic .lv span { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 6px; background: #e6f0fb; color: #0058b0; }
+    .topic .lv span.phd { background: var(--secondary-color); color: #fff; }
+    .topic h4 { font-size: 19px; font-weight: 700; color: var(--secondary-color); margin: 0 0 8px; }
+    .topic .hook { font-size: 15px; margin-bottom: 8px; }
+    .topic .do { font-size: 14px; color: #3b3b3b; margin-bottom: 10px; }
+    .topic .prior { font-size: 13px; color: #52514e; background: #f4f6f8; border-radius: 8px; padding: 8px 10px; margin-bottom: 12px; }
+    .topic .prior b { color: var(--secondary-color); }
+    .topic .foot { margin-top: auto; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .topic .foot a.live { font-size: 13px; text-decoration: none; border: 1px solid #c3c2b7; border-radius: 999px; padding: 3px 10px; color: var(--secondary-color); }
+    .topic .foot a.live:hover { border-color: var(--primary-color); color: var(--primary-color); }
+    .topic .foot .want { margin-left: auto; font-size: 14px; }
+    .topic.own { border: 2px dashed #c3c2b7; box-shadow: none; background: transparent; }
 
-    .section-title h2 {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      padding-bottom: 20px;
-      position: relative;
-      color: var(--secondary-color);
-    }
-
-    .section-title h2::after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 50px;
-      height: 3px;
-      background: var(--primary-color);
-      bottom: 0;
-      left: 0;
-    }
-
-    section {
-      padding: 60px 0;
-      overflow: hidden;
-    }
-
-    .topic-card {
-      padding: 30px;
-      box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
-      background: #fff;
-      margin-bottom: 30px;
-      transition: all 0.3s ease-in-out;
-      border-radius: 5px;
-    }
-
-    .topic-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .tag {
-      display: inline-block;
-      background-color: rgba(0, 102, 204, 0.1);
-      color: var(--primary-color);
-      padding: 5px 10px;
-      border-radius: 20px;
-      font-size: 12px;
-      margin-right: 5px;
-      margin-bottom: 5px;
-    }
-
-    .topic-header {
-      border-bottom: 1px solid #eee;
-      margin-bottom: 20px;
-      padding-bottom: 10px;
-    }
-
-    .topic-footer {
-      border-top: 1px solid #eee;
-      margin-top: 20px;
-      padding-top: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .apply-button {
-      padding: 8px 20px;
-    }
-
-    .tab-content {
-      padding-top: 30px;
-    }
-
-    /* Add smooth scrolling for all browsers */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Timeline Styles */
-    .past-theses {
-      background-color: var(--light-bg);
-      padding: 80px 0;
-    }
-
-    .timeline-year {
-      margin-bottom: 40px;
-    }
-
-    .year-heading {
-      position: relative;
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: var(--primary-color);
-      color: #fff;
-      border-radius: 30px;
-      margin-bottom: 30px;
-      font-size: 18px;
-      font-weight: 600;
-    }
-
-    .timeline-items {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-      position: relative;
-    }
-
-    .thesis-card {
-      background: #fff;
-      border-radius: 5px;
-      padding: 20px;
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .thesis-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    }
-
-    .thesis-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 15px;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .thesis-type {
-      display: inline-block;
-      padding: 3px 10px;
-      background-color: #e9ecef;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--secondary-color);
-    }
-
-    .thesis-badge {
-      display: inline-block;
-      padding: 3px 10px;
-      background-color: #198754;
-      color: white;
-      border-radius: 20px;
-      font-size: 12px;
-      font-weight: 600;
-    }
-
-    /* Improved tag colors with better readability */
-    .tag.bg-primary {
-      background-color: rgba(13, 110, 253, 0.15) !important;
-      color: #0b5ed7 !important;
-      font-weight: 600;
-    }
-    
-    .tag.bg-info {
-      background-color: rgba(13, 202, 240, 0.15) !important;
-      color: #0aa2c0 !important;
-      font-weight: 600;
-    }
-    
-    .tag.bg-secondary {
-      background-color: rgba(108, 117, 125, 0.15) !important;
-      color: #495057 !important;
-      font-weight: 600;
-    }
-    
-    .tag.bg-success {
-      background-color: rgba(25, 135, 84, 0.15) !important;
-      color: #146c43 !important;
-      font-weight: 600;
-    }
-    
-    .tag.bg-warning {
-      background-color: rgba(255, 193, 7, 0.15) !important;
-      color: #b86e00 !important;
-      font-weight: 600;
-    }
-    
-    .tag.bg-danger {
-      background-color: rgba(220, 53, 69, 0.15) !important;
-      color: #b02a37 !important;
-      font-weight: 600;
-    }
-
-    .thesis-card h4 {
-      font-size: 16px;
-      margin-bottom: 10px;
-      line-height: 1.4;
-      font-weight: 600;
-    }
-
-    .student {
-      font-size: 14px;
-      color: #6c757d;
-      margin: 0;
-      margin-top: auto;
-    }
-
-    .thesis-link {
-      display: inline-flex;
-      align-items: center;
-      color: var(--primary-color);
-      font-size: 14px;
-      margin-top: 10px;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .thesis-link:hover {
-      text-decoration: underline;
-      color: #0056b3;
-    }
-
-    .thesis-link i {
-      margin-right: 5px;
-      font-size: 16px;
-    }
-
-    .nav-pills .nav-link {
-      border-radius: 20px;
-      padding: 5px 15px;
-      font-size: 14px;
-      margin: 0 5px;
-      color: var(--secondary-color);
-    }
-
-    .nav-pills .nav-link.active {
-      background-color: var(--primary-color);
-      color: white;
-    }
-
-    @media (max-width: 768px) {
-      .timeline-items {
-        grid-template-columns: 1fr;
-      }
-    }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .step { background: #fff; border-radius: 14px; padding: 18px 20px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+    .step .n { width: 32px; height: 32px; border-radius: 50%; background: var(--primary-color); color: #fff; display: grid; place-items: center; font-weight: 700; margin-bottom: 8px; }
+    .step h4 { font-size: 18px; font-weight: 700; color: var(--secondary-color); }
+    .faq details { background: #fff; border-radius: 10px; padding: 12px 16px; margin-bottom: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.05); }
+    .faq summary { font-weight: 600; cursor: pointer; color: var(--secondary-color); }
+    .faq p { margin: 8px 0 0; }
+    .apply { background: var(--secondary-color); color: #fff; border-radius: 16px; padding: 28px; text-align: center; }
+    .apply h2 { color: #fff; font-weight: 700; }
+    .apply .btn-light { font-weight: 600; }
+  </style>
+  <link href="assets/timeline-chart.css" rel="stylesheet">
+  <style>
+    .tlp-card { background: #fff; border: 1px solid #e3e8ee; border-radius: 12px; padding: 16px 18px 12px; margin-top: 26px; }
+    .tlp-card h3 { font-size: 18px; font-weight: 700; color: var(--secondary-color); margin-bottom: 2px; }
+    .tlp-card > p { font-size: 14.5px; color: #4b5866; margin-bottom: 10px; }
+    .tlp-chart { height: 380px; }
+    @media (max-width: 575px) { .tlp-card { padding: 12px 10px; } .tlp-chart { height: 340px; } }
   </style>
 </head>
 
 <body>
-  <!-- Header with Navigation -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
       <h1 class="logo me-auto"><a href="index.html">Pavel Kordík</a></h1>
+      <div class="lang" role="group" aria-label="Language / Jazyk">
+        <button type="button" data-set-lang="cs" aria-pressed="false">CZ</button>
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+      </div>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="index.html#business">Business</a></li>
-          <li><a class="nav-link" href="index.html#bridge">Academia-Industry</a></li>
+          <li><a class="nav-link" href="index.html#projects">Projects</a></li>
           <li><a class="nav-link" href="index.html#research">Research</a></li>
-          <li><a class="nav-link" href="index.html#eu-projects">EU Projects</a></li>
-          <li><a class="nav-link" href="index.html#non-profit">Non-Profit</a></li>
-          <li><a class="nav-link" href="index.html#journey">Journey</a></li>
-          <li><a class="nav-link active" href="index.html#teaching">Teaching</a></li>
+          <li><a class="nav-link" href="timeline.html">Timeline</a></li>
+          <li><a class="nav-link active" href="student-topics.html">Thesis topics</a></li>
           <li><a class="nav-link" href="index.html#publications">Publications</a></li>
           <li><a class="nav-link" href="index.html#contact">Contact</a></li>
         </ul>
@@ -443,997 +127,315 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <div class="row gy-4 justify-content-center">
-        <div class="col-lg-8 text-center">
-          <h1 data-aos="fade-up">Student Research Opportunities</h1>
-          <p data-aos="fade-up" data-aos-delay="400">Explore project, thesis, and dissertation opportunities in AI, machine learning, and recommender systems under my supervision.</p>
+  <main>
+    <div class="hero-t">
+      <div class="container">
+        <div class="kicker"><span data-l="en">PhD · Master's · Bachelor's at FIT CTU</span><span data-l="cs">Doktorát · diplomové · bakalářské práce na FIT ČVUT</span></div>
+        <h1><span data-l="en">Work on something real.</span><span data-l="cs">Pracuj na něčem skutečném.</span></h1>
+        <p class="lead">
+          <span data-l="en">Every topic below is tied to a live project: a recommender used by companies worldwide, a chatbot used in Czech classrooms, EU projects on climate and rural regions, or tools that are already online. You get real data and real users, and if the results are good, we write a paper together. Work by students in the group has recently been published at RecSys, UMAP, CIKM and a NeurIPS workshop.</span>
+          <span data-l="cs">Každé téma níže navazuje na běžící projekt: doporučovací systém, který používají firmy po celém světě, chatbot ve školních třídách, evropské projekty o klimatu a venkovských regionech, nebo nástroje, které už jsou online. Dostaneš skutečná data i uživatele, a když výsledky stojí za to, napíšeme spolu článek. Práce studentů ze skupiny nedávno vyšly na konferencích RecSys, UMAP, CIKM a na workshopu NeurIPS.</span>
+        </p>
+        <div class="btns">
+          <a href="#topics" class="btn btn-primary"><span data-l="en">Browse topics</span><span data-l="cs">Projít témata</span></a>
+          <a href="#apply" class="btn btn-outline-primary"><span data-l="en">How to start</span><span data-l="cs">Jak začít</span></a>
+          <a href="timeline.html?type=thesis" class="btn btn-link"><span data-l="en">143 past theses on the timeline →</span><span data-l="cs">143 obhájených prací na časové ose →</span></a>
         </div>
+        <div class="phd-note">
+          <i class="bi bi-mortarboard"></i>
+          <div>
+            <p><strong><span data-l="en">I am looking mainly for PhD candidates.</span><span data-l="cs">Hledám hlavně doktorandy.</span></strong>
+              <span data-l="en">Strong people who want to work on the group's research lines, ideally with experience from a company. For bachelor's and master's theses I take a limited number of independent students who want to publish.</span>
+              <span data-l="cs">Silné lidi, kteří chtějí pracovat na výzkumných směrech skupiny, ideálně se zkušeností z firmy. Bakalářek a diplomek vedu omezený počet, pro samostatné studenty, kteří chtějí publikovat.</span></p>
+            <a class="btn btn-primary btn-sm" href="index.html?type=phd#contact"><span data-l="en">Apply for a PhD</span><span data-l="cs">Přihlásit se na doktorát</span></a>
+          </div>
+        </div>
+        <p class="updated"><i class="bi bi-calendar-check"></i>
+          <span data-l="en">Updated October 2026 · Supervisor: doc. Ing. Pavel Kordík, Ph.D., Department of Applied Mathematics, FIT CTU in Prague</span>
+          <span data-l="cs">Aktualizováno v říjnu 2026 · Vedoucí: doc. Ing. Pavel Kordík, Ph.D., Katedra aplikované matematiky, FIT ČVUT v Praze</span>
+        </p>
       </div>
     </div>
-  </section>
 
-  <main id="main">
-    <!-- Topic Navigation -->
-    <section class="topic-navigation">
+    <section style="padding-top:0">
       <div class="container">
-        <ul class="nav nav-tabs justify-content-center" id="topicTabs" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="phd-tab" data-bs-toggle="tab" data-bs-target="#phd" type="button" role="tab" aria-controls="phd" aria-selected="true">PhD Topics</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="masters-tab" data-bs-toggle="tab" data-bs-target="#masters" type="button" role="tab" aria-controls="masters" aria-selected="false">Master's Thesis</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button" role="tab" aria-controls="projects" aria-selected="false">Student Projects</button>
-          </li>
-        </ul>
+        <h2 class="sec-title"><span data-l="en">From a thesis to a paper</span><span data-l="cs">Z práce rovnou do článku</span></h2>
+        <p class="sec-sub"><span data-l="en">A few students who started exactly where you would.</span><span data-l="cs">Pár studentů, kteří začínali přesně tam, kde ty.</span></p>
+        <div class="proof">
+          <div class="story"><div class="who">Čeněk Žid</div><div class="path">
+            <span data-l="en">Master's thesis on recommending opportunities to students (2022) <i class="bi bi-arrow-right"></i> paper at CISIS 2023 <i class="bi bi-arrow-right"></i> PhD, paper at CIKM 2025</span>
+            <span data-l="cs">Diplomka o doporučování příležitostí studentům (2022) <i class="bi bi-arrow-right"></i> článek na CISIS 2023 <i class="bi bi-arrow-right"></i> doktorát, článek na CIKM 2025</span></div></div>
+          <div class="story"><div class="who">Vojtěch Cahlík</div><div class="path">
+            <span data-l="en">Master's thesis on neural networks that resize themselves (2022) <i class="bi bi-arrow-right"></i> paper at IEEE CSIT 2022 <i class="bi bi-arrow-right"></i> PhD on explaining language models (xAI 2025)</span>
+            <span data-l="cs">Diplomka o neuronových sítích, které mění svou velikost (2022) <i class="bi bi-arrow-right"></i> článek na IEEE CSIT 2022 <i class="bi bi-arrow-right"></i> doktorát o vysvětlování jazykových modelů (xAI 2025)</span></div></div>
+          <div class="story"><div class="who">Vojtěch Vančura</div><div class="path">
+            <span data-l="en">PhD on scalable recommender models (2025) <i class="bi bi-arrow-right"></i> papers at RecSys 2022 and 2024 and in ACM TORS; the ELSA and beeFormer code is open-sourced by Recombee</span>
+            <span data-l="cs">Doktorát o škálovatelných doporučovacích modelech (2025) <i class="bi bi-arrow-right"></i> články na RecSys 2022 a 2024 a v ACM TORS; kód ELSA a beeFormer zveřejnil Recombee</span></div></div>
+          <div class="story"><div class="who">Filip Spáček</div><div class="path">
+            <span data-l="en">Student in the group, working on harmful queries in e-shop search <i class="bi bi-arrow-right"></i> the SHIELD dataset and a paper at UMAP 2025</span>
+            <span data-l="cs">Student ve skupině, práce o škodlivých dotazech ve vyhledávání e-shopů <i class="bi bi-arrow-right"></i> dataset SHIELD a článek na UMAP 2025</span></div></div>
+          <div class="story"><div class="who">Tereza Zmeškalová</div><div class="path">
+            <span data-l="en">Student in the group <i class="bi bi-arrow-right"></i> a new linear model for next-basket recommendation, paper at RecSys 2025</span>
+            <span data-l="cs">Studentka ve skupině <i class="bi bi-arrow-right"></i> nový lineární model pro doporučení dalšího nákupu, článek na RecSys 2025</span></div></div>
+          <div class="story"><div class="who">Tomáš Řehořek</div><div class="path">
+            <span data-l="en">PhD on recommendation models (2019) <i class="bi bi-arrow-right"></i> co-founder of Recombee, which he now leads</span>
+            <span data-l="cs">Doktorát o doporučovacích modelech (2019) <i class="bi bi-arrow-right"></i> spoluzakladatel Recombee, které dnes vede</span></div></div>
+        </div>
+        <div class="tlp-card">
+          <h3><span data-l="en">Theses and papers since 2002</span><span data-l="cs">Práce a články od roku 2002</span></h3>
+          <p><span data-l="en">Every brick is a thesis (light) or a paper (solid) from the group since 2002, coloured by topic. The topics below continue the newest columns. Hover a brick, or click a year to see what students worked on.</span><span data-l="cs">Každá cihlička je jedna obhájená práce (světlá) nebo článek (plná) ze skupiny od roku 2002, barva určuje téma. Témata níže navazují na nejnovější sloupce. Najeď na cihličku, nebo klikni na rok a uvidíš, na čem studenti pracovali.</span></p>
+          <div class="tlp-chart" id="tlPreview" aria-label="Research timeline preview"></div>
+        </div>
+      </div>
+    </section>
 
-        <div class="tab-content" id="topicTabsContent">
-          <!-- PhD Topics -->
-          <div class="tab-pane fade show active" id="phd" role="tabpanel" aria-labelledby="phd-tab">
-            <div class="section-title">
-              <h2>PhD Dissertation Topics</h2>
-              <p>Join my research team to explore cutting-edge topics in AI and recommender systems. PhD studies offer the opportunity to contribute to the scientific community through publications in top conferences and journals while developing novel algorithms and systems with real-world impact.</p>
-              <div class="alert alert-info mt-3">
-                <i class="bi bi-info-circle-fill me-2"></i>
-                For detailed information about the doctoral program in Informatics at FIT CTU, including admission requirements and program structure, please visit the 
-                <a href="https://fit.cvut.cz/en/studies/programs-and-specializations/doctoral/dsp-informatics" target="_blank" class="alert-link">official DSP Informatics program page</a>.
-              </div>
-            </div>
+    <section id="topics" style="padding-top:10px">
+      <div class="container">
+        <h2 class="sec-title"><span data-l="en">Topics</span><span data-l="cs">Témata</span></h2>
+        <p class="sec-sub"><span data-l="en">Each topic can be scaled to a bachelor's or master's thesis, and some to a PhD. The level badges are a suggestion, not a rule.</span><span data-l="cs">Každé téma jde zmenšit na bakalářku nebo zvětšit na diplomku, některá i na doktorát. Štítky úrovní jsou doporučení, ne pravidlo.</span></p>
 
-            <div class="row">
-              <div class="col-lg-12 mb-4">
-                <div class="topic-card" data-aos="fade-up">
-                  <div class="topic-header">
-                    <h3>Algorithms and Architectures of Recommender Systems</h3>
-                    <div class="mt-2">
-                      <span class="tag">Recommender Systems</span>
-                      <span class="tag">Deep Learning</span>
-                      <span class="tag">Transfer Learning</span>
-                      <span class="tag">Reinforcement Learning</span>
-                    </div>
-                  </div>
-                  
-                  <p>Our current research in recommender systems focuses on several open problems with deep theoretical foundations and concrete practical applications. We're investigating:</p>
-                  
-                  <ul>
-                    <li>Utilization of deep neural networks to reduce the cold-start problem in recommender systems</li>
-                    <li>Construction of transformers for shopping basket prediction</li>
-                    <li>Reinforcement learning for optimization of long-term metrics such as user satisfaction</li>
-                    <li>Transfer learning methods for integrating new recommendation databases</li>
-                    <li>Application of AutoML for optimizing the architecture and hyperparameters of recommender systems</li>
-                  </ul>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Supervisor:</strong> doc. Ing. Pavel Kordík, Ph.D.
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=PhD%20Application%3A%20Recommender%20Systems" class="btn btn-primary apply-button">Apply for this Topic</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-12 mb-4">
-                <div class="topic-card" data-aos="fade-up" data-aos-delay="100">
-                  <div class="topic-header">
-                    <h3>Neural Architecture Search for Efficient AI Systems</h3>
-                    <div class="mt-2">
-                      <span class="tag">Neural Architecture Search</span>
-                      <span class="tag">Model Efficiency</span>
-                      <span class="tag">AutoML</span>
-                      <span class="tag">On-device Learning</span>
-                    </div>
-                  </div>
-                  
-                  <p>This research explores automated methods for designing optimal neural network architectures that balance accuracy and computational efficiency. The focus is on developing novel neural architecture search (NAS) algorithms that can discover compact yet powerful models suitable for deployment in resource-constrained environments.</p>
-                  
-                  <ul>
-                    <li>Designing differentiable architecture search methods for specific domains</li>
-                    <li>Developing multi-objective optimization approaches that balance accuracy, latency, energy consumption, and memory usage</li>
-                    <li>Creating adaptive neural networks that can dynamically adjust their architecture during inference</li>
-                    <li>Integration of domain knowledge into the architecture search process</li>
-                    <li>Applications in edge computing and embedded systems</li>
-                  </ul>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Supervisor:</strong> doc. Ing. Pavel Kordík, Ph.D.
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=PhD%20Application%3A%20Neural%20Architecture%20Search" class="btn btn-primary apply-button">Apply for this Topic</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Track A -->
+        <div class="track" id="track-recsys">
+          <div class="track-head"><div class="ti"><i class="bi bi-stars"></i></div><div>
+            <h3><span data-l="en">Recommender systems &amp; search</span><span data-l="cs">Doporučovací systémy a vyhledávání</span></h3>
+            <p><span data-l="en">With the Recombee research team: production-scale data, models that run for real customers.</span><span data-l="cs">S výzkumným týmem Recombee: data v produkčním měřítku a modely, které běží u skutečných zákazníků.</span></p></div></div>
+          <div class="topics">
+            <article class="topic" data-topic-en="Recommender models that read" data-topic-cs="Doporučovací modely, které umí číst">
+              <div class="lv"><span>MSc</span><span class="phd">PhD</span></div>
+              <h4><span data-l="en">Recommender models that read</span><span data-l="cs">Doporučovací modely, které umí číst</span></h4>
+              <p class="hook"><span data-l="en">Clicks tell you what people like, text tells you what things are. Combine both so that a brand-new item gets good recommendations from day one.</span><span data-l="cs">Kliky říkají, co lidé mají rádi, text říká, co věci jsou. Spoj obojí, aby i úplně nová položka dostala dobrá doporučení od prvního dne.</span></p>
+              <p class="do"><span data-l="en">You will train shallow autoencoders and sentence encoders on interaction data, test them on public benchmarks and on Recombee-scale catalogues.</span><span data-l="cs">Budeš trénovat mělké autoenkodéry a jazykové enkodéry na datech o interakcích a testovat je na veřejných benchmarcích i na katalozích v měřítku Recombee.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> ELSA (RecSys 2022), beeFormer (RecSys 2024), Language Embeddings Meet Shallow Autoencoders (UMAP 2026)</p>
+              <div class="foot"><a class="live" href="https://github.com/recombee/beeformer" target="_blank" rel="noopener"><i class="bi bi-github"></i> beeFormer</a><a class="live" href="https://github.com/recombee/elsa" target="_blank" rel="noopener"><i class="bi bi-github"></i> ELSA</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="Sparse embeddings and fast retrieval" data-topic-cs="Řídké embeddingy a rychlé vyhledávání">
+              <div class="lv"><span>BSc</span><span>MSc</span></div>
+              <h4><span data-l="en">Sparse embeddings and fast retrieval</span><span data-l="cs">Řídké embeddingy a rychlé vyhledávání</span></h4>
+              <p class="hook"><span data-l="en">Dense vectors are accurate but expensive. How sparse can an embedding get before recommendations and search get worse?</span><span data-l="cs">Husté vektory jsou přesné, ale drahé. Jak řídký může embedding být, než se zhorší doporučování a vyhledávání?</span></p>
+              <p class="do"><span data-l="en">You will compress embeddings, build an index and measure the trade-off between memory, speed and quality.</span><span data-l="cs">Budeš komprimovat embeddingy, stavět index a měřit kompromis mezi pamětí, rychlostí a kvalitou.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> The Future is Sparse (RecSys 2025), SparseELSA (ACM TORS 2025)</p>
+              <div class="foot"><a class="live" href="https://github.com/recombee/SparseELSA" target="_blank" rel="noopener"><i class="bi bi-github"></i> SparseELSA</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="Simulated users for testing recommenders" data-topic-cs="Simulovaní uživatelé pro testování doporučovačů">
+              <div class="lv"><span>MSc</span><span class="phd">PhD</span></div>
+              <h4><span data-l="en">Simulated users for testing recommenders</span><span data-l="cs">Simulovaní uživatelé pro testování doporučovačů</span></h4>
+              <p class="hook"><span data-l="en">Offline metrics often disagree with A/B tests. Can language-model agents that behave like users close that gap?</span><span data-l="cs">Offline metriky se často neshodnou s A/B testy. Dokážou ten rozdíl překlenout agenti s jazykovým modelem, kteří se chovají jako uživatelé?</span></p>
+              <p class="do"><span data-l="en">You will build user simulators, calibrate them on logged behaviour and check whether they rank models the way real traffic does.</span><span data-l="cs">Postavíš simulátory uživatelů, zkalibruješ je na zaznamenaném chování a ověříš, jestli řadí modely stejně jako skutečný provoz.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> <span data-l="en">best paper at EvalRS @ KDD 2023 on offline–online evaluation; master's thesis on foundation models for recommendation (2026)</span><span data-l="cs">best paper na EvalRS @ KDD 2023 o offline a online vyhodnocení; diplomka o foundation modelech pro doporučování (2026)</span></p>
+              <div class="foot"><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="Recommendation for AI agents" data-topic-cs="Doporučování pro AI agenty">
+              <div class="lv"><span>MSc</span><span class="phd">PhD</span></div>
+              <h4><span data-l="en">Recommendation for AI agents</span><span data-l="cs">Doporučování pro AI agenty</span></h4>
+              <p class="hook"><span data-l="en">More and more shopping and searching is done by agents on behalf of people. What should a recommender show to an agent, and how do we keep it honest?</span><span data-l="cs">Stále víc nakupování a hledání za lidi dělají agenti. Co má doporučovač ukázat agentovi a jak zajistit, aby hrál fér?</span></p>
+              <p class="do"><span data-l="en">A new PhD line started in 2026; master's theses can take one piece of it, such as an agent-facing recommendation API or an evaluation benchmark.</span><span data-l="cs">Nová doktorská linie začala v roce 2026; diplomka může převzít jeden kus, třeba doporučovací API pro agenty nebo benchmark pro vyhodnocení.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> <span data-l="en">keynote “The Great Convergence” at ISD 2026</span><span data-l="cs">keynote „The Great Convergence“ na ISD 2026</span></p>
+              <div class="foot"><a class="live" href="https://kordikp.github.io/slaidy/isd2026/" target="_blank" rel="noopener"><i class="bi bi-easel"></i> <span data-l="en">keynote slides</span><span data-l="cs">slajdy keynote</span></a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
           </div>
+        </div>
 
-          <!-- Master's Thesis Topics -->
-          <div class="tab-pane fade" id="masters" role="tabpanel" aria-labelledby="masters-tab">
-            <div class="section-title">
-              <h2>Master's Thesis Topics</h2>
-              <p>Master's thesis projects offer an opportunity to develop specialized expertise in cutting-edge AI technologies while solving real-world problems. These topics are designed to challenge you intellectually while producing valuable results for academia and industry.</p>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-6 mb-4">
-                <div class="topic-card" data-aos="fade-up">
-                  <div class="topic-header">
-                    <h3>Transfer Learning for Cold Start Problem in Recommender Systems</h3>
-                    <div class="mt-2">
-                      <span class="tag">Transfer Learning</span>
-                      <span class="tag">Recommender Systems</span>
-                      <span class="tag">Cold Start</span>
-                    </div>
-                  </div>
-                  
-                  <p>Develop and evaluate novel methods for leveraging transfer learning to address the cold start problem in recommender systems. This thesis will explore how knowledge from existing domains can be transferred to new domains with limited data.</p>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Supervisor:</strong> doc. Ing. Pavel Kordík, Ph.D.
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=Master%27s%20Thesis%3A%20Transfer%20Learning" class="btn btn-primary apply-button">Apply</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 mb-4">
-                <div class="topic-card" data-aos="fade-up" data-aos-delay="100">
-                  <div class="topic-header">
-                    <h3>Transformer-Based Models for Shopping Basket Prediction</h3>
-                    <div class="mt-2">
-                      <span class="tag">Transformers</span>
-                      <span class="tag">Sequential Data</span>
-                      <span class="tag">E-commerce</span>
-                    </div>
-                  </div>
-                  
-                  <p>Design and implement transformer-based architectures for predicting shopping basket contents in e-commerce applications. This thesis will investigate how attention mechanisms can capture complex dependencies between items.</p>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Supervisor:</strong> doc. Ing. Pavel Kordík, Ph.D.
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=Master%27s%20Thesis%3A%20Transformer%20Models" class="btn btn-primary apply-button">Apply</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 mb-4">
-                <div class="topic-card" data-aos="fade-up" data-aos-delay="200">
-                  <div class="topic-header">
-                    <h3>Reinforcement Learning for Long-term User Satisfaction in Recommender Systems</h3>
-                    <div class="mt-2">
-                      <span class="tag">Reinforcement Learning</span>
-                      <span class="tag">User Satisfaction</span>
-                      <span class="tag">Long-term Metrics</span>
-                    </div>
-                  </div>
-                  
-                  <p>Explore the application of reinforcement learning techniques to optimize for long-term user satisfaction in recommender systems, moving beyond immediate click-through and conversion rates.</p>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Supervisor:</strong> doc. Ing. Pavel Kordík, Ph.D.
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=Master%27s%20Thesis%3A%20RL%20for%20User%20Satisfaction" class="btn btn-primary apply-button">Apply</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 mb-4">
-                <div class="topic-card" data-aos="fade-up" data-aos-delay="300">
-                  <div class="topic-header">
-                    <h3>AutoML for Recommender Systems Architecture Optimization</h3>
-                    <div class="mt-2">
-                      <span class="tag">AutoML</span>
-                      <span class="tag">Hyperparameter Tuning</span>
-                      <span class="tag">Architecture Optimization</span>
-                    </div>
-                  </div>
-                  
-                  <p>Develop automated machine learning approaches for optimizing the architecture and hyperparameters of recommender systems, reducing the need for manual tuning while improving performance.</p>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Supervisor:</strong> doc. Ing. Pavel Kordík, Ph.D.
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=Master%27s%20Thesis%3A%20AutoML%20for%20Recommenders" class="btn btn-primary apply-button">Apply</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Track B -->
+        <div class="track" id="track-language">
+          <div class="track-head"><div class="ti"><i class="bi bi-shield-check"></i></div><div>
+            <h3><span data-l="en">Safe and useful language models</span><span data-l="cs">Bezpečné a užitečné jazykové modely</span></h3>
+            <p><span data-l="en">Guardrails, explanations and safety data for systems people actually use.</span><span data-l="cs">Ochranné mantinely, vysvětlení a bezpečnostní data pro systémy, které lidé opravdu používají.</span></p></div></div>
+          <div class="topics">
+            <article class="topic" data-topic-en="Guardrails for children's AI tutors" data-topic-cs="Mantinely pro AI tutory dětí">
+              <div class="lv"><span>BSc</span><span>MSc</span></div>
+              <h4><span data-l="en">Guardrails for children's AI tutors</span><span data-l="cs">Mantinely pro AI tutory dětí</span></h4>
+              <p class="hook"><span data-l="en">Children are not small adults, and general-purpose moderation misses what matters for them. Help make the Tiny chatbot used in Czech schools safer.</span><span data-l="cs">Děti nejsou malí dospělí a obecná moderace přehlédne to, na čem u nich záleží. Pomoz udělat bezpečnějším chatbota Tiny, který se používá ve školách.</span></p>
+              <p class="do"><span data-l="en">You will extend a child-centred safety taxonomy, generate synthetic test conversations and train small guard models that run cheaply.</span><span data-l="cs">Rozšíříš bezpečnostní taxonomii zaměřenou na děti, vygeneruješ syntetické testovací konverzace a natrénuješ malé hlídací modely, které běží levně.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> <span data-l="en">bachelor's thesis “Safety Assessment in Child-AI Interactions” (J. Fikeis, 2026)</span><span data-l="cs">bakalářku „Safety Assessment in Child-AI Interactions“ (J. Fikeis, 2026)</span></p>
+              <div class="foot"><a class="live" href="https://tiny.school/" target="_blank" rel="noopener"><i class="bi bi-chat-dots"></i> Tiny</a><a class="live" href="https://kids-alignment-pechakucha.vercel.app/" target="_blank" rel="noopener"><i class="bi bi-easel"></i> <span data-l="en">6-minute talk</span><span data-l="cs">6minutová přednáška</span></a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="Explanations you can check" data-topic-cs="Vysvětlení, která jdou ověřit">
+              <div class="lv"><span>MSc</span><span class="phd">PhD</span></div>
+              <h4><span data-l="en">Explanations you can check</span><span data-l="cs">Vysvětlení, která jdou ověřit</span></h4>
+              <p class="hook"><span data-l="en">A language model can explain its answer convincingly and still be wrong about why it answered. Make explanations that are grounded in the model's actual reasoning.</span><span data-l="cs">Jazykový model umí své odpovědi přesvědčivě vysvětlit, a přitom se mýlit v tom, proč tak odpověděl. Vytvoř vysvětlení, která vycházejí ze skutečného uvažování modelu.</span></p>
+              <p class="do"><span data-l="en">You will design tasks where the right reasoning is known, fine-tune models and measure how faithful their explanations are.</span><span data-l="cs">Navrhneš úlohy se známým správným postupem, doladíš modely a změříš, jak věrná jsou jejich vysvětlení.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> Reasoning-Grounded Natural Language Explanations for Language Models (xAI 2025)</p>
+              <div class="foot"><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="Safe semantic search" data-topic-cs="Bezpečné sémantické vyhledávání">
+              <div class="lv"><span>BSc</span><span>MSc</span></div>
+              <h4><span data-l="en">Safe semantic search</span><span data-l="cs">Bezpečné sémantické vyhledávání</span></h4>
+              <p class="hook"><span data-l="en">Semantic search finds what you mean, including things a marketplace should not show. Detect harmful and sensitive queries without blocking normal ones.</span><span data-l="cs">Sémantické vyhledávání najde, co myslíš, včetně věcí, které by tržiště ukazovat nemělo. Rozpoznej škodlivé a citlivé dotazy, aniž bys blokoval ty běžné.</span></p>
+              <p class="do"><span data-l="en">You will extend the SHIELD dataset to new languages or domains and compare fast retrieval-based classifiers with fine-tuned models.</span><span data-l="cs">Rozšíříš dataset SHIELD o další jazyky nebo oblasti a porovnáš rychlé klasifikátory založené na vyhledávání s doladěnými modely.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> Mitigating Risks in Marketplace Semantic Search (UMAP 2025)</p>
+              <div class="foot"><a class="live" href="https://github.com/flpspacek/SHIELD" target="_blank" rel="noopener"><i class="bi bi-github"></i> SHIELD</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
           </div>
+        </div>
 
-          <!-- Student Projects -->
-          <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
-            <div class="section-title">
-              <h2>Student Projects</h2>
-              <p>Engage in hands-on projects that apply AI and machine learning techniques to solve real problems. These projects are suitable for bachelor's and master's students looking to develop practical skills and build their portfolio.</p>
-            </div>
+        <!-- Track C -->
+        <div class="track" id="track-science">
+          <div class="track-head"><div class="ti"><i class="bi bi-globe-europe-africa"></i></div><div>
+            <h3><span data-l="en">AI for climate, regions and science</span><span data-l="cs">AI pro klima, regiony a vědu</span></h3>
+            <p><span data-l="en">Within EU projects FOCAL and PoliRuralPlus and with partners such as Meteopress and HZDR.</span><span data-l="cs">V rámci evropských projektů FOCAL a PoliRuralPlus a s partnery jako Meteopress a HZDR.</span></p></div></div>
+          <div class="topics">
+            <article class="topic" data-topic-en="Sharper climate projections" data-topic-cs="Ostřejší klimatické projekce">
+              <div class="lv"><span>MSc</span><span class="phd">PhD</span></div>
+              <h4><span data-l="en">Sharper climate projections and nowcasting</span><span data-l="cs">Ostřejší klimatické projekce a nowcasting</span></h4>
+              <p class="hook"><span data-l="en">Climate models work on coarse grids, but a town needs to know about its own valley. Downscale projections to 1 km, or predict rain from radar for the next hour.</span><span data-l="cs">Klimatické modely počítají v hrubé mřížce, ale obec potřebuje vědět, co čeká její údolí. Zjemni projekce na 1 km, nebo předpovídej srážky z radaru na příští hodinu.</span></p>
+              <p class="do"><span data-l="en">You will train super-resolution or diffusion models on climate and radar data and validate them against observations.</span><span data-l="cs">Budeš trénovat super-resolution nebo difuzní modely na klimatických a radarových datech a ověřovat je proti pozorování.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> <span data-l="en">NeurIPS 2025 climate workshop paper; 1st place in Weather4cast 2022; master's thesis on diffusion nowcasting (2026)</span><span data-l="cs">článek na klimatickém workshopu NeurIPS 2025; 1. místo ve Weather4cast 2022; diplomka o difuzním nowcastingu (2026)</span></p>
+              <div class="foot"><a class="live" href="https://cordis.europa.eu/project/id/101137787" target="_blank" rel="noopener"><i class="bi bi-cloud-sun"></i> FOCAL</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="A geo-aware AI assistant for rural planning" data-topic-cs="AI asistent pro plánování venkova, který zná místo">
+              <div class="lv"><span>BSc</span><span>MSc</span></div>
+              <h4><span data-l="en">A geo-aware AI assistant for rural planning</span><span data-l="cs">AI asistent pro plánování venkova, který zná místo</span></h4>
+              <p class="hook"><span data-l="en">Advice that is right in Catalonia can be harmful in Bohemia. Make an assistant that grounds its answers in local maps and data, and knows when to refuse.</span><span data-l="cs">Rada, která platí v Katalánsku, může v Čechách škodit. Vytvoř asistenta, který odpovídá podle místních map a dat a pozná, kdy odmítnout.</span></p>
+              <p class="do"><span data-l="en">You will work with the JackDaw agent and the geo-safety dataset: retrieval over spatial data, evaluation with real questions from regions.</span><span data-l="cs">Budeš pracovat s agentem JackDaw a geo-bezpečnostním datasetem: vyhledávání v prostorových datech a vyhodnocení na skutečných dotazech z regionů.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> No Safe Words (GeoAI '26), JackDaw (FedCSIS 2025)</p>
+              <div class="foot"><a class="live" href="https://polirural-pechakucha.vercel.app/" target="_blank" rel="noopener"><i class="bi bi-easel"></i> <span data-l="en">project talk</span><span data-l="cs">přednáška o projektu</span></a><a class="live" href="https://www.poliruralplus.eu" target="_blank" rel="noopener"><i class="bi bi-geo-alt"></i> PoliRuralPlus</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="Recommending models to scientists" data-topic-cs="Doporučování modelů vědcům">
+              <div class="lv"><span>MSc</span></div>
+              <h4><span data-l="en">Recommending models to scientists</span><span data-l="cs">Doporučování modelů vědcům</span></h4>
+              <p class="hook"><span data-l="en">Picking the right closure model for a fluid simulation is like picking a film: there are many, and past runs tell you which fit. Treat it as a recommendation problem.</span><span data-l="cs">Vybrat správný model uzávěru pro simulaci proudění je jako vybrat film: možností je hodně a minulé běhy napoví, co sedí. Uchop to jako doporučovací úlohu.</span></p>
+              <p class="do"><span data-l="en">You will apply matrix completion and cold-start recommenders to simulation results, together with researchers from HZDR in Dresden.</span><span data-l="cs">Použiješ doplňování matic a doporučovače pro studený start na výsledky simulací, spolu s výzkumníky z HZDR v Drážďanech.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> AI Thermal Fluids 2025; arXiv 2026</p>
+              <div class="foot"><a class="live" href="https://arxiv.org/abs/2604.09112" target="_blank" rel="noopener"><i class="bi bi-file-text"></i> arXiv</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+          </div>
+        </div>
 
-            <div class="row">
-              <div class="col-lg-4 mb-4">
-                <div class="topic-card" data-aos="fade-up">
-                  <div class="topic-header">
-                    <h3>Developing a Content-Based Recommendation Engine</h3>
-                    <div class="mt-2">
-                      <span class="tag">Content-Based Filtering</span>
-                      <span class="tag">NLP</span>
-                      <span class="tag">Python</span>
-                    </div>
-                  </div>
-                  
-                  <p>Build a content-based recommendation engine that analyzes text features to suggest relevant items to users. Implement and compare different text representation techniques and similarity measures.</p>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Type:</strong> Bachelor's Project
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=Student%20Project%3A%20Content-Based%20Recommendation" class="btn btn-primary apply-button">Apply</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 mb-4">
-                <div class="topic-card" data-aos="fade-up" data-aos-delay="100">
-                  <div class="topic-header">
-                    <h3>A/B Testing Framework for Recommender Systems</h3>
-                    <div class="mt-2">
-                      <span class="tag">A/B Testing</span>
-                      <span class="tag">Statistical Analysis</span>
-                      <span class="tag">Web Development</span>
-                    </div>
-                  </div>
-                  
-                  <p>Design and implement a framework for conducting and analyzing A/B tests for recommender systems. Develop tools for measuring statistical significance and visualizing test results.</p>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Type:</strong> Master's Project
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=Student%20Project%3A%20AB%20Testing%20Framework" class="btn btn-primary apply-button">Apply</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 mb-4">
-                <div class="topic-card" data-aos="fade-up" data-aos-delay="200">
-                  <div class="topic-header">
-                    <h3>Interactive Visualization of Recommendation Explanations</h3>
-                    <div class="mt-2">
-                      <span class="tag">Explainable AI</span>
-                      <span class="tag">Data Visualization</span>
-                      <span class="tag">Frontend Development</span>
-                    </div>
-                  </div>
-                  
-                  <p>Create an interactive visualization system that explains recommendations to users. Implement various explanation strategies and develop intuitive visual representations.</p>
-                  
-                  <div class="topic-footer">
-                    <div>
-                      <strong>Type:</strong> Bachelor's/Master's Project
-                    </div>
-                    <a href="mailto:kordik@gmail.com?subject=Student%20Project%3A%20Recommendation%20Visualizations" class="btn btn-primary apply-button">Apply</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <!-- Track D -->
+        <div class="track" id="track-learning">
+          <div class="track-head"><div class="ti"><i class="bi bi-book"></i></div><div>
+            <h3><span data-l="en">AI for learning</span><span data-l="cs">AI pro učení</span></h3>
+            <p><span data-l="en">Tools that are already online and have readers: build the next feature and measure whether it helps.</span><span data-l="cs">Nástroje, které už jsou online a mají čtenáře: postav další funkci a změř, jestli pomáhá.</span></p></div></div>
+          <div class="topics">
+            <article class="topic" data-topic-en="A book that recommends itself" data-topic-cs="Kniha, která doporučuje sama sebe">
+              <div class="lv"><span>BSc</span><span>MSc</span></div>
+              <h4><span data-l="en">A book that recommends itself</span><span data-l="cs">Kniha, která doporučuje sama sebe</span></h4>
+              <p class="hook"><span data-l="en">The p-book teaches recommender systems and is personalised by one. Does reading by missions, feeds or a map change what people learn?</span><span data-l="cs">P-book učí doporučovací systémy a sama se jedním přizpůsobuje. Mění čtení po misích, ve feedu nebo na mapě to, co se lidé naučí?</span></p>
+              <p class="do"><span data-l="en">You will design an experiment in the live book, or build the generator that writes new, validated versions of a chapter for a reader.</span><span data-l="cs">Navrhneš experiment v živé knize, nebo postavíš generátor, který čtenáři napíše novou, ověřenou verzi kapitoly.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> <span data-l="en">p-book demo at RecSys 2026; versions for schools in Czech and English</span><span data-l="cs">demo p-booku na RecSys 2026; verze pro školy česky i anglicky</span></p>
+              <div class="foot"><a class="live" href="https://recsys-pbook.vercel.app" target="_blank" rel="noopener"><i class="bi bi-book"></i> p-book</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="RecSys Atlas: mapping a research field" data-topic-cs="RecSys Atlas: mapa výzkumného oboru">
+              <div class="lv"><span>BSc</span><span>MSc</span></div>
+              <h4><span data-l="en">RecSys Atlas: mapping a research field</span><span data-l="cs">RecSys Atlas: mapa výzkumného oboru</span></h4>
+              <p class="hook"><span data-l="en">2,200 papers on one map, with open problems drafted by AI from the abstracts. Which of those problems are real, and can the method map other fields?</span><span data-l="cs">2 200 článků na jedné mapě a otevřené problémy, které z abstraktů navrhla AI. Které z nich jsou skutečné a dá se stejně zmapovat i jiný obor?</span></p>
+              <p class="do"><span data-l="en">You will verify AI-drafted claims against the papers, ask authors, or extend the Atlas to SIGIR, KDD or a field of your choice.</span><span data-l="cs">Budeš ověřovat tvrzení navržená AI proti článkům, ptát se autorů, nebo rozšíříš Atlas na SIGIR, KDD či obor podle sebe.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> <span data-l="en">RecSys Atlas (2026), 20 years of ACM RecSys</span><span data-l="cs">RecSys Atlas (2026), 20 let konference ACM RecSys</span></p>
+              <div class="foot"><a class="live" href="https://kordikp.github.io/atlas/" target="_blank" rel="noopener"><i class="bi bi-map"></i> Atlas</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="An AI co-author for slides" data-topic-cs="AI spoluautor prezentací">
+              <div class="lv"><span>BSc</span></div>
+              <h4><span data-l="en">An AI co-author for slides</span><span data-l="cs">AI spoluautor prezentací</span></h4>
+              <p class="hook"><span data-l="en">SlAIdy keeps a deck as plain markdown and SVG, so an AI can edit it without breaking anything. Make the assistant draw good figures and judge its own edits.</span><span data-l="cs">SlAIdy drží prezentaci jako obyčejný markdown a SVG, takže ji AI může upravovat, aniž by něco rozbila. Nauč asistenta kreslit dobré obrázky a hodnotit vlastní úpravy.</span></p>
+              <p class="do"><span data-l="en">You will build figure generation or an evaluation of AI edits on real decks, such as the ISD 2026 keynote.</span><span data-l="cs">Postavíš generování obrázků nebo vyhodnocení úprav AI na skutečných prezentacích, třeba na keynote z ISD 2026.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> <span data-l="en">SlAIdy, used for keynotes, lectures and school lessons</span><span data-l="cs">SlAIdy, ve kterých vznikají keynote, přednášky i hodiny pro školy</span></p>
+              <div class="foot"><a class="live" href="https://kordikp.github.io/slaidy/" target="_blank" rel="noopener"><i class="bi bi-easel"></i> SlAIdy</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic" data-topic-en="Matching students with real projects" data-topic-cs="Párování studentů se skutečnými projekty">
+              <div class="lv"><span>BSc</span><span>MSc</span></div>
+              <h4><span data-l="en">Matching students with real projects</span><span data-l="cs">Párování studentů se skutečnými projekty</span></h4>
+              <p class="hook"><span data-l="en">Companies post projects, students have skills and timetables. Recommend the right match, and the right moment to send it.</span><span data-l="cs">Firmy vypisují projekty, studenti mají dovednosti a rozvrhy. Doporuč správnou dvojici a správnou chvíli, kdy ji poslat.</span></p>
+              <p class="do"><span data-l="en">You will work on reciprocal recommendation and outreach timing for the edumatch.ai platform.</span><span data-l="cs">Budeš pracovat na vzájemném doporučování a načasování oslovení pro platformu edumatch.ai.</span></p>
+              <p class="prior"><b><span data-l="en">Builds on:</span><span data-l="cs">Navazuje na:</span></b> CISIS 2023, Active Recommendation for Email Outreach Dynamics (CIKM 2025)</p>
+              <div class="foot"><a class="live" href="https://edumatch.ai" target="_blank" rel="noopener"><i class="bi bi-people"></i> edumatch.ai</a><a class="want btn btn-sm btn-primary" href="mailto:kordik@gmail.com"><span data-l="en">I'm interested</span><span data-l="cs">Mám zájem</span></a></div>
+            </article>
+            <article class="topic own" data-topic-en="My own idea" data-topic-cs="Vlastní nápad">
+              <h4><span data-l="en">Your own idea</span><span data-l="cs">Vlastní nápad</span></h4>
+              <p class="hook"><span data-l="en">Have an idea in machine learning, recommender systems or language models, or a problem from your job? Write me, the best theses often start this way.</span><span data-l="cs">Máš nápad ze strojového učení, doporučovacích systémů nebo jazykových modelů, nebo problém z práce? Napiš mi, nejlepší práce často začínají právě takhle.</span></p>
+              <div class="foot"><a class="want btn btn-sm btn-outline-primary" href="mailto:kordik@gmail.com"><span data-l="en">Pitch my idea</span><span data-l="cs">Poslat nápad</span></a></div>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Past Theses Timeline Section -->
-    <section id="past-theses" class="past-theses">
+    <section id="apply">
       <div class="container">
-        <div class="section-title">
-          <h2>Past Theses</h2>
-          <p>Browse through previously completed master's and bachelor's theses supervised by doc. Ing. Pavel Kordík, Ph.D., organized by year and topic area.</p>
+        <h2 class="sec-title"><span data-l="en">How to start</span><span data-l="cs">Jak začít</span></h2>
+        <div class="steps">
+          <div class="step"><div class="n">1</div><h4><span data-l="en">Pick a topic</span><span data-l="cs">Vyber si téma</span></h4>
+            <p><span data-l="en">Or two. Or bring your own. You don't need to know everything about it yet.</span><span data-l="cs">Nebo dvě. Nebo přijď s vlastním. Nemusíš o něm ještě všechno vědět.</span></p></div>
+          <div class="step"><div class="n">2</div><h4><span data-l="en">Send a short email</span><span data-l="cs">Pošli krátký e-mail</span></h4>
+            <p><span data-l="en">Use “I'm interested” on a topic: the email is pre-filled with three questions. Two minutes, no CV needed.</span><span data-l="cs">Klikni u tématu na „Mám zájem“: e-mail se předvyplní třemi otázkami. Dvě minuty, životopis není potřeba.</span></p></div>
+          <div class="step"><div class="n">3</div><h4><span data-l="en">Meet for half an hour</span><span data-l="cs">Sejdeme se na půl hodiny</span></h4>
+            <p><span data-l="en">We shape the assignment together, agree on who from the team helps you, and register the thesis in KOS.</span><span data-l="cs">Společně doladíme zadání, domluvíme, kdo z týmu ti bude pomáhat, a zadáme práci do KOSu.</span></p></div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="nav nav-pills mb-4 justify-content-center" id="thesesTabs" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all-theses" type="button" role="tab" aria-controls="all-theses" aria-selected="true">All Topics</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="recsys-tab" data-bs-toggle="pill" data-bs-target="#recsys-theses" type="button" role="tab" aria-controls="recsys-theses" aria-selected="false">Recommender Systems</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="ml-tab" data-bs-toggle="pill" data-bs-target="#ml-theses" type="button" role="tab" aria-controls="ml-theses" aria-selected="false">Machine Learning</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="nlp-tab" data-bs-toggle="pill" data-bs-target="#nlp-theses" type="button" role="tab" aria-controls="nlp-theses" aria-selected="false">NLP & Text Analytics</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="vis-tab" data-bs-toggle="pill" data-bs-target="#vis-theses" type="button" role="tab" aria-controls="vis-theses" aria-selected="false">Visualization & UI</button>
-              </li>
-            </ul>
-
-            <div class="tab-content" id="thesesTabsContent">
-              <!-- All Theses Timeline -->
-              <div class="tab-pane fade show active" id="all-theses" role="tabpanel" aria-labelledby="all-tab">
-                <div class="timeline">
-                  <!-- 2023-2024 -->
-                  <div class="timeline-year" data-aos="fade-up">
-                    <h3 class="year-heading">2023-2024</h3>
-                    <div class="timeline-items">
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Nowcasting from Radar Images Using Diffusion Networks</h4>
-                        <p class="student">Bc. Markéta Minářová | Work in progress</p>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Demonstration and Benchmarking of Evolutionary Algorithms in TensorNEAT</h4>
-                        <p class="student">Daniil Kolesnikov | Work in progress</p>
-                      </div>
-
-                      <div class="thesis-card" data-category="ui">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-warning">Web & UI</span>
-                        </div>
-                        <h4>Secure Cross-Site Widget Integration Solution</h4>
-                        <p class="student">Bc. Matej Stieranka | Work in progress</p>
-                      </div>
-
-                      <div class="thesis-card" data-category="nlp">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-secondary">NLP</span>
-                        </div>
-                        <h4>Full-Duplex Dialogue Systems</h4>
-                        <p class="student">Bc. Vojtěch Slavík | Work in progress</p>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Cold Start Items in Next Basket Recommendation</h4>
-                        <p class="student">Jakub Feik | Work in progress</p>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Semantic Product Search</h4>
-                        <p class="student">Bc. Patrik Schweika | Completed 1/4/2024</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/114585" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Efficient implementation of neuroevolution for reinforcement learning tasks</h4>
-                        <p class="student">Vladimír Votava | Completed 11/8/2023</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/115974" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Knowlege tracing techniques, their explainability and applications</h4>
-                        <p class="student">Bc. Eliška Svobodová | Completed 12/12/2023</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/114586" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="nlp">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-secondary">NLP</span>
-                        </div>
-                        <h4>Text to query using large language models on local infrastructure</h4>
-                        <p class="student">Patrik Laurinc | Completed 4/26/2023</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/109371" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="web">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-success">Data Analysis</span>
-                        </div>
-                        <h4>Estimating Customer Lifetime Value for Media Houses</h4>
-                        <p class="student">Bekbolot Khudaiberdiev | Completed 9/30/2021</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/107260" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- 2021-2022 -->
-                  <div class="timeline-year" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="year-heading">2021-2022</h3>
-                    <div class="timeline-items">
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Personalized recommendations for students</h4>
-                        <p class="student">Bc. Čeněk Žid | Completed 9/30/2021</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/101209" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Anytime Learning with Auto-Sizing Neural Networks</h4>
-                        <p class="student">Bc. Vojtěch Cahlík | Completed 10/12/2021</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/101055" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Algorithms for better understanding of recommended content and user clusters</h4>
-                        <p class="student">Bc. Pavel Hlubík | Completed 2/10/2021</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/94489" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="nlp">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-secondary">NLP</span>
-                        </div>
-                        <h4>Machine learning based query analysis for an online medical clinic</h4>
-                        <p class="student">Bc. Adam Jankovec | Completed 2/10/2021</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/94593" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Vehicle Routing Problem with Time Windows solved via Machine Learning and Optimization Heuristics</h4>
-                        <p class="student">Bc. Adam Zvada | Completed 2/11/2021</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/94492" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- 2018-2020 -->
-                  <div class="timeline-year" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="year-heading">2018-2020</h3>
-                    <div class="timeline-items">
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Recommendation based on product images</h4>
-                        <p class="student">Bc. Kristýna Tauchmanová</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/90093" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ui">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-warning">UI/UX</span>
-                        </div>
-                        <h4>Grammar interactive evolution of graph interfaces</h4>
-                        <p class="student">Petr Hanzl</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/83425" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>User subaccounts detection for better recommendation</h4>
-                        <p class="student">Tomáš Vopat</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/83387" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="nlp">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-secondary">NLP</span>
-                        </div>
-                        <h4>Classification of URLs Using Deep Neural Networks</h4>
-                        <p class="student">Matyáš Skalický</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/83230" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Scalability of Nearest Neighbor Algorithm</h4>
-                        <p class="student">Antonín Dvořák</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/83215" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="nlp">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-secondary">NLP</span>
-                        </div>
-                        <h4>Question Answering Algorithms in Natural Language</h4>
-                        <p class="student">Matúš Žilinec</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/83399" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Music Recommender System</h4>
-                        <p class="student">Ondřej Šofr</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/79444" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Improving Learning to Rank Algorithms</h4>
-                        <p class="student">Huy Hoang Vu</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/76809" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Neural Autoencoders in Recommender Systems</h4>
-                        <p class="student">Bc. Michal Bajer</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/82568" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ui">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-warning">Web & UI</span>
-                        </div>
-                        <h4>Software module for skill based search of students</h4>
-                        <p class="student">Adam Jankovec</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/83147" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="cv">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-danger">Computer Vision</span>
-                        </div>
-                        <h4>Lip Reading using Deep Neural Networks</h4>
-                        <p class="student">Jan Horák</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/76800" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Recommending related images to articles</h4>
-                        <p class="student">Bc. Matouš Pištora</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/82329" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Recommendation of new movies to obtain</h4>
-                        <p class="student">Tatiana Lekýrová</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/83193" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="recsys">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-primary">Recommender Systems</span>
-                        </div>
-                        <h4>Recommendation algorithms optimization</h4>
-                        <p class="student">Bc. Jakub Drdák</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/74610" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- 2015-2017 -->
-                  <div class="timeline-year" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="year-heading">2015-2017</h3>
-                    <div class="timeline-items">
-                      <div class="thesis-card" data-category="web">
-                        <div class="thesis-header">
-                          <span class="thesis-type">BT</span>
-                          <span class="tag bg-secondary">Text Analytics</span>
-                        </div>
-                        <h4>Web service for advanced text analysis</h4>
-                        <p class="student">Jan Švejda</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/69963" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-success">Data Analysis</span>
-                        </div>
-                        <h4>Flight data analysis and passenger anomaly detection</h4>
-                        <p class="student">Bc. Matúš Tóth</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/70156" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-success">Data Analysis</span>
-                        </div>
-                        <h4>Criminality prediction</h4>
-                        <p class="student">Bc. Veronika Maurerová</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/69704" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="cv">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-danger">Computer Vision</span>
-                        </div>
-                        <h4>Historic Landmarks Identification</h4>
-                        <p class="student">Bc. Peter Bábics</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/70406" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="nlp">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-secondary">NLP</span>
-                        </div>
-                        <h4>Understanding Documents with Text Mining Methods</h4>
-                        <p class="student">Bc. Sergii Stamenov</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/69588" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-
-                      <div class="thesis-card" data-category="ml">
-                        <div class="thesis-header">
-                          <span class="thesis-type">MT</span>
-                          <span class="tag bg-info">Machine Learning</span>
-                        </div>
-                        <h4>Scalability of Predictive Modeling Algorithms</h4>
-                        <p class="student">Bc. Tomáš Frýda</p>
-                        <a href="https://dspace.cvut.cz/handle/10467/69110" target="_blank" class="thesis-link">
-                          <i class="bi bi-file-earmark-text"></i> Read full thesis
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Filtered views for specific categories will be added by JavaScript dynamically -->
-              <div class="tab-pane fade" id="recsys-theses" role="tabpanel" aria-labelledby="recsys-tab">
-                <!-- Content will be generated by JS -->
-              </div>
-
-              <div class="tab-pane fade" id="ml-theses" role="tabpanel" aria-labelledby="ml-tab">
-                <!-- Content will be generated by JS -->
-              </div>
-
-              <div class="tab-pane fade" id="nlp-theses" role="tabpanel" aria-labelledby="nlp-tab">
-                <!-- Content will be generated by JS -->
-              </div>
-
-              <div class="tab-pane fade" id="vis-theses" role="tabpanel" aria-labelledby="vis-tab">
-                <!-- Content will be generated by JS -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Application Process Section -->
-    <section class="application-process section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Application Process</h2>
-          <p>Interested in working with me on one of these topics? Here's how to apply:</p>
+        <div class="faq mt-4">
+          <details><summary><span data-l="en">When should I write?</span><span data-l="cs">Kdy se ozvat?</span></summary>
+            <p><span data-l="en">Ideally one semester before you want to register the thesis, so there is time to try the data and tools. Later works too.</span><span data-l="cs">Ideálně semestr předtím, než chceš práci zadat, ať je čas vyzkoušet data a nástroje. Jde to ale i později.</span></p></details>
+          <details><summary><span data-l="en">Do I have to study at FIT CTU?</span><span data-l="cs">Musím studovat na FIT ČVUT?</span></summary>
+            <p><span data-l="en">Bachelor's and master's theses are mostly for FIT students; students of other faculties can agree on external supervision. For a PhD, see the <a href="https://fit.cvut.cz/en/study-programs/doctoral-study" target="_blank" rel="noopener">doctoral study programme at FIT CTU</a>.</span><span data-l="cs">Bakalářky a diplomky jsou hlavně pro studenty FIT; studenti jiných fakult se mohou domluvit na externím vedení. K doktorátu viz <a href="https://fit.cvut.cz/cs/studijni-programy/doktorske-studium" target="_blank" rel="noopener">doktorské studium na FIT ČVUT</a>.</span></p></details>
+          <details><summary><span data-l="en">How do I apply for a PhD?</span><span data-l="cs">Jak se přihlásit na doktorát?</span></summary>
+            <p><span data-l="en">Write through the <a href="index.html?type=phd#contact">form on my homepage</a> or by e-mail: which research line interests you, what you have done so far (company, projects, papers) and a link to your CV or LinkedIn. We meet, agree on a topic, and you then apply to the <a href="https://fit.cvut.cz/en/study-programs/doctoral-study" target="_blank" rel="noopener">doctoral programme at FIT CTU</a>.</span><span data-l="cs">Napiš přes <a href="index.html?type=phd#contact">formulář na mém webu</a> nebo e-mailem: který výzkumný směr tě láká, co máš za sebou (firma, projekty, články) a odkaz na CV nebo LinkedIn. Sejdeme se, domluvíme téma a pak podáš přihlášku do <a href="https://fit.cvut.cz/cs/studijni-programy/doktorske-studium" target="_blank" rel="noopener">doktorského studia na FIT ČVUT</a>.</span></p></details>
+          <details><summary><span data-l="en">Czech or English?</span><span data-l="cs">Česky, nebo anglicky?</span></summary>
+            <p><span data-l="en">Both are fine. English makes it easier to turn the thesis into a paper.</span><span data-l="cs">Obojí je v pořádku. V angličtině se z práce snáz udělá článek.</span></p></details>
+          <details><summary><span data-l="en">Who will I work with?</span><span data-l="cs">S kým budu pracovat?</span></summary>
+            <p><span data-l="en">With me and usually with one of my PhD students or postdocs who knows the topic in detail; on Recombee topics also with its research team.</span><span data-l="cs">Se mnou a obvykle s některým z mých doktorandů nebo postdoků, kteří téma znají do detailu; u témat s Recombee i s jeho výzkumným týmem.</span></p></details>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 mb-4">
-            <div class="topic-card text-center" data-aos="fade-up">
-              <i class="bi bi-envelope-fill" style="font-size: 3rem; color: var(--primary-color);"></i>
-              <h4 class="mt-3">1. Initial Contact</h4>
-              <p>Send me an email with your CV, transcript, and a brief explanation of why you're interested in the specific topic.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="topic-card text-center" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-chat-text-fill" style="font-size: 3rem; color: var(--primary-color);"></i>
-              <h4 class="mt-3">2. Discussion Meeting</h4>
-              <p>We'll schedule a meeting to discuss your background, interests, and the potential project in more detail.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mb-4">
-            <div class="topic-card text-center" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-file-earmark-text-fill" style="font-size: 3rem; color: var(--primary-color);"></i>
-              <h4 class="mt-3">3. Proposal Development</h4>
-              <p>Together, we'll refine the topic and develop a formal proposal with clear objectives and methodology.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-4">
-          <p>For PhD applications, additional university requirements apply. Please check the <a href="https://fit.cvut.cz/en/studies/programs-and-specializations/doctoral/dsp-informatics" target="_blank">official FIT CTU PhD application guidelines</a>.</p>
-          <a href="mailto:kordik@gmail.com" class="btn btn-outline-primary">Contact Me with Questions</a>
+        <div class="apply mt-4">
+          <h2><span data-l="en">Not sure which topic? Write anyway.</span><span data-l="cs">Nevíš, které téma? Napiš i tak.</span></h2>
+          <p><span data-l="en">Tell me what you enjoy and we'll find a topic that fits.</span><span data-l="cs">Napiš, co tě baví, a téma najdeme spolu.</span></p>
+          <a class="btn btn-light want" data-topic-en="any topic" data-topic-cs="libovolné téma" href="mailto:kordik@gmail.com">kordik@gmail.com</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer id="footer" class="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Pavel Kordík</span></strong>. All Rights Reserved
-      </div>
-    </div>
+    <div class="container"><div class="copyright">&copy; <strong><span>Pavel Kordík</span></strong></div></div>
   </footer>
 
-  <!-- Vendor JS Files -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/timeline-chart.js"></script>
   <script>
-    AOS.init();
-
-    document.addEventListener('DOMContentLoaded', function() {
-      // Mobile navigation toggle
-      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-      const navbar = document.querySelector('#navbar');
-      
-      if (mobileNavToggle) {
-        mobileNavToggle.addEventListener('click', function(e) {
-          navbar.classList.toggle('navbar-mobile');
-          this.classList.toggle('bi-list');
-          this.classList.toggle('bi-x');
-        });
-      }
-      
-      // Smooth scrolling for navigation links
-      const scrollto = (el) => {
-        const header = document.querySelector('#header');
-        let offset = header.offsetHeight;
-        
-        let elementPos = document.querySelector(el).offsetTop;
-        window.scrollTo({
-          top: elementPos - offset,
-          behavior: 'smooth'
-        });
-      };
-      
-      // Handle hash links in the url
-      window.addEventListener('load', () => {
-        if (window.location.hash) {
-          if (document.querySelector(window.location.hash)) {
-            scrollto(window.location.hash);
-            
-            // Activate the tab if hash matches a tab id
-            const hash = window.location.hash;
-            if (hash === '#phd' || hash === '#masters' || hash === '#projects') {
-              const tabTrigger = document.querySelector(`button[data-bs-target="${hash}"]`);
-              if (tabTrigger) {
-                tabTrigger.click();
-              }
-            }
-          }
+    (function () {
+      const el = document.getElementById('tlPreview');
+      if (!el || !('IntersectionObserver' in window)) return;
+      const io = new IntersectionObserver(async entries => {
+        if (!entries.some(e => e.isIntersecting)) return;
+        io.disconnect();
+        try {
+          const data = await fetch('data/timeline.json').then(r => r.json());
+          TimelineChart.mount(el, data, { mini: true, intro: true, onNavigate: p => { location.href = 'timeline.html?' + new URLSearchParams(p); } });
+        } catch (e) {
+          el.innerHTML = '<p><a href="timeline.html">Open the research timeline</a></p>';
         }
-      });
-    });
+      }, { rootMargin: '0px 0px -15% 0px' });
+      io.observe(el);
+    })();
   </script>
-
-  <!-- Timeline filtering script -->
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Generate filtered tabs content
-      function generateFilteredContent() {
-        const categories = {
-          'recsys': { selector: '[data-category="recsys"]', title: 'Recommender Systems' },
-          'ml': { selector: '[data-category="ml"]', title: 'Machine Learning' },
-          'nlp': { selector: '[data-category="nlp"]', title: 'NLP & Text Analytics' },
-          'vis': { selector: '[data-category="ui"],[data-category="cv"]', title: 'Visualization & UI' }
-        };
-        
-        for (const [key, info] of Object.entries(categories)) {
-          const container = document.getElementById(`${key}-theses`);
-          if (!container) continue;
-          
-          // Clear existing content
-          container.innerHTML = '';
-          
-          // Create title
-          const titleDiv = document.createElement('div');
-          titleDiv.className = 'section-title';
-          titleDiv.innerHTML = `<h3>${info.title} Theses</h3>
-            <p>Displaying theses focused on ${info.title.toLowerCase()} research and applications.</p>`;
-          container.appendChild(titleDiv);
-          
-          // Create timeline div
-          const timelineDiv = document.createElement('div');
-          timelineDiv.className = 'timeline';
-          container.appendChild(timelineDiv);
-          
-          // Get all thesis cards matching the category
-          const allCards = document.querySelectorAll(info.selector);
-          
-          // Group by year
-          const years = {};
-          allCards.forEach(card => {
-            const yearHeading = card.closest('.timeline-year').querySelector('.year-heading').textContent;
-            if (!years[yearHeading]) {
-              years[yearHeading] = [];
-            }
-            // Deep clone to ensure all child elements (including links) are preserved
-            const clonedCard = card.cloneNode(true);
-            years[yearHeading].push(clonedCard);
-          });
-          
-          // Create year sections
-          let delay = 0;
-          for (const [year, cards] of Object.entries(years)) {
-            const yearDiv = document.createElement('div');
-            yearDiv.className = 'timeline-year';
-            yearDiv.setAttribute('data-aos', 'fade-up');
-            yearDiv.setAttribute('data-aos-delay', delay.toString());
-            
-            const yearHeadingDiv = document.createElement('h3');
-            yearHeadingDiv.className = 'year-heading';
-            yearHeadingDiv.textContent = year;
-            yearDiv.appendChild(yearHeadingDiv);
-            
-            const itemsDiv = document.createElement('div');
-            itemsDiv.className = 'timeline-items';
-            cards.forEach(card => {
-              itemsDiv.appendChild(card);
-            });
-            yearDiv.appendChild(itemsDiv);
-            
-            timelineDiv.appendChild(yearDiv);
-            delay += 100;
-          }
-        }
-      }
-      
-      // Generate filtered content when DOM is loaded
-      generateFilteredContent();
-      
-      // Reinitialize AOS after tab changes
-      const tabLinks = document.querySelectorAll('#thesesTabs button[data-bs-toggle="pill"]');
-      tabLinks.forEach(tabLink => {
-        tabLink.addEventListener('shown.bs.tab', function() {
-          AOS.refresh();
-        });
+  (function () {
+    'use strict';
+    const root = document.documentElement;
+    const MAIL = 'kordik@gmail.com';
+    const T = {
+      en: { subj: t => `Thesis topic: ${t}`, body: t => `Hi Pavel,\n\nI'm interested in: ${t}\nLevel (bachelor's / master's / PhD): \nI'd like to start (semester): \n\nA bit about me (what I study, what I've built, a GitHub link if any):\n\n` },
+      cs: { subj: t => `Téma práce: ${t}`, body: t => `Dobrý den,\n\nmám zájem o téma: ${t}\nÚroveň (bakalářská / diplomová / disertační): \nChtěl(a) bych začít (semestr): \n\nPár slov o mně (co studuji, co jsem udělal(a), případně odkaz na GitHub):\n\n` },
+    };
+    function setLang(l) {
+      root.dataset.lang = l; root.lang = l;
+      document.querySelectorAll('[data-set-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.setLang === l));
+      document.querySelectorAll('.want').forEach(a => {
+        const card = a.closest('[data-topic-en]') || a;
+        const t = card.dataset['topic' + (l === 'cs' ? 'Cs' : 'En')] || '';
+        a.href = `mailto:${MAIL}?subject=${encodeURIComponent(T[l].subj(t))}&body=${encodeURIComponent(T[l].body(t))}`;
       });
-    });
-  </script>
-
-  <!-- Helper script for generating DSpace search links -->
-  <script>
-    /**
-     * Helper function to generate search links for theses in DSpace
-     * Usage: Open browser console and run generateDSpaceLinks() to see search links for all theses
-     */
-    function generateDSpaceLinks() {
-      const thesisCards = document.querySelectorAll('.thesis-card');
-      const results = [];
-      
-      thesisCards.forEach(card => {
-        const title = card.querySelector('h4').textContent.trim();
-        const studentInfo = card.querySelector('.student').textContent.trim();
-        const studentName = studentInfo.split('|')[0].trim();
-        
-        // Generate a search URL for DSpace
-        const searchParams = new URLSearchParams();
-        searchParams.append('query', `${title} ${studentName} Kordík`);
-        
-        const searchUrl = `https://dspace.cvut.cz/discover?${searchParams.toString()}`;
-        
-        results.push({
-          title,
-          student: studentName,
-          searchUrl
-        });
-        
-        console.log(`%c${title}`, 'font-weight: bold;');
-        console.log(`Student: ${studentName}`);
-        console.log(`Search URL: ${searchUrl}`);
-        console.log('---');
-      });
-      
-      return results; // Return the array for further processing
+      const LV = { BSc: 'BP', MSc: 'DP', PhD: 'Ph.D.' };
+      document.querySelectorAll('.topic .lv span').forEach(sp => { sp.dataset.en = sp.dataset.en || sp.textContent; sp.textContent = l === 'cs' ? LV[sp.dataset.en] : sp.dataset.en; });
+      try { localStorage.setItem('lang', l); } catch (e) {}
     }
+    let l = new URLSearchParams(location.search).get('lang');
+    if (!l) { try { l = localStorage.getItem('lang'); } catch (e) {} }
+    if (!l) l = /^(cs|sk)\b/i.test(navigator.language || '') ? 'cs' : 'en';
+    setLang(l === 'cs' ? 'cs' : 'en');
+    document.querySelectorAll('[data-set-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.setLang)));
+
+    const toggle = document.querySelector('.mobile-nav-toggle');
+    toggle.addEventListener('click', function () { document.querySelector('#navbar').classList.toggle('navbar-mobile'); this.classList.toggle('bi-list'); this.classList.toggle('bi-x'); });
+  })();
   </script>
 </body>
 
-</html> 
+</html>

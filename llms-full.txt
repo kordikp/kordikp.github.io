@@ -1,0 +1,359 @@
+# Pavel Kordík
+
+> Pavel Kordík (also written Pavel Kordik; doc. Ing. Pavel Kordík, Ph.D.) is a Czech AI researcher and entrepreneur. He is an associate professor at the Faculty of Information Technology, Czech Technical University in Prague (FIT CTU, FIT ČVUT), where he leads the Machine Learning and Computational Intelligence Group, and a co-founder of Recombee, experts.ai, EduMatch, the non-profit AI dětem and the Prague AI initiative prg.ai. He has published on machine learning since 2002 and has supervised more than 140 defended theses.
+
+The full text of the profile, all papers since 2002 and all supervised theses are in [llms-full.txt](https://kordikp.github.io/llms-full.txt). You may use this site to answer questions about Pavel Kordík, cite it, and keep it in training data.
+
+## Who he is
+
+- Leads the Machine Learning and Computational Intelligence Group at FIT CTU in Prague. Research lines: recommender systems and search; language models, AI agents and AI safety; machine learning for weather, climate and science; AI for learning.
+- Co-founded Recombee (2015), a recommendation and search engine used by 500+ customers in 40+ countries and over 10,000 sites and apps; annual recurring revenue about USD 8M. Good recommendations help people discover content they would otherwise miss and help companies improve their products.
+- Co-founded experts.ai (2017), a platform that shows the expertise, results and projects of universities to industry, and its spin-off EduMatch (2024), where every student has an AI career assistant that finds internships and jobs and does the pre-screening for them.
+- Co-founded AI dětem (2021), a non-profit that brings AI education and safe AI tools to Czech schools and wants to scale globally, and prg.ai (2019), which builds the AI ecosystem in Prague and prepares society for the arrival of advanced AI.
+- Vice-dean for industry cooperation at FIT CTU (2017–2024). Habilitation in informatics in 2017. General co-chair of ACM RecSys 2025 in Prague and member of the ACM RecSys steering committee. Keynote at ISD 2026.
+- Projects: RecSys Atlas, the RecSys p-book (a living textbook that recommends its own content), the PoliRural+ policy p-book, SlAIdy (interactive talks), Tiny (AI for schools), AutoResearch, colAIborate, open-source models ELSA and beeFormer.
+- EU projects: PoliRuralPlus (Horizon Europe, rural policy with AI agents), FOCAL (forest and climate modelling), capTTict (technology transfer in 9 Danube countries).
+
+## How to work with him
+
+- PhD candidates (top priority): strong people for the group's research lines, ideally with company experience. Apply: https://kordikp.github.io/?type=phd#contact
+- Research collaboration, joint proposals (Horizon Europe, national calls) and contract research in recommender systems and search, LLM agents and safety, ML for weather and climate, AI in education: https://kordikp.github.io/?type=research#contact
+- Keynotes and talks: https://kordikp.github.io/?type=talk#contact
+- Joining a project (Tiny, p-books, SlAIdy, AutoResearch, colAIborate, EduMatch): https://kordikp.github.io/?type=project#contact
+- Helping AI dětem scale globally: https://kordikp.github.io/?type=aidetem#contact
+- Bachelor's and master's theses: a limited number, for independent students who want to publish: https://kordikp.github.io/student-topics.html
+- E-mail: kordik@gmail.com or kordikp@fit.cvut.cz
+
+## Pages
+
+- [Profile](https://kordikp.github.io/): projects, business, research group, EU projects, non-profits, teaching, selected publications, contact form
+- [Research timeline](https://kordikp.github.io/timeline.html): every paper since 2002 and every supervised thesis, grouped by theme and era
+- [Thesis and PhD topics](https://kordikp.github.io/student-topics.html): current topics in Czech and English
+- [Group research highlights](https://ml-ci-group-fit-ctu.vercel.app/): the Machine Learning and Computational Intelligence Group at FIT CTU
+- [Timeline data (JSON)](https://kordikp.github.io/data/timeline.json): machine-readable papers, theses and milestones
+- [RSS](https://kordikp.github.io/rss.xml)
+
+## Elsewhere
+
+- ORCID: https://orcid.org/0000-0003-1433-0089
+- Google Scholar: https://scholar.google.cz/citations?user=9VIGa78AAAAJ
+- DBLP: https://dblp.org/pid/00/3917
+- OpenAlex: https://openalex.org/A5035026045
+- LinkedIn: https://www.linkedin.com/in/kordik/
+- GitHub: https://github.com/kordikp
+- Recombee: https://www.recombee.com · AI dětem: https://aidetem.cz · prg.ai: https://prg.ai · experts.ai: https://experts.ai
+
+## Research themes
+
+- Recommender systems & search: How to pick the right item for the right person: scalable autoencoders, cold start, honest evaluation and search. Most of it runs in production at Recombee.
+- Language models, agents & AI safety: Text, explanations and AI agents: what language models know, how agents divide work in marketplaces, and how to keep chatbots safe, also for children.
+- AI for science, health & climate: Machine learning on real measurements: weather nowcasting, climate and rural data, fluid simulations, medicine and forensic anthropology.
+- Education, society & applied AI: AI for learning and for the people around it: education data, startups, skills and academia-industry matching.
+- Neural networks & optimization: Neural networks, evolutionary algorithms and learned optimizers; from neuroevolution to transformers.
+- Data mining, clustering & visualization: Finding structure in data: clustering (Chameleon), anomalies, time series and interactive visualization.
+- Inductive modelling, meta-learning & AutoML: Letting algorithms build models: the GAME method, meta-learning templates, Predictor Factory and automated data mining.
+
+## Eras
+
+- 2002–2008, Inductive modelling: Student and Ph.D. years with prof. Miroslav Šnorek, starting from the GMDH method. The GAME method grows networks of heterogeneous neurons from data; ensembles of such models estimate their own credibility. First applications in medicine: sleep stages, atrial electrograms, fetal weight.
+- 2009–2014, Meta-learning and data mining: At the new FIT CTU: meta-learning templates that combine models, the FAKE GAME open-source system, continuous optimization libraries, feature ranking, clustering and text mining. Most theses of this era build predictive models for real data.
+- 2015–2019, From AutoML to recommender systems: Recombee is founded and the group turns to recommendation. In parallel: learning from relational data (Predictor Factory), multi-objective clustering (Chameleon 2) and predictive ensembles for transfer learning. The first doctoral students defend.
+- 2020–2023, Deep learning in practice: Scalable shallow autoencoders (ELSA, VASP) and honest offline evaluation of recommenders; learned optimizers and physics-informed weather nowcasting with Meteopress; awards at NeurIPS, KDD and AAAI workshops.
+- 2024–2026, Recommendation meets language models: Language and interaction signals merge (beeFormer, sparse embeddings), LLMs get explained and guarded (SHIELD, child-safety alignment, geo-grounded guardrails), AI agents start shopping on both sides of a marketplace, EU projects bring climate and rural data. RecSys 2025 comes to Prague; the p-book and RecSys Atlas open the field to newcomers.
+
+## Milestones
+
+- 2026 capTTict completed: Technology transfer and startup support across 9 Danube countries (2024–2026).
+- 2026 Keynote at ISD 2026: “The Great Convergence: Recommendation, Search, and Conversation in Real-World AI Systems”.
+- 2026 p-book and RecSys Atlas: A self-recommending living book (RecSys 2026 demo) and a map of 20 years of RecSys research.
+- 2025 General Co-Chair, ACM RecSys 2025 in Prague: More than 1,000 attendees from around the world.
+- 2024 Three EU projects start: PoliRuralPlus (Horizon Europe, CTU coordinates 20 partners), capTTict (Interreg Danube, CTU lead partner) and FOCAL (Horizon Europe).
+- 2024 Co-founded edumatch.ai: Matching students with real-world opportunities in companies.
+- 2024 ACM RecSys Steering Committee: Also Senior PC member of RecSys 2024.
+- 2023 Best Paper Award, EvalRS @ KDD 2023: P. Kasalický, R. Alves, P. Kordík.
+- 2022 1st place, Weather4cast 2022 (NeurIPS 2022): Core challenge won by the group (J. Pihrt, R. Raevskiy, P. Šimánek, M. Choma), in collaboration with Meteopress.
+- 2021 Co-founded AI dětem: Teaching artificial intelligence to children at Czech schools.
+- 2021 2nd place, Meta-Learning Challenge (AAAI 2021): T. Chobola, D. Vašata, P. Kordík.
+- 2020 UniHack 2020: Co-organised an online hackathon of FIT CTU and prg.ai: in the first COVID spring, student teams and mentors looked for ways to help companies, the city, schools and healthcare.
+- 2019 Co-founded prg.ai: Prague AI hub of the city, Charles University, the Czech Academy of Sciences and CTU.
+- 2019 First doctoral students defended: Tomáš Řehořek (now leading Recombee) and Tomáš Bartoň.
+- 2017 Associate Professor (doc.) in Informatics: Habilitation at FIT CTU.
+- 2017 Vice-Dean for Industry Cooperation, FIT CTU (2017–2024): Ran the faculty's partnership programme with companies.
+- 2017 Co-founded experts.ai: A platform connecting university experts with industry.
+- 2015 Co-founded Recombee: Recommender systems as a service, now with customers worldwide; it works closely with the group at CTU.
+- 2015 ECOOP 2015 in Prague: Organising committee of the European Conference on Object-Oriented Programming.
+- 2011 Program committee, ACM KDD 2011
+- 2010 Vice-Dean for Development, FIT CTU (2010–2016): Built up the young faculty; introduced master's courses Data Preprocessing, Data Mining Algorithms and Computational Intelligence Methods.
+- 2009 Moved to the new Faculty of Information Technology: Founding years of FIT CTU; released the open-source FAKE GAME system for automated data mining.
+- 2008 ICANN 2008 in Prague: Organising committee of the 18th International Conference on Artificial Neural Networks.
+- 2007 Ph.D. on automated knowledge extraction: Dissertation on the GAME method (Group of Adaptive Models Evolution); organised the IWIM 2007 workshop in Prague.
+- 2007 New course: Data Mining (FEE): Introduced the data mining course at CTU FEE together with Filip Železný.
+- 2004 Joined the Department of Computer Science, CTU FEE: Started teaching and research in the computational intelligence group of prof. Miroslav Šnorek.
+- 2003 Ing. in Computer Engineering, CTU FEE: Graduated from the Faculty of Electrical Engineering, Czech Technical University in Prague.
+
+## Papers (118, since 2002)
+
+- 2026. Matušek J., Kordík P.: Evaluating the Division of Labour in Strategic Two-Sided Agentic Marketplaces. IJCCI 2026, special session AI Agents: Progress, Architecture, and Applications (AIPAA), accepted. [Language, agents & safety, Recommender systems]
+- 2026. Kordík P., Nečasová E.: How Would You Like Your Recommendations? p-book, a Self-Recommending Living Book That Teaches How Recommender Systems Work. RecSys 2026 (20th ACM Conference on Recommender Systems), demo. [Recommender systems, Education & society] https://doi.org/10.1145/3773078.3841269
+- 2026. Hänsch S., Sajdoková A., Rębowski A., Miškařík F., Ramakrishna K., Schlegel F., Rybář V., Alves R., Kordík P.: Hybrid Cold-Start Recommender System for Closure Model Selection in Multiphase Flow Simulations. arXiv:2604.09112. [Science & climate, Recommender systems] https://arxiv.org/abs/2604.09112
+- 2026. Alves R., Vančura V., Kordík P., Ledent A.: Language Embeddings Meet Shallow Autoencoders. UMAP 2026 (34th ACM Conference on User Modeling, Adaptation and Personalization). [Recommender systems, Language, agents & safety] https://doi.org/10.1145/3774935.3806192
+- 2026. Fikeis J., Kordík P.: Mind the Alignment Gap: Why General-Purpose Moderation Fails Children, and How a Child-Centric Taxonomy and Synthetic Data Close It. WOAH 2026, 10th Workshop on Online Abuse and Harms @ EMNLP 2026, accepted. [Language, agents & safety, Education & society]
+- 2026. Perles M., Slyvka O., Kordík P.: No Safe Words: Building Shortcut-Resistant Safety Guardrails for Geographically Grounded Environmental Advice. GeoAI '26, 9th ACM SIGSPATIAL Int. Workshop on AI for Geographic Knowledge Discovery. [Language, agents & safety, Science & climate] https://doi.org/10.5281/zenodo.22050643
+- 2026. Kordík P., Schedl M., Bieliková M., Pera M. S., De Gemmis M.: The 19th ACM Conference on Recommender Systems (RecSys 2025). ACM SIGWEB Newsletter, Summer 2026. [Recommender systems] https://doi.org/10.1145/3830455.3830456
+- 2025. Žid Č., Alves R., Kordík P.: Active Recommendation for Email Outreach Dynamics. ACM International Conference on Information and Knowledge Management. [Recommender systems] https://doi.org/10.1145/3746252.3760832
+- 2025. Charvát K., Bergheim R., Palma R., Rynkiewicz A. A., Botek M., Kovalenko A., Kordík P., Horáková Š., Kollerová M.: Bridging Global Language Models and Local Spatial Data: The JackDaw Approach to Context-Aware Agriculture and Rural Planning. FedCSIS 2025, Annals of Computer Science and Information Systems 43, pp. 507–518. [Language, agents & safety, Science & climate] https://doi.org/10.15439/2025F8393
+- 2025. Hänsch S., Sajdoková A., Rabau A., Rybář V., Alves R., Kordík P.: Data-driven closure model selection for multiphase CFD via matrix completion. AI Thermal Fluids 4, 100019. [Science & climate, Recommender systems] https://doi.org/10.1016/j.aitf.2025.100019
+- 2025. Košťál P., Kordík P., Podsztavek O.: Downscaling climate projections to 1 km with single-image super resolution. NeurIPS 2025 Workshop on Tackling Climate Change with Machine Learning. [Science & climate, Neural nets & optimization] https://www.climatechange.ai/papers/neurips2025/86
+- 2025. Sobotka J., Šimánek P., Kordík P.: Enhancing Fractional Gradient Descent with Learned Optimizers. arXiv:2510.18783. [Neural nets & optimization] https://doi.org/10.48550/arXiv.2510.18783
+- 2025. Vančura V. et al.: Evaluating Linear Shallow Autoencoders on Large Scale Datasets. ACM Transactions on Recommender Systems. [Recommender systems] https://doi.org/10.1145/3748335
+- 2025. Spáček F., Vančura V., Kordík P.: Mitigating Risks in Marketplace Semantic Search: A Dataset for Harmful and Sensitive Query Alignment. UMAP 2025 (33rd ACM Conference on User Modeling, Adaptation and Personalization). [Recommender systems, Language, agents & safety] https://doi.org/10.1145/3699682.3728329
+- 2025. Cahlík V., Alves R., Kordík P.: Reasoning-Grounded Natural Language Explanations for Language Models. xAI 2025 (World Conference on Explainable AI), CCIS 2578, pp. 3–18. [Language, agents & safety] https://doi.org/10.1007/978-3-032-08327-2_1
+- 2025. Zmeškalová T. et al.: Recurrent Autoregressive Linear Model for Next-Basket Recommendation. RecSys '25: Proceedings of the Nineteenth ACM Conference on Recommender Systems. [Recommender systems] https://doi.org/10.1145/3705328.3759313
+- 2025. Spišák M. et al.: Segment-Aware Analytics for Real-Time Editorial Support in Media Groups. INRA 2025 workshop @ RecSys 2025 (CEUR-WS Vol-4056). [Recommender systems] https://ceur-ws.org/Vol-4056/short1.pdf
+- 2025. Kasalický P. et al.: The Future is Sparse: Embedding Compression for Scalable Retrieval in Recommender Systems. RecSys '25: Proceedings of the Nineteenth ACM Conference on Recommender Systems. [Recommender systems] https://doi.org/10.1145/3705328.3748147
+- 2024. Vančura V., Kordík P., Straka M.: beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems. RecSys '24: Proceedings of the 18th ACM Conference on Recommender Systems. [Recommender systems, Language, agents & safety] https://doi.org/10.1145/3640457.3691707
+- 2023. Kasalický P., Alves R., Kordík P.: Bridging Offline-Online Evaluation with a Time-dependent and Popularity Bias-free Offline Metric for Recommenders. Proceedings of EvalRS: A Rounded Evaluation Of Recommender Systems 2023. [Recommender systems] https://ceur-ws.org/Vol-3450/paper3.pdf
+- 2023. Kovalenko A., Kordík P.: Decorelated Weight Initialization by Backpropagation. ICANN 2023, LNCS. [Neural nets & optimization] https://doi.org/10.1007/978-3-031-44207-0_46
+- 2023. Kuznetsov S., Kordík P.: Improving recommendation diversity and serendipity with an ontology-based algorithm for cold start environments. International Journal of Data Science and Analytics. [Recommender systems] https://doi.org/10.1007/s41060-023-00418-4
+- 2023. Kuznetsov S., Kordík P.: Overcoming the Cold-Start Problem in Recommendation Systems with Ontologies and Knowledge Graphs. New Trends in Database and Information Systems. [Recommender systems] https://doi.org/10.1007/978-3-031-42941-5_52
+- 2023. Žid Č., Kordík P., Kuznetsov S.: Personalised Recommendations and Profile Based Re-ranking Improve Distribution of Student Opportunities. International Joint Conference 16th International Conference on Computational Intelligence in Security for Information Systems (CISIS 2023) 14th International Conference on EUropean Transnational Education (ICEUTE 2023). [Recommender systems, Education & society] https://doi.org/10.1007/978-3-031-42519-6_21
+- 2022. Cahlík V., Kordík P., Čepek M.: Adapting the Size of Artificial Neural Networks Using Dynamic Auto-Sizing. IEEE 17th International Conference on Computer Science and Information Technologies. [Neural nets & optimization] https://doi.org/10.1109/CSIT56902.2022.10000471
+- 2022. Motl J., Kordík P.: Discriminant Analysis on a Stream of Features. Engineering Applications of Neural Networks. [AutoML & meta-learning]
+- 2022. Šimánek P., Vašata D., Kordík P.: Learning to Optimize with Dynamic Mode Decomposition. 2022 International Joint Conference on Neural Networks (IJCNN). [Neural nets & optimization] https://doi.org/10.1109/IJCNN55064.2022.9892364
+- 2022. Pastukhov D. et al.: Offline evaluation of the serendipity in recommendation systems. IEEE 17th International Conference on Computer Science and Information Technologies. [Recommender systems] https://doi.org/10.1109/CSIT56902.2022.10000782
+- 2022. Šafařík J., Vančura V., Kordík P.: RepSys: Framework for Interactive Evaluation of Recommender Systems. RecSys '22: Proceedings of the 16th ACM Conference on Recommender Systems. [Recommender systems] https://doi.org/10.1145/3523227.3551469
+- 2022. Vančura V. et al.: Scalable Linear Shallow Autoencoder for Collaborative Filtering. RecSys '22: Proceedings of the 16th ACM Conference on Recommender Systems. [Recommender systems] https://doi.org/10.1145/3523227.3551482
+- 2022. Motl J., Kordík P.: Trend and Seasonality Elimination from Relational Data. Engineering Applications of Neural Networks. [AutoML & meta-learning] https://doi.org/10.1007/978-3-031-08223-8_22
+- 2021. Motl J., Kordík P.: Aggregate Function Generalization to Temporal Data. 2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI). [AutoML & meta-learning] https://doi.org/10.1109/ICTAI52525.2021.00098
+- 2021. Vančura V., Kordík P.: Deep Variational Autoencoder with Shallow Parallel Path for Top-N Recommendation (VASP). Artificial Neural Networks and Machine Learning – ICANN 2021. [Recommender systems, Neural nets & optimization] https://doi.org/10.1007/978-3-030-86383-8_11
+- 2021. Kovalenko A., Kordík P., Friedjungová M.: Dynamic Neural Diversification: Path to Computationally Sustainable Neural Networks. Artificial Neural Networks and Machine Learning – ICANN 2021. [Neural nets & optimization] https://doi.org/10.1007/978-3-030-86340-1_19
+- 2021. Motl J., Kordík P.: Fast and exact audit scheduling optimization. SN Applied Sciences 3(10), 794. [Data mining] https://doi.org/10.1007/s42452-021-04778-z
+- 2021. Buk Z. et al.: Novel data mining-based age-at-death estimation model using adult pubic symphysis 3D scans. Proceedings of the 21st Conference Information Technologies – Applications and Theory (ITAT 2021). [Science & climate, Data mining] https://ceur-ws.org/Vol-2962/paper29.pdf
+- 2021. Yorsh U., Kovalenko A., Vančura V., Vašata D., Kordík P., Mikolov T.: SimpleTRON: Simple Transformer with O(N) Complexity. arXiv:2111.15588. [Neural nets & optimization] https://doi.org/10.48550/arXiv.2111.15588
+- 2021. Motl J., Kordík P.: Stratified Cross-Validation on Multiple Columns. 2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI). [AutoML & meta-learning] https://doi.org/10.1109/ICTAI52525.2021.00012
+- 2021. Chobola T., Vašata D., Kordík P.: Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network. AAAI Workshop on Meta-Learning and MetaDL Challenge. [Neural nets & optimization, AutoML & meta-learning] https://proceedings.mlr.press/v140/chobola21a.html
+- 2019. Bartoň T., Brůna T., Kordík P.: Chameleon 2: An Improved Graph-Based Clustering Algorithm. ACM Transactions on Knowledge Discovery from Data. [Data mining] https://doi.org/10.1145/3299876
+- 2019. Motl J., Kordík P.: Learning on a Stream of Features with Random Forest. Proceedings of the 19th Conference Information Technologies - Applications and Theory (ITAT 2019). [AutoML & meta-learning]
+- 2018. Kordík P. et al.: Comparing Offline and Online Evaluation Results of Recommender Systems. REVEAL RecSyS 2018 workshop proceedings. [Recommender systems] https://sites.google.com/view/reveal2018/proceedings?authuser=0
+- 2018. Kordík P., Frýda T., Černý J.: Discovering predictive ensembles for transfer learning and meta-learning. Machine Learning. [AutoML & meta-learning] https://doi.org/10.1007/s10994-017-5682-0
+- 2018. Motl J., Kordík P.: Do We Need to Observe Features to Perform Feature Selection?. Proceedings of the 18th Conference Information Technologies - Applications and Theory (ITAT 2018). [AutoML & meta-learning]
+- 2018. Kordík P., Frýda T.: On Scalability of Predictive Ensembles and Tradeoff Between Their Training Time and Accuracy. Advances in Intelligent Systems and Computing II. [AutoML & meta-learning] https://doi.org/10.1007/978-3-319-70581-1_18
+- 2018. Motl J., Kordík P.: Violation of Independence of Irrelevant Alternatives in Friedman’s test. Proceedings of the 18th Conference Information Technologies - Applications and Theory (ITAT 2018). [AutoML & meta-learning]
+- 2017. Motl J., Kordík P.: Foreign Key Constraint Identification in Relational Databases. ITAT 2017: Information Technologies – Applications and Theory. [AutoML & meta-learning] http://ceur-ws.org/Vol-1885/106.pdf
+- 2017. Kordík P. et al.: Scalability of predictive ensembles. 2017 12th International Scientific and Technical Conference on Computer Sciences and Information Technologies (CSIT). [AutoML & meta-learning] https://doi.org/10.1109/STC-CSIT.2017.8098848
+- 2016. Bartoň T., Brůna T., Kordík P.: MoCham: Robust Hierarchical Clustering Based on Multi-objective Optimization. 2016 IEEE 16th International Conference on Data Mining Workshops. [Data mining, Neural nets & optimization] https://doi.org/10.1109/ICDMW.2016.0123
+- 2016. Kordík P., Tkačík J.: Neural Turing Machine for Sequential Learning of Human Mobility Patterns. 2016 International Joint Conference on Neural Networks (IJCNN). [Neural nets & optimization, Science & climate] https://doi.org/10.1109/IJCNN.2016.7727551
+- 2016. Kordík P., Motl J.: Predictor Factory. Software (RIV). [AutoML & meta-learning]
+- 2016. Kuznetsov S. et al.: Reducing Cold Start Problems in Educational Recommender Systems. 2016 International Joint Conference on Neural Networks (IJCNN). [Recommender systems, Education & society] https://doi.org/10.1109/IJCNN.2016.7727600
+- 2015. Bartoň T., Kordík P.: Evaluation of relative indexes for multi-objective clustering. Hybrid Artificial Intelligent Systems. [Data mining] https://doi.org/10.1007/978-3-319-19644-2_39
+- 2015. Kuznetsov S.K., Kordík P.K.: Mining skills from educational data for project recommendations. Proceedings of the International Joint Conference CISIS’15 and ICEUTE’15. [Recommender systems, Education & society] https://doi.org/10.1007/978-3-319-19713-5_54
+- 2015. Bartoň T., Kordík P.: Using multi-objective optimization for the selection of ensemble members. ITAT 2015 conference proceedings. [AutoML & meta-learning, Neural nets & optimization]
+- 2014. Kordík P., Černý J.: Building Predictive Models in Two Stages with Meta-Learning Templates optimized by Genetic Programming. 2014 IEEE Symposium on Computational Intelligence in Ensemble Learning (CIEL) Proceedings. [AutoML & meta-learning, Neural nets & optimization] https://doi.org/10.1109/CIEL.2014.7015740
+- 2014. Kordík P., Kuznetsov S.: Utilizing educational data in collaboration with industry. Proceedings of the 13th Annual Conference Znalosti 2014. [Education & society] http://znalosti.eu/images/accepted_papers/znalosti2014_paper23.pdf
+- 2013. Řehořek T., Kordík P.: A Soft Computing Approach to Knowledge Flow Synthesis and Optimization. Soft Computing Models in Industrial and Environmental Applications. [AutoML & meta-learning, Neural nets & optimization] https://doi.org/10.1007/978-3-642-32922-7_3
+- 2013. Bartoň T., Kordík P.: Encoding time series data for better clustering results. INTERNATIONAL JOINT CONFERENCE CISIS'12 - ICEUTE'12 - SOCO'12 SPECIAL SESSIONS. [Data mining] https://doi.org/10.1007/978-3-642-33018-6_48
+- 2013. Abdel Kader A. K. et al.: Interpretation of Geophysical Data at EL Fayoum-Dahshour Area, Egypt Using Three Dimensional Models. Arabian Journal for Science and Engineering. [Science & climate] https://doi.org/10.1007/s13369-012-0385-0
+- 2013. Háva O., Kordík P., Skrbek M.: Supervised two-step feature extraction for structured representation of text data. Simulation Modelling Practice and Theory. [Language, agents & safety] https://doi.org/10.1016/j.simpat.2012.11.003
+- 2013. Háva O., Skrbek M., Kordík P.: Vector representation of context networks of latent topics. Proceedings of the World Congress on Engineering 2013. [Language, agents & safety, Neural nets & optimization]
+- 2012. Háva O., Skrbek M., Kordík P.: Contextual latent semantic networks used for document classification. Proceedings of the International Conference on Knowledge Discovery and Information Retrieval. [Language, agents & safety, Neural nets & optimization]
+- 2012. Háva O., Skrbek M., Kordík P.: Document Classification with Supervised Latent Feature Selection. Proceedings of the 2nd International Conference on Web Intelligence, Mining and Semantics. [Language, agents & safety, AutoML & meta-learning] https://doi.org/10.1145/2254129.2254213
+- 2012. Kovářík O., Kordík P.: Max-min ant system with linear memory complexity. Proceedings of the IEEE Congress on Evolutionary Computation, CEC 2012, Brisbane, Australia, June 10-15, 2012. [Neural nets & optimization] https://doi.org/10.1109/CEC.2012.6256528
+- 2012. Kordík P., Černý J.: On performance of Meta-learning Templates on Different Datasets. The 2012 International Joint Conference on Neural Networks (IJCNN), Brisbane, Australia, June 10-15, 2012. [AutoML & meta-learning] https://doi.org/10.1109/IJCNN.2012.6252379
+- 2012. Borovička T. et al.: Selecting Representative Data Sets. Advances in Data Mining Knowledge Discovery and Applications. [Data mining] https://doi.org/10.5772/50787
+- 2012. Buk Z. et al.: The age at death assessment in a multi-ethnic sample of pelvic bones using nature-inspired data mining methods. Forensic Science International. [Science & climate, AutoML & meta-learning] https://doi.org/10.1016/j.forsciint.2012.02.019
+- 2011. Brimich L., Khalil A., Kordík P., Mekkawi M. et al.: Active subsurface structures at Fayoum-Cairo district, Northern Western Desert, Egypt. Contributions to Geophysics and Geodesy. [Education & society]
+- 2011. Kordík P., Skalička O., Kovářík O.: Java Combinatorial Optimization Platform. Software (RIV). [Neural nets & optimization]
+- 2011. Drchal J. et al.: Java Continuous Optimization Library. Software (RIV). [Neural nets & optimization]
+- 2011. Kordík P., Černý J.: Self-organization of Supervised Models. Meta-Learning in Computational Intelligence. [AutoML & meta-learning] https://doi.org/10.1007/978-3-642-20980-2_6
+- 2011. Řehořek T., Kordík P.: Using Interactive Evolution for Exploratory Data Analysis. Proceedings of the 6th International Scientific and Technical Conference (CSIT'2011). [Data mining, Neural nets & optimization]
+- 2010. Černý J., Kordík P.: Advanced ensemble strategies for polynomial models. Proceeding of the third international conference on inductive modelling. [AutoML & meta-learning]
+- 2010. Pilný A. et al.: Application of Feature Selection Methods in Age Prediction. Proceeding of the third international conference on inductive modelling. [AutoML & meta-learning]
+- 2010. Kordík P., Bičík V.: Continuous Optimization Algorithms: Performance on Benchmarking Functions and Model Parameters. Proceedings of the 7th EUROSIM Congress on Modelling and Simulation, Vol. [Neural nets & optimization]
+- 2010. Pilný A., Kordík P., Šnorek M.: Game model utilization for feature ranking and feature selection. Proceedings of the Seventh International Conference on Engineering Computational Technology. [AutoML & meta-learning]
+- 2010. Kordík P. et al.: Meta-learning approach to neural network optimization. Neural Networks. [AutoML & meta-learning, Neural nets & optimization] https://doi.org/10.1016/j.neunet.2010.02.003
+- 2010. Pilný A., Kordík P., Šnorek M.: New Methods for Feature Ranking. Workshop 2010. [AutoML & meta-learning]
+- 2010. Čepek M., Kordík P., Šnorek M.: The Effect of Modelling Method to the Inductive Preprocessing Algorithm. Proceedings of 3rd International Conference on Inductive Modelling 2010. [AutoML & meta-learning]
+- 2009. Kordík P. et al.: Building Automation Simulator and Control Strategy for Intelligent and Energy Efficient Home. Proceedings of the European Modelling and Simulation Symposium EMS 2009. [Science & climate] https://doi.org/10.1109/ems.2009.104
+- 2009. Křemen V., Kordík P., Lhotská L.: Comparison of Several Classifiers to Evaluate Endocardial Electrograms Fractionation in Human. Proceedings of the 31st Annual International Conference of the IEEE Engineering in Medicine and Biology Society. [Science & climate] https://doi.org/10.1109/IEMBS.2009.5335161
+- 2009. Kordík P. et al.: Fake game. Software (RIV). [AutoML & meta-learning]
+- 2009. Kordík P.: GAME - Hybrid Self-Organizing Modeling System Based on GMDH. Hybrid Self-Organizing Modeling Systems. [AutoML & meta-learning] https://doi.org/10.1007/978-3-642-01530-4_6
+- 2009. Kordík P., Drchal J.: Meta-optimization survey and possible applications of Inductive Approach in this field. Proceedings of the International Conference ISDMCI 2009. [AutoML & meta-learning, Neural nets & optimization] http://neuron.felk.cvut.cz/~kordikp/evp.pdf
+- 2009. Bulgakova O., Kordík P.: Methods of true data mining model selection with experimental results. 3rd International Workshop on Inductive Modelling (IWIM 2009). [AutoML & meta-learning, Data mining]
+- 2009. Křemen V., Lhotská L., Kordík P.: New Robust Method of Atrial Electrograms Classification to Identify Complex Fractionated Atrial Electrograms. Proceedings of the 31st Annual International Conference of the IEEE Engineering in Medicine and Biology Society. [Science & climate]
+- 2008. Novák D. et al.: Analysis of Vestibular-Ocular Reflex by Evolutionary Framework. Artificial Neural Networks - ICANN 2008, PT I. [Science & climate, Neural nets & optimization] https://doi.org/10.1007/978-3-540-87536-9_47
+- 2008. Čepek M. et al.: Automatic Method for Data Preprocessing for the GAME Inductive Modelling Method. Proceedings of the 2nd International Conference on Inductive Modelling. [AutoML & meta-learning]
+- 2008. Pilný A., Kordík P., Šnorek M.: Behaviour of FeRaNGA method for Feature Ranking during learning process using Inductive Modelling. Proceedings of the 2nd International Conference on Inductive Modelling. [AutoML & meta-learning]
+- 2008. Pilný A., Kordík P., Šnorek M.: Feature Ranking Derived from Data Mining Process. Artificial Neural Networks - ICANN 2008. [AutoML & meta-learning, Data mining] https://doi.org/10.1007/978-3-540-87559-8_92
+- 2008. Siegl T. et al.: Fetal Weight Prediction Models: Standard Techniques or Computational Intelligence Methods?. Artificial Neural Networks - ICANN 2008, PT I. [Science & climate] https://doi.org/10.1007/978-3-540-87536-9_48
+- 2008. Kovářík O., Kordík P.: Optimizing Models Using Continuous Ant Algorithms. Proceedings of the 2nd International Conference on Inductive Modelling. [Neural nets & optimization]
+- 2008. Kordík P., Špirk J., Šimeček I.: Parallel computing of GAME models. Proceedings of the 2nd International Conference on Inductive Modelling. [AutoML & meta-learning]
+- 2008. Kordík P., Křemen V., Lhotská L.: The GAME Algorithm Applied to Complex Fractionated Atrial Electrograms Data Set. Artificial Neural Networks - ICANN 2008. [Science & climate, AutoML & meta-learning] https://doi.org/10.1007/978-3-540-87559-8_89
+- 2007. Buk Z., Kordík P., Šnorek M.: Age Prediction from Skeletal Indicators using Computational Intelligence Methods. Proceeding of International Workshop on Inductive Modelling. [Science & climate]
+- 2007. Čepek M., Šnorek M., Kordík P.: Application of Inductive Modeling to Sleep Stages Classification. Proceedings of 41th Spring International Conference MOSIS'07. [Science & climate, AutoML & meta-learning]
+- 2007. Šimeček I., Kordík P.: Cache Misses Prediction by Means of Data Mining Methods. Proceedings of Workshop 2007. [Data mining] http://shimi.webzdarma.cz/vyzkum/workshop07/colek_workshop.pdf
+- 2007. Drchal J., Kordík P., Šnorek M.: Dataset Visualization Based on a Simulation of Intermolecular Forces. IWIM 2007 - International Workshop on Inductive Modelling. [Data mining] http://cig.felk.cvut.cz
+- 2007. Kordík P.: Fully Automated Knowledge Extraction using Group of Adaptive Models Evolution. Ph.D. thesis, Czech Technical University in Prague (supervisor M. Šnorek). [AutoML & meta-learning]
+- 2007. Náplava P., Kordík P.: Hybrid Inductive Models: Topology of Model can Reveal much about Problem. IWIM 2007 - International Workshop on Inductive Modelling. [AutoML & meta-learning] http://neuron.felk.cvut.cz/~kordikp/iw/UnitsAndData.pdf
+- 2007. Gerla V. et al.: Inductive Modeling in Newborn Sleep Stage Recognition. IWIM 2007 - International Workshop on Inductive Modelling. [Science & climate, AutoML & meta-learning] http://neuron.felk.cvut.cz/~kordikp/iw/07_Gerla_Bursa_Kordik_05.pdf
+- 2007. Šnorek M., Kordík P.: Inductive Modelling World Wide the State of the Art. IWIM 2007 - International Workshop on Inductive Modelling. [AutoML & meta-learning] http://neuron.felk.cvut.cz/~kordikp/iw/IMWW.pdf
+- 2007. Čepek M., Šnorek M., Kordík P.: Missing Data Imputation and the Inductive Modelling. Proceedings of the 6th EUROSIM Congress on Modelling and Simulation. [AutoML & meta-learning]
+- 2007. Kordík P., Kovářík O., Šnorek M.: Optimization of models: looking for the best strategy. Proceedings of the 6th EUROSIM Congress on Modelling and Simulation. [Neural nets & optimization] http://neuron.felk.cvut.cz/~kordikp/iw/eurosim07.pdf
+- 2007. Pilný A., Kordík P.: Reconstruction of Eye Movements Signal using Inductive Model Detecting Saccades. IWIM 2007 - International Workshop on Inductive Modelling. [Science & climate, AutoML & meta-learning] http://neuron.felk.cvut.cz/~kordikp/iw/SacadesReconstruction-v4.pdf
+- 2007. Kordík P.: Regularization of Evolving Polynomial Models. IWIM 2007 - International Workshop on Inductive Modelling. [AutoML & meta-learning] http://neuron.felk.cvut.cz/~kordikp/iw/penalty.pdf
+- 2007. Bouška J., Kordík P.: Time Series Prediction by means of GMDH Analogues Complexing and GAME. IWIM 2007 - International Workshop on Inductive Modelling. [AutoML & meta-learning, Data mining] http://neuron.felk.cvut.cz/~kordikp/iw/GMDHACxGAMEv10.pdf
+- 2007. Drchal J., Kordík P., Koutník J.: Visualization of Diversity in Computational Intelligence Methods. Proceedings of 2nd ISGI 2007 Interational CODATA Symposium on Generalization of Information. [Data mining]
+- 2007. Kondapaneni I., Kordík P., Slavík P.: Visualization techniques utilizing the sensitivity analysis of models. Proceedings of the 2007 Winter Simulation Conference. [Data mining] https://doi.org/10.1109/wsc.2007.4419667
+- 2006. Kordík P., Saidl J., Šnorek M.: Evolutionary Search for Interesting Behavior of Neural Network Ensembles. IJCNN 2006. [AutoML & meta-learning, Neural nets & optimization] https://doi.org/10.1109/IJCNN.2006.1716252
+- 2006. Drchal J., Šnorek M., Kordík P.: Maintaining Diversity in Population of Evolved Models. 40th Spring International Conference MOSIS 2006, pp. 113–120. [AutoML & meta-learning]
+- 2005. Macaš M., Novák D., Kordík P., Lhotská L., Vyhnálek M., Brzezný R.: Dyslexia detection from eye movements using artificial neural networks. European Medical and Biological Engineering Conference (EMBEC 2005). [Science & climate, Neural nets & optimization]
+- 2005. Kordík P., Šnorek M.: Ensemble Techniques for Credibility Estimation of GAME Models. ICANN 2005, LNCS 3697. [AutoML & meta-learning] https://doi.org/10.1007/11550907_21
+- 2004. Kordík P., Šnorek M., Genyk-Berezovskyj M.: Hybrid inductive models: deterministic crowding employed. IJCNN 2004 (IEEE Int. Joint Conference on Neural Networks). [AutoML & meta-learning] https://doi.org/10.1109/IJCNN.2004.1380992
+- 2004. Kordík P., Šnorek M. et al.: School children dyslexia analysis using self organizing maps. 26th Annual Int. Conference of the IEEE EMBS (2004). [Science & climate, Education & society] https://doi.org/10.1109/IEMBS.2004.1403075
+- 2003. Kordík P., Náplava P., Šnorek M., Genyk-Berezovskyj M.: Modified GMDH method and models quality evaluation by visualization. Control Systems and Computers 2, pp. 68–75. [AutoML & meta-learning, Data mining]
+- 2002. Kordík P., Náplava P., Šnorek M., Genyk-Berezovskyj M.: The modified GMDH method applied to model complex systems. International Conference on Inductive Modelling (ICIM 2002). [AutoML & meta-learning]
+
+## Theses supervised by Pavel Kordík (143 defended)
+
+- 2026 BSc, Daniil Kolesnikov: Demonstration and Benchmarking of Evolutionary Algorithms in TensorNEAT https://dspace.cvut.cz/handle/10467/179364
+- 2026 BSc, Lukáš Lavinger: Factually Grounded Generation of Success Stories Using Large Language Models https://dspace.cvut.cz/handle/10467/182186
+- 2026 BSc, Jan Fikeis: Safety Assessment in Child-AI Interactions https://dspace.cvut.cz/handle/10467/181954
+- 2026 MSc, Matej Kulháň: Automatic Extraction of Legal Citations and Document Links from Public Institution Decisions https://dspace.cvut.cz/handle/10467/180065
+- 2026 MSc, Vojtěch Slavík: Full-Duplex Dialogue Systems https://dspace.cvut.cz/handle/10467/179498
+- 2026 MSc, Naďa Fučelová: Large Language Model Assisted Symbolic Regression https://dspace.cvut.cz/handle/10467/179998
+- 2026 MSc, Markéta Minářová: Nowcasting from Radar Images Using Diffusion Networks https://dspace.cvut.cz/handle/10467/179367
+- 2026 MSc, Matej Stieranka: Secure Cross-Site Widget Integration Library https://dspace.cvut.cz/handle/10467/180773
+- 2026 MSc, Tomáš Laurin: Training and Evaluation of Foundation Models for Recommender Systems https://dspace.cvut.cz/handle/10467/179921
+- 2025 BSc, Jakub Dorian Charbulák: A Guide to Building a Technological Startup: A Case Study https://dspace.cvut.cz/handle/10467/121097
+- 2025 BSc, Jakub Feik: Cold Start Items in Next Basket Recommendation https://dspace.cvut.cz/handle/10467/123991
+- 2025 BSc, Martin Eliáš: Robust neural embeddings for typos correction https://dspace.cvut.cz/handle/10467/123976
+- 2025 MSc, Daniel Breiner: Design and implementation of an application for scheduling and sending of personalized content https://dspace.cvut.cz/handle/10467/121010
+- 2025 PhD, Vojtěch Vančura: From Collaborative to Content-Based: Scaling Autoencoders to Train Transformers in Recommender Systems
+- 2024 BSc, Vladimír Votava: Efficient implementation of neuroevolution for reinforcement learning tasks https://dspace.cvut.cz/handle/10467/115974
+- 2024 MSc, Eliška Svobodová: Knowlege tracing techniques, their explainability and applications https://dspace.cvut.cz/handle/10467/114586
+- 2024 MSc, Patrik Schweika: Semantic Product Search https://dspace.cvut.cz/handle/10467/114585
+- 2023 BSc, Patrik Laurinc: Text to query using large language models on local infrastructure https://dspace.cvut.cz/handle/10467/109371
+- 2023 PhD, Stanislav Kuznetsov: Ontologies in Recommender Systems https://dspace.cvut.cz/handle/10467/111016
+- 2022 BSc, Bekbolot Khudaiberdiev: Estimating Customer Lifetime Value for Media Houses https://dspace.cvut.cz/handle/10467/107260
+- 2022 MSc, Vojtěch Cahlík: Anytime Learning with Auto-Sizing Neural Networks https://dspace.cvut.cz/handle/10467/101055
+- 2022 MSc, Čeněk Žid: Personalized recommendations for students https://dspace.cvut.cz/handle/10467/101209
+- 2022 PhD, Jan Motl: Predictor Factory: Learning from Relational Data https://dspace.cvut.cz/handle/10467/100475
+- 2021 MSc, Pavel Hlubík: Algorithms for better understanding of recommended content and user clusters https://dspace.cvut.cz/handle/10467/94489
+- 2021 MSc, Adam Jankovec: Machine learning based query analysis for an online medical clinic https://dspace.cvut.cz/handle/10467/94593
+- 2021 MSc, Adam Zvada: Vehicle Routing Problem with Time Windows solved via Machine Learning and Optimization Heuristics https://dspace.cvut.cz/handle/10467/94492
+- 2020 MSc, Kristýna Tauchmanová: Recommendation based on product images https://dspace.cvut.cz/handle/10467/86578
+- 2019 BSc, Matyáš Skalický: Classification of URLs Using Deep Neural Networks https://dspace.cvut.cz/handle/10467/83230
+- 2019 BSc, Petr Hanzl: Grammar interactive evolution of graph interfaces https://dspace.cvut.cz/handle/10467/83425
+- 2019 BSc, Matúš Žilinec: Question Answering Algorithms in Natural Language https://dspace.cvut.cz/handle/10467/83399
+- 2019 BSc, Tatiana Lekýrová: Recommendation of new movies to obtain https://dspace.cvut.cz/handle/10467/83193
+- 2019 BSc, Antonín Dvořák: Scalability of Nearest Neighbor Algorithm https://dspace.cvut.cz/handle/10467/83215
+- 2019 BSc, Adam Jankovec: Software module for skill based search of students https://dspace.cvut.cz/handle/10467/83147
+- 2019 BSc, Tomáš Vopat: User subaccounts detection for better recommendation https://dspace.cvut.cz/handle/10467/83387
+- 2019 MSc, Michal Bajer: Neural Autoencoders in Recommender Systems https://dspace.cvut.cz/handle/10467/82568
+- 2019 MSc, Matouš Pištora: Recommending related images to articles https://dspace.cvut.cz/handle/10467/82329
+- 2019 PhD, Tomáš Řehořek: Manipulating the Capacity of Recommendation Models in Recall-Coverage Optimization https://dspace.cvut.cz/handle/10467/81823
+- 2019 PhD, Tomáš Bartoň: Meta-optimizations for Cluster Analysis https://dspace.cvut.cz/handle/10467/82129
+- 2018 BSc, Huy Hoang Vu: Improving Learning to Rank Algorithms https://dspace.cvut.cz/handle/10467/76809
+- 2018 BSc, Jan Horák: Lip Reading using Deep Neural Networks https://dspace.cvut.cz/handle/10467/76800
+- 2018 BSc, Ondřej Šofr: Music Recommender System https://dspace.cvut.cz/handle/10467/79444
+- 2018 MSc, Jakub Drdák: Recommendation algorithms optimization https://dspace.cvut.cz/handle/10467/74610
+- 2017 BSc, Martin Šmíd: Job-board predictions https://dspace.cvut.cz/handle/10467/69323
+- 2017 BSc, Jan Švejda: Web service for advanced text analysis https://dspace.cvut.cz/handle/10467/69963
+- 2017 MSc, Veronika Maurerová: Criminality prediction https://dspace.cvut.cz/handle/10467/69704
+- 2017 MSc, Peter Bábics: Historic Landmarks Identification https://dspace.cvut.cz/handle/10467/70406
+- 2017 MSc, Zdeněk Balák: Portal for support of educational activities and student evaluation https://dspace.cvut.cz/handle/10467/69134
+- 2017 MSc, Tomáš Frýda: Scalability of Predictive Modeling Algorithms https://dspace.cvut.cz/handle/10467/69110
+- 2017 MSc, Sergii Stamenov: Understanding Documents with Text Mining Methods https://dspace.cvut.cz/handle/10467/69588
+- 2016 BSc, Radek Bartyzal: Optimization of Recommender Systems
+- 2016 BSc, Martin Endršt: Personalization of  Data Visualization User Interfaces https://dspace.cvut.cz/handle/10467/65957
+- 2016 MSc, Ján Tkačík: Algorithms for time-space behaviour analysis of suspects https://dspace.cvut.cz/handle/10467/62771
+- 2016 MSc, Lukáš Dvořák: Analytic framework for eshop interactions data https://dspace.cvut.cz/handle/10467/65078
+- 2016 MSc, František Hejl: Learning to Rank Query Suggestions
+- 2016 MSc, Martin Brázdil: Machine Learning in Game Playing using Visual Input https://dspace.cvut.cz/handle/10467/65183
+- 2016 MSc, Petr Šuták: Visual search in big graph structures https://dspace.cvut.cz/handle/10467/65189
+- 2016 PhD (co-supervised), Aleš Pilný: Model Machine Learning-based Feature Ranking and Feature Selection https://dspace.cvut.cz/handle/10467/61362
+- 2016 PhD (co-supervised), Ondřej Háva: Network Representation of Latent Features Extracted from Text Documents https://dspace.cvut.cz/handle/10467/62282
+- 2015 MSc, Jiří Maroušek: Analytic web services for the academia industry collaboration portal https://dspace.cvut.cz/handle/10467/62978
+- 2015 MSc, Štěpán Škorpil: Application to analysis of text messages for investigators https://dspace.cvut.cz/handle/10467/62983
+- 2015 MSc, Petr Dušek: Educational and Reseach Performance Dashboards
+- 2015 MSc, Marie Remešová: Educational performance dashboard https://dspace.cvut.cz/handle/10467/62950
+- 2015 MSc, Daniel Heglas: Portlets opening access to university courseware
+- 2015 MSc, Ruhi Ravichandran: Predictive models in Logistics: Comparison of traditional time series techniques with an artificial neural network model approach https://dspace.cvut.cz/handle/10467/63047
+- 2015 MSc, Jakub Bartel: Tools and approaches for new generation journalism https://dspace.cvut.cz/handle/10467/62772
+- 2014 MSc, Jan Krejcar: Anomaly detection methods
+- 2014 MSc, Jan Krejcar: Anomaly detection methods
+- 2014 MSc, František Hána: Comparison of  statistical and data mining approaches to chemometrical analysis of oil derivatives
+- 2014 MSc, Adam Činčura: Distributed computation environment https://dspace.cvut.cz/handle/10467/22536
+- 2014 MSc, Daniel Heglas: Portlets opening access to university courseware
+- 2013 BSc, Jiří Nádvorník: Algorithms for Origami Folding https://dspace.cvut.cz/handle/10467/17819
+- 2013 BSc, Milan Babka: Photovoltaic power plant output prediciton https://dspace.cvut.cz/handle/10467/14882
+- 2013 BSc, Jan Navara: The Simplification of Folmulas Generated by Inductive Models https://dspace.cvut.cz/handle/10467/17697
+- 2013 MSc, Tomáš Janda: Alumni portal https://dspace.cvut.cz/handle/10467/16338
+- 2013 MSc, Václav Čadek: Information support for clinical studies https://dspace.cvut.cz/handle/10467/22460
+- 2013 MSc, Marcel Mika: Liferay communication infrastructure https://dspace.cvut.cz/handle/10467/16293
+- 2013 MSc, Vojtěch Medonos: R&amp;D data mining https://dspace.cvut.cz/handle/10467/16303
+- 2013 MSc, Radovan Lupták: Recommender system powered by text mining methods https://dspace.cvut.cz/handle/10467/16367
+- 2013 MSc, Jakub Jirků: Regression modelling for fulltext search engine https://dspace.cvut.cz/handle/10467/16287
+- 2013 MSc, Filip Rajnoch: Sharing and electronic document circulation infrastructure https://dspace.cvut.cz/handle/10467/15016
+- 2013 MSc, Jan Motl: Supporting the Diagnosis of Borreliosis by Machine Learning Methods https://dspace.cvut.cz/handle/10467/16365
+- 2013 MSc, Jan Pavlovský: UI design for accessing educational resources https://dspace.cvut.cz/handle/10467/15034
+- 2013 MSc, Jan Fabián: Visualizing behavior of model ensembles https://dspace.cvut.cz/handle/10467/16319
+- 2012 BSc, Matej Pankovčin: Matafeature database in Rapidminer https://dspace.cvut.cz/handle/10467/9086
+- 2012 MSc, Stanislav Kuznetsov: Faculty Data Warehouse https://dspace.cvut.cz/handle/10467/16289
+- 2012 MSc, Tomáš Králík: Faculty Portal Aplication Interface https://dspace.cvut.cz/handle/10467/16288
+- 2012 MSc, Martin Hadáček: Frequent Sequence Mining Algorithm https://dspace.cvut.cz/handle/10467/10679
+- 2012 MSc, Juraj Leškanič: Methods for Metallurgical Samples Identification https://dspace.cvut.cz/handle/10467/10245
+- 2012 MSc, Adam Kučera: Reporting for Efficient Management of Faculty https://dspace.cvut.cz/handle/10467/10669
+- 2012 MSc, Tomáš Borovička: Training set Construction Methods https://dspace.cvut.cz/handle/10467/10676
+- 2012 MSc, Martin Matuška: User autentization and role management for aplications of the faculty https://dspace.cvut.cz/handle/10467/10526
+- 2012 MSc, Matyáš Krutský: Visual detection of relations in databases https://dspace.cvut.cz/handle/10467/10601
+- 2011 BSc, Jiří Samek: 3D model editor supporting photo transformations https://dspace.cvut.cz/handle/10467/4041
+- 2011 BSc, Michal Sabol: Data mining models https://dspace.cvut.cz/handle/10467/5626
+- 2011 BSc, Jan Fabián: Visualization methods for data mining reports https://dspace.cvut.cz/handle/10467/5598
+- 2011 MSc, Tomáš Bartoň: Clustering cell responses to chemical compounds https://dspace.cvut.cz/handle/10467/5635
+- 2011 MSc, Tomáš Řehořek: Evolution of processes https://dspace.cvut.cz/handle/10467/5505
+- 2010 MSc, Filip Dohnal: Access to FAKE GAME application
+- 2010 MSc, Ondřej Skalička: Combinatorial Optimization Library
+- 2010 MSc, Vladimír Bičík: Continuous optimization algorithms
+- 2010 MSc, Jan Černý: Ensembling data mining models and classifiers
+- 2010 MSc, Ivo Lašek: Integration of Business Intelligence open source tools
+- 2010 MSc, Jiří Trávníček: Noisy Data Modeling
+- 2010 MSc, Marek Handl: Spam identification independent of email body contents
+- 2009 BSc, Jakub Weberschinke: Design Patterns in the FAKE GAME Application
+- 2009 BSc, Libor Grafnetr: Email clustering algorithm
+- 2009 BSc, Vladimír Šťastný: FAKE GAME web services
+- 2009 BSc, Tomáš Řehořek: Web Client Visualization Library
+- 2009 MSc, Michal Chren: Automated Knowledge Extraction
+- 2009 MSc, Marek Tvrdý: Automation of Energy Efficient and Intelligent House
+- 2009 MSc, Adéla Svítková: Components of Energy Efficient and Intelligent House
+- 2009 MSc, Martin Hvizdoš: Continuous Optimization Library
+- 2009 MSc, Michal Škola: Data Visualization for the Knowledge Extraction
+- 2009 MSc, Michal Záborec: Evolutionary Encoding of Nomial Data
+- 2009 MSc, Martin Hasaj: Neural Networks for Adaptive Control of Households
+- 2009 MSc, Jaroslav Kuchař: Statistical Data Processing Module
+- 2008 BSc, Jakub Špirk: Distributed Computation of Inductive Models https://dspace.cvut.cz/handle/10467/15862
+- 2008 BSc, Milan Trčka: The Simplification of Formulas Generated by Inductive Models
+- 2008 MSc, Jakub Novák: Anthropological data analysis by means of computational intelligence methods
+- 2008 MSc, David Dvořák: Application for Visualization of Structure and Behaviour of Inductive Models
+- 2008 MSc, Miloslav Pavlíček: Automated Data Preprocessing Module
+- 2008 MSc, Aleš Pilný: Biological Signals Processing
+- 2008 MSc, Petr Samek: Evaluation of Comparative Study in Reconditioning Centre
+- 2008 MSc, Jaroslav Matoušek: Hybrid Inductive Models Topology Visualization
+- 2008 MSc, Vít Uličný: Hybrid inductive models in PMML
+- 2008 MSc, Josef Bouška: Neural Networks for Time Series Prediction
+- 2007 MSc, Oleg Kovářík: ANT Colony Optimization for Continuous Problems
+- 2007 MSc, Richard Málek: Alternation of Meta-heuristic Algorithms with Runtime Analysis and Parameters Adaptation
+- 2007 MSc, Ondřej Filípek: Conjugate Gradient Method for GAME Units Optimization
+- 2007 MSc, Petr Zelenka: Data Preprocessing in YALE Open Source Software
+- 2007 MSc, Tomáš Sejkora: Medical Data Analysis by Means of Statistical Methods and SOM
+- 2007 MSc, Jiří Nožka: Visual 3D Analysis of Neural Networks Behaviour
+- 2006 BSc, Miroslav Janošík: Algorithms for Optimization of GAME networks
+- 2006 BSc, Ondřej Svoboda: Bayesian methods in data mining
+- 2006 BSc, Jiří Doležel: Evolution algorithm for neural networks improvement
+- 2006 BSc, Jakub Novák: GMDH networks the KnowledgeMiner software
+- 2006 BSc, Ondřej Macek: Self Organizing Map and its Extensions
+- 2006 BSc, Lukáš Trlida: XML representation of inductive models
+- 2006 MSc, Jan Drchal: Evolutionary algorithms and neural networks
+- 2006 MSc, Miroslav Čepek: Pattern Recognition for Real World Data
+- 2006 MSc, Jan Saidl: Visualization as a tool for nature systems behaviour study
+- 2005 BSc, Pavel Staněk: Statistical Evaluation of optimal inductive model topology
+- 2005 MSc, Jiří Novák: The comparison of methods for noise cancelation

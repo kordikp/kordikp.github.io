@@ -1,0 +1,3595 @@
+{
+ "generated": "2026-10-19",
+ "themes": [
+  {
+   "id": "recsys",
+   "short": "Recommender systems",
+   "label": "Recommender systems & search",
+   "text": "How to pick the right item for the right person: scalable autoencoders, cold start, honest evaluation and search. Most of it runs in production at Recombee."
+  },
+  {
+   "id": "language",
+   "short": "Language, agents & safety",
+   "label": "Language models, agents & AI safety",
+   "text": "Text, explanations and AI agents: what language models know, how agents divide work in marketplaces, and how to keep chatbots safe, also for children."
+  },
+  {
+   "id": "science",
+   "short": "Science & climate",
+   "label": "AI for science, health & climate",
+   "text": "Machine learning on real measurements: weather nowcasting, climate and rural data, fluid simulations, medicine and forensic anthropology."
+  },
+  {
+   "id": "society",
+   "short": "Education & society",
+   "label": "Education, society & applied AI",
+   "text": "AI for learning and for the people around it: education data, startups, skills and academia-industry matching."
+  },
+  {
+   "id": "neural",
+   "short": "Neural nets & optimization",
+   "label": "Neural networks & optimization",
+   "text": "Neural networks, evolutionary algorithms and learned optimizers; from neuroevolution to transformers."
+  },
+  {
+   "id": "mining",
+   "short": "Data mining",
+   "label": "Data mining, clustering & visualization",
+   "text": "Finding structure in data: clustering (Chameleon), anomalies, time series and interactive visualization."
+  },
+  {
+   "id": "automl",
+   "short": "AutoML & meta-learning",
+   "label": "Inductive modelling, meta-learning & AutoML",
+   "text": "Letting algorithms build models: the GAME method, meta-learning templates, Predictor Factory and automated data mining."
+  }
+ ],
+ "eras": [
+  {
+   "from": 2002,
+   "to": 2008,
+   "title": "Inductive modelling",
+   "text": "Student and Ph.D. years with prof. Miroslav Šnorek, starting from the GMDH method. The GAME method grows networks of heterogeneous neurons from data; ensembles of such models estimate their own credibility. First applications in medicine: sleep stages, atrial electrograms, fetal weight."
+  },
+  {
+   "from": 2009,
+   "to": 2014,
+   "title": "Meta-learning and data mining",
+   "text": "At the new FIT CTU: meta-learning templates that combine models, the FAKE GAME open-source system, continuous optimization libraries, feature ranking, clustering and text mining. Most theses of this era build predictive models for real data."
+  },
+  {
+   "from": 2015,
+   "to": 2019,
+   "title": "From AutoML to recommender systems",
+   "text": "Recombee is founded and the group turns to recommendation. In parallel: learning from relational data (Predictor Factory), multi-objective clustering (Chameleon 2) and predictive ensembles for transfer learning. The first doctoral students defend."
+  },
+  {
+   "from": 2020,
+   "to": 2023,
+   "title": "Deep learning in practice",
+   "text": "Scalable shallow autoencoders (ELSA, VASP) and honest offline evaluation of recommenders; learned optimizers and physics-informed weather nowcasting with Meteopress; awards at NeurIPS, KDD and AAAI workshops."
+  },
+  {
+   "from": 2024,
+   "to": 2026,
+   "title": "Recommendation meets language models",
+   "text": "Language and interaction signals merge (beeFormer, sparse embeddings), LLMs get explained and guarded (SHIELD, child-safety alignment, geo-grounded guardrails), AI agents start shopping on both sides of a marketplace, EU projects bring climate and rural data. RecSys 2025 comes to Prague; the p-book and RecSys Atlas open the field to newcomers."
+  }
+ ],
+ "items": [
+  {
+   "y": 2026,
+   "type": "milestone",
+   "sub": "project",
+   "title": "capTTict completed",
+   "text": "Technology transfer and startup support across 9 Danube countries (2024–2026)."
+  },
+  {
+   "y": 2026,
+   "type": "milestone",
+   "sub": "community",
+   "title": "Keynote at ISD 2026",
+   "text": "“The Great Convergence: Recommendation, Search, and Conversation in Real-World AI Systems”."
+  },
+  {
+   "y": 2026,
+   "type": "milestone",
+   "sub": "project",
+   "title": "p-book and RecSys Atlas",
+   "text": "A self-recommending living book (RecSys 2026 demo) and a map of 20 years of RecSys research."
+  },
+  {
+   "doi": "10.1145/3773078.3841269",
+   "url": "https://recsys-pbook.vercel.app",
+   "y": 2026,
+   "sub": "conference",
+   "title": "How Would You Like Your Recommendations? p-book, a Self-Recommending Living Book That Teaches How Recommender Systems Work",
+   "authors": "Kordík P., Nečasová E.",
+   "venue": "RecSys 2026 (20th ACM Conference on Recommender Systems), demo",
+   "type": "paper",
+   "themes": [
+    "recsys",
+    "society"
+   ]
+  },
+  {
+   "doi": "10.1145/3774935.3806192",
+   "url": "",
+   "y": 2026,
+   "sub": "conference",
+   "title": "Language Embeddings Meet Shallow Autoencoders",
+   "authors": "Alves R., Vančura V., Kordík P., Ledent A.",
+   "venue": "UMAP 2026 (34th ACM Conference on User Modeling, Adaptation and Personalization)",
+   "type": "paper",
+   "themes": [
+    "recsys",
+    "language"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "https://doi.org/10.5281/zenodo.22050643",
+   "y": 2026,
+   "sub": "workshop",
+   "title": "No Safe Words: Building Shortcut-Resistant Safety Guardrails for Geographically Grounded Environmental Advice",
+   "authors": "Perles M., Slyvka O., Kordík P.",
+   "venue": "GeoAI '26, 9th ACM SIGSPATIAL Int. Workshop on AI for Geographic Knowledge Discovery",
+   "type": "paper",
+   "themes": [
+    "language",
+    "science"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2026,
+   "sub": "conference",
+   "title": "Evaluating the Division of Labour in Strategic Two-Sided Agentic Marketplaces",
+   "authors": "Matušek J., Kordík P.",
+   "venue": "IJCCI 2026, special session AI Agents: Progress, Architecture, and Applications (AIPAA), accepted",
+   "type": "paper",
+   "themes": [
+    "language",
+    "recsys"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2026,
+   "sub": "workshop",
+   "title": "Mind the Alignment Gap: Why General-Purpose Moderation Fails Children, and How a Child-Centric Taxonomy and Synthetic Data Close It",
+   "authors": "Fikeis J., Kordík P.",
+   "venue": "WOAH 2026, 10th Workshop on Online Abuse and Harms @ EMNLP 2026, accepted",
+   "type": "paper",
+   "themes": [
+    "language",
+    "society"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "https://arxiv.org/abs/2604.09112",
+   "y": 2026,
+   "sub": "preprint",
+   "title": "Hybrid Cold-Start Recommender System for Closure Model Selection in Multiphase Flow Simulations",
+   "authors": "Hänsch S., Sajdoková A., Rębowski A., Miškařík F., Ramakrishna K., Schlegel F., Rybář V., Alves R., Kordík P.",
+   "venue": "arXiv:2604.09112",
+   "type": "paper",
+   "themes": [
+    "science",
+    "recsys"
+   ]
+  },
+  {
+   "doi": "10.1145/3830455.3830456",
+   "url": "",
+   "y": 2026,
+   "sub": "article",
+   "title": "The 19th ACM Conference on Recommender Systems (RecSys 2025)",
+   "authors": "Kordík P., Schedl M., Bieliková M., Pera M. S., De Gemmis M.",
+   "venue": "ACM SIGWEB Newsletter, Summer 2026",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Demonstration and Benchmarking of Evolutionary Algorithms in TensorNEAT",
+   "title_cs": "Demostrace a benchmarking moderních evolučních algoritmů v TensorNEAT",
+   "student": "Daniil Kolesnikov",
+   "themes": [
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/179364"
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Safety Assessment in Child-AI Interactions",
+   "title_cs": "Bezpečnost a moderace v interakcích mezi dětmi a AI",
+   "student": "Jan Fikeis",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/181954"
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Factually Grounded Generation of Success Stories Using Large Language Models",
+   "title_cs": "Faktograficky podložené generování success stories pomocí velkých jazykových modelů",
+   "student": "Lukáš Lavinger",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/182186"
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Nowcasting from Radar Images Using Diffusion Networks",
+   "title_cs": "Předpověď z radarových snímků pomocí difúzních sítí",
+   "student": "Markéta Minářová",
+   "themes": [
+    "science",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/179367"
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Automatic Extraction of Legal Citations and Document Links from Public Institution Decisions",
+   "title_cs": "Automatická extrakce právních citací a propojení z rozhodnutí veřejných institucí",
+   "student": "Matej Kulháň",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/180065"
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Secure Cross-Site Widget Integration Library",
+   "title_cs": "Knihovna pro bezpečnou integraci widgetů napříč webovými stránkami",
+   "student": "Matej Stieranka",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/180773"
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Large Language Model Assisted Symbolic Regression",
+   "title_cs": "Velké jazykové modely pro symbolickou regresi",
+   "student": "Naďa Fučelová",
+   "themes": [
+    "language",
+    "automl"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/179998"
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Training and Evaluation of Foundation Models for Recommender Systems",
+   "title_cs": "Trénování a vyhodnocování foundation modelů pro doporučovací systémy",
+   "student": "Tomáš Laurin",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/179921"
+  },
+  {
+   "y": 2026,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Full-Duplex Dialogue Systems",
+   "title_cs": "Plně duplexní dialogové systémy",
+   "student": "Vojtěch Slavík",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/179498"
+  },
+  {
+   "y": 2025,
+   "type": "milestone",
+   "sub": "community",
+   "title": "General Co-Chair, ACM RecSys 2025 in Prague",
+   "text": "More than 1,000 attendees from around the world."
+  },
+  {
+   "y": 2025,
+   "sub": "conference",
+   "title": "Reasoning-Grounded Natural Language Explanations for Language Models",
+   "authors": "Cahlík V., Alves R., Kordík P.",
+   "venue": "xAI 2025 (World Conference on Explainable AI), CCIS 2578, pp. 3–18",
+   "doi": "10.1007/978-3-032-08327-2_1",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "language"
+   ]
+  },
+  {
+   "y": 2025,
+   "sub": "conference",
+   "title": "The Future is Sparse: Embedding Compression for Scalable Retrieval in Recommender Systems",
+   "authors": "Kasalický P. et al.",
+   "venue": "RecSys '25: Proceedings of the Nineteenth ACM Conference on Recommender Systems",
+   "doi": "10.1145/3705328.3748147",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2025,
+   "sub": "conference",
+   "title": "Segment-Aware Analytics for Real-Time Editorial Support in Media Groups",
+   "authors": "Spišák M. et al.",
+   "venue": "INRA 2025 workshop @ RecSys 2025 (CEUR-WS Vol-4056)",
+   "doi": "",
+   "url": "https://ceur-ws.org/Vol-4056/short1.pdf",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2025,
+   "sub": "conference",
+   "title": "Recurrent Autoregressive Linear Model for Next-Basket Recommendation",
+   "authors": "Zmeškalová T. et al.",
+   "venue": "RecSys '25: Proceedings of the Nineteenth ACM Conference on Recommender Systems",
+   "doi": "10.1145/3705328.3759313",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2025,
+   "sub": "conference",
+   "title": "Active Recommendation for Email Outreach Dynamics",
+   "authors": "Žid Č., Alves R., Kordík P.",
+   "venue": "ACM International Conference on Information and Knowledge Management",
+   "doi": "10.1145/3746252.3760832",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2025,
+   "sub": "journal",
+   "title": "Evaluating Linear Shallow Autoencoders on Large Scale Datasets",
+   "authors": "Vančura V. et al.",
+   "venue": "ACM Transactions on Recommender Systems",
+   "doi": "10.1145/3748335",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "doi": "10.1145/3699682.3728329",
+   "url": "",
+   "y": 2025,
+   "sub": "conference",
+   "title": "Mitigating Risks in Marketplace Semantic Search: A Dataset for Harmful and Sensitive Query Alignment",
+   "authors": "Spáček F., Vančura V., Kordík P.",
+   "venue": "UMAP 2025 (33rd ACM Conference on User Modeling, Adaptation and Personalization)",
+   "type": "paper",
+   "themes": [
+    "recsys",
+    "language"
+   ]
+  },
+  {
+   "doi": "10.15439/2025F8393",
+   "url": "",
+   "y": 2025,
+   "sub": "conference",
+   "title": "Bridging Global Language Models and Local Spatial Data: The JackDaw Approach to Context-Aware Agriculture and Rural Planning",
+   "authors": "Charvát K., Bergheim R., Palma R., Rynkiewicz A. A., Botek M., Kovalenko A., Kordík P., Horáková Š., Kollerová M.",
+   "venue": "FedCSIS 2025, Annals of Computer Science and Information Systems 43, pp. 507–518",
+   "type": "paper",
+   "themes": [
+    "language",
+    "science"
+   ]
+  },
+  {
+   "doi": "10.1016/j.aitf.2025.100019",
+   "url": "",
+   "y": 2025,
+   "sub": "journal",
+   "title": "Data-driven closure model selection for multiphase CFD via matrix completion",
+   "authors": "Hänsch S., Sajdoková A., Rabau A., Rybář V., Alves R., Kordík P.",
+   "venue": "AI Thermal Fluids 4, 100019",
+   "type": "paper",
+   "themes": [
+    "science",
+    "recsys"
+   ]
+  },
+  {
+   "doi": "10.48550/arXiv.2510.18783",
+   "url": "",
+   "y": 2025,
+   "sub": "preprint",
+   "title": "Enhancing Fractional Gradient Descent with Learned Optimizers",
+   "authors": "Sobotka J., Šimánek P., Kordík P.",
+   "venue": "arXiv:2510.18783",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "https://www.climatechange.ai/papers/neurips2025/86",
+   "y": 2025,
+   "sub": "workshop",
+   "title": "Downscaling climate projections to 1 km with single-image super resolution",
+   "authors": "Košťál P., Kordík P., Podsztavek O.",
+   "venue": "NeurIPS 2025 Workshop on Tackling Climate Change with Machine Learning",
+   "type": "paper",
+   "themes": [
+    "science",
+    "neural"
+   ]
+  },
+  {
+   "y": 2025,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "A Guide to Building a Technological Startup: A Case Study",
+   "title_cs": "Příručka a případová studie k budování technologických startupů",
+   "student": "Jakub Dorian Charbulák",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/121097"
+  },
+  {
+   "y": 2025,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Cold Start Items in Next Basket Recommendation",
+   "title_cs": "Problém nových položek při doporučování dalšího košíku",
+   "student": "Jakub Feik",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/123991"
+  },
+  {
+   "y": 2025,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Robust neural embeddings for typos correction",
+   "title_cs": "Robustní neuronové reprezentace pro korekci překlepů",
+   "student": "Martin Eliáš",
+   "themes": [
+    "language",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/123976"
+  },
+  {
+   "y": 2025,
+   "type": "thesis",
+   "sub": "PhD",
+   "title": "From Collaborative to Content-Based: Scaling Autoencoders to Train Transformers in Recommender Systems",
+   "title_cs": "Od kolaborativního ke content-based filtrování: škálování autoenkodérů pro trénink transformerů v doporučovacích systémech",
+   "student": "Vojtěch Vančura",
+   "themes": [
+    "recsys",
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2025,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Design and implementation of an application for scheduling and sending of personalized content",
+   "title_cs": "Návrh a implementace aplikace pro vhodné časování a rozesílání personalizovaného obsahu",
+   "student": "Daniel Breiner",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/121010"
+  },
+  {
+   "y": 2024,
+   "type": "milestone",
+   "sub": "project",
+   "title": "Three EU projects start",
+   "text": "PoliRuralPlus (Horizon Europe, CTU coordinates 20 partners), capTTict (Interreg Danube, CTU lead partner) and FOCAL (Horizon Europe)."
+  },
+  {
+   "y": 2024,
+   "type": "milestone",
+   "sub": "industry",
+   "title": "Co-founded edumatch.ai",
+   "text": "Matching students with real-world opportunities in companies."
+  },
+  {
+   "y": 2024,
+   "type": "milestone",
+   "sub": "community",
+   "title": "ACM RecSys Steering Committee",
+   "text": "Also Senior PC member of RecSys 2024."
+  },
+  {
+   "y": 2024,
+   "sub": "conference",
+   "title": "beeFormer: Bridging the Gap Between Semantic and Interaction Similarity in Recommender Systems",
+   "authors": "Vančura V., Kordík P., Straka M.",
+   "venue": "RecSys '24: Proceedings of the 18th ACM Conference on Recommender Systems",
+   "doi": "10.1145/3640457.3691707",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys",
+    "language"
+   ]
+  },
+  {
+   "y": 2024,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Efficient implementation of neuroevolution for reinforcement learning tasks",
+   "title_cs": "Efektivní implementace neuroevoluce pro úlohy posilovaného učení",
+   "student": "Vladimír Votava",
+   "themes": [
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/115974"
+  },
+  {
+   "y": 2024,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Knowlege tracing techniques, their explainability and applications",
+   "title_cs": "Techniky sledování procesu učení, jejich vysvětlitelnost a použití",
+   "student": "Eliška Svobodová",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/114586"
+  },
+  {
+   "y": 2024,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Semantic Product Search",
+   "title_cs": "Semantické vyhledávání produktů",
+   "student": "Patrik Schweika",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/114585"
+  },
+  {
+   "y": 2023,
+   "type": "milestone",
+   "sub": "award",
+   "title": "Best Paper Award, EvalRS @ KDD 2023",
+   "text": "P. Kasalický, R. Alves, P. Kordík."
+  },
+  {
+   "y": 2023,
+   "sub": "journal",
+   "title": "Improving recommendation diversity and serendipity with an ontology-based algorithm for cold start environments",
+   "authors": "Kuznetsov S., Kordík P.",
+   "venue": "International Journal of Data Science and Analytics",
+   "doi": "10.1007/s41060-023-00418-4",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2023,
+   "sub": "conference",
+   "title": "Bridging Offline-Online Evaluation with a Time-dependent and Popularity Bias-free Offline Metric for Recommenders",
+   "authors": "Kasalický P., Alves R., Kordík P.",
+   "venue": "Proceedings of EvalRS: A Rounded Evaluation Of Recommender Systems 2023",
+   "doi": "",
+   "url": "https://ceur-ws.org/Vol-3450/paper3.pdf",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2023,
+   "sub": "conference",
+   "title": "Overcoming the Cold-Start Problem in Recommendation Systems with Ontologies and Knowledge Graphs",
+   "authors": "Kuznetsov S., Kordík P.",
+   "venue": "New Trends in Database and Information Systems",
+   "doi": "10.1007/978-3-031-42941-5_52",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2023,
+   "sub": "conference",
+   "title": "Personalised Recommendations and Profile Based Re-ranking Improve Distribution of Student Opportunities",
+   "authors": "Žid Č., Kordík P., Kuznetsov S.",
+   "venue": "International Joint Conference 16th International Conference on Computational Intelligence in Security for Information Systems (CISIS 2023) 14th International Conference on EUropean Transnational Education (ICEUTE 2023)",
+   "doi": "10.1007/978-3-031-42519-6_21",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys",
+    "society"
+   ]
+  },
+  {
+   "doi": "10.1007/978-3-031-44207-0_46",
+   "url": "",
+   "y": 2023,
+   "sub": "conference",
+   "title": "Decorelated Weight Initialization by Backpropagation",
+   "authors": "Kovalenko A., Kordík P.",
+   "venue": "ICANN 2023, LNCS",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2023,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Text to query using large language models on local infrastructure",
+   "title_cs": "Převod textu na dotaz pomocí rozsáhlých jazykových modelů na místní infrastruktuře",
+   "student": "Patrik Laurinc",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/109371"
+  },
+  {
+   "y": 2023,
+   "type": "thesis",
+   "sub": "PhD",
+   "title": "Ontologies in Recommender Systems",
+   "title_cs": "Ontologie v rekomendačních systémech",
+   "student": "Stanislav Kuznetsov",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/111016"
+  },
+  {
+   "y": 2022,
+   "type": "milestone",
+   "sub": "award",
+   "title": "1st place, Weather4cast 2022 (NeurIPS 2022)",
+   "text": "Core challenge won by the group (J. Pihrt, R. Raevskiy, P. Šimánek, M. Choma), in collaboration with Meteopress."
+  },
+  {
+   "y": 2022,
+   "sub": "conference",
+   "title": "Adapting the Size of Artificial Neural Networks Using Dynamic Auto-Sizing",
+   "authors": "Cahlík V., Kordík P., Čepek M.",
+   "venue": "IEEE 17th International Conference on Computer Science and Information Technologies",
+   "doi": "10.1109/CSIT56902.2022.10000471",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2022,
+   "sub": "conference",
+   "title": "Discriminant Analysis on a Stream of Features",
+   "authors": "Motl J., Kordík P.",
+   "venue": "Engineering Applications of Neural Networks",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2022,
+   "sub": "conference",
+   "title": "Trend and Seasonality Elimination from Relational Data",
+   "authors": "Motl J., Kordík P.",
+   "venue": "Engineering Applications of Neural Networks",
+   "doi": "10.1007/978-3-031-08223-8_22",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2022,
+   "sub": "conference",
+   "title": "Offline evaluation of the serendipity in recommendation systems",
+   "authors": "Pastukhov D. et al.",
+   "venue": "IEEE 17th International Conference on Computer Science and Information Technologies",
+   "doi": "10.1109/CSIT56902.2022.10000782",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2022,
+   "sub": "conference",
+   "title": "RepSys: Framework for Interactive Evaluation of Recommender Systems",
+   "authors": "Šafařík J., Vančura V., Kordík P.",
+   "venue": "RecSys '22: Proceedings of the 16th ACM Conference on Recommender Systems",
+   "doi": "10.1145/3523227.3551469",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2022,
+   "sub": "conference",
+   "title": "Learning to Optimize with Dynamic Mode Decomposition",
+   "authors": "Šimánek P., Vašata D., Kordík P.",
+   "venue": "2022 International Joint Conference on Neural Networks (IJCNN)",
+   "doi": "10.1109/IJCNN55064.2022.9892364",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2022,
+   "sub": "conference",
+   "title": "Scalable Linear Shallow Autoencoder for Collaborative Filtering",
+   "authors": "Vančura V. et al.",
+   "venue": "RecSys '22: Proceedings of the 16th ACM Conference on Recommender Systems",
+   "doi": "10.1145/3523227.3551482",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2022,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Estimating Customer Lifetime Value for Media Houses",
+   "title_cs": "Odhadování hodnoty návštěvníka pro mediální domy",
+   "student": "Bekbolot Khudaiberdiev",
+   "themes": [
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/107260"
+  },
+  {
+   "y": 2022,
+   "type": "thesis",
+   "sub": "PhD",
+   "title": "Predictor Factory: Learning from Relational Data",
+   "title_cs": "Predictor Factory: Učení z relačních dat",
+   "student": "Jan Motl",
+   "themes": [
+    "automl"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/100475"
+  },
+  {
+   "y": 2022,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Anytime Learning with Auto-Sizing Neural Networks",
+   "title_cs": "Automatické nastavování velikosti neuronových sítí v omezeném čase",
+   "student": "Vojtěch Cahlík",
+   "themes": [
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/101055"
+  },
+  {
+   "y": 2022,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Personalized recommendations for students",
+   "title_cs": "Personalizované doporučovnání pro studenty",
+   "student": "Čeněk Žid",
+   "themes": [
+    "recsys",
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/101209"
+  },
+  {
+   "y": 2021,
+   "type": "milestone",
+   "sub": "nonprofit",
+   "title": "Co-founded AI dětem",
+   "text": "Teaching artificial intelligence to children at Czech schools."
+  },
+  {
+   "y": 2021,
+   "type": "milestone",
+   "sub": "award",
+   "title": "2nd place, Meta-Learning Challenge (AAAI 2021)",
+   "text": "T. Chobola, D. Vašata, P. Kordík."
+  },
+  {
+   "y": 2021,
+   "sub": "conference",
+   "title": "Novel data mining-based age-at-death estimation model using adult pubic symphysis 3D scans",
+   "authors": "Buk Z. et al.",
+   "venue": "Proceedings of the 21st Conference Information Technologies – Applications and Theory (ITAT 2021)",
+   "doi": "",
+   "url": "https://ceur-ws.org/Vol-2962/paper29.pdf",
+   "type": "paper",
+   "themes": [
+    "science",
+    "mining"
+   ]
+  },
+  {
+   "y": 2021,
+   "sub": "conference",
+   "title": "Transfer learning based few-shot classification using optimal transport mapping from preprocessed latent space of backbone neural network",
+   "authors": "Chobola T., Vašata D., Kordík P.",
+   "venue": "AAAI Workshop on Meta-Learning and MetaDL Challenge",
+   "doi": "",
+   "url": "https://proceedings.mlr.press/v140/chobola21a.html",
+   "type": "paper",
+   "themes": [
+    "neural",
+    "automl"
+   ]
+  },
+  {
+   "y": 2021,
+   "sub": "conference",
+   "title": "Dynamic Neural Diversification: Path to Computationally Sustainable Neural Networks",
+   "authors": "Kovalenko A., Kordík P., Friedjungová M.",
+   "venue": "Artificial Neural Networks and Machine Learning – ICANN 2021",
+   "doi": "10.1007/978-3-030-86340-1_19",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2021,
+   "sub": "conference",
+   "title": "Aggregate Function Generalization to Temporal Data",
+   "authors": "Motl J., Kordík P.",
+   "venue": "2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI)",
+   "doi": "10.1109/ICTAI52525.2021.00098",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2021,
+   "sub": "conference",
+   "title": "Stratified Cross-Validation on Multiple Columns",
+   "authors": "Motl J., Kordík P.",
+   "venue": "2021 IEEE 33rd International Conference on Tools with Artificial Intelligence (ICTAI)",
+   "doi": "10.1109/ICTAI52525.2021.00012",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2021,
+   "sub": "conference",
+   "title": "Deep Variational Autoencoder with Shallow Parallel Path for Top-N Recommendation (VASP)",
+   "authors": "Vančura V., Kordík P.",
+   "venue": "Artificial Neural Networks and Machine Learning – ICANN 2021",
+   "doi": "10.1007/978-3-030-86383-8_11",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys",
+    "neural"
+   ]
+  },
+  {
+   "doi": "10.1007/s42452-021-04778-z",
+   "url": "",
+   "y": 2021,
+   "sub": "journal",
+   "title": "Fast and exact audit scheduling optimization",
+   "authors": "Motl J., Kordík P.",
+   "venue": "SN Applied Sciences 3(10), 794",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "doi": "10.48550/arXiv.2111.15588",
+   "url": "",
+   "y": 2021,
+   "sub": "preprint",
+   "title": "SimpleTRON: Simple Transformer with O(N) Complexity",
+   "authors": "Yorsh U., Kovalenko A., Vančura V., Vašata D., Kordík P., Mikolov T.",
+   "venue": "arXiv:2111.15588",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2021,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Machine learning based query analysis for an online medical clinic",
+   "title_cs": "Analýza dotazů online zdravotní kliniky pomocí strojového učení",
+   "student": "Adam Jankovec",
+   "themes": [
+    "language",
+    "science"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/94593"
+  },
+  {
+   "y": 2021,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Vehicle Routing Problem with Time Windows solved via Machine Learning and Optimization Heuristics",
+   "title_cs": "Vehicle Routing Problem řešený pomocí strojového učení a heuristických optimalizačních metod",
+   "student": "Adam Zvada",
+   "themes": [
+    "science",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/94492"
+  },
+  {
+   "y": 2021,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Algorithms for better understanding of recommended content and user clusters",
+   "title_cs": "Algoritmy pro lepší porozumění doporučovaného obsahu a segmentů uživatelů",
+   "student": "Pavel Hlubík",
+   "themes": [
+    "recsys",
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/94489"
+  },
+  {
+   "y": 2020,
+   "type": "milestone",
+   "sub": "community",
+   "title": "UniHack 2020",
+   "text": "Co-organised an online hackathon of FIT CTU and prg.ai: in the first COVID spring, student teams and mentors looked for ways to help companies, the city, schools and healthcare."
+  },
+  {
+   "y": 2020,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Recommendation based on product images",
+   "title_cs": "Doporučování na základě obrázků produktů",
+   "student": "Kristýna Tauchmanová",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/86578"
+  },
+  {
+   "y": 2019,
+   "type": "milestone",
+   "sub": "nonprofit",
+   "title": "Co-founded prg.ai",
+   "text": "Prague AI hub of the city, Charles University, the Czech Academy of Sciences and CTU."
+  },
+  {
+   "y": 2019,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "First doctoral students defended",
+   "text": "Tomáš Řehořek (now leading Recombee) and Tomáš Bartoň."
+  },
+  {
+   "y": 2019,
+   "sub": "journal",
+   "title": "Chameleon 2: An Improved Graph-Based Clustering Algorithm",
+   "authors": "Bartoň T., Brůna T., Kordík P.",
+   "venue": "ACM Transactions on Knowledge Discovery from Data",
+   "doi": "10.1145/3299876",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "y": 2019,
+   "sub": "conference",
+   "title": "Learning on a Stream of Features with Random Forest",
+   "authors": "Motl J., Kordík P.",
+   "venue": "Proceedings of the 19th Conference Information Technologies - Applications and Theory (ITAT 2019)",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Software module for skill based search of students",
+   "title_cs": "Softwarový modul pro vyhledávání studentů na základě jejich dovedností",
+   "student": "Adam Jankovec",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/83147"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Scalability of Nearest Neighbor Algorithm",
+   "title_cs": "Škálovatelnost algoritmu nejbližších sousedů",
+   "student": "Antonín Dvořák",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/83215"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Classification of URLs Using Deep Neural Networks",
+   "title_cs": "Klasifikace webových adres pomocí hlubokých neuronových sítí",
+   "student": "Matyáš Skalický",
+   "themes": [
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/83230"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Question Answering Algorithms in Natural Language",
+   "title_cs": "Algoritmy pro strojové odpovídání na dotazy v přirozeném jazyce",
+   "student": "Matúš Žilinec",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/83399"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Grammar interactive evolution of graph interfaces",
+   "title_cs": "Gramatická interaktivní evoluce grafických rozhraní",
+   "student": "Petr Hanzl",
+   "themes": [
+    "mining",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/83425"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Recommendation of new movies to obtain",
+   "title_cs": "Doporučování filmů k akvizici",
+   "student": "Tatiana Lekýrová",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/83193"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "User subaccounts detection for better recommendation",
+   "title_cs": "Detekce uživatelských podúčtů pro lepší doporučování",
+   "student": "Tomáš Vopat",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/83387"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "PhD",
+   "title": "Manipulating the Capacity of Recommendation Models in Recall-Coverage Optimization",
+   "title_cs": "Manipulace kapacitou doporučovacích modelů pro optimalizaci v Recall-Coverage rovině",
+   "student": "Tomáš Řehořek",
+   "themes": [
+    "recsys",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/81823"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "PhD",
+   "title": "Meta-optimizations for Cluster Analysis",
+   "title_cs": "Meta optimalizace shlukové analýzy",
+   "student": "Tomáš Bartoň",
+   "themes": [
+    "mining",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/82129"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Recommending related images to articles",
+   "title_cs": "Doporučování obrázků k článkům",
+   "student": "Matouš Pištora",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/82329"
+  },
+  {
+   "y": 2019,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Neural Autoencoders in Recommender Systems",
+   "title_cs": "Neuronové autoencodery pro doporučování",
+   "student": "Michal Bajer",
+   "themes": [
+    "recsys",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/82568"
+  },
+  {
+   "y": 2018,
+   "sub": "journal",
+   "title": "Discovering predictive ensembles for transfer learning and meta-learning",
+   "authors": "Kordík P., Frýda T., Černý J.",
+   "venue": "Machine Learning",
+   "doi": "10.1007/s10994-017-5682-0",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2018,
+   "sub": "conference",
+   "title": "On Scalability of Predictive Ensembles and Tradeoff Between Their Training Time and Accuracy",
+   "authors": "Kordík P., Frýda T.",
+   "venue": "Advances in Intelligent Systems and Computing II",
+   "doi": "10.1007/978-3-319-70581-1_18",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2018,
+   "sub": "conference",
+   "title": "Comparing Offline and Online Evaluation Results of Recommender Systems",
+   "authors": "Kordík P. et al.",
+   "venue": "REVEAL RecSyS 2018 workshop proceedings",
+   "doi": "",
+   "url": "https://sites.google.com/view/reveal2018/proceedings?authuser=0",
+   "type": "paper",
+   "themes": [
+    "recsys"
+   ]
+  },
+  {
+   "y": 2018,
+   "sub": "conference",
+   "title": "Do We Need to Observe Features to Perform Feature Selection?",
+   "authors": "Motl J., Kordík P.",
+   "venue": "Proceedings of the 18th Conference Information Technologies - Applications and Theory (ITAT 2018)",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2018,
+   "sub": "conference",
+   "title": "Violation of Independence of Irrelevant Alternatives in Friedman’s test",
+   "authors": "Motl J., Kordík P.",
+   "venue": "Proceedings of the 18th Conference Information Technologies - Applications and Theory (ITAT 2018)",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2018,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Improving Learning to Rank Algorithms",
+   "title_cs": "Zlepšování algoritmů pro učení se řadit",
+   "student": "Huy Hoang Vu",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/76809"
+  },
+  {
+   "y": 2018,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Lip Reading using Deep Neural Networks",
+   "title_cs": "Odezírání ze rtů pomocí hlubokých neuronových sítí",
+   "student": "Jan Horák",
+   "themes": [
+    "language",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/76800"
+  },
+  {
+   "y": 2018,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Music Recommender System",
+   "title_cs": "Doporučování hudby",
+   "student": "Ondřej Šofr",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/79444"
+  },
+  {
+   "y": 2018,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Recommendation algorithms optimization",
+   "title_cs": "Optimalizace doporučovacích algoritmů",
+   "student": "Jakub Drdák",
+   "themes": [
+    "recsys",
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/74610"
+  },
+  {
+   "y": 2017,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "Associate Professor (doc.) in Informatics",
+   "text": "Habilitation at FIT CTU."
+  },
+  {
+   "y": 2017,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "Vice-Dean for Industry Cooperation, FIT CTU (2017–2024)",
+   "text": "Ran the faculty's partnership programme with companies."
+  },
+  {
+   "y": 2017,
+   "type": "milestone",
+   "sub": "industry",
+   "title": "Co-founded experts.ai",
+   "text": "A platform connecting university experts with industry."
+  },
+  {
+   "y": 2017,
+   "sub": "conference",
+   "title": "Scalability of predictive ensembles",
+   "authors": "Kordík P. et al.",
+   "venue": "2017 12th International Scientific and Technical Conference on Computer Sciences and Information Technologies (CSIT)",
+   "doi": "10.1109/STC-CSIT.2017.8098848",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2017,
+   "sub": "conference",
+   "title": "Foreign Key Constraint Identification in Relational Databases",
+   "authors": "Motl J., Kordík P.",
+   "venue": "ITAT 2017: Information Technologies – Applications and Theory",
+   "doi": "",
+   "url": "http://ceur-ws.org/Vol-1885/106.pdf",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2017,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Web service for advanced text analysis",
+   "title_cs": "Webová služba pro pokročilou analýzu textu",
+   "student": "Jan Švejda",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/69963"
+  },
+  {
+   "y": 2017,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Job-board predictions",
+   "title_cs": "Predikce počtu odpovědí na inzerát",
+   "student": "Martin Šmíd",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/69323"
+  },
+  {
+   "y": 2017,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Historic Landmarks Identification",
+   "title_cs": "Rozpoznávání památek",
+   "student": "Peter Bábics",
+   "themes": [
+    "science"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/70406"
+  },
+  {
+   "y": 2017,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Understanding Documents with Text Mining Methods",
+   "title_cs": "Porozumění dokumentům pomocí metod text miningu",
+   "student": "Sergii Stamenov",
+   "themes": [
+    "language",
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/69588"
+  },
+  {
+   "y": 2017,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Scalability of Predictive Modeling Algorithms",
+   "title_cs": "Škálovatelnost prediktivních modelů",
+   "student": "Tomáš Frýda",
+   "themes": [
+    "automl"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/69110"
+  },
+  {
+   "y": 2017,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Criminality prediction",
+   "title_cs": "Predikce kriminality",
+   "student": "Veronika Maurerová",
+   "themes": [
+    "science"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/69704"
+  },
+  {
+   "y": 2017,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Portal for support of educational activities and student evaluation",
+   "title_cs": "Portál pro podporu studia a klasifikace studentů",
+   "student": "Zdeněk Balák",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/69134"
+  },
+  {
+   "y": 2016,
+   "sub": "conference",
+   "title": "MoCham: Robust Hierarchical Clustering Based on Multi-objective Optimization",
+   "authors": "Bartoň T., Brůna T., Kordík P.",
+   "venue": "2016 IEEE 16th International Conference on Data Mining Workshops",
+   "doi": "10.1109/ICDMW.2016.0123",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "mining",
+    "neural"
+   ]
+  },
+  {
+   "y": 2016,
+   "sub": "conference",
+   "title": "Neural Turing Machine for Sequential Learning of Human Mobility Patterns",
+   "authors": "Kordík P., Tkačík J.",
+   "venue": "2016 International Joint Conference on Neural Networks (IJCNN)",
+   "doi": "10.1109/IJCNN.2016.7727551",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural",
+    "science"
+   ]
+  },
+  {
+   "y": 2016,
+   "sub": "conference",
+   "title": "Reducing Cold Start Problems in Educational Recommender Systems",
+   "authors": "Kuznetsov S. et al.",
+   "venue": "2016 International Joint Conference on Neural Networks (IJCNN)",
+   "doi": "10.1109/IJCNN.2016.7727600",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys",
+    "society"
+   ]
+  },
+  {
+   "y": 2016,
+   "sub": "software",
+   "title": "Predictor Factory",
+   "authors": "Kordík P., Motl J.",
+   "venue": "Software (RIV)",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2016,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Personalization of  Data Visualization User Interfaces",
+   "title_cs": "Personalizace uživatelských rozhraní pro vizualizaci dat",
+   "student": "Martin Endršt",
+   "themes": [
+    "recsys",
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/65957"
+  },
+  {
+   "y": 2016,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Optimization of Recommender Systems",
+   "title_cs": "Optimalizace doporučovacích systémů",
+   "student": "Radek Bartyzal",
+   "themes": [
+    "recsys",
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2016,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Learning to Rank Query Suggestions",
+   "title_cs": "Optimalizace pořadí výsledků našeptávače",
+   "student": "František Hejl",
+   "themes": [
+    "recsys",
+    "language"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2016,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Algorithms for time-space behaviour analysis of suspects",
+   "title_cs": "Algoritmy pro analýzu časoprostorového chování podezřelých osob",
+   "student": "Ján Tkačík",
+   "themes": [
+    "mining",
+    "science"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/62771"
+  },
+  {
+   "y": 2016,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Analytic framework for eshop interactions data",
+   "title_cs": "Analytický framework nad interakčními daty z eshopů",
+   "student": "Lukáš Dvořák",
+   "themes": [
+    "recsys"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/65078"
+  },
+  {
+   "y": 2016,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Machine Learning in Game Playing using Visual Input",
+   "title_cs": "Strojové učení pro hraní her s vizuálním vstupem",
+   "student": "Martin Brázdil",
+   "themes": [
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/65183"
+  },
+  {
+   "y": 2016,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Visual search in big graph structures",
+   "title_cs": "Vyhledávání ve velkých grafech",
+   "student": "Petr Šuták",
+   "themes": [
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/65189"
+  },
+  {
+   "type": "thesis",
+   "sub": "PhD",
+   "title_cs": "",
+   "y": 2016,
+   "student": "Aleš Pilný",
+   "title": "Model Machine Learning-based Feature Ranking and Feature Selection",
+   "role": "co-supervisor",
+   "themes": [
+    "automl"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/61362"
+  },
+  {
+   "type": "thesis",
+   "sub": "PhD",
+   "title_cs": "",
+   "y": 2016,
+   "student": "Ondřej Háva",
+   "title": "Network Representation of Latent Features Extracted from Text Documents",
+   "role": "co-supervisor",
+   "themes": [
+    "language",
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/62282"
+  },
+  {
+   "y": 2015,
+   "type": "milestone",
+   "sub": "industry",
+   "title": "Co-founded Recombee",
+   "text": "Recommender systems as a service, now with customers worldwide; it works closely with the group at CTU."
+  },
+  {
+   "y": 2015,
+   "type": "milestone",
+   "sub": "community",
+   "title": "ECOOP 2015 in Prague",
+   "text": "Organising committee of the European Conference on Object-Oriented Programming."
+  },
+  {
+   "y": 2015,
+   "sub": "conference",
+   "title": "Evaluation of relative indexes for multi-objective clustering",
+   "authors": "Bartoň T., Kordík P.",
+   "venue": "Hybrid Artificial Intelligent Systems",
+   "doi": "10.1007/978-3-319-19644-2_39",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "y": 2015,
+   "sub": "conference",
+   "title": "Using multi-objective optimization for the selection of ensemble members",
+   "authors": "Bartoň T., Kordík P.",
+   "venue": "ITAT 2015 conference proceedings",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "neural"
+   ]
+  },
+  {
+   "y": 2015,
+   "sub": "conference",
+   "title": "Mining skills from educational data for project recommendations",
+   "authors": "Kuznetsov S.K., Kordík P.K.",
+   "venue": "Proceedings of the International Joint Conference CISIS’15 and ICEUTE’15",
+   "doi": "10.1007/978-3-319-19713-5_54",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "recsys",
+    "society"
+   ]
+  },
+  {
+   "y": 2015,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Educational and Reseach Performance Dashboards",
+   "title_cs": "Interaktivní panely pro hodnocení pedagogických a výzkumných aktivit",
+   "student": "Petr Dušek",
+   "themes": [
+    "society"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2015,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Portlets opening access to university courseware",
+   "title_cs": "Portlety pro přístup ke studijním materiálům",
+   "student": "Daniel Heglas",
+   "themes": [
+    "society"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2015,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Tools and approaches for new generation journalism",
+   "title_cs": "Nástroje a postupy pro žurnalistiku nové generace",
+   "student": "Jakub Bartel",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/62772"
+  },
+  {
+   "y": 2015,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Analytic web services for the academia industry collaboration portal",
+   "title_cs": "Analytické webové služby pro portál spolupráce s průmyslem",
+   "student": "Jiří Maroušek",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/62978"
+  },
+  {
+   "y": 2015,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Educational performance dashboard",
+   "title_cs": "Panel pro vizualizaci pedagogických výkonů",
+   "student": "Marie Remešová",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/62950"
+  },
+  {
+   "y": 2015,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Predictive models in Logistics: Comparison of traditional time series techniques with an artificial neural network model approach",
+   "title_cs": "Prediktivní modely v logistice: srovnání tradičních přístupů a neuronových sítí",
+   "student": "Ruhi Ravichandran",
+   "themes": [
+    "automl",
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/63047"
+  },
+  {
+   "y": 2015,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Application to analysis of text messages for investigators",
+   "title_cs": "Aplikace pro analýzu textových zpráv pro potřeby vyšetřovatelů",
+   "student": "Štěpán Škorpil",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/62983"
+  },
+  {
+   "y": 2014,
+   "sub": "conference",
+   "title": "Building Predictive Models in Two Stages with Meta-Learning Templates optimized by Genetic Programming",
+   "authors": "Kordík P., Černý J.",
+   "venue": "2014 IEEE Symposium on Computational Intelligence in Ensemble Learning (CIEL) Proceedings",
+   "doi": "10.1109/CIEL.2014.7015740",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "neural"
+   ]
+  },
+  {
+   "y": 2014,
+   "sub": "conference",
+   "title": "Utilizing educational data in collaboration with industry",
+   "authors": "Kordík P., Kuznetsov S.",
+   "venue": "Proceedings of the 13th Annual Conference Znalosti 2014",
+   "doi": "",
+   "url": "http://znalosti.eu/images/accepted_papers/znalosti2014_paper23.pdf",
+   "type": "paper",
+   "themes": [
+    "society"
+   ]
+  },
+  {
+   "y": 2014,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Distributed computation environment",
+   "title_cs": "Prostředí pro distribuované výpočty",
+   "student": "Adam Činčura",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/22536"
+  },
+  {
+   "y": 2014,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Portlets opening access to university courseware",
+   "title_cs": "Portlety pro přístup ke studijním materiálům",
+   "student": "Daniel Heglas",
+   "themes": [
+    "society"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2014,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Comparison of  statistical and data mining approaches to chemometrical analysis of oil derivatives",
+   "title_cs": "Srovnání statistického a dataminingového přístupu k chemometrické analýze ropných derivátů",
+   "student": "František Hána",
+   "themes": [
+    "science",
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2014,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Anomaly detection methods",
+   "title_cs": "Metody pro detekci anomalit",
+   "student": "Jan Krejcar",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2014,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Anomaly detection methods",
+   "title_cs": "Metody pro detekci anomalit",
+   "student": "Jan Krejcar",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2013,
+   "sub": "journal",
+   "title": "Supervised two-step feature extraction for structured representation of text data",
+   "authors": "Háva O., Kordík P., Skrbek M.",
+   "venue": "Simulation Modelling Practice and Theory",
+   "doi": "10.1016/j.simpat.2012.11.003",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "language"
+   ]
+  },
+  {
+   "y": 2013,
+   "sub": "journal",
+   "title": "Interpretation of Geophysical Data at EL Fayoum-Dahshour Area, Egypt Using Three Dimensional Models",
+   "authors": "Abdel Kader A. K. et al.",
+   "venue": "Arabian Journal for Science and Engineering",
+   "doi": "10.1007/s13369-012-0385-0",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science"
+   ]
+  },
+  {
+   "y": 2013,
+   "sub": "conference",
+   "title": "Encoding time series data for better clustering results",
+   "authors": "Bartoň T., Kordík P.",
+   "venue": "INTERNATIONAL JOINT CONFERENCE CISIS'12 - ICEUTE'12 - SOCO'12 SPECIAL SESSIONS",
+   "doi": "10.1007/978-3-642-33018-6_48",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "y": 2013,
+   "sub": "conference",
+   "title": "Vector representation of context networks of latent topics",
+   "authors": "Háva O., Skrbek M., Kordík P.",
+   "venue": "Proceedings of the World Congress on Engineering 2013",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "language",
+    "neural"
+   ]
+  },
+  {
+   "y": 2013,
+   "sub": "conference",
+   "title": "A Soft Computing Approach to Knowledge Flow Synthesis and Optimization",
+   "authors": "Řehořek T., Kordík P.",
+   "venue": "Soft Computing Models in Industrial and Environmental Applications",
+   "doi": "10.1007/978-3-642-32922-7_3",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "neural"
+   ]
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "The Simplification of Folmulas Generated by Inductive Models",
+   "title_cs": "Zjednodušení matematických výrazů generovaných induktivními modely",
+   "student": "Jan Navara",
+   "themes": [
+    "automl"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/17697"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Algorithms for Origami Folding",
+   "title_cs": "Algoritmy pro skládání origami",
+   "student": "Jiří Nádvorník",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/17819"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Photovoltaic power plant output prediciton",
+   "title_cs": "Predikce výkonu fotovoltaických elektráren",
+   "student": "Milan Babka",
+   "themes": [
+    "science"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/14882"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Sharing and electronic document circulation infrastructure",
+   "title_cs": "Infrastruktura pro sdílení a elektronický oběh dokumentu",
+   "student": "Filip Rajnoch",
+   "themes": [
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/15016"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Regression modelling for fulltext search engine",
+   "title_cs": "Regresní modelování pro fulltextové vyhledávání",
+   "student": "Jakub Jirků",
+   "themes": [
+    "recsys",
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16287"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Visualizing behavior of model ensembles",
+   "title_cs": "Visualizace chování skupin modelů",
+   "student": "Jan Fabián",
+   "themes": [
+    "automl",
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16319"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Supporting the Diagnosis of Borreliosis by Machine Learning Methods",
+   "title_cs": "Podpora diagnostiky boreliózy metodami strojového učení",
+   "student": "Jan Motl",
+   "themes": [
+    "science"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16365"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "UI design for accessing educational resources",
+   "title_cs": "Návrh uživatelského rozhraní pro přístup ke studijním materiálům",
+   "student": "Jan Pavlovský",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/15034"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Liferay communication infrastructure",
+   "title_cs": "Komunikační infrastruktura v portálu Liferay",
+   "student": "Marcel Mika",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16293"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Recommender system powered by text mining methods",
+   "title_cs": "Systém pro doporučování založený na metodách pro extrakci znalostí z textu",
+   "student": "Radovan Lupták",
+   "themes": [
+    "recsys",
+    "language"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16367"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Alumni portal",
+   "title_cs": "Portál pro absolventy",
+   "student": "Tomáš Janda",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16338"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "R&amp;D data mining",
+   "title_cs": "Vytěžování vědeckovýzkumných dat",
+   "student": "Vojtěch Medonos",
+   "themes": [
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16303"
+  },
+  {
+   "y": 2013,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Information support for clinical studies",
+   "title_cs": "Informační podpora klinických studií",
+   "student": "Václav Čadek",
+   "themes": [
+    "science"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/22460"
+  },
+  {
+   "y": 2012,
+   "sub": "journal",
+   "title": "The age at death assessment in a multi-ethnic sample of pelvic bones using nature-inspired data mining methods",
+   "authors": "Buk Z. et al.",
+   "venue": "Forensic Science International",
+   "doi": "10.1016/j.forsciint.2012.02.019",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science",
+    "automl"
+   ]
+  },
+  {
+   "y": 2012,
+   "sub": "conference",
+   "title": "Contextual latent semantic networks used for document classification",
+   "authors": "Háva O., Skrbek M., Kordík P.",
+   "venue": "Proceedings of the International Conference on Knowledge Discovery and Information Retrieval",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "language",
+    "neural"
+   ]
+  },
+  {
+   "y": 2012,
+   "sub": "conference",
+   "title": "Document Classification with Supervised Latent Feature Selection",
+   "authors": "Háva O., Skrbek M., Kordík P.",
+   "venue": "Proceedings of the 2nd International Conference on Web Intelligence, Mining and Semantics",
+   "doi": "10.1145/2254129.2254213",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "language",
+    "automl"
+   ]
+  },
+  {
+   "y": 2012,
+   "sub": "conference",
+   "title": "On performance of Meta-learning Templates on Different Datasets",
+   "authors": "Kordík P., Černý J.",
+   "venue": "The 2012 International Joint Conference on Neural Networks (IJCNN), Brisbane, Australia, June 10-15, 2012",
+   "doi": "10.1109/IJCNN.2012.6252379",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2012,
+   "sub": "conference",
+   "title": "Max-min ant system with linear memory complexity",
+   "authors": "Kovářík O., Kordík P.",
+   "venue": "Proceedings of the IEEE Congress on Evolutionary Computation, CEC 2012, Brisbane, Australia, June 10-15, 2012",
+   "doi": "10.1109/CEC.2012.6256528",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2012,
+   "sub": "chapter",
+   "title": "Selecting Representative Data Sets",
+   "authors": "Borovička T. et al.",
+   "venue": "Advances in Data Mining Knowledge Discovery and Applications",
+   "doi": "10.5772/50787",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Matafeature database in Rapidminer",
+   "title_cs": "Databáze metapříznaků v prostředí Rapidminer",
+   "student": "Matej Pankovčin",
+   "themes": [
+    "automl"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/9086"
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Reporting for Efficient Management of Faculty",
+   "title_cs": "Reportování pro efektivní řízení fakulty",
+   "student": "Adam Kučera",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/10669"
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Methods for Metallurgical Samples Identification",
+   "title_cs": "Metody pro identifikaci vzorků z hutní výroby",
+   "student": "Juraj Leškanič",
+   "themes": [
+    "science"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/10245"
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Frequent Sequence Mining Algorithm",
+   "title_cs": "Algoritmus pro tvorbu asociačních pravidel z častých sekvencí",
+   "student": "Martin Hadáček",
+   "themes": [
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/10679"
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "User autentization and role management for aplications of the faculty",
+   "title_cs": "Autentizace uživatelů a správa rolí v prostředí fakultních aplikací",
+   "student": "Martin Matuška",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/10526"
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Visual detection of relations in databases",
+   "title_cs": "Visualní detekce vztahů v databázích",
+   "student": "Matyáš Krutský",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/10601"
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Faculty Data Warehouse",
+   "title_cs": "Datový sklad fakulty",
+   "student": "Stanislav Kuznetsov",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16289"
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Training set Construction Methods",
+   "title_cs": "Metody pro konstrukci trénovací množiny",
+   "student": "Tomáš Borovička",
+   "themes": [
+    "automl",
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/10676"
+  },
+  {
+   "y": 2012,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Faculty Portal Aplication Interface",
+   "title_cs": "Aplikační rozhraní k portálu fakulty",
+   "student": "Tomáš Králík",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/16288"
+  },
+  {
+   "y": 2011,
+   "type": "milestone",
+   "sub": "community",
+   "title": "Program committee, ACM KDD 2011",
+   "text": ""
+  },
+  {
+   "y": 2011,
+   "sub": "conference",
+   "title": "Using Interactive Evolution for Exploratory Data Analysis",
+   "authors": "Řehořek T., Kordík P.",
+   "venue": "Proceedings of the 6th International Scientific and Technical Conference (CSIT'2011)",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "mining",
+    "neural"
+   ]
+  },
+  {
+   "y": 2011,
+   "sub": "chapter",
+   "title": "Self-organization of Supervised Models",
+   "authors": "Kordík P., Černý J.",
+   "venue": "Meta-Learning in Computational Intelligence",
+   "doi": "10.1007/978-3-642-20980-2_6",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2011,
+   "sub": "software",
+   "title": "Java Continuous Optimization Library",
+   "authors": "Drchal J. et al.",
+   "venue": "Software (RIV)",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2011,
+   "sub": "software",
+   "title": "Java Combinatorial Optimization Platform",
+   "authors": "Kordík P., Skalička O., Kovářík O.",
+   "venue": "Software (RIV)",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2011,
+   "sub": "journal",
+   "title": "Active subsurface structures at Fayoum-Cairo district, Northern Western Desert, Egypt",
+   "authors": "Brimich L., Khalil A., Kordík P., Mekkawi M. et al.",
+   "venue": "Contributions to Geophysics and Geodesy",
+   "type": "paper",
+   "themes": [
+    "society"
+   ]
+  },
+  {
+   "y": 2011,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Visualization methods for data mining reports",
+   "title_cs": "Visualizační metody pro data mining reporty",
+   "student": "Jan Fabián",
+   "themes": [
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/5598"
+  },
+  {
+   "y": 2011,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "3D model editor supporting photo transformations",
+   "title_cs": "Editor 3D modelů s podporou transformace fotografií",
+   "student": "Jiří Samek",
+   "themes": [
+    "society"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/4041"
+  },
+  {
+   "y": 2011,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Data mining models",
+   "title_cs": "Modely pro vytěžování znalostí",
+   "student": "Michal Sabol",
+   "themes": [
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/5626"
+  },
+  {
+   "y": 2011,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Clustering cell responses to chemical compounds",
+   "title_cs": "Shlukování průběhů reakcí buněk na chemické látky",
+   "student": "Tomáš Bartoň",
+   "themes": [
+    "mining"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/5635"
+  },
+  {
+   "y": 2011,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Evolution of processes",
+   "title_cs": "Evoluce procesů",
+   "student": "Tomáš Řehořek",
+   "themes": [
+    "neural"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/5505"
+  },
+  {
+   "y": 2010,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "Vice-Dean for Development, FIT CTU (2010–2016)",
+   "text": "Built up the young faculty; introduced master's courses Data Preprocessing, Data Mining Algorithms and Computational Intelligence Methods."
+  },
+  {
+   "y": 2010,
+   "sub": "journal",
+   "title": "Meta-learning approach to neural network optimization",
+   "authors": "Kordík P. et al.",
+   "venue": "Neural Networks",
+   "doi": "10.1016/j.neunet.2010.02.003",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "neural"
+   ]
+  },
+  {
+   "y": 2010,
+   "sub": "conference",
+   "title": "The Effect of Modelling Method to the Inductive Preprocessing Algorithm",
+   "authors": "Čepek M., Kordík P., Šnorek M.",
+   "venue": "Proceedings of 3rd International Conference on Inductive Modelling 2010",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2010,
+   "sub": "conference",
+   "title": "Advanced ensemble strategies for polynomial models",
+   "authors": "Černý J., Kordík P.",
+   "venue": "Proceeding of the third international conference on inductive modelling",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2010,
+   "sub": "conference",
+   "title": "Continuous Optimization Algorithms: Performance on Benchmarking Functions and Model Parameters",
+   "authors": "Kordík P., Bičík V.",
+   "venue": "Proceedings of the 7th EUROSIM Congress on Modelling and Simulation, Vol",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2010,
+   "sub": "conference",
+   "title": "Application of Feature Selection Methods in Age Prediction",
+   "authors": "Pilný A. et al.",
+   "venue": "Proceeding of the third international conference on inductive modelling",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2010,
+   "sub": "conference",
+   "title": "Game model utilization for feature ranking and feature selection",
+   "authors": "Pilný A., Kordík P., Šnorek M.",
+   "venue": "Proceedings of the Seventh International Conference on Engineering Computational Technology",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2010,
+   "sub": "conference",
+   "title": "New Methods for Feature Ranking",
+   "authors": "Pilný A., Kordík P., Šnorek M.",
+   "venue": "Workshop 2010",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2010,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Access to FAKE GAME application",
+   "title_cs": "Přístup k aplikaci FAKE GAME",
+   "student": "Filip Dohnal",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2010,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Integration of Business Intelligence open source tools",
+   "title_cs": "Integrace BI open source nástrojů",
+   "student": "Ivo Lašek",
+   "themes": [
+    "society"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2010,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Ensembling data mining models and classifiers",
+   "title_cs": "Metody pro kombinování modelů a klasifikátorů",
+   "student": "Jan Černý",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2010,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Noisy Data Modeling",
+   "title_cs": "Modelování zašuměných dat",
+   "student": "Jiří Trávníček",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2010,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Spam identification independent of email body contents",
+   "title_cs": "Rozpoznávání nevyžádané pošty bez znalosti obsahu zpráv",
+   "student": "Marek Handl",
+   "themes": [
+    "language"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2010,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Combinatorial Optimization Library",
+   "title_cs": "Knihovna pro kombinatorickou optimalizaci",
+   "student": "Ondřej Skalička",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2010,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Continuous optimization algorithms",
+   "title_cs": "Algoritmy pro spojitou optimalizaci",
+   "student": "Vladimír Bičík",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "Moved to the new Faculty of Information Technology",
+   "text": "Founding years of FIT CTU; released the open-source FAKE GAME system for automated data mining."
+  },
+  {
+   "y": 2009,
+   "sub": "conference",
+   "title": "Meta-optimization survey and possible applications of Inductive Approach in this field",
+   "authors": "Kordík P., Drchal J.",
+   "venue": "Proceedings of the International Conference ISDMCI 2009",
+   "doi": "",
+   "url": "http://neuron.felk.cvut.cz/~kordikp/evp.pdf",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "neural"
+   ]
+  },
+  {
+   "y": 2009,
+   "sub": "conference",
+   "title": "Building Automation Simulator and Control Strategy for Intelligent and Energy Efficient Home",
+   "authors": "Kordík P. et al.",
+   "venue": "Proceedings of the European Modelling and Simulation Symposium EMS 2009",
+   "doi": "10.1109/ems.2009.104",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science"
+   ]
+  },
+  {
+   "y": 2009,
+   "sub": "conference",
+   "title": "New Robust Method of Atrial Electrograms Classification to Identify Complex Fractionated Atrial Electrograms",
+   "authors": "Křemen V., Lhotská L., Kordík P.",
+   "venue": "Proceedings of the 31st Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science"
+   ]
+  },
+  {
+   "y": 2009,
+   "sub": "conference",
+   "title": "Comparison of Several Classifiers to Evaluate Endocardial Electrograms Fractionation in Human",
+   "authors": "Křemen V., Kordík P., Lhotská L.",
+   "venue": "Proceedings of the 31st Annual International Conference of the IEEE Engineering in Medicine and Biology Society",
+   "doi": "10.1109/IEMBS.2009.5335161",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science"
+   ]
+  },
+  {
+   "y": 2009,
+   "sub": "chapter",
+   "title": "GAME - Hybrid Self-Organizing Modeling System Based on GMDH",
+   "authors": "Kordík P.",
+   "venue": "Hybrid Self-Organizing Modeling Systems",
+   "doi": "10.1007/978-3-642-01530-4_6",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2009,
+   "sub": "software",
+   "title": "Fake game",
+   "authors": "Kordík P. et al.",
+   "venue": "Software (RIV)",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2009,
+   "sub": "workshop",
+   "title": "Methods of true data mining model selection with experimental results",
+   "authors": "Bulgakova O., Kordík P.",
+   "venue": "3rd International Workshop on Inductive Modelling (IWIM 2009)",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "mining"
+   ]
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Design Patterns in the FAKE GAME Application",
+   "title_cs": "Návrhové vzory v aplikaci FAKE GAME",
+   "student": "Jakub Weberschinke",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Email clustering algorithm",
+   "title_cs": "Shlukování emailových zpráv",
+   "student": "Libor Grafnetr",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Web Client Visualization Library",
+   "title_cs": "Vizualizační knihovna pro webového klienta",
+   "student": "Tomáš Řehořek",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "FAKE GAME web services",
+   "title_cs": "Webové služby aplikace FAKE GAME",
+   "student": "Vladimír Šťastný",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Components of Energy Efficient and Intelligent House",
+   "title_cs": "Komponenty nízkoenergetické inteligentní domácnosti",
+   "student": "Adéla Svítková",
+   "themes": [
+    "science"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Statistical Data Processing Module",
+   "title_cs": "Modul pro statistické zpracování dat",
+   "student": "Jaroslav Kuchař",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Automation of Energy Efficient and Intelligent House",
+   "title_cs": "Řízení nízkoenergetické inteligentní domácnosti",
+   "student": "Marek Tvrdý",
+   "themes": [
+    "science"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Neural Networks for Adaptive Control of Households",
+   "title_cs": "Neuronové sítě pro adaptivní řízení domácnosti",
+   "student": "Martin Hasaj",
+   "themes": [
+    "science",
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Continuous Optimization Library",
+   "title_cs": "Knihovna pro spojitou optimalizaci",
+   "student": "Martin Hvizdoš",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Automated Knowledge Extraction",
+   "title_cs": "Automatická extrakce znalostí",
+   "student": "Michal Chren",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Evolutionary Encoding of Nomial Data",
+   "title_cs": "Evoluční kódování nominálních dat",
+   "student": "Michal Záborec",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2009,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Data Visualization for the Knowledge Extraction",
+   "title_cs": "Vizualizace dat pro extrakci znalostí",
+   "student": "Michal Škola",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "milestone",
+   "sub": "community",
+   "title": "ICANN 2008 in Prague",
+   "text": "Organising committee of the 18th International Conference on Artificial Neural Networks."
+  },
+  {
+   "y": 2008,
+   "sub": "conference",
+   "title": "Automatic Method for Data Preprocessing for the GAME Inductive Modelling Method",
+   "authors": "Čepek M. et al.",
+   "venue": "Proceedings of the 2nd International Conference on Inductive Modelling",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2008,
+   "sub": "conference",
+   "title": "Parallel computing of GAME models",
+   "authors": "Kordík P., Špirk J., Šimeček I.",
+   "venue": "Proceedings of the 2nd International Conference on Inductive Modelling",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2008,
+   "sub": "conference",
+   "title": "The GAME Algorithm Applied to Complex Fractionated Atrial Electrograms Data Set",
+   "authors": "Kordík P., Křemen V., Lhotská L.",
+   "venue": "Artificial Neural Networks - ICANN 2008",
+   "doi": "10.1007/978-3-540-87559-8_89",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science",
+    "automl"
+   ]
+  },
+  {
+   "y": 2008,
+   "sub": "conference",
+   "title": "Optimizing Models Using Continuous Ant Algorithms",
+   "authors": "Kovářík O., Kordík P.",
+   "venue": "Proceedings of the 2nd International Conference on Inductive Modelling",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2008,
+   "sub": "conference",
+   "title": "Analysis of Vestibular-Ocular Reflex by Evolutionary Framework",
+   "authors": "Novák D. et al.",
+   "venue": "Artificial Neural Networks - ICANN 2008, PT I",
+   "doi": "10.1007/978-3-540-87536-9_47",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science",
+    "neural"
+   ]
+  },
+  {
+   "y": 2008,
+   "sub": "conference",
+   "title": "Behaviour of FeRaNGA method for Feature Ranking during learning process using Inductive Modelling",
+   "authors": "Pilný A., Kordík P., Šnorek M.",
+   "venue": "Proceedings of the 2nd International Conference on Inductive Modelling",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2008,
+   "sub": "conference",
+   "title": "Feature Ranking Derived from Data Mining Process",
+   "authors": "Pilný A., Kordík P., Šnorek M.",
+   "venue": "Artificial Neural Networks - ICANN 2008",
+   "doi": "10.1007/978-3-540-87559-8_92",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "mining"
+   ]
+  },
+  {
+   "y": 2008,
+   "sub": "conference",
+   "title": "Fetal Weight Prediction Models: Standard Techniques or Computational Intelligence Methods?",
+   "authors": "Siegl T. et al.",
+   "venue": "Artificial Neural Networks - ICANN 2008, PT I",
+   "doi": "10.1007/978-3-540-87536-9_48",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science"
+   ]
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Distributed Computation of Inductive Models",
+   "title_cs": "Distribuovaný výpočet induktivních modelů",
+   "student": "Jakub Špirk",
+   "themes": [
+    "automl"
+   ],
+   "url": "https://dspace.cvut.cz/handle/10467/15862"
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "The Simplification of Formulas Generated by Inductive Models",
+   "title_cs": "Zjednodušení matematických výrazů generovaných induktivními modely",
+   "student": "Milan Trčka",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Biological Signals Processing",
+   "title_cs": "Zpracování biologických signálů",
+   "student": "Aleš Pilný",
+   "themes": [
+    "science"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Application for Visualization of Structure and Behaviour of Inductive Models",
+   "title_cs": "Aplikace pro vizualizaci struktury a chování induktivních modelů",
+   "student": "David Dvořák",
+   "themes": [
+    "automl",
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Anthropological data analysis by means of computational intelligence methods",
+   "title_cs": "Analýza antropologických dat metodami výpočetní inteligence",
+   "student": "Jakub Novák",
+   "themes": [
+    "science"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Hybrid Inductive Models Topology Visualization",
+   "title_cs": "Zobrazení topologie hybridních induktivních modelů",
+   "student": "Jaroslav Matoušek",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Neural Networks for Time Series Prediction",
+   "title_cs": "Neuronové sítě pro predikci časových řad",
+   "student": "Josef Bouška",
+   "themes": [
+    "mining",
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Automated Data Preprocessing Module",
+   "title_cs": "Modul pro automatické předzpracovaní dat",
+   "student": "Miloslav Pavlíček",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Evaluation of Comparative Study in Reconditioning Centre",
+   "title_cs": "Vyhodnocení výsledků srovnávací studie v rekondičním centru",
+   "student": "Petr Samek",
+   "themes": [
+    "society"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2008,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Hybrid inductive models in PMML",
+   "title_cs": "Hybridní induktivní modely v PMML",
+   "student": "Vít Uličný",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2007,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "Ph.D. on automated knowledge extraction",
+   "text": "Dissertation on the GAME method (Group of Adaptive Models Evolution); organised the IWIM 2007 workshop in Prague."
+  },
+  {
+   "y": 2007,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "New course: Data Mining (FEE)",
+   "text": "Introduced the data mining course at CTU FEE together with Filip Železný."
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Time Series Prediction by means of GMDH Analogues Complexing and GAME",
+   "authors": "Bouška J., Kordík P.",
+   "venue": "IWIM 2007 - International Workshop on Inductive Modelling",
+   "doi": "",
+   "url": "http://neuron.felk.cvut.cz/~kordikp/iw/GMDHACxGAMEv10.pdf",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "mining"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Age Prediction from Skeletal Indicators using Computational Intelligence Methods",
+   "authors": "Buk Z., Kordík P., Šnorek M.",
+   "venue": "Proceeding of International Workshop on Inductive Modelling",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Application of Inductive Modeling to Sleep Stages Classification",
+   "authors": "Čepek M., Šnorek M., Kordík P.",
+   "venue": "Proceedings of 41th Spring International Conference MOSIS'07",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "science",
+    "automl"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Missing Data Imputation and the Inductive Modelling",
+   "authors": "Čepek M., Šnorek M., Kordík P.",
+   "venue": "Proceedings of the 6th EUROSIM Congress on Modelling and Simulation",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Visualization of Diversity in Computational Intelligence Methods",
+   "authors": "Drchal J., Kordík P., Koutník J.",
+   "venue": "Proceedings of 2nd ISGI 2007 Interational CODATA Symposium on Generalization of Information",
+   "doi": "",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Dataset Visualization Based on a Simulation of Intermolecular Forces",
+   "authors": "Drchal J., Kordík P., Šnorek M.",
+   "venue": "IWIM 2007 - International Workshop on Inductive Modelling",
+   "doi": "",
+   "url": "http://cig.felk.cvut.cz",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Inductive Modeling in Newborn Sleep Stage Recognition",
+   "authors": "Gerla V. et al.",
+   "venue": "IWIM 2007 - International Workshop on Inductive Modelling",
+   "doi": "",
+   "url": "http://neuron.felk.cvut.cz/~kordikp/iw/07_Gerla_Bursa_Kordik_05.pdf",
+   "type": "paper",
+   "themes": [
+    "science",
+    "automl"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Visualization techniques utilizing the sensitivity analysis of models",
+   "authors": "Kondapaneni I., Kordík P., Slavík P.",
+   "venue": "Proceedings of the 2007 Winter Simulation Conference",
+   "doi": "10.1109/wsc.2007.4419667",
+   "url": "",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Optimization of models: looking for the best strategy",
+   "authors": "Kordík P., Kovářík O., Šnorek M.",
+   "venue": "Proceedings of the 6th EUROSIM Congress on Modelling and Simulation",
+   "doi": "",
+   "url": "http://neuron.felk.cvut.cz/~kordikp/iw/eurosim07.pdf",
+   "type": "paper",
+   "themes": [
+    "neural"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Regularization of Evolving Polynomial Models",
+   "authors": "Kordík P.",
+   "venue": "IWIM 2007 - International Workshop on Inductive Modelling",
+   "doi": "",
+   "url": "http://neuron.felk.cvut.cz/~kordikp/iw/penalty.pdf",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Hybrid Inductive Models: Topology of Model can Reveal much about Problem",
+   "authors": "Náplava P., Kordík P.",
+   "venue": "IWIM 2007 - International Workshop on Inductive Modelling",
+   "doi": "",
+   "url": "http://neuron.felk.cvut.cz/~kordikp/iw/UnitsAndData.pdf",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Reconstruction of Eye Movements Signal using Inductive Model Detecting Saccades",
+   "authors": "Pilný A., Kordík P.",
+   "venue": "IWIM 2007 - International Workshop on Inductive Modelling",
+   "doi": "",
+   "url": "http://neuron.felk.cvut.cz/~kordikp/iw/SacadesReconstruction-v4.pdf",
+   "type": "paper",
+   "themes": [
+    "science",
+    "automl"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Inductive Modelling World Wide the State of the Art",
+   "authors": "Šnorek M., Kordík P.",
+   "venue": "IWIM 2007 - International Workshop on Inductive Modelling",
+   "doi": "",
+   "url": "http://neuron.felk.cvut.cz/~kordikp/iw/IMWW.pdf",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2007,
+   "sub": "conference",
+   "title": "Cache Misses Prediction by Means of Data Mining Methods",
+   "authors": "Šimeček I., Kordík P.",
+   "venue": "Proceedings of Workshop 2007",
+   "doi": "",
+   "url": "http://shimi.webzdarma.cz/vyzkum/workshop07/colek_workshop.pdf",
+   "type": "paper",
+   "themes": [
+    "mining"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2007,
+   "sub": "thesis",
+   "title": "Fully Automated Knowledge Extraction using Group of Adaptive Models Evolution",
+   "authors": "Kordík P.",
+   "venue": "Ph.D. thesis, Czech Technical University in Prague (supervisor M. Šnorek)",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2007,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Visual 3D Analysis of Neural Networks Behaviour",
+   "title_cs": "Vizuální 3D analýza chování neuronových sítí",
+   "student": "Jiří Nožka",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2007,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "ANT Colony Optimization for Continuous Problems",
+   "title_cs": "Spojitá optimalizace pomocí mravenčích kolonií",
+   "student": "Oleg Kovářík",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2007,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Conjugate Gradient Method for GAME Units Optimization",
+   "title_cs": "Metoda sdružených gradientů pro optimalizaci jednotek GAME",
+   "student": "Ondřej Filípek",
+   "themes": [
+    "automl",
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2007,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Data Preprocessing in YALE Open Source Software",
+   "title_cs": "Předzpracování dat v programu YALE",
+   "student": "Petr Zelenka",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2007,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Alternation of Meta-heuristic Algorithms with Runtime Analysis and Parameters Adaptation",
+   "title_cs": "Strategie přepínání metaheuristik: analýza běhu algoritmů a přizpůsobení jejich parametrů",
+   "student": "Richard Málek",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2007,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Medical Data Analysis by Means of Statistical Methods and SOM",
+   "title_cs": "Analýza  medicínských dat pomocí statistických metod a SOM",
+   "student": "Tomáš Sejkora",
+   "themes": [
+    "science"
+   ],
+   "url": ""
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2006,
+   "sub": "conference",
+   "title": "Maintaining Diversity in Population of Evolved Models",
+   "authors": "Drchal J., Šnorek M., Kordík P.",
+   "venue": "40th Spring International Conference MOSIS 2006, pp. 113–120",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "doi": "10.1109/IJCNN.2006.1716252",
+   "url": "",
+   "y": 2006,
+   "sub": "conference",
+   "title": "Evolutionary Search for Interesting Behavior of Neural Network Ensembles",
+   "authors": "Kordík P., Saidl J., Šnorek M.",
+   "venue": "IJCNN 2006",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "neural"
+   ]
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "GMDH networks the KnowledgeMiner software",
+   "title_cs": "GMDH sítě v aplikaci KnowledgeMiner",
+   "student": "Jakub Novák",
+   "themes": [
+    "automl",
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Evolution algorithm for neural networks improvement",
+   "title_cs": "Evoluční algoritmy pro šlechtění neuronových sítí",
+   "student": "Jiří Doležel",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "XML representation of inductive models",
+   "title_cs": "XML reprezentace induktivních modelů",
+   "student": "Lukáš Trlida",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Algorithms for Optimization of GAME networks",
+   "title_cs": "Algoritmy pro optimalizaci sítí GAME",
+   "student": "Miroslav Janošík",
+   "themes": [
+    "automl",
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Self Organizing Map and its Extensions",
+   "title_cs": "Samoorganizující se mapy (SOM)",
+   "student": "Ondřej Macek",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Bayesian methods in data mining",
+   "title_cs": "Vytěžování dat Bayesovskými metodami",
+   "student": "Ondřej Svoboda",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Evolutionary algorithms and neural networks",
+   "title_cs": "Evoluční algoritmy a neuronové sítě",
+   "student": "Jan Drchal",
+   "themes": [
+    "neural"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Visualization as a tool for nature systems behaviour study",
+   "title_cs": "Vizualizace jako nástroj studia chování modelů přírodních systémů",
+   "student": "Jan Saidl",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2006,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "Pattern Recognition for Real World Data",
+   "title_cs": "Hledání příznaků v reálných datech.",
+   "student": "Miroslav Čepek",
+   "themes": [
+    "mining"
+   ],
+   "url": ""
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2005,
+   "sub": "conference",
+   "title": "Dyslexia detection from eye movements using artificial neural networks",
+   "authors": "Macaš M., Novák D., Kordík P., Lhotská L., Vyhnálek M., Brzezný R.",
+   "venue": "European Medical and Biological Engineering Conference (EMBEC 2005)",
+   "type": "paper",
+   "themes": [
+    "science",
+    "neural"
+   ]
+  },
+  {
+   "doi": "10.1007/11550907_21",
+   "url": "",
+   "y": 2005,
+   "sub": "conference",
+   "title": "Ensemble Techniques for Credibility Estimation of GAME Models",
+   "authors": "Kordík P., Šnorek M.",
+   "venue": "ICANN 2005, LNCS 3697",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2005,
+   "type": "thesis",
+   "sub": "BSc",
+   "title": "Statistical Evaluation of optimal inductive model topology",
+   "title_cs": "Statistické vyhodnocení optimální topologie induktivních modelů",
+   "student": "Pavel Staněk",
+   "themes": [
+    "automl"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2005,
+   "type": "thesis",
+   "sub": "MSc",
+   "title": "The comparison of methods for noise cancelation",
+   "title_cs": "Srovnání metod pro potlačení šumu",
+   "student": "Jiří Novák",
+   "themes": [
+    "science"
+   ],
+   "url": ""
+  },
+  {
+   "y": 2004,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "Joined the Department of Computer Science, CTU FEE",
+   "text": "Started teaching and research in the computational intelligence group of prof. Miroslav Šnorek."
+  },
+  {
+   "doi": "10.1109/IEMBS.2004.1403075",
+   "url": "",
+   "y": 2004,
+   "sub": "conference",
+   "title": "School children dyslexia analysis using self organizing maps",
+   "authors": "Kordík P., Šnorek M. et al.",
+   "venue": "26th Annual Int. Conference of the IEEE EMBS (2004)",
+   "type": "paper",
+   "themes": [
+    "science",
+    "society"
+   ]
+  },
+  {
+   "doi": "10.1109/IJCNN.2004.1380992",
+   "url": "",
+   "y": 2004,
+   "sub": "conference",
+   "title": "Hybrid inductive models: deterministic crowding employed",
+   "authors": "Kordík P., Šnorek M., Genyk-Berezovskyj M.",
+   "venue": "IJCNN 2004 (IEEE Int. Joint Conference on Neural Networks)",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  },
+  {
+   "y": 2003,
+   "type": "milestone",
+   "sub": "academic",
+   "title": "Ing. in Computer Engineering, CTU FEE",
+   "text": "Graduated from the Faculty of Electrical Engineering, Czech Technical University in Prague."
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2003,
+   "sub": "journal",
+   "title": "Modified GMDH method and models quality evaluation by visualization",
+   "authors": "Kordík P., Náplava P., Šnorek M., Genyk-Berezovskyj M.",
+   "venue": "Control Systems and Computers 2, pp. 68–75",
+   "type": "paper",
+   "themes": [
+    "automl",
+    "mining"
+   ]
+  },
+  {
+   "doi": "",
+   "url": "",
+   "y": 2002,
+   "sub": "conference",
+   "title": "The modified GMDH method applied to model complex systems",
+   "authors": "Kordík P., Náplava P., Šnorek M., Genyk-Berezovskyj M.",
+   "venue": "International Conference on Inductive Modelling (ICIM 2002)",
+   "type": "paper",
+   "themes": [
+    "automl"
+   ]
+  }
+ ]
+}

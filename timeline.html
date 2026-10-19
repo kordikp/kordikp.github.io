@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Research Timeline – Pavel Kordík</title>
+  <meta name="description" content="24 years of research by Pavel Kordík in one zoomable chart: every paper and every supervised bachelor's, master's and doctoral thesis since 2002, coloured by topic, with milestones and the eras of the group's work.">
+  <link rel="canonical" href="https://kordikp.github.io/timeline.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research Timeline – Pavel Kordík">
+  <meta property="og:description" content="Every paper and supervised thesis since 2002 in one zoomable chart, coloured by topic.">
+  <meta property="og:url" content="https://kordikp.github.io/timeline.html">
+  <meta property="og:image" content="https://kordikp.github.io/assets/img/PAVEL-KORDIK-420x420.png">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png?v=2">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png?v=2">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700|Raleway:500,600,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/site.css" rel="stylesheet">
+  <link href="assets/timeline-chart.css" rel="stylesheet">
+
+  <style>
+    body { background: #f3f5f8; }
+    .tl-app {
+      margin: var(--hdr, 64px) auto 0; max-width: 1680px;
+      height: calc(100vh - var(--hdr, 64px)); height: calc(100dvh - var(--hdr, 64px));
+      display: grid; grid-template-columns: minmax(0, 1fr) 350px; grid-template-rows: auto minmax(0, 1fr);
+      gap: 10px 16px; padding: 12px 18px 14px;
+    }
+    .tl-top { grid-column: 1 / -1; display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; }
+    .tl-title h1 { font-size: 22px; font-weight: 700; color: var(--secondary-color); margin: 0; }
+    .tl-sub { margin: 0; font-size: 12.5px; color: #5f6b7a; }
+    .tl-crumbs { flex: 1; min-width: 220px; display: flex; align-items: center; flex-wrap: wrap; gap: 2px; font-size: 13.5px; }
+    .tl-crumbs button { border: 0; background: none; color: var(--primary-color); padding: 2px 6px; border-radius: 6px; }
+    .tl-crumbs button:hover { background: #e6f0fb; }
+    .tl-crumbs .sep { color: #9aa5b1; font-size: 12px; }
+    .tl-crumbs .cur { font-weight: 600; color: var(--secondary-color); padding: 2px 6px; }
+    .tl-crumbs .bc-theme { display: inline-flex; align-items: center; gap: 6px; margin-left: 10px; padding: 1px 2px 1px 10px; border-radius: 999px; background: #fff; border: 1.5px solid var(--c); font-size: 12.5px; color: var(--text-color); }
+    .tl-crumbs .bc-theme i { width: 9px; height: 9px; border-radius: 2px; background: var(--c); }
+    .tl-crumbs .bc-theme button { padding: 0 6px; color: #5f6b7a; }
+    .tl-tools { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .seg { display: inline-flex; border: 1px solid #cfd8e3; border-radius: 8px; overflow: hidden; background: #fff; }
+    .seg button { border: 0; background: none; padding: 5px 11px; font-size: 13px; color: var(--secondary-color); }
+    .seg button + button { border-left: 1px solid #cfd8e3; }
+    .seg button[aria-pressed="true"] { background: var(--secondary-color); color: #fff; }
+    .tl-tools input { width: 220px; border: 1px solid #cfd8e3; border-radius: 8px; padding: 5px 10px; font-size: 13px; }
+    .tl-btn { border: 1px solid #cfd8e3; background: #fff; border-radius: 8px; padding: 5px 10px; font-size: 13px; color: var(--secondary-color); white-space: nowrap; text-decoration: none; }
+    .tl-btn:hover:not(:disabled) { border-color: var(--primary-color); color: var(--primary-color); }
+    .tl-btn:disabled { opacity: .4; }
+    .tl-main { background: #fff; border: 1px solid #e3e8ee; border-radius: 12px; padding: 12px 14px 6px; display: flex; flex-direction: column; min-height: 0; }
+    .tl-chart { flex: 1; min-height: 0; }
+    .tl-side { background: #fff; border: 1px solid #e3e8ee; border-radius: 12px; padding: 16px 18px; overflow-y: auto; min-height: 0; font-size: 14px; line-height: 1.5; }
+
+    .tl-side h2 { font-size: 20px; font-weight: 700; color: var(--secondary-color); margin: 2px 0 8px; }
+    .tl-side h3 { font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #5f6b7a; margin: 18px 0 8px; }
+    .tl-side p { margin-bottom: 10px; }
+    .ps-k { font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: #5f6b7a; }
+    .ps-how { padding-left: 18px; margin: 0 0 4px; }
+    .ps-how li { margin-bottom: 2px; }
+    .ps-era { display: block; width: 100%; text-align: left; border: 1px solid #e3e8ee; background: #fff; border-radius: 10px; padding: 8px 11px; margin-bottom: 7px; font-size: 13px; color: var(--text-color); }
+    .ps-era:hover { border-color: var(--primary-color); }
+    .ps-era b { display: block; color: var(--secondary-color); font-size: 14px; }
+    .ps-era small { color: #5f6b7a; }
+    .ps-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0 4px; }
+    .ps-stats div { background: #f5f7fa; border-radius: 10px; padding: 8px 10px; }
+    .ps-stats b { display: block; font-size: 22px; line-height: 1.1; color: var(--secondary-color); }
+    .ps-stats span { font-size: 12.5px; color: #5f6b7a; }
+    .ps-stats small { display: block; font-size: 11.5px; color: #5f6b7a; }
+    .ps-mix button { display: grid; grid-template-columns: 1fr auto; gap: 1px 8px; width: 100%; border: 0; background: none; padding: 3px 0 5px; text-align: left; font-size: 13px; color: var(--text-color); }
+    .ps-mix button:hover .mx-l { color: var(--primary-color); }
+    .ps-mix .mx-l { display: flex; align-items: center; gap: 7px; }
+    .ps-mix .mx-l i { width: 10px; height: 10px; border-radius: 3px; background: var(--c); flex: none; }
+    .ps-mix .mx-n { color: #5f6b7a; font-size: 12px; }
+    .ps-mix .mx-bar { grid-column: 1 / -1; height: 4px; border-radius: 2px; background: #edf1f5; overflow: hidden; }
+    .ps-mix .mx-bar span { display: block; height: 100%; background: var(--c); border-radius: 2px; }
+    .ps-ms { list-style: none; padding: 0; margin: 0; }
+    .ps-ms li { margin-bottom: 7px; font-size: 13px; }
+    .ps-ms li b { color: var(--secondary-color); }
+    .ps-ms .yr { display: inline-block; min-width: 38px; font-weight: 700; color: #5f6b7a; }
+    .ps-nav { display: flex; justify-content: space-between; gap: 8px; margin-top: 14px; }
+    .ps-nav button { flex: 1; min-width: 0; border: 1px solid #e3e8ee; background: #fff; border-radius: 8px; padding: 6px 8px; font-size: 12.5px; color: var(--secondary-color); text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .ps-nav button:last-child { text-align: right; }
+    .ps-nav button:hover { border-color: var(--primary-color); }
+    .ps-theme { border-left: 4px solid var(--c); padding: 2px 0 2px 12px; margin-bottom: 16px; }
+    .ps-theme h2 { margin-bottom: 4px; }
+    .ps-link { border: 0; background: none; padding: 0; color: var(--primary-color); font-size: 13px; text-align: left; }
+    .ps-link:hover { text-decoration: underline; }
+    .ps-cta { margin-top: 18px; background: var(--secondary-color); color: #fff; border-radius: 10px; padding: 12px 14px; font-size: 13.5px; }
+    .ps-cta a { color: #fff; font-weight: 600; }
+    .ps-src { margin-top: 14px; font-size: 11.5px; color: #6c757d; }
+    .ps-list { margin-top: 18px; }
+    .ps-list summary { cursor: pointer; color: var(--primary-color); font-size: 13.5px; }
+    .ps-list h4 { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 700; color: #5f6b7a; margin: 12px 0 4px; }
+    .ps-li { display: grid; grid-template-columns: 10px 1fr; gap: 8px; width: 100%; border: 0; background: none; text-align: left; padding: 4px 0; font-size: 13px; color: var(--text-color); }
+    .ps-li i { width: 10px; height: 10px; border-radius: 3px; margin-top: 5px; background: var(--c); }
+    .ps-li.th i { background: var(--t); box-shadow: inset 0 0 0 1.5px var(--c); }
+    .ps-li small { display: block; color: #6c757d; font-size: 11.5px; }
+    .ps-li:hover span { color: var(--primary-color); }
+    .pi { border-left: 4px solid var(--c); padding-left: 12px; margin-bottom: 6px; }
+    .pi-k { display: flex; justify-content: space-between; align-items: center; font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: #5f6b7a; }
+    .pi-x { border: 0; background: none; font-size: 22px; line-height: 1; color: #5f6b7a; padding: 0 2px; }
+    .pi h2 { font-size: 18px; line-height: 1.3; }
+    .pi-cs { color: #5f6b7a; font-style: italic; font-size: 13px; }
+    .pi-who { font-weight: 500; margin-bottom: 4px !important; }
+    .pi-venue { color: #5f6b7a; font-size: 13px; }
+    .pi-th { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 10px; }
+    .pi-th button { display: inline-flex; align-items: center; gap: 6px; border: 1px solid #d5dde6; background: #fff; border-radius: 999px; padding: 2px 10px 2px 8px; font-size: 12px; color: var(--text-color); }
+    .pi-th button i { width: 9px; height: 9px; border-radius: 2px; background: var(--c); }
+    .pi-links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pi-links a { font-size: 13px; text-decoration: none; border: 1px solid #c9d6e3; border-radius: 999px; padding: 3px 12px; color: var(--secondary-color); }
+    .pi-links a:hover { border-color: var(--primary-color); color: var(--primary-color); }
+    .pi-nav { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 14px 0 4px; font-size: 12.5px; color: #5f6b7a; }
+    .pi-nav button { border: 1px solid #e3e8ee; background: #fff; border-radius: 8px; padding: 3px 12px; color: var(--secondary-color); }
+    .ps-sep { border: 0; border-top: 1px solid #e9edf2; margin: 16px 0 12px; opacity: 1; }
+
+    .tl-cap { display: none; }
+    body.tour #header, body.tour .tl-top, body.tour .tl-side, body.tour .tlc-hint, body.tour .tlc-tip { display: none !important; }
+    body.tour .tl-app { margin-top: 0; height: 100vh; grid-template-columns: 1fr; grid-template-rows: 1fr; padding: 26px 30px 18px; }
+    body.tour .tl-main { border: 0; padding: 0; }
+    body.tour .tl-cap { display: block; min-height: 138px; margin-bottom: 6px; opacity: 0; transform: translateY(6px); transition: opacity .35s, transform .35s; }
+    body.tour .tl-cap.on { opacity: 1; transform: none; }
+    .tl-cap .yrs { font-size: 15px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary-color); }
+    .tl-cap h3 { font-size: 34px; font-weight: 700; color: var(--secondary-color); margin: 2px 0 4px; }
+    .tl-cap p { font-size: 17px; color: #3d4a59; max-width: 1000px; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+    @media (max-width: 991px) {
+      .tl-app { display: block; height: auto; padding: 10px 12px 24px; }
+      .tl-top { margin-bottom: 10px; }
+      .tl-main { height: max(460px, 70vh); padding: 10px 8px 4px; }
+      .tl-side { margin-top: 12px; }
+      .tl-tools { width: 100%; }
+      .tl-tools input { flex: 1; width: auto; min-width: 120px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo me-auto"><a href="index.html">Pavel Kordík</a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="index.html#projects">Projects</a></li>
+          <li><a class="nav-link" href="index.html#research">Research</a></li>
+          <li><a class="nav-link active" href="timeline.html">Timeline</a></li>
+          <li><a class="nav-link" href="student-topics.html">Thesis topics</a></li>
+          <li><a class="nav-link" href="index.html#publications">Publications</a></li>
+          <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="tl-app">
+    <div class="tl-top">
+      <div class="tl-title">
+        <h1>Research timeline</h1>
+        <p class="tl-sub" id="sub"></p>
+      </div>
+      <nav class="tl-crumbs" id="crumbs" aria-label="Zoom level"></nav>
+      <div class="tl-tools">
+        <div class="seg" role="group" aria-label="Show">
+          <button type="button" id="tyPaper" aria-pressed="true">Papers</button>
+          <button type="button" id="tyThesis" aria-pressed="true">Theses</button>
+        </div>
+        <input id="q" type="search" placeholder="Search titles, people, venues…" aria-label="Search">
+        <button type="button" class="tl-btn" id="zoomOut" title="Zoom out (Esc)"><i class="bi bi-zoom-out"></i> Zoom out</button>
+        <a class="tl-btn" id="tourBtn" href="timeline.html?tour" title="Animated tour, made for screen recording"><i class="bi bi-play-fill"></i> Tour</a>
+      </div>
+    </div>
+    <section class="tl-main" aria-label="Chart">
+      <div class="tl-cap" id="cap" aria-live="polite"></div>
+      <div class="tl-chart" id="chart"></div>
+    </section>
+    <aside class="tl-side" id="side" aria-live="polite"></aside>
+  </main>
+
+  <script src="assets/timeline-chart.js"></script>
+  <script>
+  (async function () {
+    const $ = s => document.querySelector(s);
+    const hdr = $('#header');
+    const setHdr = () => document.documentElement.style.setProperty('--hdr', hdr.offsetHeight + 'px');
+    setHdr(); addEventListener('resize', setHdr);
+    $('.mobile-nav-toggle').addEventListener('click', function () { $('#navbar').classList.toggle('navbar-mobile'); this.classList.toggle('bi-list'); this.classList.toggle('bi-x'); });
+
+    const params = new URLSearchParams(location.search);
+    let tour = params.has('tour');
+    if (tour) document.body.classList.add('tour');
+
+    const D = TimelineChart.prepare(await fetch('data/timeline.json').then(r => r.json()));
+    const { esc, fold, kindLabel } = TimelineChart;
+    const papers = D.items.filter(i => i.type === 'paper'), theses = D.items.filter(i => i.type === 'thesis');
+    $('#sub').textContent = `${papers.length} papers · ${theses.length} supervised theses · ${D.milestones.length} milestones · ${D.minY}–${D.maxY}`;
+
+    // Initial state from the URL
+    const init = {};
+    const yr = k => /^\d{4}$/.test(params.get(k) || '') ? +params.get(k) : null;
+    if (yr('from') || yr('to')) { init.from = yr('from') || yr('to'); init.to = yr('to') || init.from; }
+    if (params.get('type') === 'paper') init.show = { paper: true, thesis: false };
+    if (params.get('type') === 'thesis') init.show = { paper: false, thesis: true };
+    if (D.byId[params.get('theme')]) init.theme = params.get('theme');
+    if (params.get('q')) { init.q = params.get('q'); $('#q').value = init.q; }
+    const it0 = D.byKey[params.get('item')];
+    if (it0) { init.from = init.to = it0.y; init.sel = it0.id; }
+
+    let listOpen = false;
+    const chart = TimelineChart.mount($('#chart'), D, { state: init, intro: !tour, onChange: update });
+    update();
+
+    /* ---------- side panel ---------- */
+    function isFull(s) { return s.from === D.minY && s.to === D.maxY; }
+    function range(s) { return s.from === s.to ? String(s.from) : `${s.from}–${s.to}`; }
+    function inView(s) { return D.items.filter(i => i.y >= s.from && i.y <= s.to && s.show[i.type] && (!s.theme || i.themes.includes(s.theme))); }
+    function plural(n, a, b) { return `${n} ${n === 1 ? a : b}`; }
+
+    function stats(list) {
+      const p = list.filter(i => i.type === 'paper').length, t = list.filter(i => i.type === 'thesis');
+      const by = k => t.filter(i => i.kind === k).length;
+      const parts = [['MSc', 'MSc'], ['BSc', 'BSc'], ['PhD', 'Ph.D.']].filter(([k]) => by(k)).map(([k, l]) => `${by(k)} ${l}`).join(' · ');
+      return `<div class="ps-stats"><div><b>${p}</b><span>${p === 1 ? 'paper' : 'papers'}</span></div><div><b>${t.length}</b><span>supervised ${t.length === 1 ? 'thesis' : 'theses'}</span>${parts ? `<small>${parts}</small>` : ''}</div></div>`;
+    }
+    function mix(list) {
+      const rows = D.themes.map(t => [t, list.filter(i => i.themes.includes(t.id)).length]).filter(r => r[1]).sort((a, b) => b[1] - a[1]);
+      if (!rows.length) return '';
+      const mx = rows[0][1];
+      return `<h3>Topics</h3><div class="ps-mix">${rows.map(([t, n]) => `<button type="button" data-act="theme" data-theme="${t.id}" style="--c:${t.color}" title="Follow ${esc(t.label)} through the years"><span class="mx-l"><i></i>${esc(t.label)}</span><span class="mx-n">${n}</span><span class="mx-bar"><span style="width:${(n / mx * 100).toFixed(0)}%"></span></span></button>`).join('')}</div>`;
+    }
+    function milestones(s) {
+      const ms = D.milestones.filter(m => m.y >= s.from && m.y <= s.to).sort((a, b) => a.y - b.y);
+      if (!ms.length) return '';
+      return `<h3>Milestones</h3><ul class="ps-ms">${ms.map(m => `<li><span class="yr">${m.y}</span><b>${esc(m.title)}</b>${m.text ? `<br><span>${esc(m.text)}</span>` : ''}</li>`).join('')}</ul>`;
+    }
+    function list(s, items) {
+      const q = fold(s.q.trim());
+      const shown = q ? items.filter(i => i.hay.includes(q)) : items;
+      if (!shown.length) return q ? '<p class="ps-src">Nothing matches the search in this view.</p>' : '';
+      const years = [...new Set(shown.map(i => i.y))].sort((a, b) => b - a);
+      const label = q ? plural(shown.length, 'match', 'matches') + ' in this view' : `All ${shown.length} items in this view as a list`;
+      return `<details class="ps-list" ${listOpen || q ? 'open' : ''}><summary>${label}</summary>${years.map(y => `<h4>${y}</h4>` + shown.filter(i => i.y === y).reverse().map(i => {
+        const t = s.theme ? D.byId[s.theme] : D.themes[i.t0];
+        return `<button type="button" class="ps-li${i.type === 'thesis' ? ' th' : ''}" data-act="sel" data-id="${i.id}" style="--c:${t.color};--t:${t.tint}"><i></i><span>${esc(i.title)}<small>${esc(kindLabel(i))}${i.type === 'paper' ? '' : ' · ' + esc(i.student || '')}</small></span></button>`;
+      }).join('')).join('')}</details>`;
+    }
+    function sameYear(it) { return chart.visibleItems().filter(i => i.y === it.y).reverse(); }
+    function itemCard(s, it) {
+      const t = D.byId[it.themes[0]];
+      const same = sameYear(it), k = same.findIndex(i => i.id === it.id);
+      const links = [];
+      if (it.doi) links.push(`<a href="https://doi.org/${esc(it.doi)}" target="_blank" rel="noopener">DOI</a>`);
+      if (it.url) links.push(`<a href="${esc(it.url)}" target="_blank" rel="noopener">${it.type === 'thesis' ? 'Full text in DSpace' : 'Open'}</a>`);
+      const who = it.type === 'paper' ? it.authors : (it.student || '') + (it.role === 'co-supervisor' ? ' (I was co-supervisor)' : '');
+      return `<div class="pi" style="--c:${t.color}">
+        <div class="pi-k"><span>${it.y} · ${esc(kindLabel(it))}</span><button type="button" class="pi-x" data-act="close" aria-label="Close">&times;</button></div>
+        <h2>${esc(it.title)}</h2>
+        ${it.title_cs && it.title_cs !== it.title ? `<p class="pi-cs" lang="cs">${esc(it.title_cs)}</p>` : ''}
+        ${who ? `<p class="pi-who">${esc(who)}</p>` : ''}
+        ${it.type === 'paper' && it.venue ? `<p class="pi-venue">${esc(it.venue)}</p>` : ''}
+        <div class="pi-th">${it.themes.map(id => `<button type="button" data-act="theme" data-theme="${id}" style="--c:${D.byId[id].color}"><i></i>${esc(D.byId[id].short)}</button>`).join('')}</div>
+        ${links.length ? `<div class="pi-links">${links.join('')}</div>` : ''}
+        ${same.length > 1 ? `<div class="pi-nav"><button type="button" data-act="prev" aria-label="Previous">&larr;</button><span>${k + 1} of ${same.length} in ${it.y}</span><button type="button" data-act="next" aria-label="Next">&rarr;</button></div>` : ''}
+      </div><hr class="ps-sep">`;
+    }
+    function eraBlock(s, e) {
+      const i = D.eras.indexOf(e), prev = D.eras[i - 1], next = D.eras[i + 1];
+      return `<div class="ps-k">${e.from}–${e.to} · era ${i + 1} of ${D.eras.length}</div><h2>${esc(e.title)}</h2><p>${esc(e.text)}</p>` +
+        `<div class="ps-nav">${prev ? `<button type="button" data-act="zoom" data-from="${prev.from}" data-to="${prev.to}">&larr; ${esc(prev.title)}</button>` : '<span></span>'}${next ? `<button type="button" data-act="zoom" data-from="${next.from}" data-to="${next.to}">${esc(next.title)} &rarr;</button>` : '<span></span>'}</div>`;
+    }
+    function rangeBlock(s) {
+      const e = chart.eraOf(s.from, s.to);
+      let h = `<div class="ps-k">${s.from === s.to ? 'Year' : 'Years'}</div><h2>${range(s)}</h2>`;
+      if (e) h += `<p>Era: <button type="button" class="ps-link" data-act="zoom" data-from="${e.from}" data-to="${e.to}">${esc(e.title)} (${e.from}–${e.to})</button></p>`;
+      if (s.from === s.to) h += `<div class="ps-nav">${s.from > D.minY ? `<button type="button" data-act="zoom" data-from="${s.from - 1}" data-to="${s.from - 1}">&larr; ${s.from - 1}</button>` : '<span></span>'}${s.from < D.maxY ? `<button type="button" data-act="zoom" data-from="${s.from + 1}" data-to="${s.from + 1}">${s.from + 1} &rarr;</button>` : '<span></span>'}</div>`;
+      return h;
+    }
+    function overview() {
+      return `<h2>${D.minY}–${D.maxY}</h2>
+        <p>Every brick is one paper (solid) or one thesis I supervised (light), stacked by year and coloured by topic. Flags mark milestones.</p>
+        <ul class="ps-how"><li><b>Click an era</b> or a year to zoom in</li><li><b>Drag</b> across the chart to pick years</li><li><b>Click a topic</b> to follow it through the years</li><li><b>Click a brick</b> for the paper or thesis</li></ul>
+        <h3>Five eras</h3>${D.eras.map(e => {
+          const its = D.items.filter(i => i.y >= e.from && i.y <= e.to);
+          const p = its.filter(i => i.type === 'paper').length;
+          return `<button type="button" class="ps-era" data-act="zoom" data-from="${e.from}" data-to="${e.to}"><small>${e.from}–${e.to}</small><b>${esc(e.title)}</b><small>${plural(p, 'paper', 'papers')} · ${plural(its.length - p, 'thesis', 'theses')}</small></button>`;
+        }).join('')}`;
+    }
+    function panel(s) {
+      const items = inView(s), full = isFull(s);
+      const e = chart.eraOf(s.from, s.to);
+      let h = '';
+      if (s.sel && D.byKey[s.sel]) h += itemCard(s, D.byKey[s.sel]);
+      if (s.theme) {
+        const t = D.byId[s.theme];
+        h += `<div class="ps-theme" style="--c:${t.color}"><div class="ps-k">Topic</div><h2>${esc(t.label)}</h2><p>${esc(t.text || '')}</p><button type="button" class="ps-link" data-act="theme" data-theme="">Show all topics</button></div>`;
+      }
+      if (full) h += s.theme ? '' : overview();
+      else if (e && e.from === s.from && e.to === s.to) h += eraBlock(s, e);
+      else h += rangeBlock(s);
+      if (!full || s.theme) h += stats(items);
+      if (!s.theme && !full) h += mix(items);
+      if (!full) h += milestones(s);
+      h += list(s, items);
+      if (full && !s.theme) h += `<div class="ps-cta">Looking for a thesis? <a href="student-topics.html">Current topics &rarr;</a></div>
+        <p class="ps-src">Papers from the CTU publication database (V3S) and OpenAlex; theses from the CTU study system, with links to the CTU digital library (DSpace). Topics are assigned from titles. Updated ${esc(D.generated)}.</p>`;
+      const side = $('#side'), top = side.scrollTop;
+      side.innerHTML = h;
+      side.scrollTop = s.sel ? 0 : top;
+      const det = side.querySelector('.ps-list');
+      if (det) det.addEventListener('toggle', () => { listOpen = det.open; });
+    }
+
+    function crumbs(s) {
+      const parts = [], e = chart.eraOf(s.from, s.to);
+      if (isFull(s)) parts.push('<span class="cur">All years</span>');
+      else {
+        parts.push(`<button type="button" data-act="zoom" data-from="${D.minY}" data-to="${D.maxY}">All years</button>`);
+        if (e && (e.from !== s.from || e.to !== s.to)) parts.push(`<span class="sep">›</span><button type="button" data-act="zoom" data-from="${e.from}" data-to="${e.to}">${esc(e.title)}</button>`);
+        parts.push(`<span class="sep">›</span><span class="cur">${range(s)}${e && e.from === s.from && e.to === s.to ? ' · ' + esc(e.title) : ''}</span>`);
+      }
+      if (s.theme) { const t = D.byId[s.theme]; parts.push(`<span class="bc-theme" style="--c:${t.color}"><i></i>${esc(t.short)}<button type="button" data-act="theme" data-theme="" aria-label="Show all topics">&times;</button></span>`); }
+      $('#crumbs').innerHTML = parts.join('');
+    }
+
+    function syncUrl(s) {
+      if (tour) return;
+      const p = new URLSearchParams();
+      if (!isFull(s)) { p.set('from', s.from); p.set('to', s.to); }
+      if (s.theme) p.set('theme', s.theme);
+      if (s.show.paper !== s.show.thesis) p.set('type', s.show.paper ? 'paper' : 'thesis');
+      if (s.q.trim()) p.set('q', s.q.trim());
+      if (s.sel) p.set('item', s.sel);
+      const qs = p.toString();
+      history.replaceState(null, '', qs ? '?' + qs : location.pathname);
+    }
+
+    function update() {
+      const s = chart.state;
+      $('#tyPaper').setAttribute('aria-pressed', s.show.paper);
+      $('#tyThesis').setAttribute('aria-pressed', s.show.thesis);
+      $('#zoomOut').disabled = isFull(s);
+      crumbs(s); panel(s); syncUrl(s);
+    }
+
+    /* ---------- interactions ---------- */
+    function step(d) {
+      const s = chart.state; if (!s.sel) return;
+      const same = sameYear(D.byKey[s.sel]), k = same.findIndex(i => i.id === s.sel);
+      chart.set({ sel: same[(k + d + same.length) % same.length].id });
+    }
+    document.addEventListener('click', e => {
+      const b = e.target.closest('[data-act]');
+      if (!b || !b.closest('#side, #crumbs')) return;
+      const a = b.dataset.act;
+      if (a === 'zoom') chart.set({ from: +b.dataset.from, to: +b.dataset.to });
+      else if (a === 'theme') chart.set({ theme: b.dataset.theme || null });
+      else if (a === 'sel') { const it = D.byKey[b.dataset.id]; chart.set({ from: it.y, to: it.y, sel: it.id }); }
+      else if (a === 'close') chart.set({ sel: null });
+      else if (a === 'prev') step(-1);
+      else if (a === 'next') step(1);
+    });
+    function toggleType(k) {
+      const show = Object.assign({}, chart.state.show, { [k]: !chart.state.show[k] });
+      if (!show.paper && !show.thesis) show[k === 'paper' ? 'thesis' : 'paper'] = true;
+      chart.set({ show });
+    }
+    $('#tyPaper').addEventListener('click', () => toggleType('paper'));
+    $('#tyThesis').addEventListener('click', () => toggleType('thesis'));
+    let qt; $('#q').addEventListener('input', e => { clearTimeout(qt); qt = setTimeout(() => chart.set({ q: e.target.value }), 150); });
+    $('#zoomOut').addEventListener('click', () => chart.zoomOut());
+    addEventListener('keydown', e => {
+      if (e.target.matches('input, textarea')) return;
+      const s = chart.state;
+      if (e.key === 'Escape') { if (s.sel) chart.set({ sel: null }); else if (s.theme && isFull(s)) chart.set({ theme: null }); else chart.zoomOut(); }
+      else if (s.sel && (e.key === 'ArrowUp' || e.key === 'ArrowLeft')) { e.preventDefault(); step(-1); }
+      else if (s.sel && (e.key === 'ArrowDown' || e.key === 'ArrowRight')) { e.preventDefault(); step(1); }
+    });
+
+    /* ---------- tour for screen recording: timeline.html?tour ---------- */
+    // The tour hides the panel and the toolbar; any click or key press ends it and brings them back.
+    if (tour) {
+      const wait = ms => new Promise(r => setTimeout(r, ms));
+      const cap = $('#cap');
+      const endTour = e => {
+        if (!tour) return;
+        tour = false;
+        removeEventListener('pointerdown', endTour, true); removeEventListener('keydown', endTour, true);
+        // The layout changes under the pointer, so act on the brick that was pressed and swallow the click.
+        const hit = e.target.closest && e.target.closest('#chart');
+        if (hit) addEventListener('click', ev => { ev.stopPropagation(); ev.preventDefault(); }, { capture: true, once: true });
+        const b = hit && e.target.closest('.tlc-b');
+        document.body.classList.remove('tour'); cap.classList.remove('on');
+        setHdr();
+        if (b) chart.set({ sel: b.dataset.id }); else update();
+      };
+      addEventListener('pointerdown', endTour, true); addEventListener('keydown', endTour, true);
+      const say = async (yrs, h, p) => {
+        cap.classList.remove('on'); await wait(300);
+        cap.innerHTML = `<div class="yrs">${esc(yrs)}</div><h3>${esc(h)}</h3>${p ? `<p>${esc(p)}</p>` : ''}`;
+        cap.classList.add('on');
+      };
+      const steps = async () => {
+        await say(`${D.minY} – today`, 'Research timeline', `${papers.length} papers · ${theses.length} supervised theses · ${D.milestones.length} milestones`);
+        chart.intro(45); await wait(4300);
+        for (const e of D.eras) {
+          if (!tour) return;
+          chart.set({ from: e.from, to: e.to });
+          await say(`${e.from} – ${e.to === D.maxY ? 'today' : e.to}`, e.title, e.text);
+          await wait(5600);
+        }
+        if (!tour) return;
+        chart.set({ from: D.minY, to: D.maxY });
+        for (const id of ['recsys', 'language']) {
+          const t = D.byId[id]; if (!t || !tour) continue;
+          chart.set({ theme: id }); await say('Topic', t.label, t.text); await wait(4600);
+        }
+        if (!tour) return;
+        chart.set({ theme: null });
+        const ag = D.items.find(i => /agentic marketplaces/i.test(i.title));
+        if (ag) {
+          chart.set({ from: ag.y, to: ag.y }); await say(String(ag.y), 'AI agents on both sides of a marketplace', `${ag.authors} · ${ag.venue}`);
+          await wait(900); if (!tour) return; chart.set({ sel: ag.id }); await wait(5000); if (!tour) return; chart.set({ sel: null });
+        }
+        chart.set({ from: D.minY, to: D.maxY });
+        await say('kordikp.github.io/timeline.html', `Research timeline ${D.minY}–${D.maxY}`, `Click any brick for the paper or thesis. Thesis topics: kordikp.github.io/student-topics.html`);
+      };
+      await steps();
+    }
+  })();
+  </script>
+</body>
+
+</html>
